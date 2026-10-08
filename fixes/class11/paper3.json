@@ -1,0 +1,121 @@
+[
+ {
+  "q": "Q25",
+  "old": "A bus route has 12 stops. Each ticket is printed with the stop where a journey starts and a different stop where it ends. How many different tickets are needed to cover every possible journey?",
+  "new": "A bus route has 10 stops. Each ticket is printed with the stop where a journey starts and a different stop where it ends. How many different tickets are needed to cover every possible journey?",
+  "why": "P&C ceiling: numbers ≤ 10 in factorials (12P2 = 12!/10! exceeds it)"
+ },
+ {
+  "q": "Q25",
+  "old": "144",
+  "new": "100",
+  "after": "A bus route has 12 stops. Each ticket is printed with the stop where a journey starts and a different stop where it ends. How many different tickets are needed to cover every possible journey?",
+  "why": "options for 10 stops: 10 × 10"
+ },
+ {
+  "q": "Q25",
+  "old": "66",
+  "new": "45",
+  "after": "A bus route has 12 stops. Each ticket is printed with the stop where a journey starts and a different stop where it ends. How many different tickets are needed to cover every possible journey?",
+  "why": "options for 10 stops: C(10, 2)"
+ },
+ {
+  "q": "Q25",
+  "old": "132",
+  "new": "90",
+  "after": "A bus route has 12 stops. Each ticket is printed with the stop where a journey starts and a different stop where it ends. How many different tickets are needed to cover every possible journey?",
+  "why": "correct option for 10 stops: 10 × 9"
+ },
+ {
+  "q": "Q25",
+  "old": "121",
+  "new": "81",
+  "after": "A bus route has 12 stops. Each ticket is printed with the stop where a journey starts and a different stop where it ends. How many different tickets are needed to cover every possible journey?",
+  "why": "options for 10 stops: 9 × 9"
+ },
+ {
+  "q": "Q25",
+  "old": "132",
+  "new": "90",
+  "after": "tan 50° = (tan 70° − tan 20°)/(1 + tan 70° tan 20°). Since tan 70° = 1/tan 20°, the denominator is 1 + 1 = 2, so tan 70° − tan 20° = 2 tan 50°.",
+  "why": "answer cell for 10 stops"
+ },
+ {
+  "q": "Q25",
+  "old": "The start can be any of 12 stops and the end any of the other 11: 12 × 11 = 132.",
+  "new": "The start can be any of 10 stops and the end any of the other 9: 10 × 9 = 90.",
+  "why": "solution for 10 stops"
+ },
+ {
+  "q": "Q16",
+  "old": "120°",
+  "new": "45°",
+  "why": "120° is not acute, so it is eliminated by the stem; 45° is a plausible distractor"
+ },
+ {
+  "q": "Q37",
+  "old": "Some different whole numbers are to be chosen. What is the least number of them that must be chosen so that, however they are chosen, some two of them have a difference divisible by 9?",
+  "new": "What is the least number of different whole numbers that must be chosen so that, however they are chosen, two of them always have a difference divisible by 9?",
+  "why": "clearer, shorter single question"
+ },
+ {
+  "q": "Q1",
+  "old": "A number times its conjugate is a² + b². So (1 + 3i)(1 − 3i) = 1 + 9 = 10.",
+  "new": "The number a + ib times its conjugate a − ib is a² + b². So (1 + 3i)(1 − 3i) = 1 + 9 = 10.",
+  "why": "a and b were undefined"
+ },
+ {
+  "q": "Q4",
+  "old": "(1 − i)² = 1 − 2i + i² = −2i. So (1 − i)⁶ = (−2i)³ = −8i³ = −8 × (−i) = 8i.",
+  "new": "First, (1 − i)² = 1 − 2i + i² = −2i. So (1 − i)⁶ = (−2i)³ = −8i³ = −8 × (−i) = 8i.",
+  "why": "sentence started with a numeral expression"
+ },
+ {
+  "q": "Q9",
+  "old": "5(3ⁿ − 1) ÷ 2 = 1,820 gives 3ⁿ − 1 = 728, so 3ⁿ = 729 and n = 6.",
+  "new": "The sum of n terms is 5(3ⁿ − 1) ÷ 2 = 1,820, so 3ⁿ − 1 = 728, 3ⁿ = 729 and n = 6.",
+  "why": "sentence started with a numeral; n undefined"
+ },
+ {
+  "q": "Q16",
+  "old": "The first line has slope √3, so it makes 60° with the x-axis. The line x = 2 makes 90° with it, so θ = 90° − 60° = 30°.",
+  "new": "The first line has slope √3, so it makes 60° with the x-axis. The line x = 2 is vertical and makes 90° with the x-axis, so θ = 90° − 60° = 30°.",
+  "why": "'with it' was ambiguous (reads as 90° with the first line)"
+ },
+ {
+  "q": "Q22",
+  "old": "cos 3A = 4 cos³A − 3 cos A = cos A (4 cos²A − 3). Since cos²A = 1 − sin²A, the bracket is 4 − 4 sin²A − 3 = 1 − 4 sin²A.",
+  "new": "Here cos 3A = 4 cos³A − 3 cos A = cos A (4 cos²A − 3). Since cos²A = 1 − sin²A, the bracket is 4 − 4 sin²A − 3 = 1 − 4 sin²A.",
+  "why": "complete sentence"
+ },
+ {
+  "q": "Q24",
+  "old": "tan 50° = (tan 70° − tan 20°)/(1 + tan 70° tan 20°). Since tan 70° = 1/tan 20°, the denominator is 1 + 1 = 2, so tan 70° − tan 20° = 2 tan 50°.",
+  "new": "Here tan 50° = (tan 70° − tan 20°)/(1 + tan 70° tan 20°). Since tan 70° = 1/tan 20°, the denominator is 1 + 1 = 2, so tan 70° − tan 20° = 2 tan 50°.",
+  "why": "complete sentence"
+ },
+ {
+  "q": "Q30",
+  "old": "4pq³ = 6p²q² gives 4q = 6p, so 4(1 − p) = 6p and p = 2/5.",
+  "new": "With q = 1 − p, the condition is 4pq³ = 6p²q². Dividing by 2pq² gives 2q = 3p, so 2(1 − p) = 3p and p = 2/5.",
+  "why": "sentence started with a numeral; q was undefined"
+ },
+ {
+  "q": "Q34",
+  "old": "200 + 35w ≥ 1,000 gives w ≥ 800 ÷ 35 ≈ 22.9. The least whole number of weeks is 23.",
+  "new": "After w weeks he has ₹(200 + 35w). Then 200 + 35w ≥ 1,000 gives w ≥ 800 ÷ 35 ≈ 22.9. The least whole number of weeks is 23.",
+  "why": "sentence started with a numeral; w was undefined"
+ },
+ {
+  "q": "Q36",
+  "old": "3¹ > 1 and 3² > 8, but at n = 3 both sides equal 27, so it fails. From n = 4 on it holds (81 > 64), and the step 3k³ ≥ (k + 1)³ keeps it going. The least start is 4.",
+  "new": "It holds at n = 1 and n = 2 (3 > 1, 9 > 8), but at n = 3 both sides equal 27, so it fails. From n = 4 on it holds (81 > 64), and the step 3k³ ≥ (k + 1)³ keeps it going. The least start is 4.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q44",
+  "old": "OB makes the angle 2θ with the x-axis, where tan θ = 1/3. tan 2θ = (2/3)/(1 − 1/9) = 3/4, so OB is 3x − 4y = 0. The distance of P is (3 × 10 − 0)/5 = 6.",
+  "new": "OB makes the angle 2θ with the x-axis, where tan θ = 1/3. Then tan 2θ = (2/3)/(1 − 1/9) = 3/4, so OB is 3x − 4y = 0. The distance of P is (3 × 10 − 0)/5 = 6.",
+  "why": "sentence started with lowercase 'tan'"
+ }
+]

@@ -1,0 +1,145 @@
+[
+ {
+  "q": "Q10",
+  "old": "3x + 2 > 14 gives 3x > 12, so x > 4. 13 − 2x ≥ −5 gives −2x ≥ −18, so x ≤ 9 (the sign turns round). Together, 4 < x ≤ 9.",
+  "new": "From 3x + 2 > 14, 3x > 12, so x > 4. From 13 − 2x ≥ −5, −2x ≥ −18, so x ≤ 9 (the sign turns round). Together, 4 < x ≤ 9.",
+  "why": "Solution sentences start with numerals (house rule)"
+ },
+ {
+  "q": "Q11",
+  "old": "−8",
+  "new": "−4",
+  "after": "An arithmetic progression and a geometric progression of positive numbers both have first term 2 and third term 18. By how much is the second term of the arithmetic progression greater than the second term of the geometric progression?",
+  "why": "−8 is not a plausible mistake; −4 is the reversed subtraction 6 − 10"
+ },
+ {
+  "q": "Q21",
+  "old": " and Q lie on a unit circle about the origin O. OP makes the angle θ with the positive ",
+  "new": " and Q lie on a unit circle centred at the origin O. OP makes the angle θ with the positive ",
+  "why": "Clearer wording"
+ },
+ {
+  "q": "Q21",
+  "old": "-axis, and OQ is OP turned anticlockwise through a right angle. Where is Q?",
+  "new": "-axis, and OQ is OP turned anticlockwise through a right angle. What are the coordinates of Q?",
+  "why": "'Where is Q?' is vague; options are coordinates"
+ },
+ {
+  "q": "Q21",
+  "old": "(A) ",
+  "new": "(−4/5, 3/5)",
+  "mode": "addrun",
+  "after": "sin 200° = sin(180° + 20°) = −sin 20°, and sin(−20°) = −sin 20°. The other three angles have sine +sin 20°.",
+  "why": "Answer cell shows only the letter"
+ },
+ {
+  "q": "Q27",
+  "old": "The weather office says that on each of the next 4 days the chance of rain is 0.3, and the days are independent of each other. What is the probability that it rains on at least one of the 4 days?",
+  "new": "The weather office says that on each of the next 3 days the chance of rain is 0.3, and the days are independent of each other. What is the probability that it rains on at least one of the 3 days?",
+  "why": "4-day version needs 4 dp (0.7599); C11 ceiling is 3 dp"
+ },
+ {
+  "q": "Q27",
+  "old": "0.7599",
+  "new": "0.657",
+  "after": "The weather office says that on each of the next 4 days the chance of rain is 0.3, and the days are independent of each other. What is the probability that it rains on at least one of the 4 days?",
+  "why": "3-day version: 1 − 0.7³ = 0.657"
+ },
+ {
+  "q": "Q27",
+  "old": "0.2401",
+  "new": "0.343",
+  "why": "Distractor: all days dry, 0.7³"
+ },
+ {
+  "q": "Q27",
+  "old": "0.4116",
+  "new": "0.441",
+  "why": "Distractor: exactly one rainy day, 3 × 0.3 × 0.7²"
+ },
+ {
+  "q": "Q27",
+  "old": "0.9919",
+  "new": "0.973",
+  "why": "Distractor: 1 − 0.3³"
+ },
+ {
+  "q": "Q27",
+  "old": "0.7599",
+  "new": "0.657",
+  "after": "Myra has 2 places, and the other 6 students fill the rest in 6! = 720 ways. So 2 × 720 = 1,440.",
+  "why": "Key answer cell for the 3-day version"
+ },
+ {
+  "q": "Q27",
+  "old": "The chance that a day is dry is 0.7, so all 4 days are dry with chance 0.7⁴ = 0.2401. At least one rainy day: 1 − 0.2401 = 0.7599.",
+  "new": "The chance that a day is dry is 0.7, so all 3 days are dry with chance 0.7³ = 0.343. At least one rainy day: 1 − 0.343 = 0.657.",
+  "why": "Solution for the 3-day version"
+ },
+ {
+  "q": "Q28",
+  "old": "At an airport, the numbers of planes that landed in five hours were recorded as 5, 8, 11, 14 and 17. The variance of these numbers is 18. Later it was found that the 17 was a mistake: the true number was 2. What is the variance of the corrected numbers?",
+  "new": "At an airport, the numbers of planes that landed in each of five hours were recorded as 5, 8, 11, 14 and 17. The variance of these numbers is 18. Later it was found that the 17 was a mistake: the true number was 2. What is the variance of the corrected numbers?",
+  "why": "'in five hours' reads as one total; data are per hour"
+ },
+ {
+  "q": "Q31",
+  "old": "In the figure, 6 parallel lines (black) are crossed by 4 other parallel lines (purple). How many parallelograms of all sizes are formed whose four sides lie along these lines?",
+  "new": "In the figure, 6 horizontal parallel lines are crossed by 4 slanting parallel lines. How many parallelograms of all sizes are formed whose four sides lie along these lines?",
+  "why": "Colour must not carry information (greyscale rule); direction identifies the families"
+ },
+ {
+  "q": "Q31",
+  "old": "A parallelogram needs 2 of the 6 black lines and 2 of the 4 purple lines: C(6, 2) × C(4, 2) = 15 × 6 = 90.",
+  "new": "A parallelogram needs 2 of the 6 horizontal lines and 2 of the 4 slanting lines: C(6, 2) × C(4, 2) = 15 × 6 = 90.",
+  "why": "Match stem"
+ },
+ {
+  "q": "Q40",
+  "old": "How many 4-digit numbers have digits that strictly increase from left to right, such as 1,358?",
+  "new": "How many 4-digit numbers have digits that strictly increase from left to right, such as 1358?",
+  "why": "Comma inside a digit-pattern example is distracting"
+ },
+ {
+  "q": "Q43",
+  "old": ". Some of the coefficients are real numbers and the others are imaginary. What is the sum of the real coefficients?",
+  "new": ". Some of the coefficients are real numbers and the others are purely imaginary. What is the sum of the real coefficients?",
+  "why": "Precise term (non-real coefficients are 12i, 160i, 192i)"
+ },
+ {
+  "q": "Q32",
+  "old": "₹3,420",
+  "new": "₹3,280",
+  "after": "Usha runs a tea stall. She buys a kettle for ₹2,000, on which GST is 12%, and paper cups for ₹1,000, on which GST is 18%. Both prices are before GST. How much does she pay in all?",
+  "why": "12% GST slab abolished Sept 2025; kettle now 5%"
+ },
+ {
+  "q": "Q32",
+  "old": "₹3,360",
+  "new": "₹3,150",
+  "why": "distractor: 5% on everything"
+ },
+ {
+  "q": "Q32",
+  "old": "₹3,450",
+  "new": "₹3,410",
+  "why": "distractor: rates swapped"
+ },
+ {
+  "q": "Q32",
+  "old": "₹3,420",
+  "new": "₹3,280",
+  "after": "A parallelogram needs 2 of the 6 black lines and 2 of the 4 purple lines: C(6, 2) × C(4, 2) = 15 × 6 = 90.",
+  "why": "answer cell"
+ },
+ {
+  "q": "Q32",
+  "old": "GST is 12% of ₹2,000 = ₹240 and 18% of ₹1,000 = ₹180. Total = ₹3,000 + ₹420 = ₹3,420.",
+  "new": "GST is 5% of ₹2,000 = ₹100 and 18% of ₹1,000 = ₹180. Total = ₹3,000 + ₹280 = ₹3,280."
+ },
+ {
+  "q": "Q32",
+  "old": "Usha runs a tea stall. She buys a kettle for ₹2,000, on which GST is 12%, and paper cups for ₹1,000, on which GST is 18%. Both prices are before GST. How much does she pay in all?",
+  "new": "Usha runs a tea stall. She buys a kettle for ₹2,000, on which GST is 5%, and paper cups for ₹1,000, on which GST is 18%. Both prices are before GST. How much does she pay in all?"
+ }
+]

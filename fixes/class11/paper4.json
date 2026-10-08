@@ -1,0 +1,57 @@
+[
+ {
+  "q": "Q11",
+  "old": "In the figure, the largest square has side 8 cm. The corners of each next square are the midpoints of the sides of the square just outside it. The squares go on in this way for ever. What is the total area of all the squares?",
+  "new": "In the figure, the largest square has side 8 cm. The corners of each next square are the midpoints of the sides of the square just outside it. The squares go on in this way forever. What is the total area of all the squares?",
+  "why": "'for ever' -> 'forever'"
+ },
+ {
+  "q": "Q14",
+  "old": "Putting x = 1, the coefficients add up to 4ⁿ = 4,096, so n = 6. The middle term is the 4th: C(6, 3)(3x)³ = 20 × 27x³ = 540x³.",
+  "new": "Putting x = 1, the coefficients add up to 4 to the power n, and 4,096 = 4⁶, so n = 6. The middle term is the 4th: C(6, 3)(3x)³ = 20 × 27x³ = 540x³.",
+  "why": "superscript n (U+207F) renders as a quote mark in the PDF"
+ },
+ {
+  "q": "Q30",
+  "old": "Trisha and 5 friends meet at a badminton court. A doubles match is played by two teams of 2 players each. Two matches are different if the two teams are different. How many different doubles matches can be chosen from the 6 friends?",
+  "new": "Trisha and 5 friends meet at a badminton court. A doubles match is played by two teams of 2 players each. Two matches are different if the two teams are different. How many different doubles matches can be chosen from these 6 players?",
+  "why": "Trisha plus 5 friends is 6 players, not 6 friends"
+ },
+ {
+  "q": "Q36",
+  "old": "Cut the square into 9 squares of side 1 cm; two points in one small square are at most √2 cm apart. With 10 points, two share a small square. 9 points placed 1.5 cm apart are all more than √2 cm apart, so 9 is too few.",
+  "new": "Cut the square into 9 squares of side 1 cm; two points in one small square are at most √2 cm apart. With 10 points, two share a small square. But 9 points in a 3 × 3 grid, 1.5 cm apart, are all more than √2 cm apart, so 9 is too few.",
+  "why": "sentence starts with a numeral; say how the 9 points are placed"
+ },
+ {
+  "q": "Q37",
+  "old": "One square (shaded) has been removed from the 8 × 8 board in the figure. An induction proof shows that such a board can be covered by L-shaped tiles of 3 squares. In its step, the board is cut into four 4 × 4 quarters, and one tile is put at the centre so that it covers one square from each quarter that has no removed square. Which of the four centre squares E, F, G and H is NOT covered by this tile?",
+  "new": "One square (shaded) has been removed from the 8 × 8 board in the figure. An induction proof shows that such a board can be covered by L-shaped tiles of 3 squares. In the induction step, the board is cut into four 4 × 4 quarters, and one tile is put at the centre so that it covers one square from each quarter that has no removed square. Which of the four centre squares E, F, G and H is NOT covered by this tile?",
+  "why": "'In its step' is vague"
+ },
+ {
+  "q": "Q38",
+  "old": ")ⁿ ≥ 1 + ",
+  "new": ")ᵏ ≥ 1 + ",
+  "why": "superscript n renders as a quote mark in the PDF; use k (ᵏ renders)"
+ },
+ {
+  "q": "Q38",
+  "old": "nx",
+  "new": "kx",
+  "why": "consistent with exponent k"
+ },
+ {
+  "q": "Q38",
+  "old": "n",
+  "new": "k",
+  "after": ")ⁿ ≥ 1 + ",
+  "why": "consistent with exponent k"
+ },
+ {
+  "q": "Q41",
+  "old": "The terms 1, 4, 12, 32, 80, … are 1 × 1, 2 × 2, 3 × 4, 4 × 8, 5 × 16, so aₙ = n × 2ⁿ⁻¹; by induction, if it holds for k and k + 1 then the next term is 4(k + 1)2ᵏ − 4k × 2ᵏ⁻¹ = (k + 2)2ᵏ⁺¹. For S = 1 + 2 × 2 + 3 × 2² + … + 15 × 2¹⁴, 2S − S = 15 × 2¹⁵ − (1 + 2 + … + 2¹⁴) = 491,520 − 32,767 = 458,753.",
+  "new": "The terms 1, 4, 12, 32, 80, … are 1 × 1, 2 × 2, 3 × 4, 4 × 8, 5 × 16, so term k is k × 2ᵏ⁻¹; by induction, if it holds for k and k + 1 then the next term is 4(k + 1)2ᵏ − 4k × 2ᵏ⁻¹ = (k + 2)2ᵏ⁺¹. For S = 1 + 2 × 2 + 3 × 2² + … + 15 × 2¹⁴, 2S − S = 15 × 2¹⁵ − (1 + 2 + … + 2¹⁴) = 491,520 − 32,767 = 458,753.",
+  "why": "superscript n renders as a quote mark in the PDF"
+ }
+]
