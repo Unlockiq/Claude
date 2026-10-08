@@ -81,3 +81,19 @@ None of the 225 questions is copied word for word, but some question types come 
 - **Labels to change:** P1 Q15 Easy → Medium; P4 Q37 Easy → Medium; P3 Q40 and P4 Q40 Medium → Easy.
 - **Weak wrong options:** P3 Q3 (41 and 45 in a tens pattern), P3 Q24 (0 sides), P5 Q42 (0 and 7 corners), P5 Q43 (₹1 and ₹10 are not in the pattern).
 - **P3 Q32** uses ₹200 and ₹500 notes, which are above the usual Class 1 money range. It is fine as recognition only.
+
+## Fixes applied in v3 (`papers/class1_v3/`)
+
+`tools/fix_class1_v3.py` makes the v3 files from the v2 files. It changes text only: no picture, option order or answer letter is changed, so the **answer keys stay the same**. Each PDF was rebuilt with LibreOffice, as the originals were. Page counts match v2, and every question is on the same page as before, except Paper 3 Q20 and Q24, which moved up one page with their pictures.
+
+- **Cover (all 5):** removed the "drawn to scale" line, changed "or" to "and", and made the answer-sheet note clear.
+- **Must fix:** P1 Q43 (asks for the month after October), P4 Q14 (counts "bunches of cherries"), P5 Q31 question, P3 Q28 and Q31 solutions, P1 key Q34, P2 key Q45.
+- **Numeral-led sentences:** fixed in all 12 questions.
+- **Hard words in questions:** "odd one out", "fewest", "earliest", "take-away sum", "sapling" and "least worth" are replaced.
+- **Text vs picture:** fixed P2 Q5, P2 Q38 (options now "Row A–D"), P3 Q11, P3 Q27, P4 Q9, P4 Q36, P5 Q16 by changing the wording to match the picture.
+- **Other rewrites:** as listed in each paper's file.
+
+### Not changed (needs your decision or a redrawn picture)
+- **Pictures to redraw (optional):** P1 Q42 (the grey card looks like a square), P2 Q24 (shapes B and D look broken), P5 Q40 (option labels are not lined up), P5 ₹100 note (the text overlaps the oval).
+- **Content choices:** reduce the repeated "bundles of 10" questions, vary the star-question layout, make the too-easy questions harder (P2 Q26, P5 Q11, Q16, Q24), improve the weak wrong options, put the P3 Q43 options in calendar order (this changes the answer letter), and change the Easy/Medium labels.
+- **Answer-key solutions:** these still contain "odd one out", "fewest" and sentences that start with a numeral. Adults read them, so I left them.
