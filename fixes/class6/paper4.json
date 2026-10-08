@@ -1,0 +1,74 @@
+[
+ {
+  "q": "Q11",
+  "old": "A box in the art class has 25 crayons. 14 of them are blunt. Which decimal shows the fraction of the crayons that are blunt?",
+  "new": "A box in the art class has 25 crayons. Of these, 14 are blunt. Which decimal shows the fraction of the crayons that are blunt?",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "75 students went on a school trip. 27 of them wore caps. What percentage of the students wore caps?",
+  "new": "There were 75 students on a school trip. Of these, 27 wore caps. What percentage of the students wore caps?",
+  "why": "Two sentences started with numerals"
+ },
+ {
+  "q": "Q43",
+  "old": " of the trail at 3 km/h. She walks the next 40% of the trail at 4 km/h. She walks the rest of the trail, downhill, at 6 km/h. How long does she take to walk the whole trail, not counting any stops?",
+  "new": " of the trail at 3 km/h. She walks the next 40% of the trail at 4 km/h. She walks the rest of the trail, downhill, at 6 km/h. How long does she take to walk the whole trail, not counting any stops?",
+  "why": "'3' and 'km/h' split across lines; use non-breaking spaces"
+ },
+ {
+  "q": "Q44",
+  "old": "A garden bed is the triangle PQR. Angle P and angle Q are complementary. The sides are PQ = 15 m, QR = 9 m and PR = 12 m. Grass costs ₹20 for each square metre. What is the cost of covering the whole bed with grass?",
+  "new": "A garden bed is the triangle PQR. Angle P and angle Q add up to 90°. The sides are PQ = 15 m, QR = 9 m and PR = 12 m. Grass costs ₹20 for each square metre. What is the cost of covering the whole bed with grass?",
+  "why": "'Complementary' is not in the Class 6 angle list (Class 7 NCERT term)"
+ },
+ {
+  "q": "Q45",
+  "old": " + 15) km/h. The motorbike has not caught up with the bus yet 3 hours after it starts. Which expression gives how many kilometres the bus is ahead of the motorbike at that moment?",
+  "new": " + 15) km/h. Three hours after the motorbike starts, it has still not caught up with the bus. Which expression gives how many kilometres the bus is ahead of the motorbike at that moment?",
+  "why": "Awkward word order 'not caught up ... yet 3 hours after'"
+ },
+ {
+  "q": "Q3",
+  "old": "10 less means 10 steps to the left on the number line: −95 − 10 = −105.",
+  "new": "Taking 10 away means 10 steps to the left on the number line: −95 − 10 = −105.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q11",
+  "old": "14 out of 25 is ",
+  "new": "The fraction 14 out of 25 is ",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q33",
+  "old": "25 minutes = 25/60 hour. Distance = 12 × 25 ÷ 60 = 5 km.",
+  "new": "The time is 25 minutes = 25/60 hour. Distance = 12 × 25 ÷ 60 = 5 km.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q37",
+  "old": "After an even number of presses a fan is back to off; after an odd number it is on. 15 and 27 are odd and 32 is even, so fans X and Z are on.",
+  "new": "After an even number of presses a fan is back to off; after an odd number it is on. The numbers 15 and 27 are odd and 32 is even, so fans X and Z are on.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q39",
+  "old": "From the 1st to the 10th watering there are 9 gaps of 4 days = 36 days. 36 = 5 × 7 + 1, so it is 1 day after Monday: Tuesday.",
+  "new": "From the 1st to the 10th watering there are 9 gaps of 4 days = 36 days. As 36 = 5 × 7 + 1, it is 1 day after Monday: Tuesday.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q40",
+  "old": "Replacing a and b by a − b lowers the total by 2b, an even number, so the total always stays odd or always stays even. 1 + 2 + … + 10 = 55 is odd, so the last number is odd. It is also never more than 10, the largest number on the board, so 55 is impossible: only 7 is left. 7 can really be reached: 2 − 1, 5 − 4, 7 − 6 and 9 − 8 give four 1s; 1 − 1 twice gives two 0s, and 0 − 0 = 0; then 10 − 3 = 7 and 7 − 0 = 7.",
+  "new": "Replacing a and b by a − b lowers the total by 2b, an even number, so the total always stays odd or always stays even. The starting total 1 + 2 + … + 10 = 55 is odd, so the last number is odd. It is also never more than 10, the largest number on the board, so 55 is impossible: only 7 is left. The number 7 can really be reached: 2 − 1, 5 − 4, 7 − 6 and 9 − 8 give four 1s; 1 − 1 twice gives two 0s, and 0 − 0 = 0; then 10 − 3 = 7 and 7 − 0 = 7.",
+  "why": "Two sentences started with numerals"
+ },
+ {
+  "q": "Q44",
+  "old": "Angles P and Q add to 90°, so angle R = 180° − 90° = 90°. The sides around R are QR = 9 m and PR = 12 m, so the area is 9 × 12 ÷ 2 = 54 m². Cost = 54 × ₹20 = ₹1,080.",
+  "new": "Angles P and Q add up to 90°, so angle R = 180° − 90° = 90°. The sides around R are QR = 9 m and PR = 12 m, so the area is 9 × 12 ÷ 2 = 54 m². Cost = 54 × ₹20 = ₹1,080.",
+  "why": "Match revised stem wording"
+ }
+]

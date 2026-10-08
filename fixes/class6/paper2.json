@@ -1,0 +1,132 @@
+[
+ {
+  "q": "Q12",
+  "old": "(D) ",
+  "new": "0.3, 7/20, 38%, 2/5",
+  "mode": "addrun",
+  "after": "1/25 = 4/100 = 0.04 = 4%, so all three are equal. In the other sets 0.4 = 40%, 1/5 = 0.2 and 3/5 = 0.6 do not match.",
+  "why": "Answer cell shows only the letter"
+ },
+ {
+  "q": "Q31",
+  "old": "(B) ",
+  "new": "48 apples and 60 oranges",
+  "mode": "addrun",
+  "after": "Ball throw and skipping together: 10 + 15 = 25 students. Running has 35 students, and 35 − 25 = 10 more.",
+  "why": "Answer cell shows only the letter"
+ },
+ {
+  "q": "Q45",
+  "old": " km/h. At the same time, Irfan cycles from the other town towards her at a speed 3 km/h less than hers. They have not met after 2 hours (so ",
+  "new": " km/h. At the same time, Irfan cycles from the other town towards her at a speed 3 km/h less than hers (so ",
+  "why": "x > 3 follows from Irfan's speed, not from 'not met'; move the clause"
+ },
+ {
+  "q": "Q45",
+  "old": " is greater than 3). Which expression gives the distance between them, in km, after 2 hours?",
+  "new": " is greater than 3). They have not met after 2 hours. Which expression gives the distance between them, in km, at that time?",
+  "why": "Pairs with the change above; logic now correct"
+ },
+ {
+  "q": "Q43",
+  "old": "Mihir's family drives to another town at a steady speed of 60 km/h. At 8:45 am they had covered 15% of the distance. At 10:15 am they had covered 40% of the distance. What is the total distance of the journey?",
+  "new": "Mihir's family drove to another town at a steady speed of 60 km/h. At 8:45 am they had covered 15% of the distance. At 10:15 am they had covered 40% of the distance. What is the total distance of the journey?",
+  "why": "Tense consistency (drives vs had covered)"
+ },
+ {
+  "q": "Q20",
+  "old": "The figure shows a hexagon. Five of its angles are marked. What is the size of the angle marked ",
+  "new": "The figure shows a hexagon. The sizes of five of its angles are given. What is the size of the angle marked ",
+  "why": "All six angles carry arcs; five have sizes given"
+ },
+ {
+  "q": "Q36",
+  "old": "The triangular numbers are 1, 3, 6, 10, 15, … (each one adds the next counting number). Which of these is a triangular number?",
+  "new": "The triangular numbers are 1, 3, 6, 10, 15, … (add 2, then 3, then 4, and so on). Which of these is a triangular number?",
+  "why": "'each one adds the next counting number' is vague"
+ },
+ {
+  "q": "Q7",
+  "old": "In the square in the figure, the numbers in each row, each column and each diagonal add up to the same total. Which integer goes in the shaded box?",
+  "new": "In the grid in the figure, the numbers in each row, each column and each diagonal add up to the same total. Which integer goes in the shaded box?",
+  "why": "'square' is ambiguous next to geometry; it is a 3 × 3 grid"
+ },
+ {
+  "q": "Q2",
+  "old": "108 = 2 × 2 × 3 × 3 × 3 = 2² × 3³. The others have another prime factor: 102 = 2 × 3 × 17, 126 = 2 × 3² × 7, 150 = 2 × 3 × 5².",
+  "new": "Here 108 = 2 × 2 × 3 × 3 × 3 = 2² × 3³. The others have another prime factor: 102 = 2 × 3 × 17, 126 = 2 × 3² × 7, 150 = 2 × 3 × 5².",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q5",
+  "old": "36 = 2² × 3² and 60 = 2² × 3 × 5, so HCF = 2² × 3 = 12 and LCM = 2² × 3² × 5 = 180. The other pairs have the same product 2,160, but their HCF is not 12.",
+  "new": "Here 36 = 2² × 3² and 60 = 2² × 3 × 5, so HCF = 2² × 3 = 12 and LCM = 2² × 3² × 5 = 180. The other pairs have the same product 2,160, but their HCF is not 12.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q8",
+  "old": "47 = 50 − 3, so (−6) × 47 = (−6) × 50 − (−6) × 3 by the distributive property (−300 + 18 = −282).",
+  "new": "Since 47 = 50 − 3, (−6) × 47 = (−6) × 50 − (−6) × 3 by the distributive property (−300 + 18 = −282).",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q9",
+  "old": "4 − (−5) = 9, so (−36) ÷ 9 = −4. Then (−4) × (−3) = 12, and 12 − 8 = 4.",
+  "new": "First, 4 − (−5) = 9, so (−36) ÷ 9 = −4. Then (−4) × (−3) = 12, and 12 − 8 = 4.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q11",
+  "old": "1/25 = 4/100 = 0.04 = 4%, so all three are equal. In the other sets 0.4 = 40%, 1/5 = 0.2 and 3/5 = 0.6 do not match.",
+  "new": "In (A), 1/25 = 4/100 = 0.04 = 4%, so all three are equal. In the other sets 0.4 = 40%, 1/5 = 0.2 and 3/5 = 0.6 do not match.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q14",
+  "old": "52 m is the 65% that is left. 1% is 52 ÷ 65 = 0.8 m, so 100% is 80 m.",
+  "new": "The 52 m left is 65% of the roll. So 1% is 52 ÷ 65 = 0.8 m, and 100% is 80 m.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q19",
+  "old": "110° + 35° + 35° = 180°, one angle is obtuse and two angles are equal. 120° + 30° + 40° = 190° is not possible, 50°, 50°, 80° is acute and 100°, 50°, 30° is scalene.",
+  "new": "In (A), 110° + 35° + 35° = 180°, one angle is obtuse and two angles are equal. In the others, 120° + 30° + 40° = 190° is not possible, 50°, 50°, 80° is acute and 100°, 50°, 30° is scalene.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q24",
+  "old": "2 m = 200 cm, so the volume is 200 × 30 × 20 = 1,20,000 cm³.",
+  "new": "Since 2 m = 200 cm, the volume is 200 × 30 × 20 = 1,20,000 cm³.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q31",
+  "old": "48 : 60 = (4 × 12) : (5 × 12) = 4 : 5. The others simplify to 5 : 4, 44 : 45 and 5 : 6.",
+  "new": "Here 48 : 60 = (4 × 12) : (5 × 12) = 4 : 5. The others simplify to 5 : 4, 44 : 45 and 5 : 6.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q33",
+  "old": "The speed is 600 ÷ 40 = 15 m per second. 2 minutes = 120 seconds, so the bird flies 15 × 120 = 1,800 m.",
+  "new": "The speed is 600 ÷ 40 = 15 m per second. In 2 minutes = 120 seconds, the bird flies 15 × 120 = 1,800 m.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q36",
+  "old": "The triangular numbers go 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, … (66 = 11 × 12 ÷ 2). 60, 64 and 72 are not in the list.",
+  "new": "The triangular numbers go 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, … (66 = 11 × 12 ÷ 2). The numbers 60, 64 and 72 are not in the list.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q41",
+  "old": "From 5 o'clock to 1 o'clock is 8 hours, and the clock repeats every 12 hours, so the number of hours must be 8 more than a multiple of 12. 12n + 20 = 12(n + 1) + 8 always works; 4n + 8 fails for n = 1, 12n + 4 always gives 9 o'clock and 20n + 12 gives 5 o'clock when n = 0.",
+  "new": "From 5 o'clock to 1 o'clock is 8 hours, and the clock repeats every 12 hours, so the number of hours must be 8 more than a multiple of 12. So 12n + 20 = 12(n + 1) + 8 always works; 4n + 8 fails for n = 1, 12n + 4 always gives 9 o'clock and 20n + 12 gives 5 o'clock when n = 0.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q42",
+  "old": "They spray together every LCM(8, 12, 18) = 72 minutes. From the 1st to the 5th time there are 4 gaps, that is 4 × 72 = 288 minutes = 4 h 48 min. 4:30 pm − 4 h 48 min = 11:42 am.",
+  "new": "They spray together every LCM(8, 12, 18) = 72 minutes. From the 1st to the 5th time there are 4 gaps, that is 4 × 72 = 288 minutes = 4 h 48 min. So the first time was 4:30 pm − 4 h 48 min = 11:42 am.",
+  "why": "House rule: no sentence starts with a numeral"
+ }
+]

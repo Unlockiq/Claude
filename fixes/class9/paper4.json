@@ -1,0 +1,124 @@
+[
+ {
+  "q": "Q1",
+  "old": "7/37 = 7 × 0.027027… and 7 × 027 = 189, so every block of three digits becomes 189: 7/37 = 0.189189…",
+  "new": "Here 7/37 = 7 × 0.027027… and 7 × 027 = 189, so every block of three digits becomes 189: 7/37 = 0.189189…",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q2",
+  "old": "(B) ",
+  "new": "0.4555… (the digit 5 repeats for ever)",
+  "mode": "addrun",
+  "after": "7/37 = 7 × 0.027027… and 7 × 027 = 189, so every block of three digits becomes 189: 7/37 = 0.189189…",
+  "why": "answer cell shows only a letter"
+ },
+ {
+  "q": "Q6",
+  "old": "Sonal runs a bookshop. She kept some money in a bank for 2 years at 20% per year compound interest, compounded annually, and it grew to ₹36,000. How much would the same money have grown to in the same 2 years at 20% per year simple interest?",
+  "new": "Sonal kept some money in a bank for 2 years at 20% per year compound interest, compounded annually, and it grew to ₹36,000. How much would the same money have grown to in the same 2 years at 20% per year simple interest?",
+  "why": "remove irrelevant first sentence"
+ },
+ {
+  "q": "Q9",
+  "old": "The numbers 6, 11, 16, … form an AP: n hexagons need 5n + 1 crayons. 5n + 1 = 151 gives n = 30.",
+  "new": "The numbers 6, 11, 16, … form an AP: n hexagons need 5n + 1 crayons. Then 5n + 1 = 151 gives n = 30.",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q10",
+  "old": "(B) ",
+  "new": "slope 2, y-intercept −3",
+  "mode": "addrun",
+  "after": "The numbers 6, 11, 16, … form an AP: n hexagons need 5n + 1 crayons. 5n + 1 = 151 gives n = 30.",
+  "why": "answer cell shows only a letter"
+ },
+ {
+  "q": "Q10",
+  "old": "3y = 6x − 9, so y = 2x − 3. The slope is 2 and the y-intercept is −3.",
+  "new": "Here 3y = 6x − 9, so y = 2x − 3. The slope is 2 and the y-intercept is −3.",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q12",
+  "old": "3x² + 10x + 8 = (3x + 4)(x + 2), so the breadth is (x + 2) cm. Perimeter = 2(3x + 4 + x + 2) = (8x + 12) cm.",
+  "new": "Here 3x² + 10x + 8 = (3x + 4)(x + 2), so the breadth is (x + 2) cm. Perimeter = 2(3x + 4 + x + 2) = (8x + 12) cm.",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "The numbers are 13, 21, 29, …, 93, an AP with d = 8. 93 = 13 + (n − 1) × 8 gives n = 11.",
+  "new": "The numbers are 13, 21, 29, …, 93, an AP with d = 8. Then 93 = 13 + (n − 1) × 8 gives n = 11.",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q17",
+  "old": "(A) ",
+  "new": "at the centre of the tabletop",
+  "mode": "addrun",
+  "after": "In an isosceles trapezium the two base angles at each parallel side are equal, so each pair of opposite angles adds up to 180°. By the converse of the cyclic-quadrilateral theorem its vertices lie on a circle.",
+  "why": "answer cell shows only a letter"
+ },
+ {
+  "q": "Q20",
+  "old": "(C) ",
+  "new": "a rhombus that is not a square",
+  "mode": "addrun",
+  "after": "Equal chords subtend equal angles at the centre, so ∠COD = 70°. OC = OD (radii), so x = (180° − 70°) ÷ 2 = 55°.",
+  "why": "answer cell shows only a letter"
+ },
+ {
+  "q": "Q28",
+  "old": "(A) ",
+  "new": "How many hours do Class 9 students sleep on a school night?",
+  "mode": "addrun",
+  "after": "There are 24 − 9 − 5 = 10 red umbrellas, so 14 are not red. P(not red) = 14/24 = 7/12.",
+  "why": "answer cell shows only a letter"
+ },
+ {
+  "q": "Q30",
+  "old": "The two days do not affect each other. P(girl, boy) = 5/6 × 1/6 = 5/36 and P(boy, girl) = 1/6 × 5/6 = 5/36, so P(the boy leads on exactly one day) = 10/36 = 5/18.",
+  "new": "There are 6 × 6 = 36 equally likely (Monday, Tuesday) choices. The boy leads on exactly one day in 5 + 5 = 10 of them (girl then boy, or boy then girl), so the probability is 10/36 = 5/18.",
+  "why": "count the 36-outcome sample space; multiplying probabilities of stages is C10 multi-stage probability"
+ },
+ {
+  "q": "Q31",
+  "old": "(C) ",
+  "new": "the litres of milk taken out of the tank each minute",
+  "mode": "addrun",
+  "after": "The two days do not affect each other. P(girl, boy) = 5/6 × 1/6 = 5/36 and P(boy, girl) = 1/6 × 5/6 = 5/36, so P(the boy leads on exactly one day) = 10/36 = 5/18.",
+  "why": "answer cell shows only a letter"
+ },
+ {
+  "q": "Q37",
+  "old": "51 is a prime number.",
+  "new": "The number 51 is prime.",
+  "after": "What a big number 51 is!",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q37",
+  "old": "51 is a prime number.",
+  "new": "The number 51 is prime.",
+  "after": "It divides by 2, 3, 4, 5, 6 (each leaves a remainder) and then by 7, and 91 ÷ 7 = 13 with no remainder, so it stops after 6 divisions.",
+  "why": "answer cell matches the changed option"
+ },
+ {
+  "q": "Q37",
+  "old": "\"51 is a prime number\" is a proposition; it happens to be false, since 51 = 3 × 17. A question, an instruction and an exclamation are not true or false.",
+  "new": "The sentence \"The number 51 is prime\" is a proposition; it happens to be false, since 51 = 3 × 17. A question, an instruction and an exclamation are not true or false.",
+  "why": "match changed option; no numeral at sentence start"
+ },
+ {
+  "q": "Q41",
+  "old": "The list is 3, 7, 4, −3, −7, −4, 3, 7, … and repeats every 6 numbers; each block of 6 adds to 0. 100 = 16 × 6 + 4, so the sum is 3 + 7 + 4 − 3 = 11.",
+  "new": "The list is 3, 7, 4, −3, −7, −4, 3, 7, … and repeats every 6 numbers; each block of 6 adds to 0. Since 100 = 16 × 6 + 4, the sum is 3 + 7 + 4 − 3 = 11.",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q43",
+  "old": "The points are A(0, 3) and B(4, 1). The point P lies on the line ",
+  "new": "A is the point (0, 3) and B is the point (4, 1). The point P lies on the line ",
+  "why": "awkward opening sentence"
+ }
+]

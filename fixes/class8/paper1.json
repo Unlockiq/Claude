@@ -1,0 +1,100 @@
+[
+ {
+  "q": "Q36",
+  "old": " stands for one digit. Which digit ",
+  "new": " stands for one digit. Which of these values of ",
+  "why": "d = 3 also works (336 = 8 × 42); stem must not imply a unique digit"
+ },
+ {
+  "q": "Q36",
+  "old": "A number is divisible by 8 when its last three digits are. 376 = 8 × 47, but 316, 356 and 396 are not multiples of 8. So the digit is 7.",
+  "new": "A number is divisible by 8 when the number made by its last three digits is. Of the options, only 376 = 8 × 47 works; 316, 356 and 396 are not multiples of 8. So d = 7.",
+  "why": "no sentence starts with a numeral; d = 7 is unique only among the options"
+ },
+ {
+  "q": "Q33",
+  "old": "Farhan buys 50 kg of apples from an orchard at ₹80 per kg. 10% of the apples rot and are thrown away. He sells the rest at ₹100 per kg. What is his profit percent?",
+  "new": "Farhan buys 50 kg of apples from an orchard at ₹80 per kg. Of these, 10% rot and are thrown away. He sells the rest at ₹100 per kg. What is his profit percent?",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q4",
+  "old": "A sheet of paper is folded in half again and again. The picture shows the sheet opened out after 1, 2 and 3 folds; the dashed lines are the creases. The sheet is folded in half 6 times and opened out. Each small part is what fraction of the whole sheet?",
+  "new": "A sheet of paper is folded in half again and again. The picture shows the sheet opened out after 1, 2 and 3 folds; the dashed lines are the creases. The sheet is folded in half 6 times and opened out. What fraction of the whole sheet is each small part?",
+  "why": "awkward question order"
+ },
+ {
+  "q": "Q34",
+  "old": "For her stamp collection club, Swati buys 50 stamps at ₹12 each and 50 stamps at ₹18 each. She sells the cheaper stamps at a profit of 25% and the dearer stamps at a loss of 10%. What is her overall profit or loss percent?",
+  "new": "For her stamp collection club, Swati buys 50 stamps at ₹12 each and 50 stamps at ₹18 each. She sells the cheaper stamps at a profit of 25% and the costlier stamps at a loss of 10%. What is her overall profit or loss percent?",
+  "why": "'dearer' is uncommon for this age group"
+ },
+ {
+  "q": "Q39",
+  "old": "In the picture, three lines are drawn from the top corner of a big triangle to its base, and one more line is drawn across it. How many triangles of all sizes are there in the picture?",
+  "new": "In the picture, three lines are drawn from the top corner of a big triangle to its base, and one more line is drawn across it from side to side. How many triangles of all sizes are there in the picture?",
+  "why": "'across it' is vague"
+ },
+ {
+  "q": "Q6",
+  "old": "2⁻⁴ = 1/16, 4⁻² = 1/16, (−4)⁻² = 1/16 and (−2)⁻⁴ = 1/16. But 8⁻² = 1/64 and (1/4)⁻² = 16. So 4 of them equal 1/16.",
+  "new": "Here 2⁻⁴ = 1/16, 4⁻² = 1/16, (−4)⁻² = 1/16 and (−2)⁻⁴ = 1/16. But 8⁻² = 1/64 and (1/4)⁻² = 16. So 4 of them equal 1/16.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q7",
+  "old": "The second cut is 640 − 544 = ₹96 on a price of ₹640. 96/640 × 100 = 15%.",
+  "new": "The second cut is 640 − 544 = ₹96 on a price of ₹640. As a percentage, 96/640 × 100 = 15%.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q27",
+  "old": "60 seconds or more means the classes 60–70 and 70–80. Their points (at 65 and 75) are at 7 and 2, so 7 + 2 = 9 swimmers.",
+  "new": "Taking 60 seconds or more means the classes 60–70 and 70–80. Their points (at 65 and 75) are at 7 and 2, so 7 + 2 = 9 swimmers.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q37",
+  "old": "2,662 = 2 × 11 × 11 × 11 is not a multiple of 7, 13 or 101, so only 11 can work. It always does: abba = 1,001a + 110b = 11 × (91a + 10b).",
+  "new": "The example 2,662 = 2 × 11 × 11 × 11 is not a multiple of 7, 13 or 101, so only 11 can work. It always does: abba = 1,001a + 110b = 11 × (91a + 10b).",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q40",
+  "old": "Each animal has 2 or 4 legs, so the total is even. The fewest legs come from 1 cow and 34 hens: 4 + 68 = 72. The most come from 34 cows and 1 hen: 136 + 2 = 138. 98 works: 14 cows and 21 hens have 56 + 42 = 98 legs.",
+  "new": "Each animal has 2 or 4 legs, so the total is even. The fewest legs come from 1 cow and 34 hens: 4 + 68 = 72. The most come from 34 cows and 1 hen: 136 + 2 = 138. The total 98 works: 14 cows and 21 hens have 56 + 42 = 98 legs.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q3",
+  "old": "Arun has many wooden blocks like the one in the picture, each 4 cm × 2 cm × 2 cm. He wants to put some of them together, without gaps or cutting, to make one solid cube. What is the least number of blocks he needs?",
+  "new": "Arun has many wooden blocks like the one in the picture, each 4 cm × 2 cm × 2 cm. He wants to put some of them together, without gaps or cutting, to make one solid cube. What is the least number of blocks he needs?",
+  "why": "non-breaking spaces: '4 / cm' currently splits across lines"
+ },
+ {
+  "q": "Q18",
+  "old": "ABCD is a rectangle. Its diagonals AC and BD meet at O. ∠OAB = 32°, as in the picture. What is ∠AOB?",
+  "new": "ABCD is a rectangle. Its diagonals AC and BD meet at O. ∠OAB = 32°, as in the picture. What is ∠AOB?",
+  "why": "non-breaking spaces: '∠OAB = / 32°' splits across lines"
+ },
+ {
+  "q": "Q21",
+  "old": "ABCD is a trapezium with DC ∥ AB, as in the picture. DC = 8 cm, AB = 26 cm, and the slanting sides AD and BC are both 15 cm. DM is perpendicular to AB. What is the height h = DM?",
+  "new": "ABCD is a trapezium with DC ∥ AB, as in the picture. DC = 8 cm, AB = 26 cm, and the slanting sides AD and BC are both 15 cm. DM is perpendicular to AB. What is the height h = DM?",
+  "why": "non-breaking spaces: 'DC / = 8 cm' splits across lines"
+ },
+ {
+  "q": "Q41",
+  "old": " × ",
+  "new": " × ",
+  "after": " square tiles. A smaller square of ",
+  "why": "non-breaking spaces: 'm × / m' splits across lines"
+ },
+ {
+  "q": "Q41",
+  "old": ", ",
+  "new": ", ",
+  "after": " is at least 1. Exactly 96 tiles are left. How many different pairs of whole numbers (",
+  "why": "non-breaking space: '(n, / m)' splits across lines"
+ }
+]

@@ -1,0 +1,106 @@
+[
+ {
+  "q": "Q1",
+  "old": "13² = 169 and 14² = 196. 190 is 21 more than 169 but only 6 less than 196, so √190 is closest to 14.",
+  "new": "Here 13² = 169 and 14² = 196. The number 190 is 21 more than 169 but only 6 less than 196, so √190 is closest to 14.",
+  "why": "House rule: sentences must not start with a numeral"
+ },
+ {
+  "q": "Q3",
+  "old": "6³ = 216. Six consecutive odd numbers with sum 216 have an average of 216 ÷ 6 = 36, so they are 31, 33, 35, 37, 39 and 41. The first is 31.",
+  "new": "Here 6³ = 216. Six consecutive odd numbers with sum 216 have an average of 216 ÷ 6 = 36, so they are 31, 33, 35, 37, 39 and 41. The first is 31.",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q9",
+  "old": "(A) ",
+  "new": "a 25% discount followed by a further 10% discount",
+  "mode": "addrun",
+  "after": "The rate goes up by 1% a year. Extra interest = 15,000 × 1 × 2 ÷ 100 = ₹300.",
+  "why": "Answer cell shows only the letter"
+ },
+ {
+  "q": "Q9",
+  "old": "10% then 25% leaves 0.9 × 0.75 = 0.675 of the price. 25% then 10% leaves 0.75 × 0.9 = 0.675 too, because the order of multiplying does not matter. (A single 35% leaves 0.65, and 17.5% twice leaves about 0.68.)",
+  "new": "Taking 10% off and then 25% off leaves 0.9 × 0.75 = 0.675 of the price. Taking 25% off and then 10% off leaves 0.75 × 0.9 = 0.675 too, because the order of multiplying does not matter. (A single 35% leaves 0.65, and 17.5% twice leaves about 0.68.)",
+  "why": "House rule: sentences must not start with a numeral"
+ },
+ {
+  "q": "Q10",
+  "old": "36,000 ÷ 25,000 = 1.44 = 1.2 × 1.2. Each year the number was multiplied by 1.2, which is an increase of 20%.",
+  "new": "Here 36,000 ÷ 25,000 = 1.44 = 1.2 × 1.2. Each year the number was multiplied by 1.2, which is an increase of 20%.",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "9x² + 30x + 25 = (3x + 5)², so each side is (3x + 5) cm. Perimeter = 4(3x + 5) = (12x + 20) cm.",
+  "new": "Here 9x² + 30x + 25 = (3x + 5)², so each side is (3x + 5) cm. Perimeter = 4(3x + 5) = (12x + 20) cm.",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q22",
+  "old": "A field of area 1.2 hectares is divided into equal square plots of side 20 m, with nothing left over. How many plots are there? (1 hectare = 10,000 m².)",
+  "new": "A field of area 1.2 hectares is divided into equal square plots of side 20 m, with nothing left over. How many plots are there? (Use 1 hectare = 10,000 m².)",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q22",
+  "old": "1.2 hectares = 12,000 m². Each plot has area 20 × 20 = 400 m². Number of plots = 12,000 ÷ 400 = 30.",
+  "new": "The field is 1.2 hectares = 12,000 m². Each plot has area 20 × 20 = 400 m². Number of plots = 12,000 ÷ 400 = 30.",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q23",
+  "old": "2πrh = 13.2, so 2 × 22/7 × r × 3 = 13.2, giving r = 13.2 × 7 ÷ 132 = 0.7 m. The diameter is 2 × 0.7 = 1.4 m.",
+  "new": "Curved surface area = 2πrh = 13.2, so 2 × 22/7 × r × 3 = 13.2, giving r = 13.2 × 7 ÷ 132 = 0.7 m. The diameter is 2 × 0.7 = 1.4 m.",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q25",
+  "old": "A solid stand is made of two cylinders, one on top of the other, with their centres in a line. The bottom one has radius 14 cm and the top one has radius 7 cm; each is 10 cm tall, as in the picture. All of its outside is painted except the face it stands on. What area is painted? (Use π = ",
+  "new": "A solid stand is made of two cylinders, one on top of the other, with their centres in a line. The bottom one has radius 14 cm and the top one has radius 7 cm; each is 10 cm tall, as in the picture. All of it is painted except the face it stands on. What area is painted? (Use π = ",
+  "why": "Layout: the closing '.)' wraps onto its own line; shorter wording pulls it back (re-check layout)"
+ },
+ {
+  "q": "Q26",
+  "old": "A well is dug in the shape of a cylinder, 2 m across and 14 m deep. All the earth taken out is spread evenly to make a platform 11 m long and 8 m wide, as in the picture. Assume the earth keeps the same volume. How high is the platform, in centimetres? (Use π = ",
+  "new": "A well is dug in the shape of a cylinder, 2 m in diameter and 14 m deep. All the earth taken out is spread evenly to make a platform 11 m long and 8 m wide, as in the picture. Assume the earth keeps the same volume. How high is the platform, in centimetres? (Use π = ",
+  "why": "'2 m across' is informal/vague; say diameter"
+ },
+ {
+  "q": "Q27",
+  "old": "Students flew 40 paper planes and grouped the distances in classes 2–4, 4–6, 6–8, 8–10 and 10–12 m, where 6–8 means 6 m or more but less than 8 m. In the histogram, the bar for the class 6–8 m is missing (marked ?). Complete the statement: the bar for 6–8 m should be ___ planes tall.",
+  "new": "Students flew 40 paper planes and grouped the distances in classes 2–4, 4–6, 6–8, 8–10 and 10–12 m, where 6–8 means 6 m or more but less than 8 m. In the histogram, the bar for the class 6–8 m is missing (marked ?). Complete the statement: the bar for 6–8 m should show ___ planes.",
+  "why": "'___ planes tall' mixes a count with a height"
+ },
+ {
+  "q": "Q37",
+  "old": "18 is divisible by 6 and by 9, but not by 54. One such number is enough to show the claim is false.",
+  "new": "The number 18 is divisible by 6 and by 9, but not by 54. One such number is enough to show the claim is false.",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q40",
+  "old": "A number is made by writing the block 48 again and again: 48, 4,848, 484,848, … (the block is written k times). Complete the statement: the least value of k for which the number is divisible by 9 is ___.",
+  "new": "A number is made by writing the block 48 again and again: 48, 4848, 484848, … (the block is written k times). Complete the statement: the least value of k for which the number is divisible by 9 is ___.",
+  "why": "Commas inside 4,848 and 484,848 clash with the commas separating the list; digit-block pattern is clearer ungrouped"
+ },
+ {
+  "q": "Q40",
+  "old": "Each block adds 4 + 8 = 12 to the digit sum, so the digit sum is 12k. 12k is a multiple of 9 first when k = 3 (digit sum 36). So 484,848 is the first one divisible by 9.",
+  "new": "Each block adds 4 + 8 = 12 to the digit sum, so the digit sum is 12k. This is a multiple of 9 first when k = 3 (digit sum 36). So 484848 is the first one divisible by 9.",
+  "why": "House rule (sentence started with '12k'); match ungrouped number in stem"
+ },
+ {
+  "q": "Q42",
+  "old": "The picture shows a fractal \"tree of squares\". Step 0 is a square of side 8 cm. At each step, on the top side of every square drawn in the step before, a right-angled isosceles triangle is drawn with that side as its longest side. Then a new square is drawn outward on each of the two shorter sides of the triangle. What is the total area of all the squares drawn in Steps 0 to 4, counting each square separately?",
+  "new": "The picture shows a fractal \"tree of squares\". Step 0 is a square of side 8 cm. At each step, on the outer side of every square drawn in the step before (the top side in Step 0), a right-angled isosceles triangle is drawn with that side as its longest side. Then a new square is drawn outward on each of the two shorter sides of the triangle. What is the total area of all the squares drawn in Steps 0 to 4, counting each square separately?",
+  "why": "From Step 1 the squares are tilted 45°, so 'top side' is ambiguous (two sides face upward)"
+ },
+ {
+  "q": "Q43",
+  "old": "Triangles ACD and CBD are similar (each has a right angle, and ∠A = ∠BCD), so AD/CD = CD/DB, giving x(x + 5) = 36. Then x² + 5x − 36 = (x + 9)(x − 4) = 0, so x = 4 and AB = 4 + 9 = 13 cm. Area = ½ × 13 × 6 = 39 cm².",
+  "new": "Triangles ACD and CBD are similar (each has a right angle, and ∠A = ∠BCD), so AD/CD = CD/DB, giving x(x + 5) = 36. Since 4 × 9 = 36, x = 4 and AB = 4 + 9 = 13 cm. Area = ½ × 13 × 6 = 39 cm².",
+  "why": "Solving a quadratic by zero-product is Class 10; a product of two numbers 5 apart is within Class 8"
+ }
+]

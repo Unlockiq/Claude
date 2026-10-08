@@ -1,0 +1,66 @@
+[
+ {
+  "q": "Q2",
+  "old": "(C) ",
+  "new": "the product of a non-zero rational number and an irrational number",
+  "mode": "addrun",
+  "after": "25² = 625 ≤ 640 < 676 = 26², so the largest square has 25 rows of 25 students. 640 − 625 = 15 students stand at the side.",
+  "why": "answer cell shows only the letter"
+ },
+ {
+  "q": "Q18",
+  "old": "(A) ",
+  "new": "Its diagonals are perpendicular to each other.",
+  "mode": "addrun",
+  "after": "AB² = 90² + 120² = 8,100 + 14,400 = 22,500, so AB = 150 m.",
+  "why": "answer cell shows only the letter"
+ },
+ {
+  "q": "Q1",
+  "old": "25² = 625 ≤ 640 < 676 = 26², so the largest square has 25 rows of 25 students. 640 − 625 = 15 students stand at the side.",
+  "new": "25² = 625 ≤ 640 < 676 = 26², so the largest square has 25 rows of 25 students. Then 640 − 625 = 15 students stand at the side.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q8",
+  "old": "In 3 years the interest is 15% of the money put in, so ₹4,600 is 115% of it. 4,600 ÷ 1.15 = ₹4,000.",
+  "new": "In 3 years the interest is 15% of the money put in, so ₹4,600 is 115% of it. The sum is 4,600 ÷ 1.15 = ₹4,000.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q9",
+  "old": "The fall is ₹10 on the old fare of ₹40. 10 ÷ 40 × 100 = 25%.",
+  "new": "The fall is ₹10 on the old fare of ₹40. So the fall is 10 ÷ 40 × 100 = 25%.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q12",
+  "old": "4y² − 28y + b² = (2y − b)² needs 2 × 2y × b = 28y, so b = 7 and b² = 49: 4y² − 28y + 49 = (2y − 7)².",
+  "new": "For 4y² − 28y + b² = (2y − b)² we need 2 × 2y × b = 28y, so b = 7 and b² = 49: 4y² − 28y + 49 = (2y − 7)².",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "x² + 9x + 20 = (x + 4)(x + 5), because 4 + 5 = 9 and 4 × 5 = 20. So the length is (x + 5) cm.",
+  "new": "x² + 9x + 20 = (x + 4)(x + 5), because 4 + 5 = 9 and 4 × 5 = 20. So the other side is (x + 5) cm.",
+  "why": "match stem ('other side', not 'length')"
+ },
+ {
+  "q": "Q24",
+  "old": "1.54 litres = 1,540 cm³. πr² = 22/7 × 49 = 154 cm², so h = 1,540 ÷ 154 = 10 cm.",
+  "new": "The volume is 1.54 litres = 1,540 cm³. πr² = 22/7 × 49 = 154 cm², so h = 1,540 ÷ 154 = 10 cm.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q26",
+  "old": "A cylindrical glass jar has an inside radius of 7 cm and is partly filled with water. Zara drops 22 identical marbles into it. All of them sink, and the water level rises by 1 cm, as in the picture. What is the volume of one marble? (Use π = ",
+  "new": "A cylindrical glass jar has an inside radius of 7 cm and is partly filled with water. Zara drops 22 identical marbles into it. All of them sink, and the water level rises by 1 cm, as in the picture. What is the volume of one marble? (Use π = ",
+  "why": "non-breaking space: 'π' and '= 22/7' are split across lines"
+ },
+ {
+  "q": "Q34",
+  "old": "A shopkeeper wants to give a discount of 25% on the marked price and still make a profit of 20% on the cost price. How far above the cost price must he mark his goods?",
+  "new": "A shopkeeper wants to give a discount of 25% on the marked price and still make a profit of 20% on the cost price. By what percent above the cost price must he mark his goods?",
+  "why": "'How far' is vague; options are percents"
+ }
+]

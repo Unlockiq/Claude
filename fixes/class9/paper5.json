@@ -1,0 +1,96 @@
+[
+ {
+  "q": "Q1",
+  "old": "(C) ",
+  "new": "0.67777…",
+  "mode": "addrun",
+  "after": "Why?",
+  "why": "Answer cell shows only a letter"
+ },
+ {
+  "q": "Q27",
+  "old": "(D) ",
+  "new": "The mean goes up by 2 and the median does NOT change.",
+  "mode": "addrun",
+  "after": "0.3 × 60 = 18, so 0.7 × B = 74 − 18 = 56 and B = 56 ÷ 0.7 = 80.",
+  "why": "Answer cell shows only a letter"
+ },
+ {
+  "q": "Q8",
+  "old": "14d = 59 − 3 = 56, so d = 4. The 8th term is 3 + 7 × 4 = 31 (it is also the average of the 1st and 15th terms, since 8 is halfway between 1 and 15).",
+  "new": "The common difference d satisfies 14d = 59 − 3 = 56, so d = 4. The 8th term is 3 + 7 × 4 = 31 (it is also the average of the 1st and 15th terms, since 8 is halfway between 1 and 15).",
+  "why": "Sentence starts with a numeral"
+ },
+ {
+  "q": "Q21",
+  "old": "2πr = 8.8 gives r = 8.8 × 7 ÷ 44 = 1.4 m. Area = 22/7 × 1.4 × 1.4 = 6.16 m².",
+  "new": "The rim is the circumference, so 2πr = 8.8 and r = 8.8 × 7 ÷ 44 = 1.4 m. Area = 22/7 × 1.4 × 1.4 = 6.16 m².",
+  "why": "Sentence starts with a numeral"
+ },
+ {
+  "q": "Q22",
+  "old": "4πr² is 616 cm² for r = 7 and 2,464 cm² for r = 14 (four times as much). The increase is 2,464 − 616 = 1,848 cm².",
+  "new": "The surface area 4πr² is 616 cm² for r = 7 and 2,464 cm² for r = 14 (four times as much). The increase is 2,464 − 616 = 1,848 cm².",
+  "why": "Sentence starts with a numeral"
+ },
+ {
+  "q": "Q25",
+  "old": "Varsha cuts a triangle with sides 25 cm, 25 cm and 14 cm, as shown. She wants a DIFFERENT triangle that also has two 25 cm sides and exactly the same area. How long must its third side be?",
+  "new": "Varsha cuts out a paper triangle with sides 25 cm, 25 cm and 14 cm, as shown. She wants a DIFFERENT triangle that also has two 25 cm sides and exactly the same area. How long must its third side be?",
+  "why": "'cuts a triangle' is vague (cuts it into pieces?)"
+ },
+ {
+  "q": "Q25",
+  "old": "Heron: s = 32, area = √(32 × 7 × 7 × 18) = 168 cm² (height 24 cm on the 14 cm side). With a third side of 48 cm: s = 49, area = √(49 × 24 × 24 × 1) = 168 cm². The only other length giving 168 cm² is 48 cm.",
+  "new": "Heron: s = 32, area = √(32 × 7 × 7 × 18) = 168 cm². The height on the 14 cm side is 24 cm, so the triangle is two 7-24-25 right triangles. Swapping their legs (half-base 24 cm, height 7 cm) gives the same area, so the third side is 48 cm. Check: s = 49, area = √(49 × 24 × 24 × 1) = 168 cm².",
+  "why": "Solution asserted uniqueness without reasoning"
+ },
+ {
+  "q": "Q26",
+  "old": "0.3 × 60 = 18, so 0.7 × B = 74 − 18 = 56 and B = 56 ÷ 0.7 = 80.",
+  "new": "Test A gives 0.3 × 60 = 18, so 0.7 × B = 74 − 18 = 56 and B = 56 ÷ 0.7 = 80.",
+  "why": "Sentence starts with a numeral"
+ },
+ {
+  "q": "Q31",
+  "old": "Rung n is 30 + 25(n − 1) cm high. 30 + 25(n − 1) = 230 gives n − 1 = 8, so n = 9.",
+  "new": "Rung n is 30 + 25(n − 1) cm high. Solving 30 + 25(n − 1) = 230 gives n − 1 = 8, so n = 9.",
+  "why": "Sentence starts with a numeral"
+ },
+ {
+  "q": "Q34",
+  "old": "After k intervals of 5 seconds, P is at 20 − 2k and Q is at 3k. 20 − 2k = 3k gives k = 4, so they pass at floor 3 × 4 = 12 (after 20 seconds).",
+  "new": "After k intervals of 5 seconds, P is at 20 − 2k and Q is at 3k. Solving 20 − 2k = 3k gives k = 4, so they pass at floor 3 × 4 = 12 (after 20 seconds).",
+  "why": "Sentence starts with a numeral"
+ },
+ {
+  "q": "Q38",
+  "old": "Brahmagupta's formula, area = √((s − a)(s − b)(s − c)(s − d)), where s is half the perimeter, is true for every cyclic quadrilateral. Sarika uses it for the rhombus in the picture, whose sides are 13 cm and whose diagonals are 10 cm and 24 cm. What is the difference between her answer and the true area of the rhombus?",
+  "new": "Brahmagupta's formula, area = √((s − a)(s − b)(s − c)(s − d)), where a, b, c, d are the sides and s is half the perimeter, is true for every cyclic quadrilateral. Sarika uses it for the rhombus in the picture, whose sides are 13 cm and whose diagonals are 10 cm and 24 cm. What is the difference between her answer and the true area?",
+  "why": "a, b, c, d were not defined (missing information)"
+ },
+ {
+  "q": "Q39",
+  "old": "The list 5, 1, 4, 2, 3 is to be put in increasing order. The only move allowed is to swap two numbers that are next to each other. What is the least number of moves needed?",
+  "new": "Lata sorts the list 5, 1, 4, 2, 3 into increasing order. She goes along the list from left to right, swapping any two neighbours in the wrong order, and repeats this until no swap is needed. How many swaps does she make?",
+  "why": "'Least number' needs an invariant/inversion proof (invariants removed from C9, D15); recast as algorithm tracing (bubble sort), same answer 6"
+ },
+ {
+  "q": "Q39",
+  "old": "Each swap of neighbours puts exactly one pair in the right order. The pairs in the wrong order are (5,1), (5,4), (5,2), (5,3), (4,2) and (4,3): six pairs, so at least 6 moves are needed, and 6 moves are enough.",
+  "new": "First pass: 5 moves past 1, 4, 2 and 3, giving 1, 4, 2, 3, 5 (4 swaps). Second pass: 4 moves past 2 and 3, giving 1, 2, 3, 4, 5 (2 swaps). Third pass: no swaps. Total = 4 + 2 = 6.",
+  "why": "Solution matches the recast stem"
+ },
+ {
+  "q": "Q41",
+  "old": "The first number printed is 17. The next is 28 more (28 is the smallest number divisible by both 7 and 4), so the printed numbers form the AP 17, 45, 73, … with d = 28. 17 + 28(k − 1) ≤ 500 gives k ≤ 18.25, so 18 numbers.",
+  "new": "The first number printed is 17. The next is 28 more (28 is the smallest number divisible by both 7 and 4), so the printed numbers form the AP 17, 45, 73, … with d = 28. Then 17 + 28(k − 1) ≤ 500 gives k ≤ 18.25, so 18 numbers.",
+  "why": "Sentence starts with a numeral"
+ },
+ {
+  "q": "Q45",
+  "old": "₹32",
+  "new": "₹30",
+  "why": "₹32 is not a plausible slip; ₹30 is the Year 2 lily price (common mistake), alongside ₹36 (Year 3)"
+ }
+]

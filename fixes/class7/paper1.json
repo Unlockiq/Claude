@@ -1,0 +1,88 @@
+[
+ {
+  "q": "Q20",
+  "old": "(C) ",
+  "after": "AB = PQ and BC = QR, and the marked angles B and Q lie between these sides. Two sides and the included angle are equal, so the rule is SAS.",
+  "mode": "addrun",
+  "new": "Angles on a straight line add up to 180°.",
+  "why": "Answer cell shows only the letter"
+ },
+ {
+  "q": "Q12",
+  "old": " of the books are science books. The other 1,400 books are on other subjects. How many books does the library have in all?",
+  "new": " of the books are science books. The remaining 1,400 books are on other subjects. How many books does the library have in all?",
+  "why": "'The other ... other subjects' is repetitive and slightly confusing"
+ },
+ {
+  "q": "Q29",
+  "old": "A farmer collects the eggs laid by the hens every day for 30 days. The bar graph shows on how many days each number of eggs was collected. What is the mode of the number of eggs collected in a day?",
+  "new": "A farmer collects the eggs laid by her hens every day for 30 days. The bar graph shows on how many days each number of eggs was collected. What is the mode of the number of eggs collected in a day?",
+  "why": "'the hens' refers to hens never introduced"
+ },
+ {
+  "q": "Q2",
+  "old": "−9/14 has a positive denominator and 9 and 14 have no common factor. 4/−7 has a negative denominator, 10 and 15 share 5, and 12/−18 fails both tests.",
+  "new": "In −9/14, the denominator is positive and 9 and 14 have no common factor. But 4/−7 has a negative denominator, 10 and 15 share 5, and 12/−18 fails both tests.",
+  "why": "Sentences started with a numeral"
+ },
+ {
+  "q": "Q6",
+  "old": "4³ = 64, 8² = 64 and 2⁵ × 2 = 2⁶ = 64. But 2³ + 2³ = 8 + 8 = 16; the product law works only for multiplication.",
+  "new": "Here 4³ = 64, 8² = 64 and 2⁵ × 2 = 2⁶ = 64. But 2³ + 2³ = 8 + 8 = 16; the product law works only for multiplication.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q9",
+  "old": "The water is at the 40% mark. 40% of 2,500 L = 40/100 × 2,500 = 1,000 L.",
+  "new": "The water is at the 40% mark, and 40% of 2,500 L = 40/100 × 2,500 = 1,000 L.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q10",
+  "old": "18% of the cost price is ₹144, so 1% is ₹8 and 100% is ₹800.",
+  "new": "The loss, 18% of the cost price, is ₹144, so 1% is ₹8 and 100% is ₹800.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q12",
+  "old": "Science books are 1/5 = 20%. The other books are 100% − 45% − 20% = 35%. 35% is 1,400, so 1% is 40 and 100% is 4,000.",
+  "new": "Science books are 1/5 = 20%. The other books are 100% − 45% − 20% = 35%. So 35% is 1,400, 1% is 40 and 100% is 4,000.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "3(2k − 5) = 6k − 15. Then 6k − 15 − 4k = 2k − 15.",
+  "new": "First, 3(2k − 5) = 6k − 15. Then 6k − 15 − 4k = 2k − 15.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q31",
+  "old": "5 boxes = 750 mL, so 1 box = 150 mL. Juice is 2 boxes = 300 mL.",
+  "new": "Water is 5 boxes = 750 mL, so 1 box = 150 mL. Juice is 2 boxes = 300 mL.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q32",
+  "old": "3 rows have 54 seedlings, so 1 row has 18. 8 rows have 8 × 18 = 144 seedlings.",
+  "new": "There are 54 seedlings in 3 rows, so 1 row has 18. Then 8 rows have 8 × 18 = 144 seedlings.",
+  "why": "Sentences started with a numeral"
+ },
+ {
+  "q": "Q34",
+  "old": "In 1 minute he covers 15/50 = 0.3 km. 2 hours = 120 minutes, so he covers 120 × 0.3 = 36 km.",
+  "new": "In 1 minute he covers 15/50 = 0.3 km. In 2 hours, or 120 minutes, he covers 120 × 0.3 = 36 km.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q36",
+  "old": "Column F holds the multiples of 6. 100 = 6 × 16 + 4, so 100 comes 4 places after 96, which is in column D.",
+  "new": "Column F holds the multiples of 6. Since 100 = 6 × 16 + 4, the number 100 comes 4 places after 96, so it is in column D.",
+  "why": "Sentence started with a numeral; 'which' wrongly attached to 96"
+ },
+ {
+  "q": "Q42",
+  "old": "Before the evening she had 36 + 30 = 66 buns. These were 75% of the buns left after the morning, so that number was 66 ÷ 0.75 = 88. 88 is 80% of the buns baked, so she baked 88 ÷ 0.8 = 110 buns.",
+  "new": "Before the evening she had 36 + 30 = 66 buns. These were 75% of the buns left after the morning, so that number was 66 ÷ 0.75 = 88. These 88 buns are 80% of the buns baked, so she baked 88 ÷ 0.8 = 110 buns.",
+  "why": "Sentence started with a numeral"
+ }
+]

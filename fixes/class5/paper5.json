@@ -1,0 +1,148 @@
+[
+ {
+  "q": "Q18",
+  "old": "(A) ",
+  "new": "Right-angled and isosceles",
+  "mode": "addrun",
+  "after": "An obtuse angle is more than 90° and less than 180°: 95°, 105°, 120° and 140° are obtuse; 80° is acute. That is 4.",
+  "why": "Answer cell shows only the letter"
+ },
+ {
+  "q": "Q41",
+  "old": "Greatest odd: the ones digit must be 5 or 7; use 5 and keep 9, 7, 4, 2, 0 in front: 9,74,205. Smallest even: start 2, 0 and end in 4: 2,05,794. Difference = 7,68,411.",
+  "new": "Greatest odd: the ones digit must be 5, 7 or 9; use the smallest, 5, and keep 9, 7, 4, 2, 0 in front: 9,74,205. Smallest even: start 2, 0 and end in 4: 2,05,794. Difference = 7,68,411.",
+  "why": "Solution said the ones digit must be 5 or 7, but 9 is also odd"
+ },
+ {
+  "q": "Q37",
+  "old": "In the series 1, 5, 25, 125, 600, 3,125 each number should be the number before it multiplied by the same number. One number is wrong. Which is it?",
+  "new": "Look at the series 1, 5, 25, 125, 600 and 3,125. Each number should be the number before it multiplied by the same number. One number is wrong. Which is it?",
+  "why": "'600, 3,125 each' read as 3 and 125 with the comma; run-on sentence"
+ },
+ {
+  "q": "Q44",
+  "old": "The picture shows the total distance a car has travelled, as shown on its dashboard. This number reads the same from left to right and from right to left. The car then drives at a steady speed. Exactly 2 hours later, the dashboard first shows another number that reads the same both ways. What is the car's speed?",
+  "new": "The dashboard in the picture shows the total distance a car has travelled. This number reads the same from left to right and from right to left. The car then drives at a steady speed. Exactly 2 hours later, the dashboard first shows another number that reads the same both ways. What is the car's speed?",
+  "why": "'The picture shows ... as shown' is redundant"
+ },
+ {
+  "q": "Q20",
+  "old": "Look at the six shapes. Arrows show parallel sides, ticks show equal sides and small squares show right angles. A parallelogram is any four-sided shape with two pairs of parallel sides. Count every such shape. How many of the shapes are parallelograms?",
+  "new": "Look at the six shapes. Arrows show parallel sides, ticks show equal sides and small squares show right angles. A parallelogram is any four-sided shape with two pairs of parallel sides. How many of the shapes are parallelograms?",
+  "why": "'Count every such shape' is a redundant, vague instruction"
+ },
+ {
+  "q": "Q31",
+  "old": "Half a day = 12 hours = 12 × 60 = 720 minutes = 720 × 60 = 43,200 seconds. 1,200 minutes is 20 hours.",
+  "new": "Half a day is 12 hours, which is 12 × 60 = 720 minutes, or 720 × 60 = 43,200 seconds. But 1,200 minutes is 20 hours.",
+  "why": "Chained '720 minutes = 720 × 60 = 43,200 seconds' is a false equation"
+ },
+ {
+  "q": "Q2",
+  "old": "247 = 27 × 9 + 4. The next multiple of 9 is 28 × 9 = 252, so 5 must be added.",
+  "new": "Since 247 = 27 × 9 + 4, the next multiple of 9 is 28 × 9 = 252. So 5 must be added.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q11",
+  "old": "0.4 = 4/10 = 2/5, so 2.4 m = 2 2/5 m.",
+  "new": "Here, 0.4 = 4/10 = 2/5, so 2.4 m = 2 2/5 m.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q12",
+  "old": "0.4 = 40/100 = 40%.",
+  "new": "Here, 0.4 = 40/100 = 40%.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "30% of 20 = 20 × 30/100 = 6 flowers.",
+  "new": "There are 20 flowers, and 30% of 20 = 20 × 30/100 = 6 flowers.",
+  "why": "Sentence started with a numeral; state the count from the picture"
+ },
+ {
+  "q": "Q14",
+  "old": "0.15 × 20 = 0.15 × 2 × 10 = 0.3 × 10 = 3 L.",
+  "new": "Milk used = 0.15 × 20 = 0.15 × 2 × 10 = 0.3 × 10 = 3 L.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q15",
+  "old": "10% of the month is 28 ÷ 4 = 7 mm, so 100% is 7 × 10 = 70 mm.",
+  "new": "Here, 40% is 28 mm, so 10% is 28 ÷ 4 = 7 mm and 100% is 7 × 10 = 70 mm.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q16",
+  "old": "13/20 = 65/100 = 0.65, which is between 0.6 and 0.7. The others are 0.6, 0.7 and 0.55.",
+  "new": "As a decimal, 13/20 = 65/100 = 0.65, which is between 0.6 and 0.7. The others are 0.6, 0.7 and 0.55.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q25",
+  "old": "0.5 m = 50 cm. Area = ½ × 50 × 30 = 750 sq cm.",
+  "new": "First, 0.5 m = 50 cm. Then area = ½ × 50 × 30 = 750 sq cm.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q27",
+  "old": "Each symbol stands for 8 boats. 28 ÷ 8 = 3 remainder 4, and 4 boats is half a symbol. So 3½ symbols.",
+  "new": "Each symbol stands for 8 boats. Then 28 ÷ 8 = 3 remainder 4, and 4 boats is half a symbol. So 3½ symbols.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q28",
+  "old": "Class 5C sold 90 tickets. 5D sold 50 and 5E sold 40, and 50 + 40 = 90. No other pair makes 90.",
+  "new": "Class 5C sold 90 tickets. Class 5D sold 50 and Class 5E sold 40, and 50 + 40 = 90. No other pair makes 90.",
+  "why": "Sentence started with '5D'"
+ },
+ {
+  "q": "Q29",
+  "old": "1 day = 24 hours. 1,000 ÷ 24 = 41 remainder 16, so 1,000 hours = 41 days 16 hours.",
+  "new": "One day = 24 hours. Then 1,000 ÷ 24 = 41 remainder 16, so 1,000 hours = 41 days 16 hours.",
+  "why": "Sentences started with numerals"
+ },
+ {
+  "q": "Q35",
+  "old": "10 + 16 = 26, and the check 16 + 26 = 42 works.",
+  "new": "The missing number is 10 + 16 = 26, and the check 16 + 26 = 42 works.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q36",
+  "old": "Of two numbers next to each other, one is always even, so the product is always even. 105 is odd, so it can never be the answer.",
+  "new": "Of two numbers next to each other, one is always even, so the product is always even. The number 105 is odd, so it can never be the answer.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q39",
+  "old": "31 days = 4 weeks + 3 days, so the first three days of the month each come five times. These are Friday, Saturday and Sunday, so the month begins on a Friday.",
+  "new": "A month of 31 days = 4 weeks + 3 days, so the first three days of the month each come five times. These are Friday, Saturday and Sunday, so the month begins on a Friday.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q40",
+  "old": "1 + 2 + … + 11 = 66 is even. Taking away an odd card leaves an odd total, which cannot be split equally. Each even card (2, 4, 6, 8, 10) leaves an even total that can be split, so 5 cards.",
+  "new": "The total 1 + 2 + … + 11 = 66 is even. Taking away an odd card leaves an odd total, which cannot be split equally. Each even card (2, 4, 6, 8, 10) leaves an even total that can be split (for example, without 2: 11 + 10 + 8 + 3 = 32), so 5 cards.",
+  "why": "Sentence started with a numeral; show that an even removal really splits"
+ },
+ {
+  "q": "Q42",
+  "old": "12.5% = 1/8. Going back one day halves the cover: day 24 full, day 23 half, day 22 a quarter, day 21 one-eighth. So day 21.",
+  "new": "Here, 12.5% = 1/8. Going back one day halves the cover: day 24 full, day 23 half, day 22 a quarter, day 21 one-eighth. So day 21.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q43",
+  "old": "1 + 2 + 3 + 4 + 5 = 15, so there are 5 cubes. Volume = 1 + 8 + 27 + 64 + 125 = 225 cubic cm.",
+  "new": "Since 1 + 2 + 3 + 4 + 5 = 15, there are 5 cubes. Volume = 1 + 8 + 27 + 64 + 125 = 225 cubic cm.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q45",
+  "old": " = 30%, so 70% is still needed. 70 ÷ 5 = 14 lots of 6 minutes = 84 minutes = 1 hour 24 minutes.",
+  "new": " = 30%, so 70% is still needed. That is 70 ÷ 5 = 14 lots of 6 minutes = 84 minutes = 1 hour 24 minutes.",
+  "why": "Sentence started with a numeral"
+ }
+]

@@ -1,0 +1,168 @@
+[
+ {
+  "q": "Q2",
+  "old": "The Roman numeral for 1,090 is written M___. What goes in the blank?",
+  "new": "The Roman numeral for 990 is written CM___. What goes in the blank?",
+  "why": "1,090 is above the Class 5 Roman numeral ceiling (up to M = 1000); same options still work"
+ },
+ {
+  "q": "Q2",
+  "old": "1,090 = 1,000 + 90. 1,000 is M and 90 is 100 − 10 = XC, so 1,090 = MXC.",
+  "new": "Split 990 as 900 + 90. Then 900 is CM and 90 is 100 − 10 = XC, so 990 = CMXC.",
+  "why": "Match new stem; no sentence starts with a numeral"
+ },
+ {
+  "q": "Q3",
+  "old": "2 × 2 × 5 = 20, and 140 ÷ 20 = 7. 7 is a prime number, so 140 = 2 × 2 × 7 × 5.",
+  "new": "Since 2 × 2 × 5 = 20 and 140 ÷ 20 = 7, the blank is 7. It is a prime number, so 140 = 2 × 2 × 7 × 5.",
+  "why": "Sentences started with numerals"
+ },
+ {
+  "q": "Q6",
+  "old": "289 → 300, 312 → 300, 198 → 200 and 405 → 400. The estimate is 300 + 300 + 200 + 400 = 1,200.",
+  "new": "Rounding gives 289 → 300, 312 → 300, 198 → 200 and 405 → 400. The estimate is 300 + 300 + 200 + 400 = 1,200.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q7",
+  "old": "98 = 100 − 2, so 63 × 98 = 63 × 100 − 63 × 2.",
+  "new": "Since 98 = 100 − 2, we get 63 × 98 = 63 × 100 − 63 × 2.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q8",
+  "old": "(C) ",
+  "new": "100 − (3 × 18 + 2 × 15)",
+  "mode": "addrun",
+  "after": "98 = 100 − 2, so 63 × 98 = 63 × 100 − 63 × 2.",
+  "why": "Answer cell showed only the letter"
+ },
+ {
+  "q": "Q10",
+  "old": "30 × 25 + 6 × 5 = 750 + 30 = 780, but 36 × 25 = 900. The 6 must also be multiplied by 25, not by 5.",
+  "new": "Option B gives 30 × 25 + 6 × 5 = 750 + 30 = 780, but 36 × 25 = 900. The 6 must also be multiplied by 25, not by 5.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q12",
+  "old": "0.04 = 4/100 = 1/25, and 1/25 = 1 ÷ 25.",
+  "new": "Write 0.04 as 4/100 = 1/25, and 1/25 = 1 ÷ 25.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "A post office sorted 840 letters in the morning. 25% of them were for other cities. How many letters were for other cities?",
+  "new": "A post office sorted 840 letters in the morning. Of these, 25% were for other cities. How many letters were for other cities?",
+  "why": "House rule: sentence started with a numeral (25%)"
+ },
+ {
+  "q": "Q13",
+  "old": "25% = 1/4, and 840 ÷ 4 = 210.",
+  "new": "Since 25% = 1/4, the answer is 840 ÷ 4 = 210.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q16",
+  "old": "15% of 200 = 30. 30 out of 60 is one half, which is 50%.",
+  "new": "First, 15% of 200 = 30. Then 30 out of 60 is one half, which is 50%.",
+  "why": "Sentences started with numerals"
+ },
+ {
+  "q": "Q18",
+  "old": "The bottom-left shaded square (second row from the bottom, first column) has no partner on the right. Its mirror image across the dashed line is Square B.",
+  "new": "The shaded square in the first column, second row from the bottom, has no partner on the right. Its mirror image across the dashed line is Square B.",
+  "why": "'Bottom-left shaded square' is ambiguous (the square in row 5, column 2 is lower)"
+ },
+ {
+  "q": "Q19",
+  "old": "(B) ",
+  "new": "Every rhombus is a square.",
+  "mode": "addrun",
+  "after": "The bottom-left shaded square (second row from the bottom, first column) has no partner on the right. Its mirror image across the dashed line is Square B.",
+  "why": "Answer cell showed only the letter"
+ },
+ {
+  "q": "Q20",
+  "old": "180° − 35° − 55° = 90°. A triangle with a 90° angle is right-angled.",
+  "new": "The third angle is 180° − 35° − 55° = 90°. A triangle with a 90° angle is right-angled.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q25",
+  "old": "72 litres = 72,000 cubic cm. The base is 60 × 40 = 2,400 square cm, so the height is 72,000 ÷ 2,400 = 30 cm.",
+  "new": "The tank holds 72 litres = 72,000 cubic cm. The base is 60 × 40 = 2,400 sq cm, so the height is 72,000 ÷ 2,400 = 30 cm.",
+  "why": "Sentence started with a numeral; 'square cm' -> 'sq cm' to match the paper"
+ },
+ {
+  "q": "Q26",
+  "old": "The rectangle and the right-angled triangle in the picture have the same area. What is the height of the triangle, marked ?",
+  "new": "The rectangle and the right-angled triangle in the picture have the same area. What is the height of the triangle, marked with a question mark?",
+  "why": "'marked ?' reads as a broken sentence"
+ },
+ {
+  "q": "Q27",
+  "old": "There are 18 whole symbols and 3 half symbols, which make 18 + 1½ = 19½ symbols. 19½ × 10 = 195 bees.",
+  "new": "There are 18 whole symbols and 3 half symbols, which make 18 + 1½ = 19½ symbols. So there are 19½ × 10 = 195 bees.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q29",
+  "old": "1 week = 7 days. 5 weeks 4 days = 5 × 7 + 4 = 39 days.",
+  "new": "One week has 7 days, so 5 weeks 4 days = 5 × 7 + 4 = 39 days.",
+  "why": "Sentences started with numerals"
+ },
+ {
+  "q": "Q32",
+  "old": "48 minutes = 48/60 hour = 4/5 hour = 0.8 hour.",
+  "new": "An hour has 60 minutes, so 48 minutes = 48/60 hour = 4/5 hour = 0.8 hour.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q33",
+  "old": "2 hours = 2 × 60 × 60 = 7,200 seconds. 7,200 ÷ 40 = 180 sacks.",
+  "new": "Two hours = 2 × 60 × 60 = 7,200 seconds. So it fills 7,200 ÷ 40 = 180 sacks.",
+  "why": "Sentences started with numerals"
+ },
+ {
+  "q": "Q38",
+  "old": "April 18 to 30 is 13 days, May has 31 days and June 1 to 7 is 7 days. 13 + 31 + 7 = 51 days.",
+  "new": "April 18 to 30 is 13 days, May has 31 days and June 1 to 7 is 7 days. The total is 13 + 31 + 7 = 51 days.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q39",
+  "old": "Each move is odd and six odd numbers add up to an even number, so the counter always moves forward an even number of squares and lands on 1 + even = an odd square. 27 is odd and can be reached: 3 + 3 + 5 + 5 + 5 + 5 = 26, and 1 + 26 = 27.",
+  "new": "Each move is odd and six odd numbers add up to an even number, so the counter always moves forward an even number of squares and lands on 1 + even = an odd square. Square 27 is odd and can be reached: 3 + 3 + 5 + 5 + 5 + 5 = 26, and 1 + 26 = 27.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q40",
+  "old": "The terms go up by 6, so every term is 5 more than a multiple of 6. 89 − 5 = 84 = 6 × 14, so 89 is a term. 91 − 5 = 86, 96 − 5 = 91 and 99 − 5 = 94 are not multiples of 6.",
+  "new": "The terms go up by 6, so every term is 5 more than a multiple of 6. For 89, 89 − 5 = 84 = 6 × 14, so 89 is a term. For 91, 96 and 99, subtracting 5 gives 86, 91 and 94, which are not multiples of 6.",
+  "why": "Sentences started with numerals"
+ },
+ {
+  "q": "Q42",
+  "old": "35% = 7/20, so the number of coins is a multiple of 20: 20 or 40. With 40 coins there are 26 ₹2 coins (even), so there are 20 coins: 7 of ₹5 and 13 of ₹2. Money = 35 + 26 = ₹61.",
+  "new": "As 35% = 7/20, the number of coins is a multiple of 20: 20 or 40. With 40 coins there are 26 ₹2 coins (even), so there are 20 coins: 7 of ₹5 and 13 of ₹2. Money = 35 + 26 = ₹61.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q43",
+  "old": "In Figure n the base is 2n cm and the height is (n + 2) cm, so the area is n × (n + 2) sq cm. Figure 9: 9 × 11 = 99; Figure 10: 10 × 12 = 120. The first area above 100 is in Figure 10.",
+  "new": "The bases go 2, 4, 6, … cm and the heights go 3, 4, 5, … cm. Figure 9 has base 18 cm and height 11 cm, so its area is 1/2 × 18 × 11 = 99 sq cm. Figure 10 has base 20 cm and height 12 cm, so its area is 120 sq cm. Figure 10 is the first above 100 sq cm.",
+  "why": "Solution used algebra (variable n); Ch4 Algebra is not in the Class 5 syllabus"
+ },
+ {
+  "q": "Q44",
+  "old": "Nirav's family car drives along a highway at a steady speed. The stones beside the road show the distance from the same city in Roman numerals. The car passes the two stones shown at the times shown. What is the speed of the car?",
+  "new": "Nirav's family car drives along a highway at a steady speed. The stones beside the road show the distance from the same city in Roman numerals. The car passes the two stones at the times shown. What is the speed of the car?",
+  "why": "Remove repetitive 'shown ... shown'"
+ },
+ {
+  "q": "Q45",
+  "old": "20% of 5 hours = 1 hour, so it moves for 4 hours at 48 ÷ 4 = 12 km/h. Average speed = 48 ÷ 5 = 9.6 km/h. Difference = 12 − 9.6 = 2.4 km/h.",
+  "new": "The boat is still for 20% of 5 hours = 1 hour, so it moves for 4 hours at 48 ÷ 4 = 12 km/h. Average speed = 48 ÷ 5 = 9.6 km/h. Difference = 12 − 9.6 = 2.4 km/h.",
+  "why": "Sentence started with a numeral"
+ }
+]

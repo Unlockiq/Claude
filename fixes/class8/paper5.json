@@ -1,0 +1,82 @@
+[
+ {
+  "q": "Q17",
+  "old": "ABCD is a kite with AB = AD and CB = CD, as marked in the picture. ∠DAB = 70° and ∠BCD = 50°. What is the angle x = ∠ABC?",
+  "new": "ABCD is a kite with AB = AD and CB = CD, as marked in the picture. ∠DAB = 70° and ∠BCD = 50°. What is x, the size of ∠ABC?",
+  "why": "'the angle x = ∠ABC' is not a complete, clear question"
+ },
+ {
+  "q": "Q32",
+  "old": "A school spent ₹7,500 to put on its play. It sold 300 tickets at ₹30 each. What was its profit percent?",
+  "new": "A school spent ₹7,500 on its play. It sold 300 tickets at ₹30 each. What was its profit percent?",
+  "why": "'put on' is a phrasal idiom"
+ },
+ {
+  "q": "Q44",
+  "old": "Nakul has ₹60,000 to buy a new fishing net priced ₹60,000. The seller offers two ways to pay. Way 1: pay now and get a 5% discount. Way 2: pay the full price after one year. Any money that Nakul keeps stays in his bank for that year at 6% per year simple interest. At the end of the year, after paying for the net, which way leaves him with more money, and by how much?",
+  "new": "Nakul has ₹60,000 and wants to buy a fishing net priced ₹60,000. The seller offers two ways to pay. Way 1: pay now and get a 5% discount. Way 2: pay the full price after one year. Any money that Nakul keeps stays in his bank for that year at 6% per year simple interest. At the end of the year, after paying for the net, which way leaves him with more money, and by how much?",
+  "why": "Clearer opening sentence"
+ },
+ {
+  "q": "Q27",
+  "old": "13",
+  "new": "8",
+  "after": "The histogram in the picture shows the masses of 60 watermelons. The class 3–4 means 3 kg or more but less than 4 kg. The numbers on the vertical scale are missing, but the bar for 3–4 kg is marked: it stands for 14 watermelons. How many watermelons have a mass of 5 kg or more but less than 6 kg?",
+  "why": "13 is a random distractor; 8 = misreading the 6–7 kg bar (4 squares × 2)"
+ },
+ {
+  "q": "Q6",
+  "old": "Part 2 · Ch2 · Medium",
+  "new": "Part 2 · Ch2 · Easy",
+  "why": "Level swap with Q9 (one routine law of exponents)"
+ },
+ {
+  "q": "Q9",
+  "old": "Part 3 · Ch3 · Easy",
+  "new": "Part 3 · Ch3 · Medium",
+  "after": "First 2 years: 10,000 × 6% × 2 = ₹1,200. Next 3 years: 10,000 × 8% × 3 = ₹2,400. Total = ₹3,600.",
+  "why": "Level swap with Q6 (successive % then working backwards = 2+ steps); keeps 24 Easy + 16 Medium"
+ },
+ {
+  "q": "Q4",
+  "old": "(−7)⁻² = 1 ÷ (−7)² = 1/49, and (−7)³ = −343 is negative. 7 also gives 1/49 but its cube is positive.",
+  "new": "Here (−7)⁻² = 1 ÷ (−7)² = 1/49, and (−7)³ = −343 is negative. The number 7 also gives 1/49 but its cube is positive.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q5",
+  "old": "6 × 10⁻⁴, 60 × 10⁻⁵ and 0.6 × 10⁻³ all equal 0.0006. But 6 × 10⁻³ = 0.006, which is ten times as large.",
+  "new": "The numbers 6 × 10⁻⁴, 60 × 10⁻⁵ and 0.6 × 10⁻³ all equal 0.0006. But 6 × 10⁻³ = 0.006, which is ten times as large.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q10",
+  "old": "Say 100 were sold last week, 40 of them mango. This week 125 were sold and 40 × 1.5 = 60 were mango. 60 ÷ 125 × 100 = 48%.",
+  "new": "Say 100 were sold last week, 40 of them mango. This week 125 were sold and 40 × 1.5 = 60 were mango. So the answer is 60 ÷ 125 × 100 = 48%.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q11",
+  "old": "Hana gets ₹400 a year and Ivan ₹600, so Ivan closes the gap of ₹2,000 by ₹200 each year. 2,000 ÷ 200 = 10 years (both then have ₹12,000).",
+  "new": "Hana gets ₹400 a year and Ivan ₹600, so Ivan closes the gap of ₹2,000 by ₹200 each year. It takes 2,000 ÷ 200 = 10 years (both then have ₹12,000).",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q24",
+  "old": "2 cm = 0.02 m. Volume = 15 × 8 × 0.02 = 2.4 m³ = 2.4 × 1,000 = 2,400 litres.",
+  "new": "Here 2 cm = 0.02 m. Volume = 15 × 8 × 0.02 = 2.4 m³ = 2.4 × 1,000 = 2,400 litres.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q28",
+  "old": "Roses minus lilies is 150° − 90° = 60°, and 60° stands for 48 bouquets. 360° is 6 times 60°, so the total is 6 × 48 = 288.",
+  "new": "Roses minus lilies is 150° − 90° = 60°, and 60° stands for 48 bouquets. The full 360° is 6 times 60°, so the total is 6 × 48 = 288.",
+  "why": "House rule: no sentence starts with a numeral"
+ },
+ {
+  "q": "Q32",
+  "old": "Ticket money = 300 × 30 = ₹9,000. Profit = 9,000 − 7,500 = ₹1,500. 1,500 ÷ 7,500 × 100 = 20%.",
+  "new": "Ticket money = 300 × 30 = ₹9,000. Profit = 9,000 − 7,500 = ₹1,500. Profit percent = 1,500 ÷ 7,500 × 100 = 20%.",
+  "why": "House rule: no sentence starts with a numeral"
+ }
+]
