@@ -1,0 +1,8 @@
+[
+ {"q":"Q11","old":"A cook gets 7 crates of apples with 36 apples in each crate. 8 apples are bad and are thrown away. How many good apples are left?","new":"A cook gets 7 crates of apples with 36 apples in each crate. Then 8 bad apples are thrown away. How many good apples are left?","why":"sentence started with a numeral"},
+ {"q":"Q13","old":"52 children come to a school assembly. Each bench seats 6 children. What is the smallest number of benches needed so that every child has a seat?","new":"There are 52 children at a school assembly. Each bench seats 6 children. What is the smallest number of benches needed so that every child has a seat?","why":"stem started with a numeral"},
+ {"q":"Q20","old":"(B) ","new":"2 circles and 1 rectangle","mode":"addrun","after":"The edge of the umbrella has 6 straight sides and 6 corners. A flat shape with 6 sides is a hexagon.","why":"answer cell showed only the letter"},
+ {"q":"Q35","old":"Find the digit A that makes A0 − A = 63 true. In A0, the first digit is A and the second digit is 0.","new":"Find the digit A that makes A0 − A = 63 true. In A0, A is the tens digit and 0 is the ones digit.","why":"clearer place-value wording; avoids the lone '0.' on its own line"},
+ {"q":"Q37","old":"The numbers 4, 7, 2 repeat. Steps 10, 11 and 12 start a new group: 4, 7, 2. So the 11th step has 7.","new":"The numbers 4, 7, 2 repeat in groups of 3. Steps 10, 11 and 12 make the fourth group: 4, 7, 2. So the 11th step has 7.","why":"steps 10-12 do not 'start' a group; they form the 4th group"},
+ {"q":"Q4","old":"One more than 6,099: the 99 becomes 100, so the number is 6,100.","new":"One more than 6,099 is 6,100, because 99 + 1 = 100.","why":"solution was not a complete sentence"}
+]

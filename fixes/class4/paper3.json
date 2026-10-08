@@ -1,0 +1,202 @@
+[
+ {
+  "q": "Q32",
+  "old": "Entry to a swimming pool costs ₹35 for an adult and ₹20 for a child. Ankit goes with his mother, his father and his two younger sisters. How much do the 5 entry tickets cost?",
+  "new": "Entry to a swimming pool costs ₹35 for an adult and ₹20 for a child. Ankit, aged 9, goes with his mother, his father and his two younger sisters. How much do the 5 entry tickets cost?",
+  "why": "Ankit is never stated to be a child; if he is an adult the answer is ₹145 = option (C), so two options can be argued"
+ },
+ {
+  "q": "Q32",
+  "old": "2 adults: 2 × ₹35 = ₹70. 3 children: 3 × ₹20 = ₹60. Total = ₹130.",
+  "new": "There are 2 adults: 2 × ₹35 = ₹70. Ankit and his sisters are 3 children: 3 × ₹20 = ₹60. Total = ₹130.",
+  "why": "match stem fix; no sentence starts with a numeral"
+ },
+ {
+  "q": "Q44",
+  "old": "Hemant counts the money in his shop's cash box. ",
+  "new": "Hemant counts the money in his shop's cash box. Of this money, ",
+  "why": "stem sentences began with a fraction (numeral) — house rule"
+ },
+ {
+  "q": "Q44",
+  "old": " of the money is in ₹20 notes. ",
+  "new": " is in ₹20 notes and ",
+  "why": "stem: join with next part so no sentence starts with a fraction"
+ },
+ {
+  "q": "Q44",
+  "old": " of the money is in ₹10 coins. The rest is ₹350, all in ₹50 notes. How many ₹20 notes are there?",
+  "new": " is in ₹10 coins. The rest is ₹350, all in ₹50 notes. How many ₹20 notes are there?",
+  "why": "stem: completes 'Of this money, 1/3 is in ₹20 notes and 1/4 is in ₹10 coins.'"
+ },
+ {
+  "q": "Q44",
+  "old": " of the money. ",
+  "new": " of the money. This ",
+  "why": "solution: sentence started with a fraction"
+ },
+ {
+  "q": "Q44",
+  "old": " is ₹70 and the whole is ₹840. ",
+  "new": " is ₹70 and the whole is ₹840. So ",
+  "why": "solution: sentence started with a fraction"
+ },
+ {
+  "q": "Q42",
+  "old": "Vidya's watch gains 4 minutes every 24 hours. She sets it to the correct time at 8:00 a.m. on Tuesday, 4 March. On which day will the watch first be 60 minutes fast at 8:00 a.m.?",
+  "new": "Vidya's watch goes 4 minutes further ahead every 24 hours. She sets it to the correct time at 8:00 a.m. on Tuesday, 4 March. On which day will the watch first be 60 minutes fast at 8:00 a.m.?",
+  "why": "'gains' (clock sense) is unfamiliar vocabulary for Class 4"
+ },
+ {
+  "q": "Q42",
+  "old": "1 hour = 60 minutes. 60 ÷ 4 = 15 days after 4 March is 19 March. 15 days = 2 weeks + 1 day, and Tuesday + 1 day = Wednesday.",
+  "new": "The watch must get 60 minutes ahead, which takes 60 ÷ 4 = 15 days. So the day is 15 days after 4 March, which is 19 March. As 15 days = 2 weeks + 1 day, Tuesday + 1 day = Wednesday.",
+  "why": "garbled sentence ('60 ÷ 4 = 15 days after 4 March is 19 March'); numeral starts"
+ },
+ {
+  "q": "Q28",
+  "old": "Look at the pictograph. A new row is added for a Poppy bed. It had 25 bees fewer than the bed with the most bees. How many bee pictures should be drawn for the Poppy bed?",
+  "new": "Look at the pictograph. A new row is added for a Poppy bed. The Poppy bed had 25 fewer bees than the bed with the most bees. How many bee pictures should be drawn for the Poppy bed?",
+  "why": "vague 'It' (row or bed?) and tense shift"
+ },
+ {
+  "q": "Q28",
+  "old": "The most is Tulip with 7 × 10 = 70 bees. Poppy had 70 − 25 = 45 bees. 45 ÷ 10 = 4 and a half pictures.",
+  "new": "The most is Tulip with 7 × 10 = 70 bees. Poppy had 70 − 25 = 45 bees. That is 45 ÷ 10 = 4 and a half pictures.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q13",
+  "old": "Like fractions have the same denominator (bottom number). Which pair are like fractions?",
+  "new": "Like fractions have the same denominator (bottom number). Which pair shows like fractions?",
+  "why": "grammar: 'pair are'"
+ },
+ {
+  "q": "Q2",
+  "old": "49 = 40 + 9 = XL + IX = XLIX.",
+  "new": "We write 49 = 40 + 9 = XL + IX = XLIX.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q4",
+  "old": "13 thousands = 1 ten thousand + 3 thousands. So the number is 40,000 + 13,000 + 50 = 53,050.",
+  "new": "The 13 thousands make 1 ten thousand + 3 thousands. So the number is 40,000 + 13,000 + 50 = 53,050.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q7",
+  "old": "1,00,000 − 63,475 = 36,525. Check: 63,475 + 36,525 = 1,00,000.",
+  "new": "The blank is 1,00,000 − 63,475 = 36,525. Check: 63,475 + 36,525 = 1,00,000.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q8",
+  "old": "168 × 7 = 1,176 posters.",
+  "new": "The machine prints 168 × 7 = 1,176 posters.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q9",
+  "old": "Number = 7 × 1,206 + 5 = 8,442 + 5 = 8,447.",
+  "new": "The number = 7 × 1,206 + 5 = 8,442 + 5 = 8,447.",
+  "why": "fragment"
+ },
+ {
+  "q": "Q10",
+  "old": "4,281 is between 4,250 and 4,350, so it rounds to 4,300. The others round to 4,200, 4,400 and 4,000.",
+  "new": "The count 4,281 is between 4,250 and 4,349, so it rounds to 4,300. The others round to 4,200, 4,400 and 4,000.",
+  "why": "numeral start; 4,350 itself rounds to 4,400"
+ },
+ {
+  "q": "Q11",
+  "old": "5 × 4 = 20, so the bottom must also be multiplied by 4: 6 × 4 = 24.",
+  "new": "Since 5 × 4 = 20, the bottom must also be multiplied by 4: 6 × 4 = 24.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q12",
+  "old": "3 wholes = 15 fifths. 15 fifths + 2 fifths = 17 fifths, so the blank is 17.",
+  "new": "Three wholes = 15 fifths. Then 15 fifths + 2 fifths = 17 fifths, so the blank is 17.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q15",
+  "old": ". 10 − 3 = 7, so the blank is 7.",
+  "new": ". Then 10 − 3 = 7, so the blank is 7.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q16",
+  "old": "9 out of 12 is the same as 3 out of 4. Rhea has 8 pots, which is 2 groups of 4, so she paints 2 × 3 = 6 pots.",
+  "new": "Painting 9 out of 12 is the same as 3 out of 4. Rhea has 8 pots, which is 2 groups of 4, so she paints 2 × 3 = 6 pots.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q20",
+  "old": "3 squares right of column B is column E. 2 squares up from row 2 is row 4. So it is at (E, 4).",
+  "new": "Moving 3 squares right of column B gives column E. Moving 2 squares up from row 2 gives row 4. So it is at (E, 4).",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q23",
+  "old": "3 L = 3,000 mL. 3,000 ÷ 250 = 12 glasses.",
+  "new": "The jug holds 3 L = 3,000 mL. Then 3,000 ÷ 250 = 12 glasses.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q24",
+  "old": "1 m 20 cm = 120 cm. Perimeter = 2 × (120 + 80) = 400 cm.",
+  "new": "The length is 1 m 20 cm = 120 cm. Perimeter = 2 × (120 + 80) = 400 cm.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q26",
+  "old": "2 L × 4 = 8 L and 350 mL × 4 = 1,400 mL = 1 L 400 mL. Total = 9 L 400 mL.",
+  "new": "For 4 trips: 2 L × 4 = 8 L and 350 mL × 4 = 1,400 mL = 1 L 400 mL. Total = 9 L 400 mL.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q27",
+  "old": "35 bees = 3 whole pictures (30) and a half picture (5). The Marigold row has 3 and a half pictures.",
+  "new": "Here 35 bees = 3 whole pictures (30) and a half picture (5). The Marigold row has 3 and a half pictures.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q29",
+  "old": "The clock shows 6:43. 60 − 43 = 17 minutes are left before 7, so it is 17 minutes to 7.",
+  "new": "The clock shows 6:43. There are 60 − 43 = 17 minutes left before 7, so it is 17 minutes to 7.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q30",
+  "old": "The clock shows 2:05. 50 minutes before 2:05 is 1:15 (2:05 → 2:00 is 5 minutes, then 45 more minutes back).",
+  "new": "The clock shows 2:05. Going back 50 minutes from 2:05 gives 1:15 (5 minutes back to 2:00, then 45 more minutes back).",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q31",
+  "old": "Saturdays are 7 days apart. Fourth Saturday = 10 + 7 + 7 = 24th.",
+  "new": "Saturdays are 7 days apart. The fourth Saturday is the 10 + 7 + 7 = 24th.",
+  "why": "fragment"
+ },
+ {
+  "q": "Q37",
+  "old": "From 25 June, 5 days reach 30 June. 14 − 5 = 9 more days reach 9 July.",
+  "new": "From 25 June, 5 days reach 30 June. Then 14 − 5 = 9 more days reach 9 July.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q40",
+  "old": "From 1 January to 1 March is 31 + 28 = 59 days. 59 = 8 weeks + 3 days, and Monday + 3 days = Thursday.",
+  "new": "From 1 January to 1 March is 31 + 28 = 59 days. As 59 days = 8 weeks + 3 days, Monday + 3 days = Thursday.",
+  "why": "numeral start"
+ },
+ {
+  "q": "Q13",
+  "old": "(C) ",
+  "new": "2/9 and 7/9",
+  "mode": "addrun",
+  "after": "3 wholes = 15 fifths. 15 fifths + 2 fifths = 17 fifths, so the blank is 17.",
+  "why": "answer cell shows only the letter"
+ }
+]

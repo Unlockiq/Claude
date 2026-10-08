@@ -1,0 +1,193 @@
+[
+ {
+  "q": "Q34",
+  "old": "A ticket for the school play costs ₹30 for a child and ₹45 for an adult. Zubin buys 4 child tickets and some adult tickets. He pays ₹390 in all. How many adult tickets does he buy?",
+  "new": "A ticket for the school play costs ₹30 for a child and ₹50 for an adult. Zubin buys 4 child tickets and some adult tickets. He pays ₹420 in all. How many adult tickets does he buy?",
+  "why": "₹270 ÷ ₹45 is 3-digit ÷ 2-digit, over the Section I ceiling; 300 ÷ 50 is a basic fact (30 tens ÷ 5 tens). Answer stays 6 (D)"
+ },
+ {
+  "q": "Q34",
+  "old": "13",
+  "new": "14",
+  "why": "Distractor: ₹420 ÷ ₹30 (all tickets at child price)",
+  "after": "A ticket for the school play costs ₹30 for a child and ₹45 for an adult. Zubin buys 4 child tickets and some adult tickets. He pays ₹390 in all. How many adult tickets does he buy?"
+ },
+ {
+  "q": "Q34",
+  "old": "4 child tickets cost 4 × ₹30 = ₹120. ₹390 − ₹120 = ₹270, and ₹270 ÷ ₹45 = 6 adult tickets.",
+  "new": "The 4 child tickets cost 4 × ₹30 = ₹120. Then ₹420 − ₹120 = ₹300, and ₹300 ÷ ₹50 = 6 adult tickets.",
+  "why": "Match new numbers; sentences started with a numeral/₹ amount"
+ },
+ {
+  "q": "Q42",
+  "old": "(D) ",
+  "new": "8:20 a.m. on Wednesday, 1 October",
+  "mode": "addrun",
+  "after": "Section II · Ch9 + Ch10 · Hard",
+  "why": "Answer cell shows only the letter"
+ },
+ {
+  "q": "Q42",
+  "old": "10:45 p.m. + 1 hour 15 minutes = midnight. 9 hours 35 minutes − 1 hour 15 minutes = 8 hours 20 minutes, so 8:20 a.m. the next day. The day after Tuesday, 30 September is Wednesday, 1 October.",
+  "new": "From 10:45 p.m., 1 hour 15 minutes takes us to midnight. That leaves 9 hours 35 minutes − 1 hour 15 minutes = 8 hours 20 minutes, so the plane lands at 8:20 a.m. the next day. The day after Tuesday, 30 September is Wednesday, 1 October.",
+  "why": "Sentences started with numerals"
+ },
+ {
+  "q": "Q33",
+  "old": "The lift in a building is checked on the last Friday of every month. 1 December is a Monday, and December has 31 days. On which date is the lift checked in December?",
+  "new": "The lift in a building is checked on the last Friday of every month. This year, 1 December is a Monday, and December has 31 days. On which date is the lift checked in December?",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q33",
+  "old": "1 December is Monday, so 5 December is Friday. The Fridays are 5, 12, 19 and 26. The last is 26 December.",
+  "new": "Since 1 December is a Monday, 5 December is a Friday. The Fridays are 5, 12, 19 and 26. The last is 26 December.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q45",
+  "old": "The picture shows a box shaped like a cuboid, with its front view and top view. The perimeter of the front view is 40 cm. What is the area of the side view of the box?",
+  "new": "The picture shows a box shaped like a cuboid, with its front view and top view. The perimeter of the front view is 44 cm. What is the area of the side view of the box?",
+  "why": "Correct answer (40 sq cm) repeated the given number 40, so a guess gave it away; with 44 cm the height is 10 cm and the answer is 50 sq cm (still C)"
+ },
+ {
+  "q": "Q45",
+  "old": "96 sq cm",
+  "new": "120 sq cm",
+  "why": "Distractor: area of the front view, 12 × 10"
+ },
+ {
+  "q": "Q45",
+  "old": "40 sq cm",
+  "new": "50 sq cm",
+  "after": "60 sq cm",
+  "why": "Correct option for new perimeter: 5 × 10"
+ },
+ {
+  "q": "Q45",
+  "old": "80 sq cm",
+  "new": "110 sq cm",
+  "why": "Distractor: 5 × 22 (half the perimeter taken as the height)"
+ },
+ {
+  "q": "Q45",
+  "old": "40 sq cm",
+  "new": "50 sq cm",
+  "after": "Section II · Ch5 + Ch6 · Hard",
+  "why": "Answer cell for new perimeter"
+ },
+ {
+  "q": "Q45",
+  "old": "Front view: 2 × (12 + height) = 40, so height = 8 cm. The top view shows the width, 5 cm. The side view is 5 cm by 8 cm, so its area is 40 sq cm.",
+  "new": "Front view: 2 × (12 + height) = 44, so height = 10 cm. The top view shows the width, 5 cm. The side view is 5 cm by 10 cm, so its area is 50 sq cm.",
+  "why": "Solution for new perimeter"
+ },
+ {
+  "q": "Q1",
+  "old": "80,000 + 500 + 3 = 80,503.",
+  "new": "The number is 80,000 + 500 + 3 = 80,503.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q6",
+  "old": "38,476 + 25,839 = 64,315. Tarun lost the carry into the thousands place.",
+  "new": "The correct sum is 38,476 + 25,839 = 64,315. Tarun lost the carry into the thousands place.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q7",
+  "old": "25 × 4 = 100, and 37 × 100 = 3,700.",
+  "new": "Group 25 and 4 first: 25 × 4 = 100, and 37 × 100 = 3,700.",
+  "why": "Solution started with a numeral; shows the grouping"
+ },
+ {
+  "q": "Q8",
+  "old": "3,456 ÷ 9 = 384.",
+  "new": "Each box gets 3,456 ÷ 9 = 384 fish.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q10",
+  "old": "36 × 48 is one more group of 36 than 36 × 47: 1,692 + 36 = 1,728.",
+  "new": "Here 36 × 48 is one more group of 36 than 36 × 47: 1,692 + 36 = 1,728.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q11",
+  "old": " of 12 tiles = 9 tiles. 4 are coloured, so 9 − 4 = 5 more.",
+  "new": " of 12 tiles = 9 tiles. There are 4 coloured tiles, so 9 − 4 = 5 more.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q12",
+  "old": "4 wholes = 12 thirds; 12 + 2 = 14 thirds, so ",
+  "new": "In 4 wholes there are 12 thirds, and 12 + 2 = 14 thirds, so ",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q21",
+  "old": "3 km = 3,000 m, and 3,000 m + 40 m = 3,040 m.",
+  "new": "Since 3 km = 3,000 m, the road is 3,000 m + 40 m = 3,040 m.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q22",
+  "old": "5 kg = 5,000 g, and 5,000 ÷ 4 = 1,250 g = 1 kg 250 g.",
+  "new": "Change 5 kg to 5,000 g. Then 5,000 ÷ 4 = 1,250 g = 1 kg 250 g.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q27",
+  "old": "5 whole flowers = 50 bouquets and half a flower = 5 bouquets, so 55.",
+  "new": "Wednesday has 5 whole flowers (50 bouquets) and half a flower (5 bouquets), so 55 bouquets.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q29",
+  "old": "The clock shows 10:05. 7 minutes earlier is 9:58.",
+  "new": "The clock shows 10:05. Going back 7 minutes gives 9:58.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q36",
+  "old": "64 − 27 = 37, and counting both end pages gives 37 + 1 = 38 pages.",
+  "new": "From page 27 to page 64 there are 64 − 27 = 37 jumps, and counting both end pages gives 37 + 1 = 38 pages.",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q37",
+  "old": "10 weeks = 70 days, and 75 − 70 = 5. So 10 weeks 5 days.",
+  "new": "Here 10 weeks = 70 days, and 75 − 70 = 5. So 75 days = 10 weeks 5 days.",
+  "why": "Solution started with a numeral; last sentence was a fragment"
+ },
+ {
+  "q": "Q38",
+  "old": "The jumps are 6, 8, 10, 12, so the jump before 6 is 4. 14 − 4 = 10.",
+  "new": "The jumps are 6, 8, 10, 12, so the jump before 6 is 4. The first number is 14 − 4 = 10.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q40",
+  "old": "The first day is 11 days before the last: 14 − 11 = 3 October. 11 days = 1 week + 4 days, and 4 days before Tuesday is Friday.",
+  "new": "The first day is 11 days before the last: 14 − 11 = 3 October. Since 11 days = 1 week + 4 days, it opened 4 days before Tuesday, which is Friday.",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q44",
+  "old": "15 days is ",
+  "new": "The last 15 days are ",
+  "why": "Solution started with a numeral"
+ },
+ {
+  "q": "Q44",
+  "old": " of the days left, so 18 days were left. 18 days is ",
+  "new": " of the days left, so 18 days were left. These 18 days are ",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q44",
+  "old": " of the holiday, so the holiday is 30 days. 12 days in May (20 to 31 May) and 18 days in June: the last day is 18 June.",
+  "new": " of the holiday, so the holiday is 30 days. There are 12 days in May (20 to 31 May) and 18 days in June, so the last day is 18 June.",
+  "why": "Sentence started with a numeral"
+ }
+]

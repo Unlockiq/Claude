@@ -1,0 +1,233 @@
+[
+ {
+  "q": "Q2",
+  "old": "Zubin writes the visitors to a science exhibition for four days, from fewest to most: 2,009, 2,090, 2,909, 2,900. Which two numbers must change places?",
+  "new": "Zubin tries to list the number of visitors to a science exhibition on four days, from fewest to most: 2,009, 2,090, 2,909, 2,900. Which two numbers must change places?",
+  "why": "'writes the visitors' is unclear; the list is meant to be wrong, so 'tries to list'"
+ },
+ {
+  "q": "Q3",
+  "old": "The buttons in a lift are marked with Roman numerals. Isha gets in at floor XVIII and goes up 4 floors. Which button did she press?",
+  "new": "The buttons in a lift are marked with Roman numerals. Isha gets in at floor XVIII and wants to go up 4 floors. Which button should she press?",
+  "why": "tense mix (gets in/goes up/did press); she presses before going up"
+ },
+ {
+  "q": "Q12",
+  "old": "In one morning, 1,680 passengers leave an airport and 925 passengers arrive. Then 2,745 passengers are there. How many were there at the start?",
+  "new": "One morning, 1,680 passengers leave an airport and 925 passengers arrive. Then there are 2,745 passengers at the airport. How many were there at the start?",
+  "why": "'In one morning' is unidiomatic; 'are there' vague"
+ },
+ {
+  "q": "Q27",
+  "old": "A fishing net is 3 m long. It is cut into 6 equal pieces. How long is each piece?",
+  "new": "A rope is 3 m long. It is cut into 6 equal pieces. How long is each piece?",
+  "why": "a net is not a length that is cut into pieces; rope is the natural object"
+ },
+ {
+  "q": "Q42",
+  "old": "Look at the seven fraction cards. Sarika picks two different cards and adds their fractions. Picking the same two cards in the other order gives the same pair. How many different pairs give a sum greater than one whole?",
+  "new": "Look at the seven fraction cards. Sarika picks two different cards and adds their fractions. The same two cards in any order count as one pair. How many different pairs give a sum greater than one whole?",
+  "why": "clearer statement that order does not matter"
+ },
+ {
+  "q": "Q42",
+  "old": "6",
+  "new": "5",
+  "why": "distractor 6 matches no mistake; 5 = counting 3/10 + 7/10 (exactly one whole) as greater",
+  "after": "Look at the seven fraction cards. Sarika picks two different cards and adds their fractions. Picking the same two cards in the other order gives the same pair. How many different pairs give a sum greater than one whole?"
+ },
+ {
+  "q": "Q17",
+  "old": "(D) ",
+  "new": "2/7, 5/7, 7/7, 9/7",
+  "why": "answer cell shows only the letter",
+  "mode": "addrun",
+  "after": "The bottom numbers are the same, so compare the top numbers. 6 is more than 4 and less than 8, so the fraction is 6/11."
+ },
+ {
+  "q": "Q2",
+  "old": "2,900 and 2,909 have the same thousands, hundreds and tens. In the ones place 0 is less than 9, so 2,900 must come before 2,909.",
+  "new": "The numbers 2,900 and 2,909 have the same thousands, hundreds and tens. In the ones place 0 is less than 9, so 2,900 must come before 2,909.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q3",
+  "old": "XVIII is 18. 18 + 4 = 22, and 22 is written XXII.",
+  "new": "XVIII is 18. Then 18 + 4 = 22, and 22 is written XXII.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q4",
+  "old": "6,040 has 6 thousands, 0 hundreds, 4 tens and 0 ones. It is read as six thousand forty.",
+  "new": "The number 6,040 has 6 thousands, 0 hundreds, 4 tens and 0 ones. It is read as six thousand forty.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q5",
+  "old": "23 hundreds = 2,300 and 14 tens = 140. 2,300 + 140 + 6 = 2,446.",
+  "new": "Here, 23 hundreds = 2,300 and 14 tens = 140. So 2,300 + 140 + 6 = 2,446.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q7",
+  "old": "6,000 − 2,450 = 3,550. Check: 3,550 + 2,450 = 6,000.",
+  "new": "The other number is 6,000 − 2,450 = 3,550. Check: 3,550 + 2,450 = 6,000.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q8",
+  "old": "7 × 12 has one more 7 than 7 × 11. So it is 7 greater: 84 − 77 = 7.",
+  "new": "There is one more 7 in 7 × 12 than in 7 × 11. So it is 7 greater: 84 − 77 = 7.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q9",
+  "old": "7 × 4 = 28: write 8 and carry 2. 3 × 4 = 12, and 12 + 2 = 14. The answer is 148.",
+  "new": "First, 7 × 4 = 28: write 8 and carry 2. Next, 3 × 4 = 12, and 12 + 2 = 14. The answer is 148.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q10",
+  "old": "7 groups of 6 make 42, and the 4 left over make 46. So 7 × 6 + 4 = 46 checks the answer.",
+  "new": "Here, 6 groups of 7 make 42, and the 4 left over make 46. So 7 × 6 + 4 = 46 checks the answer.",
+  "why": "starts with numeral; 6 groups of 7 matches 46 ÷ 7 = 6 r 4"
+ },
+ {
+  "q": "Q11",
+  "old": "6 × 8 = 48 stickers were shared, and 3 were left over. 48 + 3 = 51.",
+  "new": "Lata shared 6 × 8 = 48 stickers, and 3 were left over. She had 48 + 3 = 51.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q13",
+  "old": "8 × 9 = 72 and 8 + 9 = 17. No other pair does both.",
+  "new": "Here, 8 × 9 = 72 and 8 + 9 = 17. No other pair does both.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q14",
+  "old": "5 slices of one quarter each are 5/4. This is an improper fraction: one whole pizza and one more quarter.",
+  "new": "Tanmay eats 5 slices of one quarter each, which is 5/4. This is an improper fraction: one whole pizza and one more quarter.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q15",
+  "old": "7 of the 10 parts are shaded. 7/10 − 4/10 = 3/10.",
+  "new": "There are 7 of the 10 parts shaded. Then 7/10 − 4/10 = 3/10.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q16",
+  "old": "The bottom numbers are the same, so compare the top numbers. 6 is more than 4 and less than 8, so the fraction is 6/11.",
+  "new": "The bottom numbers are the same, so compare the top numbers. The top number 6 is more than 4 and less than 8, so the fraction is 6/11.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q17",
+  "old": "The bottom numbers are the same, so order the top numbers: 2, 5, 7, 9. 9/7 is more than one whole, so it comes last.",
+  "new": "The bottom numbers are the same, so order the top numbers: 2, 5, 7, 9. The fraction 9/7 is more than one whole, so it comes last.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q19",
+  "old": "3 edges meet at every corner: across, down and back.",
+  "new": "At every corner of a cuboid, 3 edges meet: across, down and back.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q22",
+  "old": "Each piece is a cuboid, and every cuboid has 6 faces. 6 + 6 = 12.",
+  "new": "Each piece is a cuboid, and every cuboid has 6 faces. So 6 + 6 = 12.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q23",
+  "old": "13 − 3 − 4 = 6 sides, and a shape with 6 sides is a hexagon.",
+  "new": "The third shape has 13 − 3 − 4 = 6 sides, and a shape with 6 sides is a hexagon.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q24",
+  "old": "1 L 250 mL = 1,250 mL. 1,250 mL + 750 mL = 2,000 mL, which is 2 L.",
+  "new": "First, 1 L 250 mL = 1,250 mL. Then 1,250 mL + 750 mL = 2,000 mL, which is 2 L.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q25",
+  "old": "1 m 32 cm = 132 cm. 132 cm − 125 cm = 7 cm.",
+  "new": "Yash is 1 m 32 cm = 132 cm tall. Then 132 cm − 125 cm = 7 cm.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q26",
+  "old": "Side 80 ÷ 4 = 20 cm; 40 cm by 20 cm: 40 + 20 + 40 + 20 = 120 cm.",
+  "new": "Each side is 80 ÷ 4 = 20 cm. The rectangle is 40 cm by 20 cm, so its perimeter is 40 + 20 + 40 + 20 = 120 cm.",
+  "why": "fragment, not complete sentences"
+ },
+ {
+  "q": "Q27",
+  "old": "3 m = 300 cm. 300 ÷ 6 = 50, so each piece is 50 cm long.",
+  "new": "The rope is 3 m = 300 cm long. Then 300 ÷ 6 = 50, so each piece is 50 cm long.",
+  "why": "sentences start with numerals; matches new stem"
+ },
+ {
+  "q": "Q30",
+  "old": "7 days before a Friday is also a Friday. 2 more days back is a Wednesday.",
+  "new": "Going back 7 days from a Friday gives a Friday again. Going back 2 more days gives a Wednesday.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q32",
+  "old": "10:45 AM to 12:45 PM is 2 hours. 12:45 PM to 1:20 PM is 35 minutes. The flight is 2 hours 35 minutes.",
+  "new": "From 10:45 AM to 12:45 PM is 2 hours. From 12:45 PM to 1:20 PM is 35 minutes. The flight is 2 hours 35 minutes.",
+  "why": "sentences start with numerals"
+ },
+ {
+  "q": "Q33",
+  "old": "₹200 − 3 × ₹35 = ₹95 is left. 10 balloons cost ₹90 and 11 cost ₹99, so 10.",
+  "new": "He has ₹200 − 3 × ₹35 = ₹95 left. Then 10 balloons cost ₹90 and 11 balloons cost ₹99, so he can buy 10.",
+  "why": "sentence starts with a numeral; 'so 10' fragment"
+ },
+ {
+  "q": "Q35",
+  "old": "1 × 1, 2 × 2, 3 × 3, 4 × 4 tiles, so the 6th has 6 × 6 = 36 tiles.",
+  "new": "The squares have 1 × 1, 2 × 2, 3 × 3 and 4 × 4 tiles, so the 6th has 6 × 6 = 36 tiles.",
+  "why": "fragment starting with a numeral"
+ },
+ {
+  "q": "Q37",
+  "old": "She says 100, 93, 86, 79, 72, 65, 58, 51, 44. 51 is still more than 50, so the first number less than 50 is 44.",
+  "new": "She says 100, 93, 86, 79, 72, 65, 58, 51, 44. The number 51 is still more than 50, so the first number less than 50 is 44.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q38",
+  "old": "If A is 4, the sum is 4B + 4 = 50, so 4B is 46 and B is 6. No other digit works.",
+  "new": "In the ones place, B + A ends in 0, so B + A = 10 and 1 is carried. In the tens place, A + 1 = 5, so A is 4 and B is 6.",
+  "why": "old solution guessed A = 4 without reason; '4B' notation confusing"
+ },
+ {
+  "q": "Q41",
+  "old": "XLV is 45 and VII is 7. Four jumps back: 45 − 28 = 17, which is XVII.",
+  "new": "XLV is 45 and VII is 7. The 1st tile is 4 jumps back: 45 − 4 × 7 = 45 − 28 = 17, which is XVII.",
+  "why": "fragment; shows where 28 comes from"
+ },
+ {
+  "q": "Q42",
+  "old": "The top numbers must add to more than 10: 4 + 7, 5 + 6, 5 + 7, 6 + 7. That is 4 pairs.",
+  "new": "The top numbers must add to more than 10: 4 + 7, 5 + 6, 5 + 7, 6 + 7. That is 4 pairs. (3 + 7 = 10 is not more.)",
+  "why": "explains the new distractor 5"
+ },
+ {
+  "q": "Q43",
+  "old": "The car leaves after 10:00, so 9:K5 + 28 minutes passes 10:00. 9:35 AM + 25 minutes = 10:00 and 3 minutes more = 10:03 AM, so K is 3. It came in at 9:35 AM.",
+  "new": "The car leaves after 10:00, so 9:K5 + 28 minutes passes 10:00. Try K = 3: 9:35 AM + 25 minutes = 10:00 AM, and 3 minutes more is 10:03 AM. So K is 3, and it came in at 9:35 AM.",
+  "why": "sentence starts with a numeral"
+ },
+ {
+  "q": "Q45",
+  "old": "12 edges, 4 of each length: 4 × (40 + 25 + 20) cm = 340 cm = 3 m 40 cm.",
+  "new": "A cuboid has 12 edges, 4 of each length. He uses 4 × (40 + 25 + 20) cm = 340 cm = 3 m 40 cm.",
+  "why": "fragment starting with a numeral"
+ }
+]
