@@ -1,0 +1,74 @@
+[
+ {
+  "q": "Q3",
+  "old": "Nakul makes four numbers with the digits 3, 4 and 7. Which of his numbers is even?",
+  "new": "Nakul uses the digits 3, 4 and 7 to make the four numbers below. Which of his numbers is even?",
+  "why": "Make clear the options are his four numbers (other numbers like 734 are possible)"
+ },
+ {
+  "q": "Q5",
+  "old": "Look at the floor tiles. They are numbered in order. Which two numbers are hidden?",
+  "new": "Look at the number tiles. They are numbered in order. Which two numbers are hidden?",
+  "why": "Figure shows number cards, not floor tiles"
+ },
+ {
+  "q": "Q7",
+  "old": "I am a number. 10 more than me is 405. Which number am I?",
+  "new": "I am a number. When you add 10 to me, you get 405. Which number am I?",
+  "why": "Sentence started with a numeral; simpler wording"
+ },
+ {
+  "q": "Q9",
+  "old": "Look at the numbers of four planes. They take off in order from the smallest number to the greatest. Which plane takes off third?",
+  "new": "Four planes have the numbers on these cards. They take off in order, from the smallest number to the greatest. Which plane takes off third?",
+  "why": "No planes are drawn; text must match the number cards"
+ },
+ {
+  "q": "Q14",
+  "old": "A car park has 96 spaces. 38 spaces are empty. How do you find the number of spaces that have a car in them?",
+  "new": "A car park has 96 spaces. Of these, 38 spaces are empty. How do you find the number of spaces that have a car in them?",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q17",
+  "old": "126 tickets for the school play are sold. 238 tickets are left. How many tickets were there at first?",
+  "new": "The school sells 126 tickets for its play. There are 238 tickets left. How many tickets were there at first?",
+  "why": "Two sentences started with numerals"
+ },
+ {
+  "q": "Q18",
+  "old": "9 girls and 7 boys are on the playground. All of them make 2 equal teams. How many children are in each team?",
+  "new": "There are 9 girls and 7 boys on the playground. All of them make 2 equal teams. How many children are in each team?",
+  "why": "Sentence started with a numeral"
+ },
+ {
+  "q": "Q23",
+  "old": "Flat shapes lie on the paper. Solid shapes can be held in the hand. Which one of these is a flat shape?",
+  "new": "A flat shape can be drawn on paper. A solid shape can be held in your hand. Which one of these is a flat shape?",
+  "why": "'lie on the paper' is unclear/inaccurate (solids can also lie on paper)"
+ },
+ {
+  "q": "Q34",
+  "old": "On Monday it rained at 11 AM, 1 PM, 9 AM and 12 noon. At which of these times did it rain last?",
+  "new": "Riya writes four times of the same day: 11 AM, 1 PM, 9 AM and 12 noon. Which of these times comes last in the day?",
+  "why": "'it rained at' four single moments is odd; clearer and same maths"
+ },
+ {
+  "q": "Q40",
+  "old": "At a science exhibition the tables are numbered 12, 13, 14 and so on up to 20. How many tables are there?",
+  "new": "At a science exhibition, the tables are numbered 12, 13, 14 and so on up to 20. How many tables are there?",
+  "why": "Missing comma after opening phrase"
+ },
+ {
+  "q": "Q41",
+  "old": "Look at the number line. A frog starts at F and hops forward 20 at a time. An ant starts at A and hops back 30 at a time. They hop together. On which number do they meet?",
+  "new": "Look at the number line. A frog starts at F and hops forward 20 at a time. An ant starts at A and hops back 30 at a time. They hop at the same time. On which number do they meet?",
+  "why": "'hop together' could mean they hop side by side; say at the same time"
+ },
+ {
+  "q": "Q44",
+  "old": "Look at the money Clara has. She changes one ₹100 note for ₹10 notes. How many notes and coins does she have then, in all?",
+  "new": "Look at the money Clara has. She changes one ₹100 note for ₹10 notes. How many notes and coins does she have now in all?",
+  "why": "Awkward 'then, in all'"
+ }
+]

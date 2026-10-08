@@ -1,0 +1,80 @@
+[
+ {
+  "old": "A toy shop packs balls in bags of 10. Which number of balls leaves no ball loose?",
+  "new": "A toy shop packs balls in bags of 10. Which number of balls fills the bags with no balls left over?"
+ },
+ {
+  "old": "Which of these number names goes with the right number?",
+  "new": "Which number name matches its number correctly?"
+ },
+ {
+  "old": "Look at the picture. The desks in a row are numbered in order. Which number is hidden?",
+  "new": "Look at the number cards. They are in order. Which number is hidden?"
+ },
+ {
+  "old": "Look at the plates of mushrooms. Which picture shows 4 plates of 5?",
+  "new": "Look at the plates of mushrooms. Which picture shows 4 plates with 5 mushrooms on each plate?"
+ },
+ {
+  "old": "9 + 5 = 14 is true. Each answer choice uses the same three numbers. Which of these is also true?",
+  "new": "We know that 9 + 5 = 14. Which of these number sentences is also true?"
+ },
+ {
+  "old": "A shape card has fallen on its side, as in the picture. What is the name of the shape?",
+  "new": "A shape card is turned, as in the picture. What is the name of the shape?"
+ },
+ {
+  "old": "Look at the picture. Two kinds of shapes are equal in number. Which two?",
+  "new": "Look at the picture. Count each kind of shape. Which two kinds of shapes have the same count?"
+ },
+ {
+  "old": "Which of these months comes earliest in the year?",
+  "new": "Which of these months comes first in the year?"
+ },
+ {
+  "old": "Look at the four rows. Which picture repeats circle, triangle, triangle?",
+  "new": "Look at the four rows. Which row repeats circle, triangle, triangle?"
+ },
+ {
+  "old": "Picture A",
+  "new": "Row A",
+  "after": "Look at the four rows. Which picture repeats circle, triangle, triangle?"
+ },
+ {
+  "old": "Picture B",
+  "new": "Row B",
+  "after": "Look at the four rows. Which picture repeats circle, triangle, triangle?"
+ },
+ {
+  "old": "Picture C",
+  "new": "Row C",
+  "after": "Look at the four rows. Which picture repeats circle, triangle, triangle?"
+ },
+ {
+  "old": "Picture D",
+  "new": "Row D",
+  "after": "Look at the four rows. Which picture repeats circle, triangle, triangle?"
+ },
+ {
+  "old": "Look at the number pattern. The jumps grow in the same way each time. How many tens and ones does the next number have?",
+  "new": "Look at the number pattern. Each jump is 1 more than the jump before. How many tens and ones does the next number have?"
+ },
+ {
+  "old": "Yuvan counts by tens: 10, 20, 30, and so on up to 100. How many of these numbers are the value of an Indian note?",
+  "new": "Yuvan counts by tens: 10, 20, 30, and so on up to 100. For how many of these numbers is there an Indian rupee note?"
+ },
+ {
+  "old": "Look at the picture. Pihu pays using only these two kinds of money. Which of these amounts needs the fewest notes and coins?",
+  "new": "Look at the picture. Pihu pays the exact amount using only these two kinds of money. Which amount needs the smallest number of notes and coins in all?"
+ },
+ {
+  "old": "A triangle needs 3 sticks and a square needs 4. 3 + 3 + 4 = 10 sticks. The others need 11, 9 and 8 sticks.",
+  "new": "A triangle needs 3 sticks and a square needs 4. 3 + 3 + 4 = 10 sticks. 3 triangles need 9 sticks, 2 squares need 8, and 1 triangle and 2 squares need 11."
+ },
+ {
+  "old": "(C) ",
+  "new": "2 triangles and 1 square",
+  "before": "A triangle needs 3 sticks and a square needs 4. 3 + 3 + 4 = 10 sticks. The others need 11, 9 and 8 sticks.",
+  "mode": "addrun"
+ }
+]

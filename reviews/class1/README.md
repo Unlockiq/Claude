@@ -1,5 +1,10 @@
 # AMO Level 1 — Class 1 Practice Papers 1–5: Review Summary
 
+> **Update after checking the AMO Vertical Syllabus v5.9 (locked).** Three points below were wrong and are corrected in "Syllabus check":
+> 1. The "drawn to scale" line is *required* (Visual Standards rule 1), so v3 keeps it.
+> 2. "Odd one out" is a named Class 1 topic, so using the phrase is allowed.
+> 3. The fixed star-question layout (Q41–Q45) is *mandated* by the Section II pairing table.
+
 Files reviewed: `AMO_C1_L1_PracticePaper{1..5}_v2` (PDF and DOCX). The question wording in the PDF and DOCX versions is identical for all 225 questions.
 
 For each paper, every question was solved independently and every picture was recounted. Each question was also checked for clear wording, complete sentences, fit with the Class 1 syllabus and the quality of its wrong options. The details for each paper are in `paper1.md` … `paper5.md`, with a full suggested rewrite for each flagged question.
@@ -28,7 +33,7 @@ The papers are well made. **All 225 keyed answers are correct**, the answer lett
 ## Issues that repeat across all 5 papers (fix once in the template)
 
 ### Cover page
-- **"All figures are not necessarily drawn to scale unless stated."** The logic is wrong ("All … are not" means *none* are), "unless stated" is never used in the papers, and the line means nothing to a 6-year-old. It also clashes with questions where children must judge a shape by eye (squares, equal halves). **Remove it from the child's instructions.** If you want to keep it, put "Pictures may not be drawn to scale." in the parents' box.
+- **"All figures are not necessarily drawn to scale unless stated."** The wording is clumsy, but the syllabus requires this exact sentence, so it stays (see "Syllabus check").
 - **"Look at the picture or read the question carefully."** This should be "and". Rewrite: *"Read each question and look at its picture carefully. Then mark your answer on the answer sheet."*
 - **"The answer sheet and the answer key … Detach them before the child begins."** This is unclear, because the child needs the answer sheet. Rewrite: *"Give the child the answer sheet. Remove the answer key and solutions before the child begins."*
 - *(Optional)* The score line "Section I correct: ___ / 40 × 2" looks like a fraction. Use "___ correct × 2 = ___ marks".
@@ -72,7 +77,7 @@ None of the 225 questions is copied word for word, but some question types come 
 - **Counting back by 2s:** P2 Q39 and P5 Q38.
 - **Days and months:** every paper uses Q29–Q34 on day after/before/between and months in order. "Which months are in order" or "which month is missing" appears in P1 Q34, P2 Q30, P2 Q33, P4 Q30, P4 Q34 and P5 Q30. Some variety would help, for example "today is Monday, what day is it 2 days later?" or "which month has the festival…".
 - **Symmetry / folding:** 8 questions (P1 Q25, Q42, Q45; P2 Q24; P3 Q26; P4 Q26, Q28; P5 Q27). That is reasonable, but note that 3 of them are in Paper 1.
-- **Star questions follow the same layout in every paper:** Q41 is a number pattern, Q42 a shape pattern, Q43 a months or money pattern, Q44 a notes-and-coins total, and Q45 a shape count. This is fine for practice, but children who do all 5 papers will learn the layout. Consider mixing up the order.
+- **Star questions follow the same layout in every paper.** This is required by the syllabus (see "Syllabus check").
 
 ## Difficulty notes
 
@@ -82,18 +87,37 @@ None of the 225 questions is copied word for word, but some question types come 
 - **Weak wrong options:** P3 Q3 (41 and 45 in a tens pattern), P3 Q24 (0 sides), P5 Q42 (0 and 7 corners), P5 Q43 (₹1 and ₹10 are not in the pattern).
 - **P3 Q32** uses ₹200 and ₹500 notes, which are above the usual Class 1 money range. It is fine as recognition only.
 
+## Syllabus check (AMO Vertical Syllabus v5.9)
+
+**Meets the blueprint in all 5 papers:**
+- **Chapter split:** Ch1 12, Ch2 10, Ch5 6, Ch9 6, Ch10 6.
+- **Section I difficulty:** exactly 24 Easy and 16 Medium.
+- **Section II pairs:** Q41 Ch1+Ch10, Q42 Ch5+Ch10, Q43 Ch9+Ch10, Q44 Ch1+Ch9, Q45 Ch2+Ch5.
+- **Arithmetic ceiling:** addition and subtraction stay within 20. The money star questions (Q44) use tens and ones, not sums above 20.
+- **Question length:** no question sentence is over 25 words.
+
+**Corrections to my earlier advice:**
+- **"All figures are not necessarily drawn to scale unless stated."** Visual Standards rule 1 says every paper must carry this exact sentence, so v3 keeps it. The wording is still clumsy ("all … not" means *none*). If you want it changed, it has to be changed in the syllabus first, for example to "Figures may not be drawn to scale unless stated."
+- **"Odd one out"** is a Class 1 Ch10 topic, so the phrase is allowed. v3 still uses "does NOT belong" in four questions. That is optional, except in P1 Q37, where "odd one out" clashes with the odd numbers 15 and 19.
+- **Star questions in the same order in every paper:** this is required by the Section II pairing table, so it is not a problem.
+- **Difficulty labels:** each paper has exactly 24 Easy and 16 Medium. To relabel a question (for example P1 Q15 Easy → Medium), swap it with one that moves the other way.
+
+**Still not compliant (needs a redrawn picture or a decision):**
+- **Number lines (Visual Standards rule 9):** every tick must have a number except the one being asked about. P1 Q7 and P2 Q11 leave several ticks unnumbered. See `../syllabus_visual_rules.md`.
+- **Cover line "Print or view this paper in colour":** this clashes with rule 12(c), which says papers must work in greyscale. No question depends on colour alone, so the line can simply say the paper works in colour or black and white. P4 Q28 says "coloured" for boxes that are grey and hatched.
+- **Names (Language rule 4):** the rule prefers short, internationally familiar names. The papers mostly use Indian names, which is fine for Indian students, but the rule asks for a mix.
+
 ## Fixes applied in v3 (`papers/class1_v3/`)
 
-`tools/fix_class1_v3.py` makes the v3 files from the v2 files. It changes text only: no picture, option order or answer letter is changed, so the **answer keys stay the same**. Each PDF was rebuilt with LibreOffice, as the originals were. Page counts match v2, and every question is on the same page as before, except Paper 3 Q20 and Q24, which moved up one page with their pictures.
+`tools/apply_fixes.py` applies the fixes in `fixes/class1/*.json` to the v2 files. It changes text only: no picture, option order or answer letter is changed, so the **answer keys stay the same**. Each PDF was rebuilt with LibreOffice, as the originals were. Page counts match v2, and every question is on the same page as before, except Paper 3 Q20 and Q24, which moved up one page with their pictures.
 
-- **Cover (all 5):** removed the "drawn to scale" line, changed "or" to "and", and made the answer-sheet note clear.
+- **Cover (all 5):** "or" is now "and", and the parents' note now says to remove only the answer key. The required scale line is kept.
 - **Must fix:** P1 Q43 (asks for the month after October), P4 Q14 (counts "bunches of cherries"), P5 Q31 question, P3 Q28 and Q31 solutions, P1 key Q34, P2 key Q45.
 - **Numeral-led sentences:** fixed in all 12 questions.
-- **Hard words in questions:** "odd one out", "fewest", "earliest", "take-away sum", "sapling" and "least worth" are replaced.
+- **Hard words in questions:** "fewest", "earliest", "take-away sum", "sapling" and "least worth" are replaced. "Odd one out" is reworded too (optional; see above).
 - **Text vs picture:** fixed P2 Q5, P2 Q38 (options now "Row A–D"), P3 Q11, P3 Q27, P4 Q9, P4 Q36, P5 Q16 by changing the wording to match the picture.
-- **Other rewrites:** as listed in each paper's file.
 
-### Not changed (needs your decision or a redrawn picture)
-- **Pictures to redraw (optional):** P1 Q42 (the grey card looks like a square), P2 Q24 (shapes B and D look broken), P5 Q40 (option labels are not lined up), P5 ₹100 note (the text overlaps the oval).
-- **Content choices:** reduce the repeated "bundles of 10" questions, vary the star-question layout, make the too-easy questions harder (P2 Q26, P5 Q11, Q16, Q24), improve the weak wrong options, put the P3 Q43 options in calendar order (this changes the answer letter), and change the Easy/Medium labels.
-- **Answer-key solutions:** these still contain "odd one out", "fewest" and sentences that start with a numeral. Adults read them, so I left them.
+### Not changed
+- **Pictures to redraw:** the number lines in P1 Q7 and P2 Q11; P1 Q42 (the grey card looks like a square); P2 Q24 (shapes B and D look broken); P5 Q40 (option labels are not lined up).
+- **Content choices:** reduce the repeated "bundles of 10" questions, make the too-easy questions harder, improve the weak wrong options, and put the P3 Q43 options in calendar order (this changes the answer letter).
+- **Answer-key solutions:** sentences that start with a numeral are left as they are.

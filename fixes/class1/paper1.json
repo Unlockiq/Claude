@@ -1,0 +1,60 @@
+[
+ {
+  "old": "Look at the four pictures. Which picture has the fewest balloons?",
+  "new": "Look at the four pictures. Which picture has the smallest number of balloons?"
+ },
+ {
+  "old": "Shreya counts in tens: 10, 20, 30, and so on. 70 is 7 tens. Which number does she say just after 70?",
+  "new": "Shreya counts in tens: 10, 20, 30, and so on. Which number does she say just after 70?"
+ },
+ {
+  "old": "Look at the books. Two books swap places. Then the numbers are in order, smallest first. Which two books swap?",
+  "new": "Look at the books. Which two books should swap places so that the numbers are in order, smallest first?"
+ },
+ {
+  "old": "6 children are in the swimming pool. Then 8 more children jump in. How many children are in the pool now?",
+  "new": "There are 6 children in the swimming pool. Then 8 more children jump in. How many children are in the pool now?"
+ },
+ {
+  "old": "18 children go on a bicycle trip. 5 of them stop to rest. How many children are still riding?",
+  "new": "There are 18 children on a bicycle trip. Then 5 of them stop to rest. How many children are still riding?"
+ },
+ {
+  "old": "A rainwater tank holds 20 buckets of water. 6 buckets are used for the garden. 5 buckets are used for washing. How many buckets of water are left?",
+  "new": "A rainwater tank holds 20 buckets of water. Amma uses 6 buckets for the garden and 5 buckets for washing. How many buckets of water are left in the tank?"
+ },
+ {
+  "old": "Star, balloon, car, fish: these four pictures repeat again and again. Which one goes in the box?",
+  "new": "Look at the pictures. Star, balloon, car and fish repeat again and again in the same order. Which picture goes in the box?"
+ },
+ {
+  "old": "Three of these numbers come one after the other. Which is the odd one out?",
+  "new": "Three of these numbers come one after the other. Which number does NOT belong with them?"
+ },
+ {
+  "old": "The shapes on the left make a pattern. A grey card hides one. The right side is the left side folded over. Which shape goes in the box?",
+  "new": "The shapes on the left of the red line make a pattern. A grey card hides one shape. If you fold the paper on the red line, each shape on the right lands on a matching shape on the left. Which shape goes in the box?"
+ },
+ {
+  "old": "A water tank is cleaned in the starred months on the chart. The gap is always the same. In which month was it cleaned just before April?",
+  "new": "A water tank is cleaned in the starred months on the chart. The gap between cleanings is always the same. After October, in which month will the tank be cleaned next?"
+ },
+ {
+  "old": "From April to July is 3 months, and from July to October is 3 months. Three months before April is January.",
+  "new": "From April to July is 3 months, and from July to October is 3 months. Three months after October is January."
+ },
+ {
+  "old": "From Monday to Saturday, Samar saves a ₹10 note each day. He also saves a ₹2 coin on Wednesday and one on Friday. How much does he save?",
+  "new": "From Monday to Saturday, Samar saves a ₹10 note each day. He also saves a ₹2 coin on Wednesday and another ₹2 coin on Friday. How much money does he save in all?"
+ },
+ {
+  "old": "In Picture A the dotted line goes down the middle, so the two parts have the same size and shape. In the other pictures one part is bigger.",
+  "new": "In Picture A the dotted line goes down the middle, so the two parts have the same size and shape. In the other pictures the parts do not match."
+ },
+ {
+  "old": "(B) ",
+  "new": "Sep, Oct, Nov",
+  "before": "September, October and November come one after another. In each other list two months are swapped.",
+  "mode": "addrun"
+ }
+]

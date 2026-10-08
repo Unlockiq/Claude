@@ -1,0 +1,166 @@
+[
+ {
+  "q": "Q1",
+  "old": "Look at the blocks. A big square is 1 hundred, a rod is 1 ten and a small cube is 1 one. Which picture shows more than 300?",
+  "new": "Look at the blocks. A big square is 1 hundred, a rod is 1 ten and a small square is 1 one. Which picture shows more than 300?",
+  "why": "Figure draws the ones as flat small squares, not cubes; match text to picture."
+ },
+ {
+  "q": "Q2",
+  "old": "In 152 the digit 5 is in the tens place. 5 tens are 50.",
+  "new": "In 152 the digit 5 is in the tens place, and 5 tens make 50.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q5",
+  "old": "340 has 3 hundreds and 4 tens. 4 tens are forty, so the name is three hundred forty.",
+  "new": "The number 340 has 3 hundreds and 4 tens, and 4 tens are forty. So the name is three hundred forty.",
+  "why": "Solution sentences started with numerals."
+ },
+ {
+  "q": "Q10",
+  "old": "396 is 4 away from 400, 403 is 3 away, 408 is 8 away and 411 is 11 away. The nearest is 403.",
+  "new": "From 400, 396 is 4 away, 403 is 3 away, 408 is 8 away and 411 is 11 away. The nearest is 403.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q11",
+  "old": "Count up from 64: 6 more make 70, and 30 more make 100. 6 + 30 = 36 steps.",
+  "new": "Count up from 64: 6 more make 70, and 30 more make 100. So he must run 6 + 30 = 36 more steps.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q15",
+  "old": "There are 8 plants. 8 groups of 3 is 8 × 3 = 24 mugs.",
+  "new": "There are 8 plants, and 8 groups of 3 make 8 × 3 = 24 mugs.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q17",
+  "old": "64 + 36: the ones 4 + 6 make 10, carry 1 ten. Tens: 6 + 3 + 1 = 10 tens, which is 100. The other sums make 110, 110 and 90.",
+  "new": "In 64 + 36, the ones 4 + 6 make 10, so carry 1 ten. Tens: 6 + 3 + 1 = 10 tens, which is 100. The other sums make 90, 110 and 110.",
+  "why": "Numeral-first sentence; list other sums in option order (A=90, B=110, C=110)."
+ },
+ {
+  "q": "Q18",
+  "old": "She gives away 4 × 3 = 12 ribbons. 20 − 12 = 8 ribbons are left.",
+  "new": "She gives away 4 × 3 = 12 ribbons. So 20 − 12 = 8 ribbons are left.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q19",
+  "old": "A quarter of 20 is 20 ÷ 4 = 5. Half of 10 is also 5. The others are 10, 4 and 20.",
+  "new": "A quarter of 20 is 20 ÷ 4 = 5. Half of 10 is also 5. The others are 10, 20 and 4.",
+  "why": "Removes ÷ (beyond Class 2); list others in option order (A=10, B=20, C=4)."
+ },
+ {
+  "q": "Q25",
+  "old": "I am a flat shape. I have fewer corners than a square, but more corners than a circle. Which shape am I?",
+  "new": "I am a flat shape. I have more corners than a circle, but not as many corners as a square. Which shape am I?",
+  "why": "Simpler comparison wording for age 7 (avoids 'fewer')."
+ },
+ {
+  "q": "Q28",
+  "old": "Simran is fast asleep in the middle of the night. Which of these can the time be?",
+  "new": "Simran is sleeping in the middle of the night. Which of these can the time be?",
+  "why": "Avoid idiom 'fast asleep'."
+ },
+ {
+  "q": "Q34",
+  "old": "Look at the two clocks. They show two times on the same day. Which of these is the earlier time?",
+  "new": "Look at the two clocks. They show two times on the same day. Which of these times comes first in the day?",
+  "why": "'earlier' is harder vocabulary; plainer wording."
+ },
+ {
+  "q": "Q35",
+  "old": "18 − 14 = 4, 22 − 18 = 4 and 26 − 22 = 4. Each number is 4 more than the one before, so the rule is add 4.",
+  "new": "The jumps are 18 − 14 = 4, 22 − 18 = 4 and 26 − 22 = 4. Each number is 4 more than the one before, so the rule is add 4.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q37",
+  "old": "One rule changes 3 → 8 and 6 → 11. Which of these follows the same rule?",
+  "new": "A rule changes 3 into 8 and 6 into 11. Which of these follows the same rule?",
+  "why": "Plainer sentence; arrows inside a sentence are hard to read aloud."
+ },
+ {
+  "q": "Q37",
+  "old": "3 + 5 = 8 and 6 + 5 = 11, so the rule is add 5. 9 + 5 = 14 follows the rule.",
+  "new": "The rule is add 5, because 3 + 5 = 8 and 6 + 5 = 11. Only 9 → 14 follows it, because 9 + 5 = 14.",
+  "why": "Solution sentences started with numerals."
+ },
+ {
+  "q": "Q38",
+  "old": "The rows have 5, 3 and 1 small triangles. 5 + 3 + 1 = 9.",
+  "new": "From the top, the rows have 1, 3 and 5 small triangles. So there are 1 + 3 + 5 = 9.",
+  "why": "Match row order to the picture; numeral-first sentence."
+ },
+ {
+  "q": "Q39",
+  "old": "The boards are in the gaps between the posts. 7 posts in a row have 6 gaps, so there are 6 boards.",
+  "new": "The boards are in the gaps between the posts. A row of 7 posts has 6 gaps, so there are 6 boards.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q40",
+  "old": "3 doubled is 6, 6 doubled is 12 and 12 doubled is 24. The other patterns add 2, 5 and 2 each time.",
+  "new": "In (A), 3 doubled is 6, 6 doubled is 12 and 12 doubled is 24. The other patterns add 5, 2 and 2 each time.",
+  "why": "Wrong order: B adds 5, C adds 2, D adds 2; also numeral-first sentence."
+ },
+ {
+  "q": "Q41",
+  "old": "Look at the picture. Atharv counts in fives from 5 to 45. Bina counts in twos from 2 to 44. How many numbers do both of them say?",
+  "new": "Look at the picture. Atharv counts in fives from 5 to 45. Bina counts in twos from 2 to 44. How many numbers do Atharv and Bina both say?",
+  "why": "'both of them say' can be read as 'in all'; make 'said by both' clear."
+ },
+ {
+  "q": "Q42",
+  "old": "Look at the number tiles. The jump from each tile to the next is always the same, and the pattern goes on. Which of these numbers will be on a later tile?",
+  "new": "Look at the number tiles. The jump from each tile to the next is always the same, and the pattern goes on. Which of these numbers will be on the next tile?",
+  "why": "'a later tile' is vague; 94 is the very next tile."
+ },
+ {
+  "q": "Q42",
+  "old": "37 − 18 = 19, so each jump is 19. 75 + 19 = 94. Ones: 5 + 9 = 14, write 4 and carry 1; tens: 7 + 1 + 1 = 9.",
+  "new": "Each jump is 19, because 37 − 18 = 19. The next tile is 75 + 19 = 94. Ones: 5 + 9 = 14, write 4 and carry 1; tens: 7 + 1 + 1 = 9.",
+  "why": "Solution sentences started with numerals; matches 'next tile'."
+ },
+ {
+  "q": "Q43",
+  "old": "Look at the three cards. One rule about corners joins each number to its two shapes. Which two shapes go with the number 7?",
+  "new": "Look at the three cards. Each number and its two shapes follow the same rule about corners. Which two shapes go with the number 7?",
+  "why": "'One rule ... joins' is awkward for age 7."
+ },
+ {
+  "q": "Q43",
+  "old": "(D) ",
+  "after": "Section II · Ch5 + Ch10 · Hard",
+  "new": "A triangle and a rectangle",
+  "why": "Answer cell shows only '(D)' - option text missing (all other rows give it). Ideally add the text as a separate non-purple run to match other rows.",
+  "mode": "addrun"
+ },
+ {
+  "q": "Q43",
+  "old": "Two triangles have 3 + 3 = 6 corners, a square and a rectangle have 4 + 4 = 8, and a circle and a square have 0 + 4 = 4. The number is the corners in all. A triangle and a rectangle have 3 + 4 = 7.",
+  "new": "Two triangles have 3 + 3 = 6 corners, a square and a rectangle have 4 + 4 = 8, and a circle and a square have 0 + 4 = 4. So each number is the corners in all. A triangle and a rectangle have 3 + 4 = 7.",
+  "why": "Clearer statement of the rule."
+ },
+ {
+  "q": "Q44",
+  "old": "Mishti has only notes like the one in the picture. She buys a doll for ₹430. She gives as few notes as she can. How much change does she get?",
+  "new": "Mishti has only notes like the one in the picture. She buys a doll for ₹430. She pays with as few notes as she can. How much change does she get?",
+  "why": "'gives as few notes' is unclear; say 'pays with'."
+ },
+ {
+  "q": "Q44",
+  "old": "4 notes are ₹400, which is less than ₹430. So she gives 5 notes, ₹500. The change is ₹500 − ₹430 = ₹70.",
+  "new": "With 4 notes she has only ₹400, which is less than ₹430. So she pays with 5 notes, which is ₹500. The change is ₹500 − ₹430 = ₹70.",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q45",
+  "old": "Look at the clock. Solids stand in place of 12, 3, 6 and 9. The long hand points to one solid at quarter past 8 and to another at quarter to 9. Which is true for BOTH solids?",
+  "new": "Look at the clock. It has solids in place of 12, 3, 6 and 9. The long hand points to one solid at quarter past 8 and to another at quarter to 9. Which is true for BOTH solids?",
+  "why": "'Solids stand in place of' is abstract; same length."
+ }
+]

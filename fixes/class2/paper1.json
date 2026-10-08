@@ -1,0 +1,81 @@
+[
+ {
+  "q": "Q10",
+  "old": "Look at the place-value chart. It shows 462. Asha puts 3 more counters in the T column. Which number does the chart show now?",
+  "new": "Look at the place-value chart. It shows 462. Asha puts 3 more counters in the T (tens) column. Which number does the chart show now?",
+  "why": "Spell out that T means tens for a 7-year-old"
+ },
+ {
+  "q": "Q14",
+  "old": "9 children go on a bicycle trip. Each child carries 2 bottles of water. How many bottles do they carry in all?",
+  "new": "There are 9 children on a bicycle trip. Each child carries 2 bottles of water. How many bottles do they carry in all?",
+  "why": "House rule: sentence must not start with a numeral"
+ },
+ {
+  "q": "Q17",
+  "old": "Look at the baskets. Both rows have the same number of apples in all. How many apples are in the last basket?",
+  "new": "Look at the baskets. Each basket shows its number of apples. Both rows have the same number of apples in all. How many apples are in the last basket?",
+  "why": "Figure shows numbers, not apples; say what the numbers mean and point to the ? basket"
+ },
+ {
+  "q": "Q22",
+  "old": "(A) ",
+  "new": "In the middle of the tower",
+  "after": "A circle is round. It has no straight sides, so it cannot be drawn with straight lines only.",
+  "why": "Answer cell in solutions shows only (A) with no answer text (every other row has it). Check styling of added text matches other answer cells.",
+  "mode": "addrun"
+ },
+ {
+  "q": "Q26",
+  "old": "Look at the paper leaf. Both sides of the dotted line must look the same. How many more dots must be drawn on the right side?",
+  "new": "Look at the paper leaf. The two sides of the dotted line must match exactly. How many more dots must be drawn on the right side?",
+  "why": "'look the same' is vague; mirror matching is the intended idea"
+ },
+ {
+  "q": "Q28",
+  "old": "Look at the clock in the school bus. What time is it?",
+  "new": "Look at the clock. What time does it show?",
+  "why": "No school bus is drawn; text and figure should match"
+ },
+ {
+  "q": "Q29",
+  "old": "Look at the line. It shows one whole day. What time is at the star?",
+  "new": "Look at the time line. It shows one whole day. What time is at the star?",
+  "why": "'the line' is vague"
+ },
+ {
+  "q": "Q32",
+  "old": "These four times are all on the same morning. Which one is the latest?",
+  "new": "These four times are all on the same morning. Which time comes last?",
+  "why": "'latest' is a hard word for Class 2"
+ },
+ {
+  "q": "Q32",
+  "old": "In order, the times are quarter to 9, quarter past 9, half past 9 and quarter to 10. Quarter to 10 is the latest.",
+  "new": "In order, the times are quarter to 9, quarter past 9, half past 9 and quarter to 10. Quarter to 10 comes last.",
+  "why": "Match changed question wording"
+ },
+ {
+  "q": "Q33",
+  "old": "Look at the picture. Esha has the three notes. She buys the paint box. How much money does she have left?",
+  "new": "Look at the picture. Esha has these three notes. She buys the paint box. How much money does she have left?",
+  "why": "'the three notes' reads oddly; 'these' points to the picture"
+ },
+ {
+  "q": "Q41",
+  "old": "Going down one row adds 10: 287 is above 297. So the hidden number is 298 + 10. 29 tens and 1 ten make 30 tens: 308.",
+  "new": "Going down one row adds 10: 287 is above 297. So the hidden number is 298 + 10. 29 tens and 1 more ten make 30 tens, and 8 ones: 308.",
+  "why": "Solution dropped the 8 ones (30 tens alone is 300)"
+ },
+ {
+  "q": "Q45",
+  "old": "Shaan draws a triangle on the floor. He puts a ₹10 coin on each corner and a ₹2 coin in the middle of each side. He spends ₹20 of it. How much is left?",
+  "new": "Shaan draws a triangle on the floor. He puts a ₹10 coin on each corner and a ₹2 coin in the middle of each side. He spends ₹20. How much money is left?",
+  "why": "'of it' is vague"
+ },
+ {
+  "q": "Q42",
+  "old": "One rule gives 2 → 4, 3 → 9 and 5 → 25. With the same rule, 7 → ?",
+  "new": "One rule gives 2 → 4, 3 → 9 and 5 → 25. What does this rule give for 7?"
+ }
+]

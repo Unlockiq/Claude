@@ -1,0 +1,42 @@
+[
+ {
+  "old": "Look at the picture. The ducks walk in pairs. How many ducks are there?",
+  "new": "Look at the picture. How many ducks are there?"
+ },
+ {
+  "old": "Look at the numbers worn by four children. They stand in an assembly row from the greatest number to the smallest. Which row is correct?",
+  "new": "Four children wear these number cards. They stand in a row from the greatest number to the smallest. Which row is correct?"
+ },
+ {
+  "old": "Look at the two digit cards of Kiara. She uses both cards to make a number. What is the greatest number she can make?",
+  "new": "Kiara has two digit cards. She uses both cards to make a number. What is the greatest number she can make?"
+ },
+ {
+  "old": "Look at the plates of cherries. Komal wants 5 cherries on every plate. How many more cherries does she need?",
+  "new": "Look at the plates. Each picture shows a bunch of cherries. Komal wants 5 bunches on every plate. How many more bunches does she need?"
+ },
+ {
+  "old": "The last plate has 3 cherries. 3 and 2 more make 5, so she needs 2 more cherries.",
+  "new": "The first two plates have 5 bunches each. The last plate has 3 bunches. 3 and 2 more make 5, so she needs 2 more bunches."
+ },
+ {
+  "old": "A plant nursery has 12 saplings. 7 more saplings arrive. Then 5 saplings are sold. How many saplings does the nursery have now?",
+  "new": "A plant shop has 12 small plants. Then 7 more plants arrive. After that, 5 plants are sold. How many plants does the shop have now?"
+ },
+ {
+  "old": "12 + 7 = 19. Then 19 − 5 = 14. The nursery has 14 saplings.",
+  "new": "12 + 7 = 19. Then 19 − 5 = 14. The shop has 14 plants."
+ },
+ {
+  "old": "Chitra gives a sapling plant food on a Tuesday. She gives it plant food again 7 days later. On which day is that?",
+  "new": "Chitra feeds her small plant on a Tuesday. She feeds it again 7 days later. On which day is that?"
+ },
+ {
+  "old": "Look at the numbers of the ferry boats on a river. They make a pattern. Which number is on the next boat?",
+  "new": "Look at the numbers on the cards. They make a pattern. Which number comes next?"
+ },
+ {
+  "old": "Rosa plays badminton on Monday, Tuesday, Thursday and Sunday. The gaps grow: 1 day, 2 days, 3 days. On which day does she play next?",
+  "new": "Rosa plays badminton on Monday, Tuesday, Thursday and Sunday. She plays 1 day later, then 2 days later, then 3 days later. Each time she waits one more day. On which day does she play next?"
+ }
+]

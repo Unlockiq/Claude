@@ -1,0 +1,62 @@
+[
+ {
+  "old": "1 more than 79 is ___.",
+  "new": "The number that is 1 more than 79 is ___."
+ },
+ {
+  "old": "6 tens and ___ ones make 67.",
+  "new": "The number 67 is 6 tens and ___ ones."
+ },
+ {
+  "old": "Each box shows bundles of ten sticks and some loose sticks. Which box shows the greatest number?",
+  "new": "Each box shows bundles of ten sticks. Some boxes also have loose sticks. Which box shows the greatest number?"
+ },
+ {
+  "old": "Look at the dominoes from a board game. Which domino has 11 dots in all?",
+  "new": "Look at the dominoes. Which domino has 11 dots in all?"
+ },
+ {
+  "old": "The hops on the number line show a take-away sum. Which number fills the blank?",
+  "new": "The hops on the number line show a take-away. Which number fills the blank?"
+ },
+ {
+  "old": "Which take-away sum gives 9?",
+  "new": "Which take-away gives 9?"
+ },
+ {
+  "old": "Some mangoes hang on a tree. 5 mangoes fall down. Now 11 mangoes are on the tree. How many mangoes were on the tree at first?",
+  "new": "Some mangoes hang on a tree. Then 5 mangoes fall down. Now 11 mangoes are on the tree. How many mangoes were on the tree at first?"
+ },
+ {
+  "old": "Look at the number cards. Both sides of = must give the same answer. Which number goes in the box marked with a question mark?",
+  "new": "Look at the number cards. The two sides of the = sign must be equal. Which number goes in the box with the question mark?"
+ },
+ {
+  "old": "Half of a shape is drawn beside a fold line. The other half is the same. Which picture shows the whole shape?",
+  "new": "Half of a shape is drawn next to a fold line. The other half is the same, on the other side of the fold line. Which picture shows the whole shape?"
+ },
+ {
+  "old": "This picture of a museum is made of shapes. Which shape is NOT in the picture?",
+  "new": "This picture of a house is made of shapes. Which shape is NOT in the picture?"
+ },
+ {
+  "old": "Three of the four shapes are alike: each has 3 corners. Which picture is the odd one out?",
+  "new": "Three of the four shapes are alike. Each of them has 3 corners. Which picture does NOT belong with them?"
+ },
+ {
+  "old": "It goes on in the same way. Which of these numbers comes later in the pattern?",
+  "new": "It goes on in the same way. Which of these numbers will also be in the pattern?"
+ },
+ {
+  "old": "Look at the tens in these numbers. Three of them have the same number of tens. Which number is the odd one out?",
+  "new": "Look at the tens in these numbers. Three of them have the same number of tens. Which number does NOT belong with them?"
+ },
+ {
+  "old": "All 4 sides of a square have the same length. Each drawn side is 2 dots long, so the last corner is 2 dots above the end of the bottom side. That is the dot marked R.",
+  "new": "All 4 sides of a square have the same length. Each drawn side goes 2 spaces from dot to dot. So the last corner is 2 spaces straight up from the right end of the bottom side. That is the dot marked R."
+ },
+ {
+  "old": "Our coins are ₹1, ₹2, ₹5 and ₹10. The coin between ₹2 and ₹10 is the ₹5 coin.",
+  "new": "Our coins are ₹1, ₹2, ₹5, ₹10 and ₹20. The coin between ₹2 and ₹10 is the ₹5 coin."
+ }
+]

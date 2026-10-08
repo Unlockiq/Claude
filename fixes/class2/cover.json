@@ -1,0 +1,6 @@
+[
+ {"q": "cover", "old": "Look at the picture or read the question carefully. Then mark your answer on the answer sheet at the end.",
+  "new": "Read each question and look at its picture carefully. Then mark your answer on the answer sheet at the end."},
+ {"q": "cover", "old": "The answer sheet and the answer key with solutions are at the end. Detach them before the child begins.",
+  "new": "The answer sheet and the answer key are at the end. Remove only the answer key before the child begins."}
+]

@@ -1,0 +1,86 @@
+[
+ {
+  "q": "Q5",
+  "old": "Look at the sign on a mountain path. How many steps are left to the top, written in figures?",
+  "new": "Look at the sign on a mountain path. Which number shows how many steps are left to the top?",
+  "why": "awkward trailing 'written in figures'"
+ },
+ {
+  "q": "Q9",
+  "old": "A shop has 370 eggs. A tray holds 10 eggs, which is one ten. How many tens are in 370, that is, how many full trays?",
+  "new": "A shop has 370 eggs. Each tray holds 10 eggs. How many full trays of 10 eggs can the shop make?",
+  "why": "run-on 'that is' question; simpler"
+ },
+ {
+  "q": "Q13",
+  "old": "Look at the picture. 5 plates of 8 cherries make 40 cherries. One more plate of 8 is added. How many cherries are there now?",
+  "new": "Look at the picture. Each plate has 8 bunches of cherries. There are 40 bunches in all. One more plate of 8 bunches is added. How many bunches are there now?",
+  "why": "cherry icon shows 2 cherries, so count bunches; also removes sentence starting with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "One more plate adds 8 more cherries. 40 + 8 = 48. This is 6 × 8.",
+  "new": "One more plate adds 8 more bunches. 40 + 8 = 48. This is 6 × 8.",
+  "why": "match new stem (bunches)"
+ },
+ {
+  "q": "Q17",
+  "old": "An assembly hall has 125 children. 48 children go back to class. Then 36 other children come in. How many children are in the hall now?",
+  "new": "An assembly hall has 125 children. Then 48 children go back to class. After that, 36 other children come in. How many children are in the hall now?",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q21",
+  "old": "In a kitchen, dough is rolled flat with a rolling pin. Look at the four solids. Which solid is a rolling pin shaped like?",
+  "new": "In a kitchen, dough is rolled flat with a rolling pin. Look at the four solids. Which solid has the same shape as a rolling pin?",
+  "why": "awkward word order"
+ },
+ {
+  "q": "Q35",
+  "old": "The markers on a mountain path are numbered in the pattern shown. The pattern goes on. Which of these will also be on a marker?",
+  "new": "The stones on a mountain path are numbered in the pattern shown. The pattern goes on. Which of these numbers will also be on a stone?",
+  "why": "'markers' may be read as marker pens"
+ },
+ {
+  "q": "Q37",
+  "old": "Look at the picture. On three cards, the second number is made from the first in the same way. Which card is the odd one out?",
+  "new": "Look at the picture. On three cards, the second number is made from the first in the same way. Which card does not follow this rule?",
+  "why": "idiom 'odd one out'"
+ },
+ {
+  "q": "Q40",
+  "old": "Four friends meet. Every two friends shake hands once. How many handshakes are there in all?",
+  "new": "Four friends meet. Each friend shakes hands with every other friend once. How many handshakes are there in all?",
+  "why": "'Every two friends' is unclear"
+ },
+ {
+  "q": "Q8",
+  "old": "Count the jumps: 290, 300, 310, 320, 330, 340. That is 6 jumps of 10.",
+  "new": "From A at 280, the jumps land on 290, 300, 310, 320, 330 and 340. That is 6 jumps of 10.",
+  "why": "state starting point so the count of jumps is clear"
+ },
+ {
+  "q": "Q23",
+  "old": "The closed shape with the fewest straight sides is a triangle. It needs 3 sticks.",
+  "new": "The closed shape with the smallest number of straight sides is a triangle. It needs 3 sticks.",
+  "why": "avoid 'fewest'"
+ },
+ {
+  "q": "Q24",
+  "old": "(B) ",
+  "new": "It has only flat parts.",
+  "after": "The closed shape with the fewest straight sides is a triangle. It needs 3 sticks.",
+  "why": "answer cell missing option text (other rows show it); note: this run is the coloured letter run, so option text may need its own uncoloured run. 'after' uses the original Q23 text; if Q23 fix is applied first, use its new text",
+  "mode": "addrun"
+ },
+ {
+  "q": "Q36",
+  "old": "Use the table. The number of saplings sold follows a pattern. How many saplings are sold on Day 5?",
+  "new": "Use the table. The number of plants sold follows a pattern. How many plants are sold on Day 5?"
+ },
+ {
+  "q": "Q36",
+  "old": "Saplings sold",
+  "new": "Plants sold"
+ }
+]

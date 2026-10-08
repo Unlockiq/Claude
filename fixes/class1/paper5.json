@@ -1,0 +1,50 @@
+[
+ {
+  "old": "How many numbers are greater than 37 and less than 42?",
+  "new": "How many numbers come between 37 and 42?"
+ },
+ {
+  "old": "Look at the owls. They sit on a branch. All of them fly away. How many owls are left on the branch?",
+  "new": "Look at the owls in the picture. All of them fly away. How many owls are left?"
+ },
+ {
+  "old": "7 planes are at the airport. 5 more planes land. How many planes are at the airport now?",
+  "new": "There are 7 planes at the airport. Then 5 more planes land. How many planes are at the airport now?"
+ },
+ {
+  "old": "A tea stall has 15 clean cups. 6 cups get used. How many clean cups are left?",
+  "new": "A tea stall has 15 clean cups. People use 6 of the cups. How many clean cups are left?"
+ },
+ {
+  "old": "18 children are on the playground swings and slides. Some go home, and 11 children are still playing. How many children went home?",
+  "new": "There are 18 children in the playground. Some children go home. Now 11 children are still playing. How many children went home?"
+ },
+ {
+  "old": "Look at the plates of watermelon slices. One more plate with the same number of slices is added. How many slices are there then?",
+  "new": "Look at the plates of watermelon slices. Mum puts one more plate with the same number of slices on the table. How many slices are there now?"
+ },
+ {
+  "old": "I am round. I have no corners at all. Which shape am I?",
+  "new": "I have no corners and no straight sides. Which shape am I?"
+ },
+ {
+  "old": "Look at the four shapes. Each has a dotted line. In which picture are the two sides of the dotted line NOT the same?",
+  "new": "Look at the four shapes. Each has a dotted line. In which picture does the dotted line NOT cut the shape into two halves that match?"
+ },
+ {
+  "old": "Look at the coins in Pari's purse. Our coins are ₹1, ₹2, ₹5 and ₹10. Which coin does Pari NOT have?",
+  "new": "Look at the coins in Pari's purse. Which of these coins does Pari NOT have?"
+ },
+ {
+  "old": "The number on the note Hana has is fifty. Which picture shows her note?",
+  "new": "Hana has a fifty-rupee note. Which picture shows her note?"
+ },
+ {
+  "old": "Look at the notes. Dhruv puts them in order from the least worth to the most. Which note comes second?",
+  "new": "Look at the notes. Dhruv puts them in order from the smallest amount to the biggest. Which note comes second?"
+ },
+ {
+  "old": "Look at the four number cards. Count the digits in each number. Which number is the odd one out?",
+  "new": "Look at the four number cards. Count the digits in each number. Which number has a different number of digits from the others?"
+ }
+]

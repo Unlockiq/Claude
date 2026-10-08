@@ -1,0 +1,194 @@
+[
+ {
+  "q": "Q4",
+  "old": "There are 13 tulips. 13 is an odd number.",
+  "new": "There are 13 tulips, and 13 is an odd number.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q4",
+  "old": "There are 13 tulips. 13 is an even number.",
+  "new": "There are 13 tulips, and 13 is an even number.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q4",
+  "old": "There are 12 tulips. 12 is an even number.",
+  "new": "There are 12 tulips, and 12 is an even number.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q4",
+  "old": "There are 14 tulips. 14 is an even number.",
+  "new": "There are 14 tulips, and 14 is an even number.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q9",
+  "old": "Look at the number line. The marks go up in equal steps. Which number belongs at the dot marked ?",
+  "new": "Look at the number line. The marks go up in equal steps. Which number belongs at the dot with the question mark?",
+  "why": "'dot marked ?' reads badly aloud"
+ },
+ {
+  "q": "Q14",
+  "old": "The hops on the number line start at 0 and are all the same size. Which times sum do the hops show?",
+  "new": "The hops on the number line start at 0 and are all the same size. Which multiplication fact do the hops show?",
+  "why": "'sum' means addition; 'times sum' is confusing"
+ },
+ {
+  "q": "Q18",
+  "old": "In a school canteen, 8 children sit at each of the 3 tables. 7 more children stand in a line. How many children are there in all?",
+  "new": "In a school canteen, 8 children sit at each of the 3 tables. Another 7 children stand in a line. How many children are there in all?",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q24",
+  "old": "Which list puts the shapes in order, from the fewest corners to the most corners?",
+  "new": "Which list puts the shapes in order of their corners, from the smallest number of corners to the biggest?",
+  "why": "'fewest' is a hard word for Class 2"
+ },
+ {
+  "q": "Q27",
+  "old": "It rolls straight on.",
+  "new": "It rolls straight ahead.",
+  "why": "'rolls straight on' is unclear"
+ },
+ {
+  "q": "Q39",
+  "old": "The jumps in this number pattern take turns: up, then down, in the same way each time. Which number goes in the box?",
+  "new": "The numbers go up, then down, then up, then down. Every up jump is the same, and every down jump is the same. Which number goes in the box?",
+  "why": "'take turns ... in the same way' is vague"
+ },
+ {
+  "q": "Q40",
+  "old": "A long rectangle is cut into 3 boxes, as in the picture. How many rectangles of every size can you find?",
+  "new": "A long rectangle is divided into 3 boxes by 2 lines, as in the picture. How many rectangles can you find in all? Count big and small ones.",
+  "why": "'cut into' implies 3 separate pieces (answer 3 = option A); 'of every size' is awkward"
+ },
+ {
+  "q": "Q45",
+  "old": "Ella has only ₹50 and ₹10 notes, like those in the picture. Laid apart on a table, her notes have 20 corners in all and make ₹130. How many ₹50 notes does she have?",
+  "new": "Ella has only ₹50 and ₹10 notes, like those in the picture. Her notes have 20 corners in all, and together they make ₹130. How many ₹50 notes does she have?",
+  "why": "'Laid apart on a table' is awkward and adds nothing"
+ },
+ {
+  "q": "Q1",
+  "old": "643 is 6 hundreds, 4 tens and 3 ones. The 4 tens stand for 40, so 600 + 40 + 3 = 643.",
+  "new": "The number 643 is 6 hundreds, 4 tens and 3 ones. The 4 tens stand for 40, so 600 + 40 + 3 = 643.",
+  "why": "solution started with a numeral"
+ },
+ {
+  "q": "Q2",
+  "old": "714 is 7 hundreds and 14 more. 14 is fourteen, so 714 is seven hundred fourteen.",
+  "new": "The number 714 is 7 hundreds and 14 more. We say 14 as fourteen, so 714 is seven hundred fourteen.",
+  "why": "sentences started with numerals"
+ },
+ {
+  "q": "Q6",
+  "old": "Both numbers have 5 hundreds. 507 has 0 tens and 570 has 7 tens, so 507 is smaller: 507 < 570.",
+  "new": "Both numbers have 5 hundreds. But 507 has 0 tens and 570 has 7 tens, so 507 is smaller: 507 < 570.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q10",
+  "old": "10 ten-rods make 1 more hundred, so there are 4 hundreds and 2 tens. That is 420.",
+  "new": "The first 10 ten-rods make 1 more hundred, so there are 4 hundreds and 2 tens. That is 420.",
+  "why": "solution started with a numeral"
+ },
+ {
+  "q": "Q13",
+  "old": "6 is added 3 times, so the sum is 3 groups of 6: 3 × 6.",
+  "new": "The number 6 is added 3 times, so the sum is 3 groups of 6: 3 × 6. The blank is 6.",
+  "why": "started with a numeral; state the answer"
+ },
+ {
+  "q": "Q14",
+  "old": "There are 4 hops, each 3 steps long, and the last hop lands on 12. So the hops show 4 × 3 = 12.",
+  "new": "There are 4 hops, each 3 steps long, and the last hop lands on 12. So the multiplication fact is 4 × 3 = 12.",
+  "why": "match new stem wording"
+ },
+ {
+  "q": "Q16",
+  "old": "Two equal halves make the whole. 8 + 8 = 16, so she made 16 doughnuts.",
+  "new": "Two equal halves make the whole, and 8 + 8 = 16. So she made 16 doughnuts.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q17",
+  "old": "One ten is changed into 10 ones. 10 ones and 2 ones make 12 ones, so 52 is 4 tens and 12 ones.",
+  "new": "One ten is changed into 10 ones. Then 10 ones and 2 ones make 12 ones, so 52 is 4 tens and 12 ones.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q18",
+  "old": "3 tables of 8 are 3 × 8 = 24 children. With 7 more, there are 24 + 7 = 31.",
+  "new": "There are 3 tables of 8, so 3 × 8 = 24 children sit. With 7 more, there are 24 + 7 = 31.",
+  "why": "solution started with a numeral"
+ },
+ {
+  "q": "Q19",
+  "old": "Count up from 47: 3 more makes 50, and 30 more makes 80. 3 + 30 = 33.",
+  "new": "Count up from 47: 3 more makes 50, and 30 more makes 80. So the blank is 3 + 30 = 33.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q32",
+  "old": "A sandwich and a soup cost ₹30 + ₹20 = ₹50. A juice and a banana cost ₹15 + ₹5 = ₹20. ₹50 − ₹20 = ₹30 more.",
+  "new": "A sandwich and a soup cost ₹30 + ₹20 = ₹50. A juice and a banana cost ₹15 + ₹5 = ₹20. So they cost ₹50 − ₹20 = ₹30 more.",
+  "why": "sentence started with an amount"
+ },
+ {
+  "q": "Q33",
+  "old": "The blank must come after 11 AM and before 6 PM. 3 PM is in the afternoon, after noon and before 6 PM.",
+  "new": "The blank must come after 11 AM and before 6 PM. Only 3 PM is after 11 AM and before 6 PM.",
+  "why": "sentence started with a numeral; rules out all distractors"
+ },
+ {
+  "q": "Q34",
+  "old": "6:45 is 45 minutes past 6, which is quarter to 7. The long hand points at 9 and the short hand is nearly at 7.",
+  "new": "The time 6:45 is 45 minutes past 6, which is quarter to 7. The long hand points at 9 and the short hand is nearly at 7.",
+  "why": "solution started with a numeral"
+ },
+ {
+  "q": "Q36",
+  "old": "4 + 10 = 14 and 9 + 10 = 19. The rule adds 10 each time.",
+  "new": "On the cards, 4 + 10 = 14 and 9 + 10 = 19. The rule adds 10 each time.",
+  "why": "solution started with a numeral"
+ },
+ {
+  "q": "Q37",
+  "old": "The top row has 6 squares, the bottom row has 6 squares, and 1 square joins them. 6 + 6 + 1 = 13.",
+  "new": "The top row has 6 squares, the bottom row has 6 squares, and 1 square joins them. So there are 6 + 6 + 1 = 13.",
+  "why": "sentence started with a numeral"
+ },
+ {
+  "q": "Q39",
+  "old": "The jumps are +5, −2, +5, −2, +5. The next jump is −2, and 16 − 2 = 14.",
+  "new": "The jumps are up 5, down 2, up 5, down 2, up 5. The next jump is down 2, and 16 − 2 = 14.",
+  "why": "match new stem wording (up/down)"
+ },
+ {
+  "q": "Q40",
+  "old": "There are 3 small boxes, 2 rectangles made of two boxes side by side, and 1 big rectangle made of all three. 3 + 2 + 1 = 6.",
+  "new": "There are 3 small boxes, 2 rectangles made of 2 boxes side by side, and 1 big rectangle made of all 3. So there are 3 + 2 + 1 = 6.",
+  "why": "sentence started with a numeral; digits"
+ },
+ {
+  "q": "Q41",
+  "old": "Each card gives how many tens there are in all: 425 is 42 tens and 5 ones, 361 is 36 tens and 1 one, 718 is 71 tens and 8 ones. 594 is 59 tens and 4 ones, so the answer is 59.",
+  "new": "Each card drops the ones digit: 425 gives 42, 361 gives 36 and 718 gives 71 (the number of tens in all). So 594 gives 59, because 594 is 59 tens and 4 ones.",
+  "why": "easier route for Class 2; sentence started with a numeral"
+ },
+ {
+  "q": "Q42",
+  "old": "7 + 7 = 14, 14 + 14 = 28 and 28 + 28 = 56: each number is double the one before. 56 + 56 = 112, and 112 + 112 = 224, which fits.",
+  "new": "Each number is double the one before: 7 + 7 = 14, 14 + 14 = 28 and 28 + 28 = 56. So the hidden number is 56 + 56 = 112, and 112 + 112 = 224 fits.",
+  "why": "solution started with a numeral"
+ },
+ {
+  "q": "Q45",
+  "old": "A rectangle has 4 corners, so 20 corners means 5 notes. 2 notes of ₹50 and 3 notes of ₹10 are 5 notes and make ₹100 + ₹30 = ₹130.",
+  "new": "Each note has 4 corners, so 20 corners means 5 notes. Then 2 notes of ₹50 and 3 notes of ₹10 are 5 notes and make ₹100 + ₹30 = ₹130.",
+  "why": "sentence started with a numeral"
+ }
+]
