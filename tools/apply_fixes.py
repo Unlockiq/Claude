@@ -1,12 +1,13 @@
 """Apply reviewed text fixes to AMO practice-paper DOCX files.
 
 Usage:
-  python3 apply_fixes.py SRC_DIR OUT_DIR CLASS FIXES_DIR
+  python3 apply_fixes.py SRC_DIR OUT_DIR CLASS FIXES_DIR [IN_VER OUT_VER]
 
-Reads  SRC_DIR/AMO_C{CLASS}_L1_PracticePaper{N}_v2.docx  (N = 1..5)
+Reads  SRC_DIR/AMO_C{CLASS}_L1_PracticePaper{N}_{IN_VER}.docx  (N = 1..5;
+       versions default to v2 -> v3)
        FIXES_DIR/cover.json   (fixes applied to every paper; optional)
        FIXES_DIR/paper{N}.json
-Writes OUT_DIR/AMO_C{CLASS}_L1_PracticePaper{N}_v3.docx
+Writes OUT_DIR/AMO_C{CLASS}_L1_PracticePaper{N}_{OUT_VER}.docx
 
 A fix is {"old": ..., "new": ...} with optional keys:
   "after":  exact text of a run before the target; the first matching run
@@ -56,7 +57,7 @@ def apply(x, f, where):
     return x[:m.start()] + seg + x[m.end():]
 
 
-def main(src, out, cls, fixdir):
+def main(src, out, cls, fixdir, in_ver='v2', out_ver='v3'):
     cover_path = os.path.join(fixdir, 'cover.json')
     cover = json.load(open(cover_path)) if os.path.exists(cover_path) else []
     os.makedirs(out, exist_ok=True)
@@ -64,16 +65,16 @@ def main(src, out, cls, fixdir):
         fixes = cover + json.load(open(os.path.join(fixdir, f'paper{p}.json')))
         fixes.sort(key=lambda f: not ('after' in f or 'before' in f))
         name = f'AMO_C{cls}_L1_PracticePaper{p}'
-        with zipfile.ZipFile(os.path.join(src, name + '_v2.docx')) as z:
+        with zipfile.ZipFile(os.path.join(src, name + f'_{in_ver}.docx')) as z:
             x = z.read('word/document.xml').decode('utf-8')
             for f in fixes:
                 x = apply(x, f, f'paper {p} {f.get("q", "cover")}')
-            with zipfile.ZipFile(os.path.join(out, name + '_v3.docx'), 'w', zipfile.ZIP_DEFLATED) as o:
+            with zipfile.ZipFile(os.path.join(out, name + f'_{out_ver}.docx'), 'w', zipfile.ZIP_DEFLATED) as o:
                 for item in z.infolist():
                     data = x.encode('utf-8') if item.filename == 'word/document.xml' else z.read(item.filename)
                     o.writestr(item, data)
-        print(f'Paper {p}: {len(fixes)} fixes -> {name}_v3.docx')
+        print(f'Paper {p}: {len(fixes)} fixes -> {name}_{out_ver}.docx')
 
 
 if __name__ == '__main__':
-    main(*sys.argv[1:5])
+    main(*sys.argv[1:7])
