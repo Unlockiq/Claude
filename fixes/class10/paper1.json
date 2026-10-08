@@ -1,0 +1,104 @@
+[
+ {
+  "q": "Q15",
+  "old": "In each triangle ABC below, D lies on AB and E lies on AC, and the lengths are in cm. In which picture is DE parallel to BC?",
+  "new": "In each triangle ABC in the figure, D lies on AB and E lies on AC, and the lengths are in cm. In which picture is DE parallel to BC?",
+  "why": "The figure is above the stem, not below."
+ },
+ {
+  "q": "Q18",
+  "old": "In the figure, ABCD is a trapezium with AB ∥ DC, AB = 12 cm and DC = 8 cm. The diagonals meet at O. If AC = 15 cm, what is the length of AO?",
+  "new": "In the figure, ABCD is a trapezium with AB ∥ DC, AB = 12 cm and DC = 8 cm. The diagonals meet at O. If AC = 15 cm, what is the length of AO?",
+  "why": "Line wrap splits '12' from 'cm'; use non-breaking spaces."
+ },
+ {
+  "q": "Q19",
+  "old": "The figure shows a right triangle ABC with ∠B = 90°, AB = 8 cm and BC = 15 cm. A circle touches all three sides. What is its radius ",
+  "new": "The figure shows a right triangle ABC with ∠B = 90°, AB = 8 cm and BC = 15 cm. A circle touches all three sides. What is its radius ",
+  "why": "Line wrap splits 'AB =' from '8 cm'; use non-breaking spaces."
+ },
+ {
+  "q": "Q20",
+  "old": "Ishan's vegetable bed is a sector of a circle with radius 14 m and angle 135°, as shown. How long is its curved edge? (Use π = 22/7.)",
+  "new": "Ishan's vegetable bed is a sector of a circle with radius 14 m and angle 135°, as shown. How long is its curved edge? (Use π = 22/7.)",
+  "why": "Line wrap splits 'π =' from '22/7'; use non-breaking spaces."
+ },
+ {
+  "q": "Q21",
+  "old": "A lampshade is the curved part of a frustum, open at both ends. Its end radii are 10.5 cm and 7 cm and its slant height is 12 cm, as shown. What is the area of cloth on it? (Use π = 22/7.)",
+  "new": "A lampshade is the curved part of a frustum, open at both ends. Its end radii are 10.5 cm and 7 cm and its slant height is 12 cm, as shown. What is the area of cloth on it? (Use π = 22/7.)",
+  "why": "Line wrap splits '12' from 'cm'; use non-breaking spaces."
+ },
+ {
+  "q": "Q24",
+  "old": "A flat roof measures 22 m by 20 m. A rainfall of 2 cm falls on it, and all the water drains into an empty cylindrical rainwater tank of radius 1 m. How high does the water rise in the tank? (Use π = 22/7.)",
+  "new": "A flat roof measures 22 m by 20 m. Rain falls on it to a depth of 2 cm, and all the water drains into an empty cylindrical rainwater tank of radius 1 m. How high does the water rise in the tank? (Use π = 22/7.)",
+  "why": "'A rainfall ... falls' is redundant and unclear."
+ },
+ {
+  "q": "Q26",
+  "old": "θ is an acute angle and cos θ = ",
+  "new": "The angle θ is acute and cos θ = ",
+  "why": "Sentence should not start with a symbol."
+ },
+ {
+  "q": "Q31",
+  "old": "Bill from a bakery (sale within the state)",
+  "new": "Bill from an electronics shop (sale within the state)",
+  "why": "Since Sept 2025 cakes/biscuits are taxed at 5% GST, not 18%; use goods still at 18%."
+ },
+ {
+  "q": "Q31",
+  "old": "Cake",
+  "new": "Headphones",
+  "why": "Item must be an 18%-GST good (cakes are now 5%)."
+ },
+ {
+  "q": "Q31",
+  "old": "Box of cookies",
+  "new": "Charging cable",
+  "why": "Item must be an 18%-GST good (biscuits are now 5%)."
+ },
+ {
+  "q": "Q31",
+  "old": "The table shows a bakery bill. CGST and SGST are each charged on the total price of the items. How much does the customer pay in all?",
+  "new": "The table shows a shop bill. CGST and SGST are each charged on the total price of the items. How much does the customer pay in all?",
+  "why": "Matches the new 18%-GST items."
+ },
+ {
+  "q": "Q2",
+  "old": "40 = 2³ × 5, so 21/40 ends after 3 places: 21/40 = 0.525. 13/16 has 4 places, 27/150 = 9/50 has 2 places and 7/24 does not end.",
+  "new": "Since 40 = 2³ × 5, 21/40 ends after 3 places: 21/40 = 0.525. Also, 13/16 has 4 places, 27/150 = 9/50 has 2 places and 7/24 does not end.",
+  "why": "Sentences must not start with a numeral."
+ },
+ {
+  "q": "Q3",
+  "old": "360 = 2³ × 3² × 5. Each power must become a multiple of 3, so k = 3 × 5² = 75 (360 × 75 = 27,000 = 30³).",
+  "new": "Here 360 = 2³ × 3² × 5. Each power must become a multiple of 3, so k = 3 × 5² = 75 (360 × 75 = 27,000 = 30³).",
+  "why": "Sentence must not start with a numeral."
+ },
+ {
+  "q": "Q5",
+  "old": "Bela: 25,000 × 12 = 300,000. Kartik (months 5 to 12): 45,000 × 8 = 360,000. Ratio 300,000 : 360,000 = 5 : 6.",
+  "new": "Bela: 25,000 × 12 = 300,000. Kartik (months 5 to 12): 45,000 × 8 = 360,000. The ratio is 300,000 : 360,000 = 5 : 6.",
+  "why": "Complete sentence."
+ },
+ {
+  "q": "Q36",
+  "old": "n points give n(n − 1)/2 lines. 8 × 7 ÷ 2 = 28, so there are 8 points.",
+  "new": "With n points there are n(n − 1)/2 lines. Since 8 × 7 ÷ 2 = 28, there are 8 points.",
+  "why": "Sentences must not start with a numeral/variable."
+ },
+ {
+  "q": "Q43",
+  "old": "Triangles ADB and BDC are similar, so BD² = AD × DC: x(x + 7) = 144, so x² + 7x − 144 = 0 = (x + 16)(x − 9) and x = 9. Then AC = 25 and AB² = AD × AC = 225, so AB = 15 cm.",
+  "new": "Triangles ADB and BDC are similar, so BD² = AD × DC: x(x + 7) = 144, so x² + 7x − 144 = (x + 16)(x − 9) = 0 and x = 9. Then AC = 25 and AB² = AD × AC = 225, so AB = 15 cm.",
+  "why": "'= 0 = (x + 16)(x − 9)' is an awkward equation chain."
+ },
+ {
+  "q": "Q45",
+  "old": "2πr = 132 gives r = 21 m and area = 22/7 × 21 × 21 = 1,386 m², so there are 1,386 ÷ 77 = 18 sectors. 36 saplings could be 2 in every sector, so 2 × 18 + 1 = 37 saplings are needed.",
+  "new": "Here 2πr = 132 gives r = 21 m and area = 22/7 × 21 × 21 = 1,386 m², so there are 1,386 ÷ 77 = 18 sectors. With 36 saplings there could be 2 in every sector, so 2 × 18 + 1 = 37 saplings are needed.",
+  "why": "Sentences must not start with a numeral."
+ }
+]

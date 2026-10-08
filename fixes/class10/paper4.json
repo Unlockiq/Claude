@@ -1,0 +1,50 @@
+[
+ {
+  "q": "Q4",
+  "old": "The rate is 3% per quarter. 40,000 × 1.03 = 41,200 and 41,200 × 1.03 = 42,436, so it takes 2 quarters, which is 6 months.",
+  "new": "The rate is 3% per quarter. Then 40,000 × 1.03 = 41,200 and 41,200 × 1.03 = 42,436, so it takes 2 quarters, which is 6 months.",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q7",
+  "old": "Capital is profit ÷ time: 5/10 : 3/12 = 1/2 : 1/4 = 2 : 1.",
+  "new": "Each capital is in proportion to share ÷ time: 5/10 : 3/12 = 1/2 : 1/4 = 2 : 1.",
+  "why": "'capital is profit ÷ time' is not literally true; state the proportion"
+ },
+ {
+  "q": "Q19",
+  "old": "Two circles with centres M and N have radii 9 cm and 4 cm, and they touch each other, as shown. A straight line touches the larger circle at A and the smaller circle at B. What is the length of AB?",
+  "new": "Two circles with centres M and N have radii 9 cm and 4 cm, and they touch each other externally, as shown. A straight line touches the larger circle at A and the smaller circle at B. What is the length of AB?",
+  "why": "MN = 9 + 4 needs external touching; say it in words, not only in the figure"
+ },
+ {
+  "q": "Q20",
+  "old": "The whole circle has area 22/7 × 21 × 21 = 1,386 m². 462 is one-third of 1,386, so the angle is 360° ÷ 3 = 120°.",
+  "new": "The whole circle has area 22/7 × 21 × 21 = 1,386 m². The area 462 m² is one-third of this, so the angle is 360° ÷ 3 = 120°.",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q24",
+  "old": "In the figure, ABC is a triangle with ∠C = 90°, CA = 6 cm and CB = 8 cm. Semicircles are drawn outwards on CA and on CB. The semicircle on AB passes through C. What is the total area of the two shaded crescents?",
+  "new": "In the figure, ABC is a triangle with ∠C = 90°, CA = 6 cm and CB = 8 cm. Semicircles are drawn outwards on CA and on CB. A third semicircle, on AB, passes through C. What is the total area of the two shaded crescents?",
+  "why": "'The semicircle on AB' was never introduced"
+ },
+ {
+  "q": "Q24",
+  "old": "Small semicircles: (π/2)(3² + 4²) = 25π/2. Large semicircle on AB = 10 cm: (π/2)(5²) = 25π/2. Crescents = 25π/2 + 24 − 25π/2 = 24 cm², the area of the triangle.",
+  "new": "Small semicircles: (π/2)(3² + 4²) = 25π/2. By Pythagoras AB = 10 cm, so the semicircle on AB is (π/2)(5²) = 25π/2. Crescents = 25π/2 + 24 − 25π/2 = 24 cm², the area of the triangle.",
+  "why": "'semicircle on AB = 10 cm' equates an area with a length"
+ },
+ {
+  "q": "Q36",
+  "old": "37 players enter a badminton singles knockout. In each match two players play, the loser is out, and there are no draws. In some rounds a player may get a free pass to the next round. How many matches are played to find the champion?",
+  "new": "There are 37 players in a badminton singles knockout. In each match two players play, the loser is out, and there are no draws. In some rounds a player may get a free pass to the next round. How many matches are played to find the champion?",
+  "why": "sentence must not start with a numeral"
+ },
+ {
+  "q": "Q37",
+  "old": "1 × 1 squares: 5 × 3 = 15. 2 × 2 squares: 4 × 2 = 8. 3 × 3 squares: 3 × 1 = 3. Total 15 + 8 + 3 = 26.",
+  "new": "Squares of size 1 × 1: 5 × 3 = 15. Size 2 × 2: 4 × 2 = 8. Size 3 × 3: 3 × 1 = 3. Total 15 + 8 + 3 = 26.",
+  "why": "sentences must not start with a numeral"
+ }
+]

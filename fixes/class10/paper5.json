@@ -1,0 +1,50 @@
+[
+ {
+  "q": "Q8",
+  "old": "Hana starts a workshop that makes fishing nets with ₹60,000. After 3 months, Ivan joins with ₹40,000. After 8 months from the start, Hana takes out ₹20,000. The year's profit is ₹50,000, shared in the ratio of capital × time. What is Ivan's share?",
+  "new": "Hana puts ₹60,000 into a workshop that makes fishing nets. After 3 months, Ivan joins with ₹40,000. After 8 months from the start, Hana takes out ₹20,000. The year's profit is ₹50,000, shared in the ratio of capital × time. What is Ivan's share?",
+  "why": "Misplaced modifier: 'makes fishing nets with ₹60,000'."
+ },
+ {
+  "q": "Q9",
+  "old": "For the school play, 3 front-row tickets and 5 back-row tickets cost ₹550 in all. 5 front-row tickets and 3 back-row tickets cost ₹650 in all. What is the price of one front-row ticket?",
+  "new": "For the school play, 3 front-row tickets and 5 back-row tickets cost ₹550 in all. Also, 5 front-row tickets and 3 back-row tickets cost ₹650 in all. What is the price of one front-row ticket?",
+  "why": "House rule: sentence must not start with a numeral."
+ },
+ {
+  "q": "Q11",
+  "old": "20 and −13",
+  "new": "20 and 13",
+  "why": "Common-mistake distractor: setting each factor equal to 18 gives 20 and 13; '−13' matches no mistake."
+ },
+ {
+  "q": "Q14",
+  "old": "The fourth number in an arithmetic progression is 11. Whatever the common difference is, the first seven numbers always add up to the same total. What is that total?",
+  "new": "The fourth term of an arithmetic progression is 11. Whatever the common difference is, the first seven terms always add up to the same total. What is that total?",
+  "why": "Use the syllabus term 'term' for AP members."
+ },
+ {
+  "q": "Q26",
+  "old": "θ is an acute angle, so 0° < θ < 90°. Which of these could be the value of sec θ?",
+  "new": "The angle θ is acute, so 0° < θ < 90°. Which of these could be the value of sec θ?",
+  "why": "Sentence should not start with a bare symbol; complete-sentence house style."
+ },
+ {
+  "q": "Q33",
+  "old": "25 gardeners can plant all the saplings in a park in 12 days. How many days would 20 gardeners take, all working at the same rate?",
+  "new": "A team of 25 gardeners can plant all the saplings in a park in 12 days. How many days would 20 gardeners take, all working at the same rate?",
+  "why": "House rule: sentence must not start with a numeral."
+ },
+ {
+  "q": "Q35",
+  "old": "Try the current c: against it the speed is 15 − c, with it 15 + c. For c = 5: 20 ÷ 10 = 2 hours and 20 ÷ 20 = 1 hour, which differ by 1 hour. So the current is 5 km/h.",
+  "new": "Let the current be c. Then 20/(15 − c) − 20/(15 + c) = 1, so c² + 40c − 225 = 0 = (c − 5)(c + 45) and c = 5 km/h. Check: 20 ÷ 10 = 2 hours, 20 ÷ 20 = 1 hour.",
+  "why": "Solution only verified a guess; derive it with the quadratic (C10 Ch4 skill)."
+ },
+ {
+  "q": "Q43",
+  "old": "In the figure, the incircle of right-angled △ABC (∠C = 90°) meets the longest side AB at T, splitting it into AT = 14 cm and TB = 15 cm. How long is the radius ",
+  "new": "In the figure, the incircle of right-angled △ABC (∠C = 90°) touches the longest side AB at T, splitting it into AT = 14 cm and TB = 15 cm. How long is the radius ",
+  "why": "'touches' is the precise tangent term; 'meets' could suggest two crossing points."
+ }
+]

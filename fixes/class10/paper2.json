@@ -1,0 +1,128 @@
+[
+ {
+  "q": "Q11",
+  "old": "At a fruit market, 1 kg of apples, 1 kg of bananas and 1 kg of grapes together cost ₹310. 1 kg of apples and 1 kg of bananas cost ₹190. 1 kg of bananas and 1 kg of grapes cost ₹170. What is the price of 1 kg of bananas?",
+  "new": "At a fruit market, 1 kg of apples, 1 kg of bananas and 1 kg of grapes together cost ₹310. Apples and bananas, 1 kg each, cost ₹190. Bananas and grapes, 1 kg each, cost ₹170. What is the price of 1 kg of bananas?",
+  "why": "Two sentences started with a numeral (house rule)."
+ },
+ {
+  "q": "Q30",
+  "old": "a tail with a number less than 6",
+  "new": "a tail and a number less than 6",
+  "why": "'with' is vague; the event is an AND event, parallel to the 'or' options."
+ },
+ {
+  "q": "Q40",
+  "old": "How many different triangles have sides that are whole numbers of centimetres and a perimeter of 15 cm? Triangles with the same three side lengths count as the same triangle.",
+  "new": "How many different triangles have sides that are whole numbers of centimetres and a perimeter of 15 cm? Triangles with the same three side lengths count as the same triangle.",
+  "why": "Non-breaking space: '15' and 'cm' currently split across lines."
+ },
+ {
+  "q": "Q43",
+  "old": "The three sides of a right triangle, in cm, form an arithmetic progression, and its perimeter is 48 cm. A perpendicular is drawn from the right-angled corner to the longest side. How long is this perpendicular?",
+  "new": "The three sides of a right triangle, in cm, form an arithmetic progression, and its perimeter is 48 cm. A perpendicular is drawn from the vertex of the right angle to the longest side. How long is this perpendicular?",
+  "why": "'right-angled corner' is informal; use the syllabus term 'vertex'."
+ },
+ {
+  "q": "Q44",
+  "old": "Paying later, by ₹382",
+  "new": "Paying now, by ₹562",
+  "why": "All four options said 'Paying later', so the 'which way' part of the stem was given away; sign-error distractor."
+ },
+ {
+  "q": "Q2",
+  "old": "150 = 2 × 3 × 5². The factor 3 must cancel, so ",
+  "new": "Here 150 = 2 × 3 × 5². The factor 3 must cancel, so ",
+  "why": "Solution sentence started with a numeral."
+ },
+ {
+  "q": "Q5",
+  "old": "(C) ",
+  "new": "Jai ₹45,000 for 8 months; Gita ₹36,000 for 10 months",
+  "mode": "addrun",
+  "after": "The rate is 5% per half-year for 2 half-years: 80,000 × 0.95 × 0.95 = ₹72,200.",
+  "why": "Answer cell showed only the letter."
+ },
+ {
+  "q": "Q8",
+  "old": "(B) ",
+  "new": "10% per year, compounded half-yearly",
+  "mode": "addrun",
+  "after": "Atharv: 40,000 × 4 + 70,000 × 8 = 720,000. Nitya: 50,000 × 12 = 600,000. Ratio 6 : 5, so Atharv gets 15,840 × 6/11 = ₹8,640.",
+  "why": "Answer cell showed only the letter."
+ },
+ {
+  "q": "Q8",
+  "old": "The amounts are ₹66,150 (60,000 × 1.05 × 1.05), ₹64,896 (× 1.04 × 1.04), ₹66,144 (× 1.04 × 1.06) and ₹66,000. The half-yearly scheme at 10% gives the most.",
+  "new": "Amounts: (A) 60,000 × 1.04 × 1.06 = ₹66,144; (B) 60,000 × 1.05 × 1.05 = ₹66,150; (C) 60,000 × 1.04 × 1.04 = ₹64,896; (D) ₹66,000. Scheme (B) gives the most.",
+  "why": "Amounts were listed out of option order with no labels; A and B differ by only ₹6, so the match must be clear."
+ },
+ {
+  "q": "Q9",
+  "old": "(C) ",
+  "new": "9x² − 30x + 25 = 0",
+  "mode": "addrun",
+  "after": "The amounts are ₹66,150 (60,000 × 1.05 × 1.05), ₹64,896 (× 1.04 × 1.04), ₹66,144 (× 1.04 × 1.06) and ₹66,000. The half-yearly scheme at 10% gives the most.",
+  "why": "Answer cell showed only the letter."
+ },
+ {
+  "q": "Q14",
+  "old": "5(96 + 9d) = 7.5(96 + 14d) gives d = −4. Then S₂₅ = 12.5 × (96 + 24 × (−4)) = 0.",
+  "new": "S₁₀ = S₁₅ gives 5(96 + 9d) = 7.5(96 + 14d), so d = −4. Then S₂₅ = 12.5 × (96 + 24 × (−4)) = 0.",
+  "why": "Solution started with a numeral and did not say where the equation comes from."
+ },
+ {
+  "q": "Q16",
+  "old": "6/4 = 9/6 = 12/8 = 1.5, so the sides are in the same ratio (SSS similarity).",
+  "new": "The ratios 6/4 = 9/6 = 12/8 = 1.5 are equal, so the triangles are similar (SSS similarity).",
+  "why": "Solution started with a numeral."
+ },
+ {
+  "q": "Q17",
+  "old": "M = ((2 × A + B) ÷ 3), so B = 3M − 2A = (3 + 2, 6 − 8) = (5, −2).",
+  "new": "By the section formula, M = (2A + B) ÷ 3, so B = 3M − 2A = (3 + 2, 6 − 8) = (5, −2).",
+  "why": "Redundant brackets; name the formula used."
+ },
+ {
+  "q": "Q20",
+  "old": "(B) ",
+  "new": "radius 21 cm, angle 45°",
+  "mode": "addrun",
+  "after": "Triangles ADE and ACB share ∠A and have ∠ADE = ∠ACB, so they are similar: AD/AC = AE/AB, so AC = 6 × 12 ÷ 4 = 18 cm.",
+  "why": "Answer cell showed only the letter."
+ },
+ {
+  "q": "Q24",
+  "old": "6 × 196 = 1,176 for the cube, minus the hidden circle 154, plus the curved surface 2 × 154 = 308: 1,176 + 154 = 1,330 cm².",
+  "new": "The cube gives 6 × 196 = 1,176. Subtract the hidden circle 154 and add the curved surface 2 × 154 = 308: 1,176 − 154 + 308 = 1,330 cm².",
+  "why": "Started with a numeral; '1,176 + 154' hid the subtract-and-add step."
+ },
+ {
+  "q": "Q30",
+  "old": "(A) ",
+  "new": "a head, or a number from 3 to 6",
+  "mode": "addrun",
+  "after": "P(white from X) = 3/4 and P(white from Y) = 4/5. Both: 3/4 × 4/5 = 3/5.",
+  "why": "Answer cell showed only the letter."
+ },
+ {
+  "q": "Q31",
+  "old": "(C) ",
+  "new": "10% off, then a further 25% off",
+  "mode": "addrun",
+  "after": "There are 12 equally likely outcomes. Only a tail with a 1 or 2 fails \"a head, or a number from 3 to 6\", so it has 10/12 = 5/6, more than 3/4, 2/3 and 5/12.",
+  "why": "Answer cell showed only the letter."
+ },
+ {
+  "q": "Q36",
+  "old": "32 birds can sit 4 in every nest, so 32 is not enough. With 33 birds, 4 or fewer in each nest would hold at most 32, so some nest has at least 5.",
+  "new": "With 32 birds, each nest can hold 4, so 32 is not enough. With 33 birds, 4 or fewer in each nest would hold at most 32, so some nest has at least 5.",
+  "why": "Solution started with a numeral."
+ },
+ {
+  "q": "Q37",
+  "old": "50 multiples of 2 and 20 multiples of 5, but the 10 multiples of 10 are counted twice: 50 + 20 − 10 = 60.",
+  "new": "There are 50 multiples of 2 and 20 multiples of 5, but the 10 multiples of 10 are counted twice: 50 + 20 − 10 = 60.",
+  "why": "Solution started with a numeral and was not a complete sentence."
+ }
+]
