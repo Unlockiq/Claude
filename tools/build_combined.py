@@ -97,24 +97,28 @@ def spacer(pts, sect=''):
 
 
 def cover_info(xml):
-    """Pull the label/value table, pupil bullets and parent notes from a paper cover."""
+    """Pull the label/value table, pupil bullets and parent notes from a paper cover.
+
+    Classes 1-5 have a "Hello, friend!" box; higher classes have "Instructions
+    to candidates". The heading found is returned with the rest."""
     body = xml[xml.index('<w:body>'):xml.index('<w:p><w:pPr><w:pageBreakBefore/>')]
     texts = [html.unescape(t) for t in re.findall(r'<w:t[^>]*>([^<]*)</w:t>', body)]
     texts = [t for t in texts if t.strip()]
     i = texts.index('Questions')
-    j = texts.index('Hello, friend!')
+    head = 'Hello, friend!' if 'Hello, friend!' in texts else 'Instructions to candidates'
+    j = texts.index(head)
     k = texts.index('For parents and teachers')
     rows = list(zip(texts[i:j:2], texts[i + 1:j:2]))
-    bullets = [t for t in texts[j + 1:k] if t.strip() != '•']
+    bullets = [re.sub(r'^•\s*', '', t) for t in texts[j + 1:k] if t.strip() != '•']
     notes = [t for t in texts[k + 1:] if t not in ('Name:', 'School:', 'Roll No.:')]
-    return rows, bullets, notes
+    return rows, head, bullets, notes
 
 
 LABELS = {'Questions': 'Total Questions', 'Marks': 'Total Marks', 'Negative marking': 'Negative Marking'}
 
 
 def paper_page(n, cls, info, logo_rid, pid):
-    rows, bullets, notes = info
+    rows, head, bullets, notes = info
     out = para([image_run(logo_rid, 64.4, 69.8, pid, f'logo{n}')], 'center', after=80)
     out += para([run('ARYABHATTA MATHS OLYMPIAD', 18, True, color=NAVY)], 'center', after=20)
     out += para([run('Level 1', 10, color=GREY_T)], 'center', after=200)
@@ -123,8 +127,12 @@ def paper_page(n, cls, info, logo_rid, pid):
     trs = [[para([run(LABELS.get(a, a), 11, True)]), para([run(b, 11)])] for a, b in rows]
     out += table(trs, [3150, TEXT_W - 3150], GRID, fills=[LABEL_FILL, None], mar=(95, 100))
     out += spacer(16)
-    hello = [para([run('\U0001F44B ', 13), run('Hello, friend! How to do this paper:', 13, True, color=NAVY)], after=100)]
-    hello += [para([run('⭐ ', 12), run(b, 12)], after=70) for b in bullets]
+    if head == 'Hello, friend!':
+        hello = [para([run('\U0001F44B ', 13), run('Hello, friend! How to do this paper:', 13, True, color=NAVY)], after=100)]
+        hello += [para([run('⭐ ', 12), run(b, 12)], after=70) for b in bullets]
+    else:
+        hello = [para([run(head, 13, True, color=NAVY)], after=100)]
+        hello += [para([run('•  ', 11.5), run(b, 11.5)], after=70) for b in bullets]
     out += box(hello, YEL_FILL, YEL_LINE)
     out += spacer(14)
     par = [para([run('For parents and teachers', 8.5, True, color=NAVY)], after=50)]
