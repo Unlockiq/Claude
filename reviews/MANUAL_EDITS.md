@@ -18,8 +18,8 @@ There are also 3 content decisions, and some purely cosmetic picture fixes. Thos
 | C9 P3 | Q21 and Q25: the number and "cm" split across lines. Join them with a non-breaking space. |
 | C10 P5 | Q27 option A "1 , 200√3" is in a different font, with a stray space. |
 | C11 P1 | **Done:** Q2 and Q3 z̄ fixed with `tools/fix_math_accents.py`. |
-| C11 P2 | Q5: z̄ prints as "ź". Q36: the raised ⁿ in 2ⁿ and 4ⁿ prints as a quote mark. |
-| C11 P4 | Q2: z̄ prints as "ź". |
+| C11 P2 | **Done:** Q5 z̄ and Q36 raised ⁿ fixed. |
+| C11 P4 | **Done:** Q2 z̄ fixed. |
 
 ## B. Pictures to redraw — affects correctness or a syllabus rule (33 papers)
 | Class | Paper | Picture fix |
@@ -69,3 +69,9 @@ These are listed in the class summaries:
 - Clock hands crossing numerals, overlapping labels, table headers not bold.
 - Answer-sheet bubbles in rows 10–15 out of line.
 - Optional difficulty-label swaps.
+
+## Symbol fixes done with `tools/fix_math_accents.py`
+- **z̄ (printed as "ź"):** C11 P1, P2 and P4.
+- **Raised ⁿ (printed as a quote mark):** C11 P1, P2, P3 and P5. This includes the P5 Q9 question, "(1 + x)ⁿ". It was also fixed in C7 P3, C9 P2, C9 P4 and C10 P4, which had the same problem in their solutions.
+
+All 9 rebuilt PDFs keep the same page size, page count, question positions and margins as before.
