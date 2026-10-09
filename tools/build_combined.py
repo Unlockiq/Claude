@@ -5,9 +5,9 @@ Usage:
 
 Reads PAPERS_DIR/AMO_C{CLASS}_L1_PracticePaper{1..5}_{VERSION}.docx and writes
 one .docx laid out like the REAL consolidated booklet:
-  * section 1, a front cover with no header or footer: logo, olympiad name,
-    the class cover image, "PRACTICE PAPERS", class, student-details table
-    and publisher lines;
+  * section 1, a front cover with no header or footer: the class cover image
+    filling the page, then a tagline, the student-details table and the
+    publisher lines;
   * one section per paper, each keeping the papers' page set-up, with the
     header "Aryabhatta Maths Olympiad (AMO) Level-1 Sample Papers" (amber rule)
     and the brand footer (grey rule; logo, "Unlock IQ Institute Pvt. Ltd. ·
@@ -26,6 +26,7 @@ NAVY, RED, PURPLE, GREY_T, DARK = '1F3864', 'C00000', '6A1B9A', '595959', '22222
 LABEL_FILL, GRID = 'DEEBF7', 'BFBFBF'
 YEL_FILL, YEL_LINE, GRY_FILL, GRY_LINE = 'FFF8E1', 'FFD966', 'F2F2F2', 'BFBFBF'
 TEXT_W = 9978  # twips between the AMO page margins
+COVER_W = 405.0  # pt; the cover image fills the page above the details table
 HEADER = 'Aryabhatta Maths Olympiad (AMO) Level-1 Sample Papers'
 REL = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/'
 
@@ -133,13 +134,9 @@ def paper_page(n, cls, info, logo_rid, pid):
 
 
 def front_cover(cls, logo_rid, cover_rid, cover_size, sect):
-    w = 286.0
+    w = COVER_W
     h = w * cover_size[1] / cover_size[0]
-    out = para([image_run(logo_rid, 44.7, 48.3, 9001, 'logo')], 'center', after=80)
-    out += para([run('ARYABHATTA MATHS OLYMPIAD', 27.5, True, color=PURPLE)], 'center', after=200)
-    out += para([image_run(cover_rid, w, h, 9002, 'cover')], 'center', after=160)
-    out += para([run('PRACTICE PAPERS', 18, True, color=PURPLE)], 'center', after=20)
-    out += para([run(f'Class {cls}', 16, color=DARK)], 'center', after=20)
+    out = para([image_run(cover_rid, w, h, 9002, 'cover')], 'center', after=160)
     out += para([run('Five full practice papers  ·  with answer keys & detailed solutions', 10, color='666666')], 'center', after=160)
     cells = [('Name:', '____________________'), ('Class & Section:', '________________'),
              ('Roll No.:', '________________'), ('School:', '____________________'),
