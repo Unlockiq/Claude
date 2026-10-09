@@ -17,7 +17,7 @@ There are also 3 content decisions, and some purely cosmetic picture fixes. Thos
 | C8 P2 | Q5 stem starts with the equation "8⁻² = 2ˣ". Write "It is given that 8⁻² = 2ˣ …". |
 | C9 P3 | Q21 and Q25: the number and "cm" split across lines. Join them with a non-breaking space. |
 | C10 P5 | Q27 option A "1 , 200√3" is in a different font, with a stray space. |
-| C11 P1 | Q2 and Q3: z̄ prints as "ź". Change the accent to an overbar. |
+| C11 P1 | **Done:** Q2 and Q3 z̄ fixed with `tools/fix_math_accents.py`. |
 | C11 P2 | Q5: z̄ prints as "ź". Q36: the raised ⁿ in 2ⁿ and 4ⁿ prints as a quote mark. |
 | C11 P4 | Q2: z̄ prints as "ź". |
 
