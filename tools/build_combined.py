@@ -9,7 +9,8 @@ one .docx laid out like the REAL consolidated booklet:
     filling the page, then a tagline, the student-details table and the
     publisher lines;
   * one section per paper, each keeping the papers' page set-up, with the
-    header "Aryabhatta Maths Olympiad (AMO) Level-1 Practice Papers" (amber rule)
+    header "Aryabhatta Maths Olympiad (AMO) Level-1 Practice Papers" with
+    "Practice Paper n" on the right (amber rule)
     and the brand footer (grey rule; logo, "Unlock IQ Institute Pvt. Ltd. ·
     www.unlockiqinstitute.com" on the left, "Page x of y" on the right); the
     first page of each paper shows the footer only;
@@ -165,6 +166,17 @@ def field(code, size, color):
             f'<w:r>{rpr}<w:fldChar w:fldCharType="end"/></w:r>')
 
 
+def header_xml(root, n):
+    """Booklet header: name on the left, "Practice Paper n" on the right, amber rule below."""
+    rpr = '<w:rPr><w:b w:val="0"/><w:i w:val="0"/><w:color w:val="595959"/><w:sz w:val="18"/></w:rPr>'
+    ppr = ('<w:pPr><w:pStyle w:val="Header"/>'
+           '<w:pBdr><w:bottom w:val="single" w:sz="6" w:space="3" w:color="E8A800"/></w:pBdr>'
+           f'<w:tabs><w:tab w:val="clear" w:pos="4680"/><w:tab w:val="clear" w:pos="9360"/>'
+           f'<w:tab w:val="right" w:pos="{TEXT_W}"/></w:tabs><w:spacing w:before="0" w:after="0"/></w:pPr>')
+    return (f'{root}<w:p>{ppr}<w:r>{rpr}<w:t>{esc(HEADER)}</w:t></w:r><w:r>{rpr}<w:tab/></w:r>'
+            f'<w:r>{rpr}<w:t>Practice Paper {n}</w:t></w:r></w:p></w:hdr>')
+
+
 def footer_xml(root):
     """Brand footer: grey rule; logo, institute and website on the left; "Page X of Y" on the right."""
     ppr = (f'<w:pPr><w:pStyle w:val="Footer"/><w:pBdr><w:top w:val="single" w:sz="6" w:space="6" w:color="BFBFBF"/></w:pBdr>'
@@ -211,8 +223,7 @@ def main(cls, src, ver, cover_img, logo_img, out_path):
         '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
         f'<Relationship Id="rIdLogo" Type="{REL}image" Target="media/logo.png"/></Relationships>').encode()
 
-    hdr = re.sub(r'<w:t>[^<]*</w:t>', '<w:t>' + esc(HEADER) + '</w:t>', base['word/header1.xml'].decode(), count=1)
-    header_rid = add_part('header1.xml', hdr.encode(), 'header')
+    hdr_root = re.match(r'.*?<w:hdr [^>]*>', base['word/header1.xml'].decode(), re.S).group(0)
     body, pid = front_cover(cls, logo_rid, cover_rid, im.size, cover_sect), 1
     for n, pk in enumerate(papers, 1):
         x = pk['word/document.xml'].decode()
@@ -228,6 +239,7 @@ def main(cls, src, ver, cover_img, logo_img, out_path):
             pid += 1
             return f'<wp:docPr id="{pid}"'
         content = re.sub(r'<wp:docPr id="\d+"', renum, content)
+        header_rid = add_part(f'header{n}.xml', header_xml(hdr_root, n).encode(), 'header')
         sect = (f'<w:sectPr><w:headerReference w:type="default" r:id="{header_rid}"/>'
                 f'<w:footerReference w:type="default" r:id="{footer_rid}"/>'
                 f'<w:footerReference w:type="first" r:id="{footer_rid}"/>'
