@@ -9,7 +9,7 @@ one .docx laid out like the REAL consolidated booklet:
     filling the page, then a tagline, the student-details table and the
     publisher lines;
   * one section per paper, each keeping the papers' page set-up, with the
-    header "Aryabhatta Maths Olympiad (AMO) Level-1 Sample Papers" (amber rule)
+    header "Aryabhatta Maths Olympiad (AMO) Level-1 Practice Papers" (amber rule)
     and the brand footer (grey rule; logo, "Unlock IQ Institute Pvt. Ltd. ·
     www.unlockiqinstitute.com" on the left, "Page x of y" on the right); the
     first page of each paper shows the footer only;
@@ -27,7 +27,7 @@ LABEL_FILL, GRID = 'DEEBF7', 'BFBFBF'
 YEL_FILL, YEL_LINE, GRY_FILL, GRY_LINE = 'FFF8E1', 'FFD966', 'F2F2F2', 'BFBFBF'
 TEXT_W = 9978  # twips between the AMO page margins
 COVER_W = 405.0  # pt; the cover image fills the page above the details table
-HEADER = 'Aryabhatta Maths Olympiad (AMO) Level-1 Sample Papers'
+HEADER = 'Aryabhatta Maths Olympiad (AMO) Level-1 Practice Papers'
 REL = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/'
 
 
