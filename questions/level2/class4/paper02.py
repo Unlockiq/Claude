@@ -1,0 +1,195 @@
+# AMO Level-2 · Class 4 · Practice Paper 2  (format: see paper01.py)
+
+
+def pict(rows, em, key, lw=90, step=28):
+    prims = []
+    for i, (lab, n) in enumerate(rows):
+        y = 18 + i * 34
+        prims += [('rect', 0, y - 15, lw, 30, 'lilac'), ('text', lw / 2, y, lab, 12)]
+        prims += [('emoji', em, lw + 20 + k * step, y, 24) for k in range(n)]
+    y = 18 + len(rows) * 34 + 6
+    prims += [('emoji', em, 14, y, 20), ('text', 40 + len(key) * 3.6, y, '= ' + key, 12)]
+    return prims
+
+
+def three_squares():
+    s = 22
+    return [('rect', 10, 10 + 2 * s, s, s, 'yellow'), ('rect', 10 + s, 10 + s, 2 * s, 2 * s, 'blue'),
+            ('rect', 10 + 3 * s, 10, 3 * s, 3 * s, 'pink'),
+            ('text', 10 + s / 2, 10 + 3 * s + 12, '1 cm', 10), ('text', 10 + 2 * s, 10 + 3 * s + 12, '2 cm', 10),
+            ('text', 10 + 4.5 * s, 10 + 3 * s + 12, '3 cm', 10)]
+
+
+QUESTIONS = [
+    # ---------------- Part 1 · Number System
+    dict(ch='1', scen='4 ten-thousands 15 hundreds and 23 ones',
+         stem='Which number is made of 4 ten-thousands, 15 hundreds and 23 ones?',
+         opts=['41,523', '45,123', '40,523', '41,723'],
+         hint='15 hundreds is 1 thousand and 5 hundreds.',
+         sol='4 ten-thousands = 40,000. 15 hundreds = 1,500. 23 ones = 23. 40,000 + 1,500 + 23 = 41,523.'),
+    dict(ch='1', scen='largest even 5-digit number from 3 0 8 5 9',
+         stem='Nikhil uses each of the digits 3, 0, 8, 5 and 9 once to make a 5-digit number. What is the largest even number he can make?',
+         opts=['98,530', '98,503', '98,350', '90,358'],
+         hint='An even number must end in 0 or 8. Try both and compare.',
+         sol='Ending in 0, the largest is 98,530. Ending in 8, the largest is 95,308. 98,530 is larger. (98,503 is odd.)'),
+    dict(ch='1', scen='number with the longest Roman numeral among 88 79 98 100',
+         stem='Which of these numbers needs the most letters when written in Roman numerals: 88, 79, 98, 100?',
+         opts=['88', '79', '98', '100'],
+         hint='Write each one: for example, 100 is just C.',
+         sol='88 = LXXXVIII (8 letters). 79 = LXXIX (5 letters). 98 = XCVIII (6 letters). 100 = C (1 letter). So 88 needs the most.'),
+
+    # ---------------- Part 2 · Operations
+    dict(ch='2', scen='25 times 37 times 4 times 2 by regrouping',
+         stem='Isha must work out 25 × 37 × 4 × 2 without a calculator. She changes the order to make it easy. What is the answer?',
+         opts=['7,400', '7,040', '3,700', '740'],
+         hint='25 × 4 = 100.',
+         sol='Group the easy numbers: (25 × 4) × (37 × 2) = 100 × 74 = 7,400.'),
+    dict(ch='2', scen='two numbers in a row with product 2,256',
+         stem='Two numbers that come one after the other multiply to give 2,256. What is their sum?',
+         opts=['95', '94', '96', '97'],
+         hint='50 × 50 = 2,500, so the numbers are a little less than 50.',
+         sol='Try numbers near 47: 47 × 48 = 2,256. Their sum is 47 + 48 = 95.'),
+    dict(ch='2', scen='largest 3-digit number leaving remainder 5 when divided by 9',
+         stem='What is the largest 3-digit number that leaves a remainder of 5 when divided by 9?',
+         opts=['995', '999', '994', '986'],
+         hint='Find the largest 3-digit number that 9 divides exactly.',
+         sol='999 = 9 × 111, but 999 + 5 is not 3-digit. Go one nine lower: 990 = 9 × 110. 990 + 5 = 995, which is still a 3-digit number.'),
+
+    # ---------------- Part 3 · Fractions & Decimals
+    dict(ch='3', scen='120 L tank 5/6 full and a quarter used',
+         stem='A water tank holds 120 L when full. It is 5/6 full. Then a quarter of a full tank of water is used. How many litres are left?',
+         opts=['70 L', '100 L', '30 L', '90 L'],
+         hint='Find 5/6 of 120 and 1/4 of 120.',
+         sol='5/6 of 120 L = 100 L. A quarter of 120 L = 30 L. 100 − 30 = 70 L are left.'),
+    dict(ch='3', scen='which answer for 2/3 plus 1/12 is wrong',
+         stem='Four children work out 2/3 + 1/12. Three of them are right, even though their answers look different. Which answer is wrong?',
+         opts=['8/12', '3/4', '6/8', '9/12'],
+         hint='Change 2/3 into twelfths first.',
+         sol='2/3 = 8/12, so 2/3 + 1/12 = 9/12 = 3/4 = 6/8. The answer 8/12 forgot to add the 1/12.'),
+    dict(ch='3', scen='three bags of 2.5 kg 1.7 kg 0.8 kg · how much more to 6 kg',
+         stem='Yash can carry 6 kg. He is carrying bags of 2.5 kg, 1.7 kg and 0.8 kg. How many more kilograms can he carry?',
+         opts=['1 kg', '0.9 kg', '1.1 kg', '5 kg'],
+         hint='Add the three bags carefully. 2.5 + 1.7 is more than 4.',
+         sol='2.5 + 1.7 = 4.2 kg. 4.2 + 0.8 = 5.0 kg. He can carry 6 − 5 = 1 kg more.'),
+    dict(ch='3', scen='two ropes of 2 1/4 m and 1 2/3 m joined',
+         stem='Kush joins a rope 2 1/4 m long to a rope 1 2/3 m long, end to end. How long is the joined rope?',
+         opts=['3 11/12 m', '3 3/7 m', '3 1/4 m', '4 1/12 m'],
+         hint='Add the whole numbers, then add 1/4 and 2/3 as twelfths.',
+         sol='2 + 1 = 3. 1/4 + 2/3 = 3/12 + 8/12 = 11/12. The rope is 3 11/12 m long.'),
+
+    # ---------------- Part 4 · Geometry
+    dict(ch='5', scen='pyramid with 8 edges · faces plus vertices',
+         stem='A pyramid has 8 edges. What is the number of its faces added to the number of its vertices?',
+         opts=['10', '9', '8', '12'],
+         hint='A pyramid has as many slanting edges as base edges.',
+         sol='8 edges = 4 base edges + 4 slanting edges, so the base is a square. A square pyramid has 5 faces and 5 vertices. 5 + 5 = 10. Check: 5 + 5 − 8 = 2.'),
+    dict(ch='5', scen='painted 3 by 3 by 3 cube · small cubes with exactly two painted faces',
+         stem='A big cube is made of 27 small cubes, 3 along each edge. The outside of the big cube is painted. How many small cubes have paint on exactly 2 faces?',
+         opts=['12', '8', '6', '24'],
+         hint='Look at the small cube in the middle of each edge of the big cube.',
+         sol='Corner cubes have 3 painted faces. The cube in the middle of each edge has exactly 2. A cube has 12 edges, so 12 small cubes.'),
+    dict(ch='5', scen='most crossing points of four straight lines',
+         stem='Sapna draws 4 straight lines on a page. No two lines are parallel. What is the largest number of points where two lines cross?',
+         opts=['6', '4', '8', '3'],
+         hint='Each pair of lines can cross at most once.',
+         sol='Every pair of lines can cross once. The pairs are: 1-2, 1-3, 1-4, 2-3, 2-4 and 3-4. That is 6 pairs, so at most 6 crossing points.'),
+
+    # ---------------- Part 5 · Mensuration
+    dict(ch='6', scen='two squares of perimeter 48 cm side by side',
+         stem='Two equal squares each have a perimeter of 48 cm. Gauri puts them side by side to make a rectangle. What is the perimeter of the rectangle?',
+         opts=['72 cm', '96 cm', '84 cm', '48 cm'],
+         hint='Find the side of a square first.',
+         sol='Each side is 48 ÷ 4 = 12 cm. The rectangle is 24 cm by 12 cm. Its perimeter is 2 × (24 + 12) = 72 cm.'),
+    dict(ch='6', scen='50 cm tiles on a 6 m by 4 m floor',
+         stem='A floor is 6 m long and 4 m wide. Square tiles with sides of 50 cm are laid on it with no gaps. How many tiles are needed?',
+         opts=['96', '24', '48', '960'],
+         hint='How many 50 cm tiles fit along 1 m?',
+         sol='2 tiles fit along each metre. Along 6 m: 12 tiles. Along 4 m: 8 tiles. 12 × 8 = 96 tiles.'),
+    dict(ch='6', scen='rectangle with perimeter 30 cm and whole-number sides · largest area',
+         stem='Om draws rectangles with a perimeter of 30 cm. The length and width are whole numbers of centimetres. What is the largest area he can get?',
+         opts=['56 cm²', '54 cm²', '50 cm²', '60 cm²'],
+         hint='Length + width = 15 cm. Try the pairs.',
+         sol='Length + width = 15. The areas are 1 × 14 = 14, 2 × 13 = 26, 3 × 12 = 36, 4 × 11 = 44, 5 × 10 = 50, 6 × 9 = 54 and 7 × 8 = 56. The largest is 56 cm².'),
+    dict(ch='6', scen='longest of 2,050 m 2 km 5 m 2.1 km and 2,500 cm',
+         stem='Four children run these distances: 2,050 m, 2 km 5 m, 2.1 km and 2,500 cm. Which distance is the longest?',
+         opts=['2.1 km', '2,050 m', '2 km 5 m', '2,500 cm'],
+         hint='Change them all to metres.',
+         sol='2,050 m. 2 km 5 m = 2,005 m. 2.1 km = 2,100 m. 2,500 cm = 25 m. The longest is 2.1 km.'),
+
+    # ---------------- Part 6 · Data Handling
+    dict(ch='8', scen='pictograph of apples sold on four days · money on two days',
+         fig=drawing(300, 160, pict([('Monday', 4), ('Tuesday', 6), ('Wednesday', 3), ('Thursday', 5)], '🍎', '10 apples')),
+         stem='The pictograph shows apples sold at a fruit stall. Each apple costs ₹6. How much money did the stall get for apples on Tuesday and Thursday together?',
+         opts=['₹660', '₹110', '₹66', '₹1,080'],
+         hint='Count the symbols for the two days, then use the key.',
+         sol='Tuesday and Thursday: 6 + 5 = 11 symbols = 110 apples. 110 × ₹6 = ₹660.'),
+
+    # ---------------- Part 7 · Applied Mathematics
+    dict(ch='9', scen='film of 2 h 45 min ending at 6:10 PM',
+         stem='A film lasts 2 hours 45 minutes and ends at 6:10 PM. At what time did it start?',
+         opts=['3:25 PM', '3:35 PM', '4:25 PM', '8:55 PM'],
+         hint='Go back 2 hours, then go back 45 minutes.',
+         sol='2 hours before 6:10 PM is 4:10 PM. 45 minutes before 4:10 PM is 3:25 PM.'),
+    dict(ch='9', scen='15 August Tuesday · day of 2 October',
+         stem='In a certain year, 15 August is a Tuesday. What day of the week is 2 October in the same year?',
+         opts=['Monday', 'Tuesday', 'Wednesday', 'Sunday'],
+         hint='August has 31 days and September has 30.',
+         sol='From 15 August to 31 August: 16 days. September: 30 days. Then 2 more days. 16 + 30 + 2 = 48 days. 48 = 6 weeks + 6 days. 6 days after Tuesday is Monday.'),
+    dict(ch='9', scen='buy two pens get one free · ten pens',
+         stem='A shop sells pens at ₹24 each with an offer: buy 2, get 1 free. Pooja needs exactly 10 pens. What is the least she must pay?',
+         opts=['₹168', '₹144', '₹240', '₹192'],
+         hint='Every 3 pens cost the price of 2.',
+         sol='9 pens come as 3 offers, paying for 6 pens. The 10th pen is paid for too. She pays for 7 pens: 7 × 24 = ₹168.'),
+
+    # ---------------- Part 8 · Mathematical Reasoning
+    dict(ch='10', scen='series 3 5 9 17 33',
+         fig=cards([3, 5, 9, 17, 33, '?']),
+         stem='Which number comes next in this series?',
+         opts=['65', '49', '64', '66'],
+         hint='Look at how much is added each time.',
+         sol='The amounts added are 2, 4, 8, 16: each is double the one before. Next add 32: 33 + 32 = 65. (Each number is also double the last minus 1.)'),
+    dict(ch='10', scen='1A plus A1 equals 99',
+         fig=equations([['1 A', '+', 'A 1', '=', '99']], size=32),
+         stem='A stands for the same digit in both numbers. Which digit is A?',
+         opts=['8', '9', '7', '4'],
+         hint='Look at the ones digits first.',
+         sol='Ones: A + 1 must end in 9, so A = 8. Check: 18 + 81 = 99.'),
+    dict(ch='10', scen='handshakes among six friends',
+         stem='Six friends meet. Each friend shakes hands once with every other friend. How many handshakes are there?',
+         opts=['15', '30', '36', '12'],
+         hint='The first friend shakes 5 hands. The second has 4 new handshakes, and so on.',
+         sol='5 + 4 + 3 + 2 + 1 = 15. (6 × 5 = 30 counts every handshake twice.)'),
+    dict(ch='10', scen='3-digit numbers from digits 1 2 3 with digit sum 6',
+         stem='Leena makes 3-digit numbers using only the digits 1, 2 and 3. A digit may be used more than once. How many of her numbers have digits that add up to 6?',
+         opts=['7', '6', '3', '9'],
+         hint='Which groups of three digits from 1, 2, 3 add up to 6?',
+         sol='The digits must be 1, 2, 3 (6 orders: 123, 132, 213, 231, 312, 321) or 2, 2, 2 (just 222). 6 + 1 = 7 numbers.'),
+
+    # ---------------- Section II · Star Questions
+    dict(ch='3+10', scen='ate half then a third of the rest · 10 chocolates left',
+         stem='Sneha eats 1/2 of her chocolates. Then she eats 1/3 of the chocolates that are left. Now she has 10 chocolates. How many did she have at the start?',
+         opts=['30', '60', '20', '45'],
+         hint='Work backwards. 10 is what is left after eating 1/3 of the second amount.',
+         sol='After eating 1/3 of the rest, 2/3 of it is left, and 2/3 of it is 10. So the rest was 15. That 15 was half of the start, so she had 30.'),
+    dict(ch='9+10', scen='day of the week 1,000 days after a Tuesday',
+         stem='Today is Tuesday. What day of the week will it be 1,000 days from today?',
+         opts=['Monday', 'Wednesday', 'Sunday', 'Tuesday'],
+         hint='Every 7 days the day of the week repeats.',
+         sol='1,000 = 7 × 142 + 6. After 142 full weeks it is Tuesday again, and 6 more days give Monday.'),
+    dict(ch='1+10', scen='counting back from 1,00,000 in steps of 12,500 · eighth number',
+         stem='Siddharth counts back from 1,00,000 in steps of 12,500: 1,00,000, 87,500, 75,000, … What is the 8th number he says?',
+         opts=['12,500', '0', '25,000', '1,000'],
+         hint='The 8th number is 7 steps after the 1st.',
+         sol='7 steps of 12,500 make 87,500. 1,00,000 − 87,500 = 12,500.'),
+    dict(ch='3+9', scen='saving what is left after spending a quarter and a third',
+         stem='Ruhi gets ₹360 every month. She spends 1/4 of it in the first week and 1/3 of it in the second week, and saves the rest. In how many months will she save ₹1,050?',
+         opts=['7 months', '5 months', '6 months', '8 months'],
+         hint='Find how much she saves in one month.',
+         sol='1/4 of 360 = ₹90 and 1/3 of 360 = ₹120. She saves 360 − 210 = ₹150 a month. 150 × 7 = 1,050, so 7 months.'),
+    dict(ch='5+6', scen='squares of side 1 2 3 cm side by side · perimeter',
+         fig=drawing(160, 95, three_squares()),
+         stem='Squares with sides 1 cm, 2 cm and 3 cm stand side by side on a line. What is the perimeter of the whole shape?',
+         opts=['18 cm', '24 cm', '20 cm', '22 cm'],
+         hint='The steps on top add up to the same as one straight side.',
+         sol='The shape is 1 + 2 + 3 = 6 cm wide and 3 cm tall at the highest. Going up the steps on the top adds up to 3 cm, and going across them adds up to 6 cm. Perimeter = 6 + 3 + 6 + 3 = 18 cm.'),
+]
