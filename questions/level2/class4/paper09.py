@@ -22,7 +22,7 @@ def box_sheet():
     P = lambda x, y: (10 + x * s, 10 + y * s)
     pts = [P(2, 0), P(8, 0), P(8, 2), P(10, 2), P(10, 6), P(8, 6), P(8, 8), P(2, 8), P(2, 6), P(0, 6), P(0, 2), P(2, 2)]
     return [('poly', pts, 'peach'), ('rect', *P(2, 2), 6 * s, 4 * s, 'yellow', True),
-            ('text', *P(5, 8.8), '10 cm by 8 cm sheet, 2 cm squares cut from each corner', 10)]
+            ('text', *P(5, 8.8), '2 cm squares cut from the corners', 10)]
 
 
 QUESTIONS = [

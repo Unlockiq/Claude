@@ -273,15 +273,16 @@ def paper_page(n, cls, logo_rid, pid):
     run, para, table, box, spacer = bc.run, bc.para, bc.table, bc.box, bc.spacer
     out = para([bc.image_run(logo_rid, 64.4, 69.8, pid, f'logo{n}')], 'center', after=80)
     out += para([run('ARYABHATTA MATHS OLYMPIAD', 18, True, color=bc.NAVY)], 'center', after=20)
-    out += para([run('Level 2', 10, color=bc.GREY_T)], 'center', after=200)
+    tight = len(PARTS) > 5          # Class 3+ list more chapters; keep the opening page to one page
+    out += para([run('Level 2', 10, color=bc.GREY_T)], 'center', after=120 if tight else 200)
     out += para([run(f'PRACTICE PAPER-{n}', 13.5, True, color=bc.RED)], 'center', after=40)
-    out += para([run(f'CLASS {cls}', 26, True, color=bc.NAVY)], 'center', after=200)
+    out += para([run(f'CLASS {cls}', 26, True, color=bc.NAVY)], 'center', after=120 if tight else 200)
     rows = [(a, b) if a != 'Chapters' else (a, ' · '.join(t.split(' — ')[1].split(' (')[0] for _, t, _ in PARTS)) for a, b in INFO_ROWS]
     trs = [[para([run(a, 11, True)]), para([run(b, 11)])] for a, b in rows]
-    out += table(trs, [3150, bc.TEXT_W - 3150], bc.GRID, fills=[bc.LABEL_FILL, None], mar=(95, 100))
+    out += table(trs, [3150, bc.TEXT_W - 3150], bc.GRID, fills=[bc.LABEL_FILL, None], mar=(60, 100) if tight else (95, 100))
     out += spacer(16)
     hello = [para([run('\U0001F44B ', 13), run('Hello, friend! How to do this paper:', 13, True, color=bc.NAVY)], after=100)]
-    hello += [para([run('⭐ ', 12), run(b, 12)], after=70) for b in HELLO]
+    hello += [para([run('⭐ ', 12), run(b, 12)], after=40 if tight else 70) for b in HELLO]
     out += box(hello, bc.YEL_FILL, bc.YEL_LINE)
     out += spacer(14)
     par = [para([run('For parents and teachers', 8.5, True, color=bc.NAVY)], after=50)]

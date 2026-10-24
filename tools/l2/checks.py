@@ -8,12 +8,12 @@ GIRLS = set('''Anita Meera Priya Isha Diya Kavya Riya Anaya Tara Sana Pooja Asha
 Tanvi Avni Navya Mahi Jiya Kiara Neha Ritu Sneha Aditi Pari Ruhi Vani Juhi Lata Rani Uma Esha Ananya Shreya
 Trisha Sita Bela Charu Disha Gita Hema Indu Jaya Komal Lavanya Madhu Nandini Pallavi Radha Shalini Tulsi Urvi
 Vidya Yamini Aarti Bhavna Chhaya Deepa Ekta Falguni Garima Harini Ishita Janvi Kirti Mansi Naina Ojasvi Prachi
-Rekha Sakshi Meena Kusum Leena Shruti Sapna Sunita Neelam Hema Tanya Upasana Vaishnavi Anjali Rupa Manju Seema Suhani Amrita Mitali Payal Rashmi Devika Ishani Mohini Charvi Nitya Kriti Swati Rhea Parul Vrinda'''.split())
+Rekha Sakshi Meena Kusum Leena Shruti Sapna Sunita Neelam Hema Tanya Upasana Vaishnavi Anjali Rupa Manju Seema Suhani Amrita Mitali Payal Rashmi Devika Ishani Mohini Charvi Nitya Kriti Swati Rhea Parul Vrinda Malti'''.split())
 BOYS = set('''Raj Arjun Kabir Rohan Aarav Vivaan Ishaan Dev Neel Kunal Yash Om Manav Varun Aditya Harsh Parth Samar
 Advik Krish Vihaan Reyansh Ravi Amit Nikhil Sahil Tarun Ved Ayaan Dhruv Rahul Sanjay Vikram Mohan Gopal Hari Jay
 Lakshya Mihir Nakul Pranav Rudra Shaurya Tejas Uday Vansh Yuvraj Aryan Bhavin Chirag Darsh Eshan Gautam Gaurav Raju Hitesh
 Jatin Kartik Abhay Bharat Deepak Girish Hemant Ishwar Jai Kishore Lalit Madhav Naveen Omkar Prakash Rakesh Suresh
-Tushar Umesh Vinay Mohit Ojas Rohit Lalit Raghav Hari Vivek Mukesh Sohan Akash Ankit Rishi Sameer Vijay Atul Mayank Pratik Siddharth Anand Kush Luv Ajay Karan Arnav Kiran Sunil Manoj Ritesh Vedant Aakash Ishan Pankaj Nitin Sachin'''.split())
+Tushar Umesh Vinay Mohit Ojas Rohit Lalit Raghav Hari Vivek Mukesh Sohan Akash Ankit Rishi Sameer Vijay Atul Mayank Pratik Siddharth Anand Kush Luv Ajay Karan Arnav Kiran Sunil Manoj Ritesh Vedant Aakash Ishan Pankaj Nitin Sachin Ashwin Arun'''.split())
 NAMES = GIRLS | BOYS
 
 # Capitalised words that may start a sentence or name a thing, not a person.
@@ -30,7 +30,7 @@ Clock Year Week Month Months Days Day Help Lift Ticket Tickets Seat Seats Locker
 Each Either Neither Round Square Circle Triangle Rectangle Children Class Teacher School Library Park Garden
 Market Shop Indian India Sundays Mondays Saturdays Fridays Tuesdays Wednesdays Thursdays Roman Farm Bucket Jug Tank Pole Club Pune Goa Delhi Mumbai Chennai Jaipur Kolkata Agra Mysuru Diwali Holi Coach Domino Point Grandma Grandpa Mother Father Aunt Uncle Sister Brother Mummy Papa Dadi Nani Nana Dada Mr Mrs Ms'''.split())
 
-STARTERS = set('''Later Into Ball Bat Cap Lunch Both Each Every Some Pages Houses Lockers Raffle Eggs Dots Shapes Hens Coins Coins Numbers Months Days
+STARTERS = set('''Squares Starting Seen Rice Ribbon Posts Painting Milk Follow Fencing During Cloth Cannot Any Another Later Into Ball Bat Cap Lunch Both Each Every Some Pages Houses Lockers Raffle Eggs Dots Shapes Hens Coins Coins Numbers Months Days
 Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Going Look Count Find Which What How Who Where When Whose
 The A An In On At If Then There This That These Those She He They It Its Her His My I Now Today Tomorrow Yesterday
 School Points Part Players Rows Row Lines Each Every Both Neither Use Using Write Put Thirteen Eleven Twelve Fourteen
