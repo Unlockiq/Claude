@@ -208,7 +208,7 @@ def answer_key(cls, pno, qs):
 INFO_ROWS = [
     ('Total Questions', '30 multiple-choice questions'),
     ('Level', 'Level-2 (final round): every question is Hard'),
-    ('Time', '60 minutes'),
+    ('Time', '45 minutes'),
     ('Section I', '25 questions, each from one chapter'),
     ('Section II', '5 Star Questions, each joining two chapters'),
     ('Negative Marking', 'No negative marking'),
