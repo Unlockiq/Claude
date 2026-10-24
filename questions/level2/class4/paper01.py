@@ -54,7 +54,7 @@ QUESTIONS = [
 
     # ---------------- Part 2 · Operations
     dict(ch='2', scen='hall with 48 rows of 36 chairs and 129 empty',
-         stem='A hall has 48 rows with 36 chairs in each row. During a show, 129 chairs are empty and every other chair has one person. How many people are sitting?',
+         stem='A hall has 48 rows with 36 chairs in each row. During a show, 129 chairs are empty and each of the other chairs has one person. How many people are sitting?',
          opts=['1,599', '1,728', '1,609', '1,857'],
          hint='Find the total number of chairs first.',
          sol='Chairs: 48 × 36 = 1,728. People: 1,728 − 129 = 1,599.'),
