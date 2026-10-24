@@ -18,3 +18,9 @@ Reviews of the AMO Level 1 practice papers against the AMO Vertical Syllabus v5.
 - `questions/level2/class1/paperNN.py`: the 300 new questions (all Hard, Class 1 syllabus, unique scenarios, Indian names).
 - `papers/level2/class1/`: the two booklets in the Level-1 consolidated format: Set-1 (Practice Papers 1–5) and Set-2 (Practice Papers 6–10), as DOCX and PDF.
 - `tools/l2/build_l2.py` builds a booklet, `tools/l2/figures.py` draws the pictures, `tools/l2/checks.py` holds the house-rule checks and `tools/l2/index.py` writes the question index. `assets/AMO_Class1_L2_cover.png` is the Class 1 cover relabelled for Level-2.
+
+## Level-2 (Class 2)
+
+- `reviews/level2/class2/README.md`: review of the 10 original Level-2 Class 2 papers, how they were replaced and how the new ones were verified. `originals_papers1-5.md` and `originals_papers6-10.md` are the question-by-question reviews; `question_index.md` lists all 300 new questions with their answers.
+- `questions/level2/class2/paperNN.py`: the 300 new questions.
+- `papers/level2/class2/`: Set-1 (Practice Papers 1–5) and Set-2 (Practice Papers 6–10), as DOCX and PDF. The cover is `assets/AMO_Class2_L2_cover.png`.

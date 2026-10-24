@@ -13,7 +13,7 @@ BOYS = set('''Raj Arjun Kabir Rohan Aarav Vivaan Ishaan Dev Neel Kunal Yash Om M
 Advik Krish Vihaan Reyansh Ravi Amit Nikhil Sahil Tarun Ved Ayaan Dhruv Rahul Sanjay Vikram Mohan Gopal Hari Jay
 Lakshya Mihir Nakul Pranav Rudra Shaurya Tejas Uday Vansh Yuvraj Aryan Bhavin Chirag Darsh Eshan Gautam Gaurav Raju Hitesh
 Jatin Kartik Abhay Bharat Deepak Girish Hemant Ishwar Jai Kishore Lalit Madhav Naveen Omkar Prakash Rakesh Suresh
-Tushar Umesh Vinay Mohit Ojas Rohit Lalit Raghav Hari Vivek Mukesh Sohan Akash Ankit Rishi Sameer Vijay Atul Mayank Pratik Siddharth Anand Kush Luv Ajay'''.split())
+Tushar Umesh Vinay Mohit Ojas Rohit Lalit Raghav Hari Vivek Mukesh Sohan Akash Ankit Rishi Sameer Vijay Atul Mayank Pratik Siddharth Anand Kush Luv Ajay Karan Arnav Kiran Sunil Manoj Ritesh Vedant Aakash Ishan Pankaj Nitin Sachin'''.split())
 NAMES = GIRLS | BOYS
 
 # Capitalised words that may start a sentence or name a thing, not a person.
@@ -28,13 +28,13 @@ Not No Yes Only Also Next Last First Second Third After Before Now Today Tomorro
 Sticks Coins Notes Pages Page Book Books Tray Trays Step Steps Number Numbers Tens Ones Ten Ones Rows Rod Rods
 Clock Year Week Month Months Days Day Help Lift Ticket Tickets Seat Seats Locker Lockers Bead Beads Ring Rings
 Each Either Neither Round Square Circle Triangle Rectangle Children Class Teacher School Library Park Garden
-Market Shop Indian India Sundays Mondays Saturdays Fridays Coach Domino Point Grandma Grandpa Mother Father Aunt Uncle Sister Brother Mummy Papa Dadi Nani Nana Dada Mr Mrs Ms'''.split())
+Market Shop Indian India Sundays Mondays Saturdays Fridays Tuesdays Wednesdays Thursdays Roman Coach Domino Point Grandma Grandpa Mother Father Aunt Uncle Sister Brother Mummy Papa Dadi Nani Nana Dada Mr Mrs Ms'''.split())
 
 STARTERS = set('''Later Into Ball Bat Cap Lunch Both Each Every Some Pages Houses Lockers Raffle Eggs Dots Shapes Hens Coins Coins Numbers Months Days
 Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Going Look Count Find Which What How Who Where When Whose
 The A An In On At If Then There This That These Those She He They It Its Her His My I Now Today Tomorrow Yesterday
 School Points Part Players Rows Row Lines Each Every Both Neither Use Using Write Put Thirteen Eleven Twelve Fourteen
-Without Sort Think Counting Point Ten Taking After Before Only Once Twice Cone Cylinder Sphere Cube Half Quarter Clock Rows Piece Pictures Shirt Exactly Dates Choose Putting You Together Pencil Eraser Sharpener Noon Midnight Morning Evening Night'''.split())
+Without Sort Think Counting Point Ten Taking After Before Only Once Twice Cone Cylinder Sphere Cube Half Quarter Clock Rows Piece Pictures Shirt Exactly Dates Choose Putting You Together Pencil Eraser Sharpener Noon Midnight Morning Evening Night Hall Triangular Square Rectangular Cuboid Pyramid Prism'''.split())
 WORD_CAP = 25          # Language & Culture rule 8: max 25 words per sentence for C1-3, 35 for C4-6
 ADD_CAP = 24           # Computational ceiling: C1 sums within 20 (+20% allowed for Section II); C2 sums within 999
 CAPS = {1: 24, 2: 999, 3: 10000, 4: 100000}

@@ -695,7 +695,7 @@ def _clocks(f):
             hh, mm = t
             am = math.radians(mm * 6 - 90)
             ah = math.radians((hh % 12) * 30 + mm * 0.5 - 90)
-            c.line(cx, cy, cx + r * 0.42 * math.cos(ah), cy + r * 0.42 * math.sin(ah), INK, 4.2)
+            c.line(cx, cy, cx + r * 0.42 * math.cos(ah), cy + r * 0.42 * math.sin(ah), (120, 120, 135), 5.0)
             c.line(cx, cy, cx + r * 0.64 * math.cos(am), cy + r * 0.64 * math.sin(am), INK, 2.2)
         c.circle(cx, cy, 3.2, INK, INK, 1)
         if f.get('labels'):

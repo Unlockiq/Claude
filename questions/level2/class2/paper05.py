@@ -6,6 +6,19 @@ def fan():
             ('line', 120, 10, 175, 120)]
 
 
+
+def roti_example():
+    return [('circle', 60, 60, 50, 'peach'), ('line', 14, 45, 106, 75), ('line', 45, 14, 75, 106),
+            ('text', 60, 128, '2 cuts: 4 pieces', 11)]
+
+
+def tri_sizes():
+    import math
+    h = 30 * math.sqrt(3) / 2
+    return [('poly', [(25, 60 - h), (10, 60), (40, 60)], 'yellow'), ('text', 25, 76, 'small', 10),
+            ('poly', [(120, 60 - 2 * h), (90, 60), (150, 60)], None, True), ('text', 120, 76, 'twice as tall', 10)]
+
+
 QUESTIONS = [
     # ---------------- Part 1 · Number System
     dict(ch='1', scen='3-digit numbers from 1 2 3 greater than 200',
@@ -74,7 +87,8 @@ QUESTIONS = [
 
     # ---------------- Part 3 · Geometry
     dict(ch='5', scen='three straight cuts across a round roti · most pieces',
-         stem='Mother cuts a round roti with 3 straight cuts. The cuts do not have to go through the middle. What is the largest number of pieces she can get?',
+         fig=drawing(120, 135, roti_example()),
+         stem='With 2 cuts, Mother can cut a roti into 4 pieces, as shown. Now she makes 3 straight cuts. The cuts do not have to go through the middle. What is the largest number of pieces she can get?',
          opts=['7', '6', '8', '9'],
          hint='Each new cut should cross every cut before it, at different places.',
          sol='One cut gives 2 pieces. A second cut crossing the first gives 4. A third cut that crosses both earlier cuts at two different points goes through 3 pieces and splits each, giving 4 + 3 = 7.'),
@@ -90,6 +104,7 @@ QUESTIONS = [
          hint='Only one of these is round in every direction.',
          sol='A sphere looks like a circle from every side. A cylinder looks like a rectangle from the side, a cone like a triangle, and a cube like a square.'),
     dict(ch='5', scen='small triangles needed to make a triangle twice as tall',
+         fig=drawing(160, 80, tri_sizes()),
          stem='Kush has many small triangles that are all the same. He puts some together, with no gaps, to make a bigger triangle of the same shape that is twice as tall. How many small triangles does he use?',
          opts=['4', '2', '3', '6'],
          hint='Try 1 triangle on top and a row of triangles below it.',
@@ -112,11 +127,11 @@ QUESTIONS = [
          opts=['4', '3', '7', '2'],
          hint='First find how much the ₹20 notes make.',
          sol='Three ₹20 notes make ₹60. The rest is ₹100 − ₹60 = ₹40, which is four ₹10 notes.'),
-    dict(ch='9', scen='which time is between noon and midnight',
-         stem='Which of these times is between noon and midnight?',
-         opts=['4:45 PM', '2:30 AM', '11:15 AM', '9:00 AM'],
-         hint='Times after noon are PM.',
-         sol='Noon is 12 o\'clock in the day. Times from noon to midnight are PM, so 4:45 PM is between them. The AM times are before noon.'),
+    dict(ch='9', scen='time after waking at half past six but before noon',
+         stem='Yash wakes up at half past 6 in the morning. Which of these times is after he wakes up but before noon?',
+         opts=['11:45 AM', '5:15 AM', '12:30 PM', '6:15 AM'],
+         hint='Half past 6 in the morning is 6:30 AM. Noon is 12 o\'clock in the day.',
+         sol='He wakes at 6:30 AM. 5:15 AM and 6:15 AM are before that. 12:30 PM is after noon. Only 11:45 AM is between 6:30 AM and noon.'),
     dict(ch='9', scen='₹20 notes and ₹2 coins after spending ₹45',
          stem='Sana has three ₹20 notes and five ₹2 coins. She spends ₹45. How much money does she have left?',
          opts=['₹25', '₹15', '₹70', '₹35'],
@@ -142,10 +157,10 @@ QUESTIONS = [
          hint='List every pair of coins.',
          sol='The pairs are ₹1 + ₹2 = ₹3, ₹1 + ₹5 = ₹6, ₹1 + ₹10 = ₹11, ₹2 + ₹5 = ₹7, ₹2 + ₹10 = ₹12 and ₹5 + ₹10 = ₹15. All 6 totals are different.'),
     dict(ch='10', scen='odd one out · digits counting up by one',
-         stem='Four lockers are numbered 234, 345, 456 and 568. Three numbers belong together. Which locker number is the odd one out?',
-         opts=['568', '234', '345', '456'],
+         stem='Four lockers are numbered 234, 345, 456 and 579. Three numbers belong together. Which locker number is the odd one out?',
+         opts=['579', '234', '345', '456'],
          hint='Look at the digits of each number from left to right.',
-         sol='In 234, 345 and 456 the digits go up by 1 each time. In 568 the digits go 5, 6, 8, so it is the odd one out.'),
+         sol='In 234, 345 and 456 the digits go up by 1 each time. In 579 the digits go up by 2, so it is the odd one out.'),
 
     # ---------------- Section II · Star Questions
     dict(ch='1+10', scen='3-digit numbers with digit sum 6 in increasing order',

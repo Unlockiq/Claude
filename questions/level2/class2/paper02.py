@@ -6,12 +6,12 @@ def stick_grid():
     segs = []
     for r in range(3):
         for c in range(2):
-            segs.append(((c * s, r * s), ((c + 1) * s, r * s)))
+            segs.append(((c * s + 5, r * s + 5), ((c + 1) * s + 5, r * s + 5)))
     for c in range(3):
         for r in range(2):
             if (c, r) == (1, 0):
                 continue
-            segs.append(((c * s, r * s), (c * s, (r + 1) * s)))
+            segs.append(((c * s + 5, r * s + 5), (c * s + 5, (r + 1) * s + 5)))
     return segs
 
 
@@ -116,7 +116,7 @@ QUESTIONS = [
          stem='Which solid can roll along the floor and can also be stacked one on top of another?',
          opts=['Cylinder', 'Sphere', 'Cube', 'Cone'],
          hint='It needs a curved surface and two flat faces.',
-         sol='A cylinder has a curved surface, so it rolls, and flat faces on top and bottom, so cylinders stack. A sphere rolls but cannot be stacked, and a cube stacks but does not roll. A cone has a point on top, so another cone cannot sit on it.'),
+         sol='A cylinder has a curved surface, so it rolls, and flat faces on top and bottom, so cylinders stack. A sphere rolls but cannot be stacked, and a cube stacks but does not roll. A cone has a point on top, so it does not stack steadily.'),
     dict(ch='5', scen='sticks grid with one middle stick removed · squares left',
          fig=sticks(stick_grid(), 90, 90),
          stem='Raju made a big square with 4 small squares inside using 12 sticks. He took away one stick from the middle, as shown. How many squares of all sizes are there now?',
