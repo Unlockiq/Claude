@@ -28,7 +28,7 @@ Not No Yes Only Also Next Last First Second Third After Before Now Today Tomorro
 Sticks Coins Notes Pages Page Book Books Tray Trays Step Steps Number Numbers Tens Ones Ten Ones Rows Rod Rods
 Clock Year Week Month Months Days Day Help Lift Ticket Tickets Seat Seats Locker Lockers Bead Beads Ring Rings
 Each Either Neither Round Square Circle Triangle Rectangle Children Class Teacher School Library Park Garden
-Market Shop Indian India Sundays Mondays Saturdays Fridays Tuesdays Wednesdays Thursdays Roman Coach Domino Point Grandma Grandpa Mother Father Aunt Uncle Sister Brother Mummy Papa Dadi Nani Nana Dada Mr Mrs Ms'''.split())
+Market Shop Indian India Sundays Mondays Saturdays Fridays Tuesdays Wednesdays Thursdays Roman Farm Bucket Jug Tank Pole Club Pune Goa Delhi Mumbai Chennai Jaipur Kolkata Agra Mysuru Diwali Holi Coach Domino Point Grandma Grandpa Mother Father Aunt Uncle Sister Brother Mummy Papa Dadi Nani Nana Dada Mr Mrs Ms'''.split())
 
 STARTERS = set('''Later Into Ball Bat Cap Lunch Both Each Every Some Pages Houses Lockers Raffle Eggs Dots Shapes Hens Coins Coins Numbers Months Days
 Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Going Look Count Find Which What How Who Where When Whose

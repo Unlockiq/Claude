@@ -1,0 +1,195 @@
+# AMO Level-2 · Class 3 · Practice Paper 9  (format: see paper01.py)
+
+
+def pizza_quarter():
+    import math
+    arc = [(70 + 55 * math.cos(math.radians(a)), 70 - 55 * math.sin(math.radians(a))) for a in range(90, -1, -10)]
+    return [('poly', [(70, 70)] + arc, 'blue'),
+            ('circle', 70, 70, 55, None), ('line', 15, 70, 125, 70), ('line', 70, 15, 70, 125)]
+
+
+def rect_x_mid():
+    return [('rect', 10, 10, 180, 100, 'yellow'), ('line', 10, 10, 190, 110), ('line', 190, 10, 10, 110),
+            ('line', 100, 10, 100, 110)]
+
+
+def cross_net():
+    s = 30
+    cells = [(1, 0), (0, 1), (1, 1), (2, 1), (3, 1), (1, 2)]
+    prims = [('rect', 10 + c * s, 10 + r * s, s, s, 'green') for c, r in cells]
+    prims.append(('text', 10 + 1.5 * s, 0, '3 cm', 10))
+    return prims
+
+
+QUESTIONS = [
+    # ---------------- Part 1 · Number System
+    dict(ch='1', scen='how many zeros are written from 1 to 1000',
+         stem='Tejas writes every number from 1 to 1000. How many times does he write the digit 0?',
+         opts=['192', '189', '180', '300'],
+         hint='Count 10 to 99, then each hundred like 100 to 199, then 1000.',
+         sol='10, 20, …, 90: 9 zeros. In each hundred like 100–199: 100 has 2, 101–109 have 9, and 110, 120, …, 190 have 9, so 20. Nine hundreds: 180. 1000 has 3. Total 9 + 180 + 3 = 192.'),
+    dict(ch='1', scen='number in the 7000s with tens 2 more than hundreds and digit sum 23',
+         stem='Sohan\'s number is in the 7000s. Its tens digit is 2 more than its hundreds digit. Its ones digit is the sum of its hundreds and tens digits. Its digits add up to 23. What is it?',
+         opts=['7358', '7538', '7385', '7835'],
+         hint='Try hundreds digits 1, 2, 3, … and check the total.',
+         sol='Hundreds 3 gives tens 5 and ones 3 + 5 = 8. Digit sum: 7 + 3 + 5 + 8 = 23. The number is 7358. (Hundreds 2 gives 7246 with sum 19; hundreds 4 gives ones 10, which is not a digit.)'),
+    dict(ch='1', scen='number from 1 to 50 needing the most Roman symbols',
+         stem='Which number from 1 to 50 needs the most symbols when written in Roman numerals?',
+         opts=['38', '48', '28', '37'],
+         hint='Write each option in Roman numerals and count the symbols.',
+         sol='38 = XXXVIII (7 symbols). 48 = XLVIII (6), 28 = XXVIII (6), 37 = XXXVII (6). So 38.'),
+    dict(ch='1', scen='counting on in thousands from 405 · tenth number',
+         stem='Kush starts at 405 and counts on in thousands: 405, 1405, 2405, … What is the 10th number he says?',
+         opts=['9405', '10405', '9505', '8405'],
+         hint='The 1st number is 405, so the 10th is 9 jumps later.',
+         sol='From the 1st to the 10th number there are 9 jumps of 1000. 405 + 9000 = 9405.'),
+
+    # ---------------- Part 2 · Operations
+    dict(ch='2', scen='mela tickets · Saturday 1250 more than Sunday',
+         stem='At a two-day mela, 4575 tickets were sold on Saturday. That was 1250 more than on Sunday. How many tickets were sold on the two days?',
+         opts=['7900', '10400', '5825', '3325'],
+         hint='Sunday sold fewer tickets than Saturday.',
+         sol='Sunday: 4575 − 1250 = 3325. Both days: 4575 + 3325 = 7900.'),
+    dict(ch='2', scen='8 boxes of ? chocolates equal to 12 packs of 6',
+         stem='In a shop, 8 boxes of chocolates hold as many chocolates as 12 packs of 6. Every box has the same number. How many chocolates are in one box?',
+         opts=['9', '10', '6', '8'],
+         hint='Work out 12 × 6 first.',
+         sol='12 × 6 = 72 chocolates. 72 ÷ 8 = 9 in each box.'),
+    dict(ch='2', scen='648 seats in 9 equal coaches · 4 coaches empty',
+         stem='A train has 9 coaches with the same number of seats, 648 seats in all. 5 coaches are full and the rest are empty. How many seats are empty?',
+         opts=['288', '360', '72', '216'],
+         hint='Find the seats in one coach.',
+         sol='648 ÷ 9 = 72 seats per coach. Empty coaches: 9 − 5 = 4. 72 × 4 = 288 empty seats.'),
+    dict(ch='2', scen='89 divided by a digit gives 12 remainder 5',
+         stem='When Vinay divides 89 by a 1-digit number, he gets 12 with remainder 5. What number did he divide by?',
+         opts=['7', '8', '6', '9'],
+         hint='Take away the remainder first.',
+         sol='89 − 5 = 84. 84 ÷ 12 = 7, since 12 × 7 = 84. Check: 89 ÷ 7 = 12 remainder 5.'),
+
+    # ---------------- Part 3 · Fractions
+    dict(ch='3', scen='garden in twelfths · 16 more roses than lilies · marigolds',
+         stem='In a garden, 5/12 of the flowers are roses, 3/12 are lilies and the rest are marigolds. There are 16 more roses than lilies. How many marigolds are there?',
+         opts=['32', '16', '96', '24'],
+         hint='Roses are 2/12 more than lilies.',
+         sol='5/12 − 3/12 = 2/12 is 16 flowers, so 1/12 is 8. Marigolds: 12/12 − 5/12 − 3/12 = 4/12, which is 4 × 8 = 32.'),
+    dict(ch='3', scen='sum of smallest and largest of four elevenths',
+         stem='Navya picks the smallest and the largest of 3/11, 8/11, 5/11 and 10/11 and adds them. What does she get?',
+         opts=['13/11', '11/11', '13/22', '15/11'],
+         hint='Same bottom number, so compare the tops.',
+         sol='Smallest: 3/11. Largest: 10/11. 3/11 + 10/11 = 13/11. The bottom number stays 11.'),
+    dict(ch='3', scen='minute hand from 12 to 4 then to 9 · fraction to finish a turn',
+         stem='The minute hand moves from 12 to 4 and then from 4 to 9. What fraction of a full turn must it still move to get back to 12?',
+         opts=['3/12', '9/12', '5/12', '4/12'],
+         hint='A full turn passes 12 equal gaps between the numbers.',
+         sol='From 12 to 4 is 4/12 of a turn and from 4 to 9 is 5/12. Together 9/12. Still to go: 12/12 − 9/12 = 3/12.'),
+
+    # ---------------- Part 4 · Geometry
+    dict(ch='5', scen='three matchboxes stacked · faces you can see',
+         stem='Gopal stacks 3 matchboxes on a table, one on top of another. How many faces of the boxes can be seen from all around and above?',
+         opts=['13', '18', '14', '12'],
+         hint='Faces that touch another box or the table cannot be seen.',
+         sol='3 boxes have 3 × 6 = 18 faces. Each of the 2 places where boxes touch hides 2 faces: 4. The bottom face on the table is hidden: 1. 18 − 5 = 13 faces can be seen.'),
+    dict(ch='5', scen='circle in quarters with one quarter shaded · lines of symmetry',
+         fig=drawing(140, 140, pizza_quarter()),
+         stem='A circle is cut into 4 equal parts and one part is shaded. How many lines of symmetry does the whole picture have?',
+         opts=['1', '2', '4', '0'],
+         hint='A fold must put the shaded part on top of itself.',
+         sol='A fold through the middle of the shaded part (from its point to the opposite side) puts the shaded part on itself and the other parts on each other. No other fold does, so there is 1 line of symmetry.'),
+    dict(ch='5', scen='rectangle with both diagonals and an up-down middle line · count triangles',
+         fig=drawing(200, 120, rect_x_mid()),
+         stem='Sapna draws a rectangle, both corner-to-corner lines and a line down the middle. How many triangles are there?',
+         opts=['12', '10', '8', '14'],
+         hint='Count the 6 small triangles first.',
+         sol='Small triangles: 6. Triangles made of two small ones: the top one and the bottom one, so 2. Each corner-to-corner line cuts the rectangle into 2 big triangles: 4. 6 + 2 + 4 = 12.'),
+
+    # ---------------- Part 5 · Mensuration
+    dict(ch='6', scen='square with the same perimeter as a 16 by 4 rectangle',
+         stem='A rectangle is 16 cm long and 4 cm wide. A square has the same perimeter. How long is a side of the square?',
+         opts=['10 cm', '8 cm', '20 cm', '16 cm'],
+         hint='Find the perimeter of the rectangle.',
+         sol='Rectangle: 16 + 4 + 16 + 4 = 40 cm. Square side: 40 ÷ 4 = 10 cm.'),
+    dict(ch='6', scen='school bag 3 kg 600 g with books 1 kg 850 g · empty bag',
+         stem='Nikhil\'s school bag with books weighs 3 kg 600 g. The books weigh 1 kg 850 g. How much does the empty bag weigh?',
+         opts=['1 kg 750 g', '2 kg 250 g', '1 kg 850 g', '5 kg 450 g'],
+         hint='Change to grams: 3600 g and 1850 g.',
+         sol='3600 − 1850 = 1750 g = 1 kg 750 g.'),
+    dict(ch='6', scen='house to school to park and back home · total distance',
+         stem='Sita walks from home to school (1 km 350 m), then to the park (875 m), then home (1 km 200 m). How far does she walk?',
+         opts=['3 km 425 m', '2 km 225 m', '3 km 325 m', '4 km 425 m'],
+         hint='Change everything into metres.',
+         sol='1350 + 875 + 1200 = 3425 m = 3 km 425 m.'),
+
+    # ---------------- Part 6 · Applied Mathematics
+    dict(ch='9', scen='cake needing 1 h 50 min ready by 5:15 PM · latest start',
+         stem='A cake needs 1 hour 50 minutes in the oven. It must be ready by 5:15 PM. What is the latest time Radha can put it in?',
+         opts=['3:25 PM', '3:35 PM', '4:25 PM', '7:05 PM'],
+         hint='Count back from 5:15 PM.',
+         sol='1 hour before 5:15 PM is 4:15 PM. 50 minutes before 4:15 PM is 3:25 PM.'),
+    dict(ch='9', scen='month 15 months after March',
+         stem='Ojasvi\'s cousin will visit 15 months after March. In which month will the cousin visit?',
+         opts=['June', 'May', 'July', 'April'],
+         hint='12 months after March is March again.',
+         sol='12 months after March is March of the next year. 3 more months: April, May, June.'),
+    dict(ch='9', scen='saving ₹45 a week to buy a football and a bat',
+         stem='A football costs ₹275 and a bat costs ₹380. Raju has ₹500 and saves ₹45 every week. After how many weeks can he first buy both?',
+         opts=['4', '3', '5', '15'],
+         hint='Find how much more money he needs.',
+         sol='Both cost 275 + 380 = ₹655. He needs 655 − 500 = ₹155 more. 3 weeks give ₹135, not enough. 4 weeks give ₹180, enough. So 4 weeks.'),
+    dict(ch='9', scen='135-minute film starting 7:50 PM',
+         stem='A film is 135 minutes long. It starts at 7:50 PM. When does it end?',
+         opts=['10:05 PM', '9:25 PM', '9:05 PM', '10:15 PM'],
+         hint='135 minutes is 2 hours and some minutes.',
+         sol='135 minutes = 120 + 15 = 2 h 15 min. 7:50 PM + 2 h = 9:50 PM. + 15 min = 10:05 PM.'),
+
+    # ---------------- Part 7 · Mathematical Reasoning
+    dict(ch='10', scen='times three plus one pattern from 1',
+         fig=cards([1, 4, 13, 40, '?']),
+         stem='Each number in Siddharth\'s pattern comes from the one before by the same two steps. Which number is next?',
+         opts=['121', '120', '160', '81'],
+         hint='Multiply by 3, then …',
+         sol='1 × 3 + 1 = 4, 4 × 3 + 1 = 13, 13 × 3 + 1 = 40. Next: 40 × 3 + 1 = 121.'),
+    dict(ch='10', scen='ABA plus BAB equals 666 with A two more than B',
+         fig=equations([['ABA', '+', 'BAB', '=', '666']], size=34),
+         stem='A and B are digits, and A is 2 more than B. What is the number ABA?',
+         opts=['424', '242', '535', '333'],
+         hint='Every column adds A + B.',
+         sol='Each column is A + B = 6. A is 2 more than B, so A = 4 and B = 2. ABA = 424. Check: 424 + 242 = 666.'),
+    dict(ch='10', scen='spending half plus ₹5 each day · ₹5 left after two days',
+         stem='Each day Meera spends half of her money and then ₹5 more. After two days she has ₹5 left. How much did she have at the start?',
+         opts=['₹50', '₹40', '₹30', '₹60'],
+         hint='At the start of day 2, half her money was ₹5 + ₹5.',
+         sol='Day 2: after spending half, she had 5 + 5 = ₹10, so she started day 2 with ₹20. Day 1: after spending half, she had 20 + 5 = ₹25, so she started with ₹50.'),
+    dict(ch='10', scen='2-digit numbers whose digits multiply to 12',
+         stem='How many 2-digit numbers have digits that multiply to give 12?',
+         opts=['4', '6', '2', '3'],
+         hint='Which pairs of digits multiply to 12?',
+         sol='12 = 2 × 6 = 3 × 4 (1 × 12 is not two digits). The numbers are 26, 62, 34 and 43. So 4.'),
+
+    # ---------------- Section II · Star Questions
+    dict(ch='1+10', scen='odd 4-digit numbers with digit sum 4',
+         stem='How many odd 4-digit numbers have digits that add up to 4?',
+         opts=['7', '6', '4', '10'],
+         hint='The ones digit must be 1 or 3.',
+         sol='Ones digit 3: the other digits add to 1, so 1003. Ones digit 1: the first three digits add to 3, with the first not 0: 102, 111, 120, 201, 210, 300 give 1021, 1111, 1201, 2011, 2101, 3001. Total 1 + 6 = 7.'),
+    dict(ch='3+10', scen='candle burning two twelfths each hour from 3 PM',
+         stem='A candle is lit at 3 PM. Every hour, 2/12 of the whole candle burns away. At what time is only 2/12 of the candle left?',
+         opts=['8 PM', '9 PM', '5 PM', '7 PM'],
+         hint='How much must burn away?',
+         sol='12/12 − 2/12 = 10/12 must burn. At 2/12 an hour, that takes 5 hours. 3 PM + 5 hours = 8 PM.'),
+    dict(ch='9+10', scen='three Fridays on even dates · day of the 18th',
+         stem='In one month, three Fridays fall on even dates. What day of the week is the 18th of that month?',
+         opts=['Sunday', 'Saturday', 'Friday', 'Monday'],
+         hint='Fridays are 7 days apart, so even and odd dates take turns.',
+         sol='Fridays go even, odd, even, odd, even. Three even Fridays need five Fridays starting on an even date: 2, 9, 16, 23, 30. So the 16th is a Friday and the 18th is a Sunday.'),
+    dict(ch='1+9', scen='₹8640 paid with ₹500 and ₹100 notes · ₹10 notes still needed',
+         stem='A washing machine costs ₹8640. Ishita gives 17 notes of ₹500 and 1 note of ₹100. How many ₹10 notes must she add to pay exactly?',
+         opts=['4', '14', '40', '3'],
+         hint='Find how much she has given so far.',
+         sol='17 × 500 = ₹8500, plus ₹100 = ₹8600. Still needed: 8640 − 8600 = ₹40, which is 4 notes of ₹10.'),
+    dict(ch='5+6', scen='perimeter of a cross-shaped cube net with 3 cm squares',
+         fig=drawing(130, 100, cross_net()),
+         stem='Mihir draws this cube net using squares of side 3 cm. What is the perimeter of the net?',
+         opts=['42 cm', '72 cm', '36 cm', '54 cm'],
+         hint='Count the square sides on the outside edge.',
+         sol='The row of 4 squares shows 3 sides on top, 3 on the bottom and 1 at each end: 8. The top and bottom squares show 3 sides each: 6. That is 14 sides, and 14 × 3 = 42 cm. (72 cm counts all 24 sides.)'),
+]

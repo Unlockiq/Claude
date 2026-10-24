@@ -176,13 +176,13 @@ QUESTIONS = [
 
     # ---------------- Section II · Star Questions
     dict(ch='1+10', scen='1010 1020 1040 1080 pattern',
-         fig=cards([1010, 1020, 1040, 1080, 1160, '?'], size=44),
+         fig=cards([1010, 1020, 1040, 1080, 1160, '?'], size=40, width=66),
          stem='Look at how much is added each time. Which number comes next?',
          opts=['1320', '1240', '1280', '1640'],
          hint='The amount added doubles each time.',
          sol='The pattern adds 10, 20, 40 and 80. Next it adds 160: 1160 + 160 = 1320.'),
     dict(ch='3+10', scen='twelfths pattern adding 2 3 4 5 twelfths',
-         fig=cards(['1/12', '3/12', '6/12', '10/12', '?'], size=44),
+         fig=cards(['1/12', '3/12', '6/12', '10/12', '?'], size=40, width=66),
          stem='The fractions follow a pattern. Which fraction comes next?',
          opts=['15/12', '14/12', '11/12', '15/24'],
          hint='Look at how many twelfths are added each time.',

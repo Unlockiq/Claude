@@ -8,7 +8,7 @@ def hexagon():
 
 
 def nets():
-    s = 18
+    s = 24
     layouts = {
         'P': [(1, 0), (0, 1), (1, 1), (2, 1), (3, 1), (1, 2)],
         'Q': [(0, 0), (0, 1), (1, 1), (2, 1), (3, 1), (3, 2)],
@@ -17,10 +17,10 @@ def nets():
     }
     prims = []
     for i, (lab, cells) in enumerate(layouts.items()):
-        x0 = i * 100
+        x0 = i * 125
         for c, r in cells:
             prims.append(('rect', x0 + c * s, 10 + r * s, s, s, 'yellow'))
-        prims.append(('text', x0 + 36, 82, lab, 13))
+        prims.append(('text', x0 + 48, 98, lab, 13))
     return prims
 
 
@@ -100,10 +100,10 @@ QUESTIONS = [
          hint='Fold from corner to opposite corner, and from side to opposite side.',
          sol='Folding corner to opposite corner gives 3 lines. Folding from the middle of a side to the middle of the opposite side gives 3 more. 3 + 3 = 6 lines of symmetry.'),
     dict(ch='5', scen='which arrangement of six squares is not a cube net',
-         fig=drawing(380, 90, nets()),
+         fig=drawing(475, 105, nets()),
          stem='Each shape is made of 6 squares. Which one can NOT be folded into a cube?',
          opts=['P', 'Q', 'R', 'S'], fixed=True, ans=2,
-         hint='A cube net cannot have 3 squares in a row on both sides of a fold that would overlap.',
+         hint='Imagine one square as the bottom of the box and fold the others up around it.',
          sol='R is 2 rows of 3. When you fold it, two squares end up on top of each other and two faces of the cube are left open. P, Q and S each fold into a cube.'),
 
     # ---------------- Part 5 · Mensuration
@@ -176,7 +176,7 @@ QUESTIONS = [
          hint='Count 7 in the ones place and 7 in the tens place separately.',
          sol='7 in the ones place: 7, 17, 27, …, 97 makes 10. 7 in the tens place: 70 to 79 makes 10. 77 is counted in both, and it really has two 7s. Total 20.'),
     dict(ch='3+10', scen='elevenths pattern · first fraction more than one whole',
-         fig=cards(['2/11', '5/11', '8/11', '…'], size=44),
+         fig=cards(['2/11', '5/11', '8/11', '…'], size=40, width=66),
          stem='The fractions keep growing by the same amount. Which is the first fraction in the pattern that is more than one whole?',
          opts=['14/11', '11/11', '12/11', '13/11'],
          hint='Find how much is added each time.',
