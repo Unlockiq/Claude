@@ -39,6 +39,23 @@ BLUEPRINT = {  # class: (Section I parts as (chapter, band title, count), Sectio
          ('9', 'Part 4 — Applied Mathematics (Syllabus Chapter 9)', 4),
          ('10', 'Part 5 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
         ['1+10', '2+10', '5+10', '1+9', '5+9']),
+    3: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 4),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 4),
+         ('3', 'Part 3 — Fractions (Syllabus Chapter 3)', 3),
+         ('5', 'Part 4 — Geometry (Syllabus Chapter 5)', 3),
+         ('6', 'Part 5 — Mensuration (Syllabus Chapter 6)', 3),
+         ('9', 'Part 6 — Applied Mathematics (Syllabus Chapter 9)', 4),
+         ('10', 'Part 7 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
+        ['1+10', '3+10', '9+10', '1+9', '5+6']),
+    4: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 3),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 3),
+         ('3', 'Part 3 — Fractions & Decimals (Syllabus Chapter 3)', 4),
+         ('5', 'Part 4 — Geometry (Syllabus Chapter 5)', 3),
+         ('6', 'Part 5 — Mensuration (Syllabus Chapter 6)', 4),
+         ('8', 'Part 6 — Data Handling (Syllabus Chapter 8)', 1),
+         ('9', 'Part 7 — Applied Mathematics (Syllabus Chapter 9)', 3),
+         ('10', 'Part 8 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
+        ['3+10', '9+10', '1+10', '3+9', '5+6']),
 }
 PARTS, STARS = BLUEPRINT[1]
 
@@ -49,7 +66,7 @@ def use_class(cls):
     checks.set_class(cls)
 
 
-CH_NAME = {'1': 'Ch1', '2': 'Ch2', '5': 'Ch5', '9': 'Ch9', '10': 'Ch10'}
+CH_NAME = {c: f'Ch{c}' for c in ('1', '2', '3', '5', '6', '8', '9', '10')}
 
 
 def esc(t):
@@ -242,9 +259,14 @@ HELLO = [
 NOTES = [
     'Pictures are part of the questions. Every picture also works when printed in black and white.',
     'You may read a question aloud to the child, exactly as printed. Please do not explain it or point to an answer choice.',
-    'Parts follow the AMO syllabus chapters. Chapters 3, 4, 6, 7 and 8 are not part of the Class {cls} syllabus, so the chapter numbers shown in the Part headings have gaps.',
+    'Parts follow the AMO syllabus chapters. Chapters {gaps} are not part of the Class {cls} syllabus, so the chapter numbers shown in the Part headings have gaps.',
     'The answer sheet and the answer key are at the end. Remove only the answer key before the child begins.',
 ]
+
+
+def gap_text():
+    gaps = [str(c) for c in range(1, 11) if str(c) not in [p[0] for p in PARTS]]
+    return ', '.join(gaps[:-1]) + ' and ' + gaps[-1]
 
 
 def paper_page(n, cls, logo_rid, pid):
@@ -254,7 +276,8 @@ def paper_page(n, cls, logo_rid, pid):
     out += para([run('Level 2', 10, color=bc.GREY_T)], 'center', after=200)
     out += para([run(f'PRACTICE PAPER-{n}', 13.5, True, color=bc.RED)], 'center', after=40)
     out += para([run(f'CLASS {cls}', 26, True, color=bc.NAVY)], 'center', after=200)
-    trs = [[para([run(a, 11, True)]), para([run(b, 11)])] for a, b in INFO_ROWS]
+    rows = [(a, b) if a != 'Chapters' else (a, ' · '.join(t.split(' — ')[1].split(' (')[0] for _, t, _ in PARTS)) for a, b in INFO_ROWS]
+    trs = [[para([run(a, 11, True)]), para([run(b, 11)])] for a, b in rows]
     out += table(trs, [3150, bc.TEXT_W - 3150], bc.GRID, fills=[bc.LABEL_FILL, None], mar=(95, 100))
     out += spacer(16)
     hello = [para([run('\U0001F44B ', 13), run('Hello, friend! How to do this paper:', 13, True, color=bc.NAVY)], after=100)]
@@ -262,7 +285,7 @@ def paper_page(n, cls, logo_rid, pid):
     out += box(hello, bc.YEL_FILL, bc.YEL_LINE)
     out += spacer(14)
     par = [para([run('For parents and teachers', 8.5, True, color=bc.NAVY)], after=50)]
-    par += [para([run('•  ', 8), run(t.format(cls=cls), 8)], after=30) for t in NOTES]
+    par += [para([run('•  ', 8), run(t.format(cls=cls, gaps=gap_text()), 8)], after=30) for t in NOTES]
     out += box(par, bc.GRY_FILL, bc.GRY_LINE)
     return out
 
