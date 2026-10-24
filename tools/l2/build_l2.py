@@ -26,14 +26,29 @@ LOGO = os.path.join(ROOT, 'assets/unlockiq_logo.png')
 PURPLE_T, AMBER, WHITE = '5A2D8F', 'E8A800', 'FFFFFF'
 bc.HEADER = 'Aryabhatta Maths Olympiad (AMO) Level-2 Practice Papers'
 
-PARTS = [  # (chapter code, band title, number of questions)
-    ('1', 'Part 1 — Number System (Syllabus Chapter 1)', 7),
-    ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 6),
-    ('5', 'Part 3 — Geometry (Syllabus Chapter 5)', 4),
-    ('9', 'Part 4 — Applied Mathematics (Syllabus Chapter 9)', 4),
-    ('10', 'Part 5 — Mathematical Reasoning (Syllabus Chapter 10)', 4),
-]
-STARS = ['1+10', '5+10', '9+10', '1+9', '2+5']  # Section II pairings for Class 1 (syllabus v5.9)
+BLUEPRINT = {  # class: (Section I parts as (chapter, band title, count), Section II pairings) — syllabus v5.9
+    1: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 7),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 6),
+         ('5', 'Part 3 — Geometry (Syllabus Chapter 5)', 4),
+         ('9', 'Part 4 — Applied Mathematics (Syllabus Chapter 9)', 4),
+         ('10', 'Part 5 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
+        ['1+10', '5+10', '9+10', '1+9', '2+5']),
+    2: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 6),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 6),
+         ('5', 'Part 3 — Geometry (Syllabus Chapter 5)', 5),
+         ('9', 'Part 4 — Applied Mathematics (Syllabus Chapter 9)', 4),
+         ('10', 'Part 5 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
+        ['1+10', '2+10', '5+10', '1+9', '5+9']),
+}
+PARTS, STARS = BLUEPRINT[1]
+
+
+def use_class(cls):
+    global PARTS, STARS
+    PARTS, STARS = BLUEPRINT[cls]
+    checks.set_class(cls)
+
+
 CH_NAME = {'1': 'Ch1', '2': 'Ch2', '5': 'Ch5', '9': 'Ch9', '10': 'Ch10'}
 
 
@@ -227,7 +242,7 @@ HELLO = [
 NOTES = [
     'Pictures are part of the questions. Every picture also works when printed in black and white.',
     'You may read a question aloud to the child, exactly as printed. Please do not explain it or point to an answer choice.',
-    'Parts follow the AMO syllabus chapters. Chapters 3, 4, 6, 7 and 8 are not part of the Class 1 syllabus, so the chapter numbers shown in the Part headings have gaps.',
+    'Parts follow the AMO syllabus chapters. Chapters 3, 4, 6, 7 and 8 are not part of the Class {cls} syllabus, so the chapter numbers shown in the Part headings have gaps.',
     'The answer sheet and the answer key are at the end. Remove only the answer key before the child begins.',
 ]
 
@@ -247,7 +262,7 @@ def paper_page(n, cls, logo_rid, pid):
     out += box(hello, bc.YEL_FILL, bc.YEL_LINE)
     out += spacer(14)
     par = [para([run('For parents and teachers', 8.5, True, color=bc.NAVY)], after=50)]
-    par += [para([run('•  ', 8), run(t, 8)], after=30) for t in NOTES]
+    par += [para([run('•  ', 8), run(t.format(cls=cls), 8)], after=30) for t in NOTES]
     out += box(par, bc.GRY_FILL, bc.GRY_LINE)
     return out
 
@@ -313,6 +328,7 @@ def load_paper(qdir, pno):
 
 def main(cls, set_no, first, last, qdir, out_path):
     cls, set_no, first, last = int(cls), int(set_no), int(first), int(last)
+    use_class(cls)
     papers = {p: load_paper(qdir, p) for p in range(first, last + 1)}
     for p, qs in papers.items():
         checks.check_paper(p, qs, PARTS, STARS)

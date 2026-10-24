@@ -22,7 +22,8 @@ FILL = {'blue': (207, 226, 243), 'peach': (255, 224, 194), 'pink': (248, 205, 22
         'yellow': (255, 242, 179), 'green': (217, 234, 211), 'grey': (158, 158, 158),
         'white': (255, 255, 255), 'lilac': (230, 220, 245), 'none': None}
 SHAPE_FILL = {'circle': 'blue', 'square': 'yellow', 'rectangle': 'green', 'triangle': 'pink',
-              'star': (255, 196, 61), 'semicircle': 'lilac'}
+              'star': (255, 196, 61), 'semicircle': 'lilac',
+              'cube': 'yellow', 'cylinder': 'blue', 'cone': 'pink', 'sphere': 'green'}
 
 _fonts = {}
 
@@ -149,6 +150,36 @@ class Canvas:
             box = [(cx - h) * K, (cy - h * 0.5) * K, (cx + h) * K, (cy + h * 1.5) * K]
             f = FILL.get(fill, fill)
             self.d.pieslice(box, 180, 360, fill=f, outline=outline, width=int(width * K))
+        elif kind == 'cube':
+            d = s * 0.28
+            a = s - d
+            x0, y0 = cx - s / 2, cy - s / 2 + d
+            f = FILL.get(fill, fill) if isinstance(fill, str) else fill
+            self.poly([(x0, y0), (x0 + a, y0), (x0 + a, y0 + a), (x0, y0 + a)], f or 'yellow', outline, width)
+            self.poly([(x0, y0), (x0 + d, y0 - d), (x0 + a + d, y0 - d), (x0 + a, y0)], (255, 250, 220), outline, width)
+            self.poly([(x0 + a, y0), (x0 + a + d, y0 - d), (x0 + a + d, y0 + a - d), (x0 + a, y0 + a)], (235, 215, 140), outline, width)
+        elif kind == 'cylinder':
+            w, e = s * 0.7, s * 0.14
+            f = FILL.get(fill or 'blue', fill or 'blue')
+            top, bot = cy - h + e, cy + h - e
+            self.d.rectangle([(cx - w / 2) * K, top * K, (cx + w / 2) * K, bot * K], fill=f)
+            self.d.ellipse([(cx - w / 2) * K, (bot - e) * K, (cx + w / 2) * K, (bot + e) * K], fill=f, outline=outline, width=int(width * K))
+            self.d.rectangle([(cx - w / 2 + width) * K, (bot - e) * K, (cx + w / 2 - width) * K, bot * K], fill=f)
+            self.line(cx - w / 2, top, cx - w / 2, bot, outline, width)
+            self.line(cx + w / 2, top, cx + w / 2, bot, outline, width)
+            self.d.ellipse([(cx - w / 2) * K, (top - e) * K, (cx + w / 2) * K, (top + e) * K], fill=(225, 238, 250), outline=outline, width=int(width * K))
+        elif kind == 'cone':
+            w, e = s * 0.8, s * 0.13
+            f = FILL.get(fill or 'pink', fill or 'pink')
+            bot = cy + h - e
+            self.d.ellipse([(cx - w / 2) * K, (bot - e) * K, (cx + w / 2) * K, (bot + e) * K], fill=f, outline=outline, width=int(width * K))
+            self.poly([(cx, cy - h), (cx + w / 2, bot), (cx - w / 2, bot)], f, None)
+            self.line(cx, cy - h, cx - w / 2, bot, outline, width)
+            self.line(cx, cy - h, cx + w / 2, bot, outline, width)
+        elif kind == 'sphere':
+            f = FILL.get(fill or 'green', fill or 'green')
+            self.circle(cx, cy, h, f, outline, width)
+            self.d.arc([(cx - h) * K, (cy - h * 0.3) * K, (cx + h) * K, (cy + h * 0.3) * K], 0, 180, fill=outline, width=int(width * 0.7 * K))
         elif kind == 'qbox':
             self.rect(cx - h, cy - h, s, s, 'white', PURPLE, 1.8, 3, dashed=True)
             self.text(cx, cy, '?', s * 0.55, True, PURPLE)
@@ -265,6 +296,11 @@ def sticks(segments, w, h, color=(150, 90, 40), width=4.0):
     return {'kind': 'sticks', 'segments': segments, 'w': w, 'h': h, 'color': color, 'width': width}
 
 
+def clocks(times, labels=None, r=46):
+    """Analogue clocks. times: list of (hour, minute) or None for a blank face."""
+    return {'kind': 'clocks', 'times': times, 'labels': labels, 'r': r}
+
+
 def stack(figs, gap=10):
     """Several figures, one under the other."""
     return {'kind': 'stack', 'figs': figs, 'gap': gap}
@@ -379,11 +415,18 @@ def _numberline(f):
 
 def _blocks(f):
     ims = []
-    for idx, (t, o) in enumerate(f['sets']):
+    for idx, st in enumerate(f['sets']):
+        hnd, t, o = (st if len(st) == 3 else (0,) + tuple(st))
         rod_w, rod_h, cube = 15, 150, 15
-        W = 8 + t * (rod_w + 5) + 16 + ((o + 4) // 5) * (cube + 4) + 8
+        W = 8 + hnd * (rod_h + 8) + t * (rod_w + 5) + 16 + ((o + 4) // 5) * (cube + 4) + 8
         c = Canvas(max(W, 40), rod_h + 40)
         x = 8
+        for _ in range(hnd):
+            c.rect(x, 6, rod_h, rod_h, 'green', INK, 1.2)
+            for k in range(1, 10):
+                c.line(x + k * rod_h / 10, 6, x + k * rod_h / 10, 6 + rod_h, INK, 0.6)
+                c.line(x, 6 + k * rod_h / 10, x + rod_h, 6 + k * rod_h / 10, INK, 0.6)
+            x += rod_h + 8
         for _ in range(t):
             c.rect(x, 6, rod_w, rod_h, 'blue', INK, 1.2)
             for k in range(1, 10):
@@ -634,6 +677,33 @@ def _sticks(f):
     return c.trim()
 
 
+def _clocks(f):
+    r = f['r']
+    ims = []
+    for i, t in enumerate(f['times']):
+        c = Canvas(2 * r + 20, 2 * r + (40 if f.get('labels') else 20))
+        cx, cy = r + 10, r + 10
+        c.circle(cx, cy, r, 'white', INK, 2.2)
+        for k in range(60):
+            a = math.radians(k * 6 - 90)
+            r1 = r - (6 if k % 5 == 0 else 3)
+            c.line(cx + r1 * math.cos(a), cy + r1 * math.sin(a), cx + (r - 1) * math.cos(a), cy + (r - 1) * math.sin(a), INK, 1.4 if k % 5 == 0 else 0.6)
+        for n in range(1, 13):
+            a = math.radians(n * 30 - 90)
+            c.text(cx + (r - 12) * math.cos(a), cy + (r - 12) * math.sin(a) + 0.5, n, r * 0.19)
+        if t is not None:
+            hh, mm = t
+            am = math.radians(mm * 6 - 90)
+            ah = math.radians((hh % 12) * 30 + mm * 0.5 - 90)
+            c.line(cx, cy, cx + r * 0.42 * math.cos(ah), cy + r * 0.42 * math.sin(ah), INK, 4.2)
+            c.line(cx, cy, cx + r * 0.64 * math.cos(am), cy + r * 0.64 * math.sin(am), INK, 2.2)
+        c.circle(cx, cy, 3.2, INK, INK, 1)
+        if f.get('labels'):
+            c.text(cx, 2 * r + 30, f['labels'][i], 13)
+        ims.append(c.trim(2))
+    return _join(ims, 22)
+
+
 def to_image(f):
     k = f['kind']
     if k == 'stack':
@@ -642,7 +712,7 @@ def to_image(f):
         return _join([to_image(x) for x in f['figs']], f['gap'], horizontal=True)
     return {'cards': _cards, 'objects': _objects, 'numberline': _numberline, 'blocks': _blocks,
             'shapes': _shapes, 'drawing': _drawing, 'grid': _grid, 'week': _week, 'months': _months,
-            'money': _money, 'table': _table, 'equations': _equations, 'sticks': _sticks}[k](f)
+            'money': _money, 'table': _table, 'equations': _equations, 'sticks': _sticks, 'clocks': _clocks}[k](f)
 
 
 def render(f, path, max_w=440):

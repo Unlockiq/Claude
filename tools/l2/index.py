@@ -8,6 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import build_l2 as b, checks
 
 cls, qdir, first, last, out = int(sys.argv[1]), sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), sys.argv[5]
+b.use_class(cls)
 papers = {p: b.load_paper(qdir, p) for p in range(first, last + 1)}
 dup = checks.check_all(papers)
 lines = [f'# AMO Level-2 · Class {cls} · question index (Papers {first}–{last})', '',
