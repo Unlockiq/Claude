@@ -11,3 +11,10 @@ Reviews of the AMO Level 1 practice papers against the AMO Vertical Syllabus v5.
 - `tools/blueprint_check.py`: checks the chapter counts, the Easy/Medium mix and the Section II pairs against the syllabus workbook.
 - `tools/build_combined.py`: combines a class's 5 papers into one booklet in the REAL olympiad format: a front cover with the class cover image, a REAL-style opening page for each paper, the header "Aryabhatta Maths Olympiad (AMO) Level-1 Practice Papers" with "Practice Paper n" on the right, and the brand footer with logo and page numbers. Booklets for Classes 1–11 are in `papers/combined/`. Usage: `python3 tools/build_combined.py CLASS papers/classN_vX vX assets/AMO_ClassN_cover.png assets/unlockiq_logo.png OUT.docx`, then convert with soffice.
 - `tools/fix_math_accents.py`: fixes z̄ and raised ⁿ so they print correctly in LibreOffice PDFs.
+
+## Level-2 (Class 1)
+
+- `reviews/level2/class1/README.md`: review of the 10 original Level-2 Class 1 papers and how they were replaced. The question-by-question reviews of the originals are `originals_papers1-5.md` and `originals_papers6-10.md`, and `question_index.md` lists all 300 new questions with their answers.
+- `questions/level2/class1/paperNN.py`: the 300 new questions (all Hard, Class 1 syllabus, unique scenarios, Indian names).
+- `papers/level2/class1/`: the two booklets in the Level-1 consolidated format: Set-1 (Practice Papers 1–5) and Set-2 (Practice Papers 6–10), as DOCX and PDF.
+- `tools/l2/build_l2.py` builds a booklet, `tools/l2/figures.py` draws the pictures, `tools/l2/checks.py` holds the house-rule checks and `tools/l2/index.py` writes the question index. `assets/AMO_Class1_L2_cover.png` is the Class 1 cover relabelled for Level-2.
