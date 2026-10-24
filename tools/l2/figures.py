@@ -561,7 +561,13 @@ def _money(f):
             x += 44
         if g.get('label'):
             c.text(c.w / 2, 80, g['label'], 13)
-        ims.append(c.trim(3))
+        im = c.trim(3)
+        if len(f['groups']) > 1:  # frame each group so it is clear which money belongs together
+            fr = Canvas(im.size[0] / K + 12, im.size[1] / K + 12)
+            fr.rect(2, 2, im.size[0] / K + 8, im.size[1] / K + 8, 'white', (150, 150, 150), 1.2, 8)
+            fr.im.paste(im, (int(6 * K), int(6 * K)))
+            im = fr.im
+        ims.append(im)
     per = f.get('per_row', 2 if len(ims) > 3 else len(ims))
     rows = [_join(ims[i:i + per], 26) for i in range(0, len(ims), per)]
     return rows[0] if len(rows) == 1 else _join(rows, 14, horizontal=False)

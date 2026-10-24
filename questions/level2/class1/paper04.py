@@ -23,6 +23,20 @@ def circles_fig(n, x0, label, r=7):
     return prims
 
 
+def tri_rows(n, cx, top, s=30):
+    """Big triangle of n rows of small triangles, apex at (cx, top)."""
+    h = s * 0.866
+    prims = []
+    for r in range(n):
+        for k in range(r + 1):
+            x, y = cx - s / 2 * r + s * k, top + h * r
+            prims.append(('poly', [(x, y), (x + s / 2, y + h), (x - s / 2, y + h)], 'pink'))
+        for k in range(r):
+            x, y = cx - s / 2 * r + s * k, top + h * r
+            prims.append(('poly', [(x, y), (x + s, y), (x + s / 2, y + h)], 'white'))
+    return prims
+
+
 QUESTIONS = [
     # ---------------- Part 1 · Number System
     dict(ch='1', scen='all numbers from cards 2 5 7 · fourth in order',
@@ -32,10 +46,10 @@ QUESTIONS = [
          hint='There are 6 numbers. Write them all in order.',
          sol='The numbers are 25, 27, 52, 57, 72 and 75. In order, the 4th number is 57.'),
     dict(ch='1', scen='number name for one ten less than 74',
-         stem='Which number name is for the number that is 1 ten less than 74?',
-         opts=['sixty-four', 'seventy-three', 'fifty-four', 'seventy-five'],
-         hint='One ten less changes only the tens digit.',
-         sol='One ten less than 74 is 64, because only the tens digit goes down by 1. 64 is read as sixty-four.'),
+         stem='Which number name is for the number that is 1 ten less than the number 2 more than 72?',
+         opts=['sixty-four', 'seventy-three', 'sixty-two', 'seventy-four'],
+         hint='First find the number that is 2 more than 72.',
+         sol='2 more than 72 is 74. One ten less than 74 is 64, because only the tens digit goes down by 1. 64 is read as sixty-four.'),
     dict(ch='1', scen='smallest 2-digit number with digit sum 12',
          stem='What is the smallest 2-digit number whose two digits add up to 12?',
          opts=['39', '48', '66', '93'],
@@ -57,12 +71,11 @@ QUESTIONS = [
          opts=['68', '58', '66', '78'],
          hint='Find A first. Then add 1 ten and 2 ones separately.',
          sol='A is 56. One ten more is 66. Two ones more than 66 is 68.'),
-    dict(ch='1', scen='between 50 and 64 with the same ones digit as 38',
-         stem='Which number is between 50 and 64 and has the same ones digit as 38?',
-         opts=['58', '48', '68', '53'],
-         hint='The ones digit must be 8. Then check which one is between 50 and 64.',
-         sol='Numbers ending in 8 are 38, 48, 58, 68 and so on. 48 is less than 50 and 68 is more than 64. Only 58 is between 50 and 64. 53 is in the range but ends in 3.'),
-
+    dict(ch='1', scen='numbers between 50 and 90 ending like 38',
+         stem='How many numbers between 50 and 90 have the same ones digit as 38?',
+         opts=['4', '3', '5', '9'],
+         hint='The ones digit must be 8. List them.',
+         sol='The numbers between 50 and 90 that end in 8 are 58, 68, 78 and 88. That is 4 numbers.'),
     # ---------------- Part 2 · Operations
     dict(ch='2', scen='fact family of 7 9 16 · which sentence is false',
          stem='Ved knows that 7 + 9 = 16. Which of these number sentences is NOT true?',
@@ -166,9 +179,9 @@ QUESTIONS = [
          sol='Bottom row: 8 + ? + 6 = 15. Since 8 + 6 = 14, the ? must be 1. Check the middle column: 9 + 5 + 1 = 15.'),
     dict(ch='10', scen='odd one out · forms of the number 43',
          stem='Three of these show the same number. Which one is the odd one out?',
-         opts=['3 tens and 4 ones', '43', 'forty-three', '4 tens and 3 ones'],
-         hint='Change each one into a number.',
-         sol='43, forty-three, and 4 tens and 3 ones all show 43. But 3 tens and 4 ones is 34. So it is the odd one out.'),
+         opts=['4 tens and 13 ones', '43', 'forty-three', '3 tens and 13 ones'],
+         hint='Change extra ones into tens, then write each as a number.',
+         sol='43 and forty-three show 43. 3 tens and 13 ones is 4 tens and 3 ones, which is also 43. But 4 tens and 13 ones is 5 tens and 3 ones, which is 53.'),
     dict(ch='10', scen='circles growing by three · figure five',
          fig=drawing(220, 100, circles_fig(2, 10, 'Figure 1') + circles_fig(5, 80, 'Figure 2') + circles_fig(8, 160, 'Figure 3')),
          stem='Look at how the number of circles grows from figure to figure. How many circles will Figure 5 have?',
@@ -182,12 +195,13 @@ QUESTIONS = [
          opts=['6', '5', '7', '10'],
          hint='Going down a column adds 1 ten each time.',
          sol='The marked numbers are 7, 17, 27, 37, 47, 57, 67, 77, 87, 97. The ones less than 60 are 7, 17, 27, 37, 47 and 57: that is 6 numbers.'),
-    dict(ch='5+10', scen='circle square triangle repeating · corners in the first eight',
-         fig=shapes(['circle', 'square', 'triangle', 'circle', 'square', 'triangle'], size=38),
-         stem='The shapes keep repeating in this order. How many corners do the first 8 shapes have altogether?',
-         opts=['18', '21', '14', '15'],
-         hint='Write down the 7th and 8th shapes first.',
-         sol='The first 8 shapes are circle, square, triangle, circle, square, triangle, circle, square. Corners: 0 + 4 + 3 + 0 + 4 + 3 + 0 + 4 = 18.'),
+    dict(ch='5+10', scen='big triangles made of small triangles · figure 4',
+         fig=drawing(330, 120, tri_rows(1, 30, 60) + tri_rows(2, 110, 30) + tri_rows(3, 235, 0) +
+                     [('text', 30, 125, 'Fig 1', 10), ('text', 110, 125, 'Fig 2', 10), ('text', 235, 125, 'Fig 3', 10)]),
+         stem='Each figure is a big triangle made of small triangles. The figures keep growing in the same way. How many small triangles will Figure 4 have?',
+         opts=['16', '12', '13', '10'],
+         hint='Count the small triangles in each figure, row by row.',
+         sol='Figure 1 has 1 small triangle, Figure 2 has 4 and Figure 3 has 9. The jumps are 3 and then 5, so the next jump is 7. Figure 4 has 9 + 7 = 16 small triangles.'),
     dict(ch='9+10', scen='watering on Mondays and Thursdays · fifth watering',
          stem='Gopal waters the plants every Monday and every Thursday. His first watering is on a Monday. On which day is his 5th watering?',
          opts=['Monday', 'Thursday', 'Tuesday', 'Friday'],
@@ -198,10 +212,9 @@ QUESTIONS = [
          opts=['November', 'December', 'October', 'January'],
          hint='Which number from 1 to 12 has two equal digits?',
          sol='The only number from 1 to 12 with two equal digits is 11. Counting from January, the 11th month is November.'),
-    dict(ch='2+5', scen='shapes worth their number of sides · total of a row',
-         fig=shapes(['square', 'triangle', 'triangle', 'square', 'triangle'], size=40),
-         stem='Each shape is worth the same as its number of sides. What is the total value of this row of shapes?',
-         opts=['17', '15', '20', '5'],
-         hint='A square is worth 4 and a triangle is worth 3.',
-         sol='There are 2 squares and 3 triangles. Squares: 4 + 4 = 8. Triangles: 3 + 3 + 3 = 9. Total 8 + 9 = 17.'),
+    dict(ch='2+5', scen='mirror picture with a circle on the fold · count shapes',
+         stem='Arjun draws 3 triangles and 1 circle on the left of a fold line. He draws 1 more circle right on the fold line. Then he copies the left side onto the right, like a mirror. How many shapes are there in all?',
+         opts=['9', '10', '8', '5'],
+         hint='The circle on the fold line is not copied again.',
+         sol='Left side: 3 triangles and 1 circle, which is 4 shapes. The right side copies them: 4 more shapes. The circle on the fold line is 1 shape. 4 + 4 + 1 = 9.'),
 ]

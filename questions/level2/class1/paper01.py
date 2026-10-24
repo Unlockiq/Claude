@@ -89,10 +89,10 @@ QUESTIONS = [
          sol='The ways are 1 and 9, 2 and 8, 3 and 7, 4 and 6, and 5 and 5. That is 5 ways. After 5 and 5 the pairs only repeat.'),
     dict(ch='2', scen='hens and dogs on a farm · counting legs',
          fig=objects([{'items': ['🐔', '🐔', '🐔'], 'cols': 3, 'label': 'Hens'}, {'items': ['🐕', '🐕'], 'cols': 2, 'label': 'Dogs'}], item=44),
-         stem='Each hen has 2 legs and each dog has 4 legs. How many legs do all the animals in the picture have altogether?',
-         opts=['14', '10', '20', '5'],
-         hint='Count the legs in groups: 2 for each hen and 4 for each dog.',
-         sol='Hens: 2 + 2 + 2 = 6 legs. Dogs: 4 + 4 = 8 legs. Altogether 6 + 8 = 14 legs.'),
+         stem='These animals are in a farmyard. Then two hens walk out and two more dogs walk in. How many legs are in the farmyard now?',
+         opts=['18', '14', '16', '10'],
+         hint='First find how many hens and how many dogs are there now. A hen has 2 legs and a dog has 4.',
+         sol='Now there is 3 − 2 = 1 hen and 2 + 2 = 4 dogs. Hen legs: 2. Dog legs: 4 + 4 + 4 + 4 = 16. Altogether 2 + 16 = 18 legs.'),
 
     # ---------------- Part 3 · Geometry
     dict(ch='5', scen='triangle cut by a middle line and a cross line · count triangles',

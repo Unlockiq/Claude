@@ -1,5 +1,18 @@
 # AMO Level-2 · Class 1 · Practice Paper 5  (format: see paper01.py)
 
+def tri_strip(n, x0, s=30):
+    h = 26
+    prims = []
+    for i in range(n):
+        if i % 2 == 0:
+            x = x0 + (i // 2) * s
+            prims.append(('poly', [(x, h), (x + s / 2, 0), (x + s, h)], 'pink'))
+        else:
+            x = x0 + (i // 2) * s
+            prims.append(('poly', [(x + s / 2, 0), (x + 1.5 * s, 0), (x + s, h)], 'white'))
+    return prims
+
+
 QUESTIONS = [
     # ---------------- Part 1 · Number System
     dict(ch='1', scen='two digits with repeats allowed · how many numbers',
@@ -26,7 +39,7 @@ QUESTIONS = [
          sol='Two tens less than 86 is 66, because the tens digit goes from 8 down to 6. Point Q is at 66.'),
     dict(ch='1', scen='numbers between 10 and 50 ending in zero',
          stem='How many numbers between 10 and 50 have 0 as their ones digit?',
-         opts=['3', '5', '4', '2'],
+         opts=['3', '4', '2', '6'],
          hint='"Between" means 10 and 50 themselves do not count.',
          sol='The numbers ending in 0 are 10, 20, 30, 40, 50. Between 10 and 50 only 20, 30 and 40 count. That is 3 numbers.'),
     dict(ch='1', scen='next number after 34 made of the same two digits',
@@ -98,8 +111,8 @@ QUESTIONS = [
     dict(ch='5', scen='robot made of shapes · rectangles minus circles',
          fig=drawing(170, 200, [('poly', [(65, 32), (85, 6), (105, 32)], 'pink'), ('circle', 85, 52, 22, 'blue'),
                                 ('circle', 77, 47, 4, 'white'), ('circle', 93, 47, 4, 'white'), ('rect', 74, 60, 22, 7, 'white'),
-                                ('rect', 50, 78, 70, 62, 'yellow'), ('circle', 85, 96, 5, 'white'), ('circle', 85, 118, 5, 'white'),
-                                ('rect', 24, 82, 22, 50, 'green'), ('rect', 124, 82, 22, 50, 'green'),
+                                ('rect', 60, 78, 50, 64, 'yellow'), ('circle', 85, 96, 5, 'white'), ('circle', 85, 118, 5, 'white'),
+                                ('rect', 34, 82, 22, 50, 'green'), ('rect', 114, 82, 22, 50, 'green'),
                                 ('rect', 60, 142, 18, 48, 'green'), ('rect', 92, 142, 18, 48, 'green')]),
          stem="Kartik's robot is made of shapes. How many more rectangles than circles are there in the robot?",
          opts=['1', '6', '5', '2'],
@@ -136,10 +149,10 @@ QUESTIONS = [
          hint='Look at how much is taken away each time.',
          sol='The pattern takes away 2, then 3, then 4. Next it takes away 5: 11 − 5 = 6.'),
     dict(ch='10', scen='odd one out · ones digit bigger than tens digit',
-         stem='Four players wear shirts numbered 61, 27, 38 and 59. Three of the shirt numbers belong together. Which shirt number is the odd one out?',
-         opts=['61', '27', '38', '59'],
+         stem='Four players wear shirts numbered 27, 35, 49 and 41. Three of the shirt numbers belong together. Which shirt number is the odd one out?',
+         opts=['41', '27', '35', '49'],
          hint='Compare the two digits of each number.',
-         sol='In 27, 38 and 59 the ones digit is bigger than the tens digit. In 61 the ones digit is smaller. So 61 is the odd one out.'),
+         sol='In 27, 35 and 49 the ones digit is bigger than the tens digit. In 41 the ones digit is smaller than the tens digit. So 41 is the odd one out.'),
     dict(ch='10', scen='sum of the first ten numbers in a 1 2 3 repeat',
          fig=cards([1, 2, 3, 1, 2, 3, 1, '...'], size=32),
          stem='Madhav writes 1, 2, 3 again and again. What is the total of the first 10 numbers he writes?',
@@ -161,29 +174,27 @@ QUESTIONS = [
          opts=['45', '54', '44', '36'],
          hint='Look at the numbers in pairs.',
          sol='The pattern goes 12 then its swap 21, then 23 then its swap 32, then 34 then its swap 43. The next pair starts with 45.'),
-    dict(ch='5+10', scen='odd group out by total corners',
-         fig=objects([{'label': 'P', 'items': [('triangle',), ('square',)], 'cols': 3},
-                      {'label': 'Q', 'items': [('rectangle',), ('triangle',)], 'cols': 3},
-                      {'label': 'R', 'items': [('circle',), ('square',), ('triangle',)], 'cols': 3},
-                      {'label': 'S', 'items': [('square',), ('square',)], 'cols': 3}], item=34),
-         stem='Three of these groups belong together. Which group is the odd one out?',
-         opts=['Group P', 'Group Q', 'Group R', 'Group S'], fixed=True, ans=3,
-         hint='Count the corners in each group.',
-         sol='P has 3 + 4 = 7 corners. Q has 4 + 3 = 7. R has 0 + 4 + 3 = 7. S has 4 + 4 = 8. So S is the odd one out.'),
+    dict(ch='5+10', scen='strips of triangles · corners of the outline in figure 6',
+         fig=drawing(330, 50, tri_strip(1, 0) + tri_strip(2, 55) + tri_strip(3, 155) +
+                     [('text', 15, 45, 'Fig 1', 10), ('text', 98, 45, 'Fig 2', 10), ('text', 215, 45, 'Fig 3', 10)]),
+         stem='Each figure is a strip of triangles. Look only at the outside edge of each figure. How many corners will the outside edge of Figure 6 have?',
+         opts=['8', '18', '6', '12'],
+         hint='Count the corners of the outline of Figures 1, 2 and 3.',
+         sol='Figure 1 is a triangle with 3 corners. The outline of Figure 2 has 4 corners and that of Figure 3 has 5. Each new triangle adds 1 corner to the outline. So Figure 6 has 3 + 5 = 8 corners.'),
     dict(ch='9+10', scen='repeating coins ₹1 ₹2 ₹5 · value of first seven',
          fig=money([{'items': [('coin', 1), ('coin', 2), ('coin', 5), ('coin', 1), ('coin', 2)]}]),
          stem='Coins are placed in a row in a repeating pattern: ₹1, ₹2, ₹5, ₹1, ₹2 and so on. What is the total value of the first 7 coins?',
          opts=['₹17', '₹16', '₹18', '₹15'],
          hint='Each group of three coins is worth ₹8.',
          sol='The first 6 coins are two groups of ₹1, ₹2, ₹5, worth ₹8 + ₹8 = ₹16. The 7th coin is ₹1. Total ₹16 + ₹1 = ₹17.'),
-    dict(ch='1+9', scen='notes and coins · who has more money',
-         stem='Sana has five ₹10 notes and three ₹1 coins. Tejas has three ₹10 notes and fifteen ₹1 coins. Who has more money?',
-         opts=['Sana', 'Tejas', 'Both have the same', 'It cannot be found'],
-         hint='Turn each amount into tens and ones.',
-         sol='Sana has 5 tens and 3 ones: ₹53. Fifteen ₹1 coins are 1 ten and 5 ones, so Tejas has 4 tens and 5 ones: ₹45. Sana has more.', place_value_ok=True),
-    dict(ch='2+5', scen='eleven sticks three shapes · how many squares',
-         stem='Dhruv uses exactly 11 sticks to make 3 shapes. Each shape is a triangle or a square, and no two shapes share a stick. How many squares does he make?',
-         opts=['2', '1', '3', '0'],
-         hint='A triangle needs 3 sticks and a square needs 4.',
-         sol='Three triangles need 9 sticks. Each time a triangle is changed to a square, 1 more stick is needed. 11 is 2 more than 9, so 2 shapes are squares: 3 + 4 + 4 = 11.'),
+    dict(ch='1+9', scen='dates whose digits can be swapped to make another date',
+         stem='Sana writes the date 13 with its digits swapped and gets 31, which is also a date. For which of these dates does swapping the digits NOT give a date in any month?',
+         opts=['23', '12', '21', '30'],
+         hint='The largest date in any month is 31.',
+         sol='12 swaps to 21 and 21 swaps to 12, which are both dates. 30 swaps to 03, which is the date 3. But 23 swaps to 32, and no month has 32 days.'),
+    dict(ch='2+5', scen='two beads on every corner of three triangles',
+         stem='Gita draws 3 triangles. She puts 2 beads on every corner of each triangle. How many beads does she use?',
+         opts=['18', '9', '6', '12'],
+         hint='First count all the corners.',
+         sol='3 triangles have 3 + 3 + 3 = 9 corners. Two beads on each corner: 9 + 9 = 18 beads.'),
 ]

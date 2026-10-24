@@ -18,7 +18,7 @@ One row per question. Every scenario is used once across all papers (checked by 
 | 10 | Ch2 | shape equations · triangle and circle | (C) 14 |
 | 11 | Ch2 | picking mangoes · total and difference | (B) 9 |
 | 12 | Ch2 | putting 10 marbles into two bags · counting ways | (D) 5 |
-| 13 | Ch2 | hens and dogs on a farm · counting legs | (B) 14 |
+| 13 | Ch2 | hens and dogs on a farm · counting legs | (B) 18 |
 | 14 | Ch5 | triangle cut by a middle line and a cross line · count triangles | (B) 6 |
 | 15 | Ch5 | window with four panes · count squares | (D) 5 |
 | 16 | Ch5 | folding paper twice and punching one hole | (A) 4 |
@@ -52,12 +52,12 @@ Answer letters: A 8, B 7, C 7, D 8
 | 7 | Ch1 | four more tens and two fewer ones than 27 | (A) 65 |
 | 8 | Ch2 | giving stickers so both have the same | (D) 4 |
 | 9 | Ch2 | number machine add 5 then take 3 · work backwards | (C) 12 |
-| 10 | Ch2 | bicycles and auto-rickshaws · counting wheels | (B) 13 |
+| 10 | Ch2 | bicycles and auto-rickshaws · counting wheels | (B) 3 |
 | 11 | Ch2 | missing number with a subtraction on the other side | (C) 7 |
 | 12 | Ch2 | three numbers in a row adding to 15 | (C) 6 |
 | 13 | Ch2 | reading two more pages each day · total by Wednesday | (D) 15 |
 | 14 | Ch5 | square with both corner-to-corner lines · count triangles | (D) 8 |
-| 15 | Ch5 | shape partly hidden behind a card · which it cannot be | (B) Circle |
+| 15 | Ch5 | rectangle with a corner line and a line to the bottom middle · count triangles | (B) 6 |
 | 16 | Ch5 | strip of three boxes · count rectangles of all sizes | (A) 6 |
 | 17 | Ch5 | which dotted line folds a shape into matching halves | (B) Q |
 | 18 | Ch9 | nine days from Saturday | (C) Monday |
@@ -67,7 +67,7 @@ Answer letters: A 8, B 7, C 7, D 8
 | 22 | Ch10 | two number patterns mixed together | (B) 7 |
 | 23 | Ch10 | odd card out · pairs with the same total | (D) Card S |
 | 24 | Ch10 | triangle dot pattern · dots in figure 5 | (A) 15 |
-| 25 | Ch10 | counting in threes · which number is never said | (D) 20 |
+| 25 | Ch10 | counting in threes from 2 · which number is said | (D) 20 |
 | 26 | Ch1 + Ch10 | number chart diagonal 12 23 34 | (D) 67 |
 | 27 | Ch5 + Ch10 | strip of triangles growing by two each time | (B) 11 |
 | 28 | Ch9 + Ch10 | skipping every other month · sixth month written | (B) November |
@@ -81,14 +81,14 @@ Answer letters: A 8, B 8, C 7, D 7
 | Q | Chapter | Scenario | Answer |
 |---|---|---|---|
 | 1 | Ch1 | digit cards 5 9 0 2 · largest number below 90 | (A) 59 |
-| 2 | Ch1 | four ten-frames · dots needed to fill them all | (D) 4 |
+| 2 | Ch1 | four ten-frames · dots needed to fill them all | (D) 14 |
 | 3 | Ch1 | hidden ones digit · number greater than 57 | (C) 2 |
 | 4 | Ch1 | counting back by tens from 95 | (B) 25 |
 | 5 | Ch1 | digit swap · which number becomes bigger | (B) 29 |
-| 6 | Ch1 | ones digit double the tens digit · between 20 and 30 | (A) 24 |
+| 6 | Ch1 | numbers from 20 to 50 with ones digit double the tens digit | (A) 3 |
 | 7 | Ch1 | halfway between two lettered points on a number line | (C) 35 |
 | 8 | Ch2 | ages · four years older · in three years | (B) 5 |
-| 9 | Ch2 | two flowers hiding the same number | (A) 5 |
+| 9 | Ch2 | two flowers hiding the same number | (A) 7 |
 | 10 | Ch2 | three steps up one step down on a staircase | (D) 8 |
 | 11 | Ch2 | leave one card out so the rest make 15 | (B) 3 |
 | 12 | Ch2 | 18 children in teams of four · children left over | (B) 2 |
@@ -108,7 +108,7 @@ Answer letters: A 8, B 8, C 7, D 7
 | 26 | Ch1 + Ch10 | tens down ones up from 91 · three places after 64 | (D) 37 |
 | 27 | Ch5 + Ch10 | growing square grids · extra small squares in figure 4 | (C) 7 |
 | 28 | Ch9 + Ch10 | saving ₹2 a day · day savings reach ₹12 | (D) Saturday |
-| 29 | Ch1 + Ch9 | six notes ordered by value · fourth note | (C) ₹50 |
+| 29 | Ch1 + Ch9 | notes and coins ordered by value · fourth | (C) ₹10 |
 | 30 | Ch2 + Ch5 | three shapes with eleven corners | (D) 1 triangle and 2 squares |
 
 Answer letters: A 7, B 7, C 8, D 8
@@ -123,7 +123,7 @@ Answer letters: A 7, B 7, C 8, D 8
 | 4 | Ch1 | one more than the largest number in the forties | (A) 50 |
 | 5 | Ch1 | numbers 40 to 49 with tens digit bigger than ones digit | (C) 4 |
 | 6 | Ch1 | one ten and two ones more than point A | (B) 68 |
-| 7 | Ch1 | between 50 and 64 with the same ones digit as 38 | (B) 58 |
+| 7 | Ch1 | numbers between 50 and 90 ending like 38 | (B) 4 |
 | 8 | Ch2 | fact family of 7 9 16 · which sentence is false | (A) 9 − 7 = 16 |
 | 9 | Ch2 | toy train coaches with dolls · dolls left after a stop | (B) 11 |
 | 10 | Ch2 | magic triangle with equal side sums | (A) 5 |
@@ -140,13 +140,13 @@ Answer letters: A 7, B 7, C 8, D 8
 | 21 | Ch9 | piggy bank · which coin was taken out | (C) ₹5 |
 | 22 | Ch10 | add one then two alternately | (D) 11 |
 | 23 | Ch10 | magic square missing number | (D) 1 |
-| 24 | Ch10 | odd one out · forms of the number 43 | (B) 3 tens and 4 ones |
+| 24 | Ch10 | odd one out · forms of the number 43 | (B) 4 tens and 13 ones |
 | 25 | Ch10 | circles growing by three · figure five | (D) 14 |
 | 26 | Ch1 + Ch10 | number chart column ending in 7 · how many below 60 | (B) 6 |
-| 27 | Ch5 + Ch10 | circle square triangle repeating · corners in the first eight | (C) 18 |
+| 27 | Ch5 + Ch10 | big triangles made of small triangles · figure 4 | (C) 16 |
 | 28 | Ch9 + Ch10 | watering on Mondays and Thursdays · fifth watering | (D) Monday |
 | 29 | Ch1 + Ch9 | month whose number has two same digits | (B) November |
-| 30 | Ch2 + Ch5 | shapes worth their number of sides · total of a row | (C) 17 |
+| 30 | Ch2 + Ch5 | mirror picture with a circle on the fold · count shapes | (C) 9 |
 
 Answer letters: A 7, B 8, C 8, D 7
 
@@ -154,38 +154,38 @@ Answer letters: A 7, B 8, C 8, D 7
 
 | Q | Chapter | Scenario | Answer |
 |---|---|---|---|
-| 1 | Ch1 | two digits with repeats allowed · how many numbers | (C) 4 |
+| 1 | Ch1 | two digits with repeats allowed · how many numbers | (A) 4 |
 | 2 | Ch1 | greatest number below 70 with digit sum 9 | (A) 63 |
-| 3 | Ch1 | tens digit worth seventy ones · ones digit two less | (B) 75 |
+| 3 | Ch1 | tens digit worth seventy ones · ones digit two less | (C) 75 |
 | 4 | Ch1 | number line point for two tens less than 86 | (B) Point Q |
 | 5 | Ch1 | numbers between 10 and 50 ending in zero | (C) 3 |
-| 6 | Ch1 | next number after 34 made of the same two digits | (D) 43 |
-| 7 | Ch1 | how many number comparisons are true | (A) 3 |
-| 8 | Ch2 | same digit in two boxes · teen number plus digit makes 18 | (C) 4 |
-| 9 | Ch2 | birds arriving then flying away · how many came | (B) 7 |
-| 10 | Ch2 | grid path right or down · largest total | (B) 19 |
-| 11 | Ch2 | pairs of cards making ten | (A) 3 |
-| 12 | Ch2 | beads for a bracelet and a necklace · beads left | (A) 2 |
-| 13 | Ch2 | two letters in linked number sentences | (C) 8 |
-| 14 | Ch5 | triangle with two lines from the top · count triangles | (C) 6 |
-| 15 | Ch5 | chocolate bar of 2 by 3 pieces · count squares | (A) 8 |
+| 6 | Ch1 | next number after 34 made of the same two digits | (B) 43 |
+| 7 | Ch1 | how many number comparisons are true | (B) 3 |
+| 8 | Ch2 | same digit in two boxes · teen number plus digit makes 18 | (D) 4 |
+| 9 | Ch2 | birds arriving then flying away · how many came | (C) 7 |
+| 10 | Ch2 | grid path right or down · largest total | (C) 19 |
+| 11 | Ch2 | pairs of cards making ten | (B) 3 |
+| 12 | Ch2 | beads for a bracelet and a necklace · beads left | (D) 2 |
+| 13 | Ch2 | two letters in linked number sentences | (A) 8 |
+| 14 | Ch5 | triangle with two lines from the top · count triangles | (D) 6 |
+| 15 | Ch5 | chocolate bar of 2 by 3 pieces · count squares | (B) 8 |
 | 16 | Ch5 | folding a square in half twice · final shape | (D) Square |
-| 17 | Ch5 | robot made of shapes · rectangles minus circles | (A) 1 |
-| 18 | Ch9 | grandma visits three days after Wednesday · day she leaves | (A) Monday |
+| 17 | Ch5 | robot made of shapes · rectangles minus circles | (D) 1 |
+| 18 | Ch9 | grandma visits three days after Wednesday · day she leaves | (B) Monday |
 | 19 | Ch9 | months between March and September | (D) 5 |
-| 20 | Ch9 | exactly ₹17 using four coins | (C) ₹10, ₹5, ₹1 and ₹1 |
-| 21 | Ch9 | changing a ₹20 note into ₹5 coins and giving two away | (C) ₹10 |
+| 20 | Ch9 | exactly ₹17 using four coins | (A) ₹10, ₹5, ₹1 and ₹1 |
+| 21 | Ch9 | changing a ₹20 note into ₹5 coins and giving two away | (A) ₹10 |
 | 22 | Ch10 | taking away one more each time from 20 | (D) 6 |
-| 23 | Ch10 | odd one out · ones digit bigger than tens digit | (D) 61 |
-| 24 | Ch10 | sum of the first ten numbers in a 1 2 3 repeat | (A) 19 |
-| 25 | Ch10 | circles between triangles growing by one | (B) 5 |
-| 26 | Ch1 + Ch10 | swap then step pattern 12 21 23 32 | (B) 45 |
-| 27 | Ch5 + Ch10 | odd group out by total corners | (D) Group S |
-| 28 | Ch9 + Ch10 | repeating coins ₹1 ₹2 ₹5 · value of first seven | (C) ₹17 |
-| 29 | Ch1 + Ch9 | notes and coins · who has more money | (B) Sana |
-| 30 | Ch2 + Ch5 | eleven sticks three shapes · how many squares | (D) 2 |
+| 23 | Ch10 | odd one out · ones digit bigger than tens digit | (B) 41 |
+| 24 | Ch10 | sum of the first ten numbers in a 1 2 3 repeat | (C) 19 |
+| 25 | Ch10 | circles between triangles growing by one | (A) 5 |
+| 26 | Ch1 + Ch10 | swap then step pattern 12 21 23 32 | (C) 45 |
+| 27 | Ch5 + Ch10 | strips of triangles · corners of the outline in figure 6 | (A) 8 |
+| 28 | Ch9 + Ch10 | repeating coins ₹1 ₹2 ₹5 · value of first seven | (D) ₹17 |
+| 29 | Ch1 + Ch9 | dates whose digits can be swapped to make another date | (C) 23 |
+| 30 | Ch2 + Ch5 | two beads on every corner of three triangles | (B) 18 |
 
-Answer letters: A 8, B 7, C 8, D 7
+Answer letters: A 7, B 8, C 7, D 8
 
 ## Practice Paper 6
 
@@ -193,8 +193,8 @@ Answer letters: A 8, B 7, C 8, D 7
 |---|---|---|---|
 | 1 | Ch1 | abacus showing 49 · two more ones beads | (C) 51 |
 | 2 | Ch1 | hall seats in rows of ten · row of seat 47 | (D) Row 5 |
-| 3 | Ch1 | torn-out pages 21 to 30 · how many pages | (B) 10 |
-| 4 | Ch1 | forty and seven equals thirty and a box | (A) 17 |
+| 3 | Ch1 | torn-out pages 21 to 30 · pages left in a 50-page book | (B) 40 |
+| 4 | Ch1 | forty and seven equals thirty and a box and five | (A) 12 |
 | 5 | Ch1 | cards 1 2 3 4 · numbers with tens digit bigger | (D) 6 |
 | 6 | Ch1 | writing 1 to 12 · how many digits in all | (C) 15 |
 | 7 | Ch1 | one ten more than one ten less than 58 | (B) 58 |
@@ -203,17 +203,17 @@ Answer letters: A 8, B 7, C 8, D 7
 | 10 | Ch2 | two numbers making 11 both bigger than 3 | (A) 2 |
 | 11 | Ch2 | small bus seats with two empty and one standing | (C) 11 |
 | 12 | Ch2 | giving marbles until one has three more than the other had | (B) 8 |
-| 13 | Ch2 | keeping a total of 15 when one part changes | (C) 8 |
+| 13 | Ch2 | changing both parts of 9 plus 6 to make 2 more | (C) 10 |
 | 14 | Ch5 | cupboard door with four panels · count rectangles | (C) 9 |
 | 15 | Ch5 | cutting one corner off a square · corners left | (A) 5 |
 | 16 | Ch5 | triangles inside and outside a circle | (A) 2 |
-| 17 | Ch5 | square cut into two rectangles put end to end | (B) A long rectangle |
+| 17 | Ch5 | two triangles from a square joined along their longest sides | (B) A smaller square |
 | 18 | Ch9 | three days before the day after Saturday | (D) Thursday |
 | 19 | Ch9 | amount that two coins cannot make | (D) ₹8 |
-| 20 | Ch9 | month beginning with the same letter as the next month | (B) June |
+| 20 | Ch9 | month exactly in the middle of March and November | (B) July |
 | 21 | Ch9 | Mondays in a 30-day month that starts on Monday | (B) 5 |
 | 22 | Ch10 | number track up three down two | (D) 6 |
-| 23 | Ch10 | wrongly printed shirt number in a counting-by-fives team | (B) 21 |
+| 23 | Ch10 | wrongly printed shirt number in an add-one-more pattern | (B) 15 |
 | 24 | Ch10 | table rows where the third number is the sum | (A) 6 |
 | 25 | Ch10 | ring of numbers with opposite pairs adding to ten | (D) 7 |
 | 26 | Ch1 + Ch10 | pairs of numbers 11 13 22 24 33 35 | (D) 44 |
@@ -228,9 +228,9 @@ Answer letters: A 7, B 8, C 7, D 8
 
 | Q | Chapter | Scenario | Answer |
 |---|---|---|---|
-| 1 | Ch1 | number names from 11 to 19 ending in teen | (B) 7 |
+| 1 | Ch1 | number name for one ten and seventeen ones | (B) twenty-seven |
 | 2 | Ch1 | boxes of ten crayons · giving away a box and loose crayons | (B) 55 |
-| 3 | Ch1 | tens digit of the number just after 89 | (A) 9 |
+| 3 | Ch1 | ones digit of one ten more than the number before 70 | (A) 9 |
 | 4 | Ch1 | largest number whose digits add up to 5 | (B) 50 |
 | 5 | Ch1 | which of 46 and 53 is closer to 50 | (C) 53 |
 | 6 | Ch1 | smallest 2-digit number containing the digit 7 | (C) 17 |
@@ -247,12 +247,12 @@ Answer letters: A 7, B 8, C 7, D 8
 | 17 | Ch5 | joining four corner dots with straight lines | (B) 6 |
 | 18 | Ch9 | two months after the month right after October | (A) January |
 | 19 | Ch9 | paying for a ₹7 pen with ₹5 coins · change | (B) ₹3 |
-| 20 | Ch9 | 1st is Wednesday · day of the 10th | (A) Friday |
+| 20 | Ch9 | which group of coins is worth the least | (A) Six ₹1 coins |
 | 21 | Ch9 | groups of notes and coins worth exactly ₹20 | (D) 3 |
 | 22 | Ch10 | counting back by fives from 50 · sixth number | (A) 25 |
-| 23 | Ch10 | number name cards with one wrong match | (B) thirteen – 31 |
+| 23 | Ch10 | number name cards with tens and ones · one wrong match | (B) fourteen – 4 tens and 1 one |
 | 24 | Ch10 | two children jumping by fours and threes · next shared number | (C) 19 |
-| 25 | Ch10 | in and out table that adds three | (A) 12 |
+| 25 | Ch10 | in and out table that doubles and adds one | (A) 13 |
 | 26 | Ch1 + Ch10 | counting in tens from 6 · digits adding to 10 | (B) 46 |
 | 27 | Ch5 + Ch10 | rows of squares · corners on the outline of figure 10 | (C) 4 |
 | 28 | Ch9 + Ch10 | 1st is Wednesday · date of the third Friday | (D) 17th |
@@ -267,7 +267,7 @@ Answer letters: A 7, B 8, C 7, D 8
 |---|---|---|---|
 | 1 | Ch1 | four number names in order · second smallest | (D) forty |
 | 2 | Ch1 | five more than the smallest 2-digit number with equal digits | (C) 16 |
-| 3 | Ch1 | tens still needed to reach 100 from seven tens | (D) 3 |
+| 3 | Ch1 | ones still needed to reach 100 from seven tens and twelve ones | (D) 18 |
 | 4 | Ch1 | beads on a tens-and-ones abacus to show 36 | (C) 9 |
 | 5 | Ch1 | game scores · one ten more then two ones less | (C) 55 |
 | 6 | Ch1 | how many 2-digit numbers are less than 25 | (A) 15 |
@@ -276,19 +276,19 @@ Answer letters: A 7, B 8, C 7, D 8
 | 9 | Ch2 | board game moves forward back forward | (A) 16 |
 | 10 | Ch2 | four fewer than double nine stickers | (C) 14 |
 | 11 | Ch2 | eight more than five less than 14 | (B) 17 |
-| 12 | Ch2 | two dice · ways to make a total of 10 | (A) 2 |
+| 12 | Ch2 | six more than seven and three less than a friend number | (A) 16 |
 | 13 | Ch2 | box of sweets in two rows · after eating five | (A) 7 |
 | 14 | Ch5 | left half of a shape on a fold line · whole shape | (B) Triangle |
 | 15 | Ch5 | two overlapping squares · count squares | (A) 3 |
 | 16 | Ch5 | sailboat with a divided sail · count triangles | (C) 5 |
-| 17 | Ch5 | sides of three squares compared with three triangles | (C) 3 |
-| 18 | Ch9 | week starting on Sunday · fifth day | (B) Thursday |
+| 17 | Ch5 | square cut along both middle lines · corners of the pieces | (C) 16 |
+| 18 | Ch9 | week starting on Sunday · twelfth day counted | (B) Thursday |
 | 19 | Ch9 | paying exactly ₹12 from a note and coins · money left | (D) ₹7 |
 | 20 | Ch9 | amounts payable with one ₹1 one ₹2 and one ₹5 coin | (C) 7 |
 | 21 | Ch9 | fourth month from the end of the year | (D) September |
 | 22 | Ch10 | two diagonals with equal totals in a 2 by 2 square | (B) 8 |
 | 23 | Ch10 | one circle two squares three circles four squares · tenth shape | (D) Square |
-| 24 | Ch10 | pattern 99 88 77 · sixth number | (A) 44 |
+| 24 | Ch10 | pattern 95 86 77 · sixth number | (A) 50 |
 | 25 | Ch10 | totals from two of the cards 2 5 9 · which cannot be made | (D) 12 |
 | 26 | Ch1 + Ch10 | number chart 5 14 23 32 · next marked number | (B) 41 |
 | 27 | Ch5 + Ch10 | grid where each row and column has a circle square and triangle | (B) Square |
@@ -305,16 +305,16 @@ Answer letters: A 7, B 8, C 7, D 8
 | 1 | Ch1 | two dice digits 4 and 6 · difference in tens | (B) 2 |
 | 2 | Ch1 | tens digit 7 and ones digit greater than 4 | (B) 5 |
 | 3 | Ch1 | bundles of ten and single sticks · fewest pieces for 53 | (A) 8 |
-| 4 | Ch1 | ten less than one more than 59 | (B) 50 |
+| 4 | Ch1 | two tens less than three more than 57 | (B) 40 |
 | 5 | Ch1 | towers of ten blocks · blocks needed to reach 60 | (C) 13 |
 | 6 | Ch1 | writing 1 to 20 · how many times the digit 1 is written | (B) 12 |
 | 7 | Ch1 | numbers 1 to 50 with ones digit 4 | (A) 5 |
 | 8 | Ch2 | which two subtractions give the same answer | (A) 17 − 8 and 13 − 4 |
 | 9 | Ch2 | dart board 3 5 7 · total that two darts cannot make | (D) 11 |
-| 10 | Ch2 | same three numbers in a different order | (D) 6 |
+| 10 | Ch2 | same total with one number split differently | (D) 8 |
 | 11 | Ch2 | add a box then take a box · total of the two boxes | (B) 12 |
 | 12 | Ch2 | cross of numbers · each line adds to 12 | (C) 5 |
-| 13 | Ch2 | benches of two with one child alone | (B) 15 |
+| 13 | Ch2 | kites with three bows each · bows left | (B) 13 |
 | 14 | Ch5 | kite made of two triangles · sides of the outline | (C) 4 |
 | 15 | Ch5 | square with one corner line and one middle line · count triangles | (D) 4 |
 | 16 | Ch5 | plus shape of five squares · count squares | (D) 5 |
@@ -322,14 +322,14 @@ Answer letters: A 7, B 8, C 7, D 8
 | 18 | Ch9 | library closed Sundays and Mondays · open days in two weeks | (C) 10 |
 | 19 | Ch9 | two Indian notes that make ₹70 | (C) ₹50 and ₹20 |
 | 20 | Ch9 | tuition on Tuesday Thursday Saturday · days in three weeks | (D) 9 |
-| 21 | Ch9 | ₹2 coins worth the same as a ₹20 note | (A) 10 |
+| 21 | Ch9 | ₹2 coins worth a ₹20 note and a ₹10 coin | (A) 15 |
 | 22 | Ch10 | bags of apples · odd group by total | (A) 3 bags of 3 apples |
 | 23 | Ch10 | machine that doubles · in and out table | (B) 14 |
 | 24 | Ch10 | one 1 two 2s three 3s · twelfth number | (A) 5 |
 | 25 | Ch10 | counting back by threes from 20 · first number below 5 | (B) 2 |
-| 26 | Ch1 + Ch10 | pattern 10 12 20 22 30 32 · ninth number | (D) 50 |
+| 26 | Ch1 + Ch10 | counting in nines · first number with tens digit bigger | (D) 54 |
 | 27 | Ch5 + Ch10 | strip of triangles made of sticks · triangles from 15 sticks | (A) 7 |
-| 28 | Ch9 + Ch10 | planting one more tree each month · month total reaches 10 | (C) April |
+| 28 | Ch9 + Ch10 | watering on dates 2 5 8 · sixth watering date | (C) 17th |
 | 29 | Ch1 + Ch9 | ₹38 with fewest notes and coins | (C) 6 |
 | 30 | Ch2 + Ch5 | L-shape of three squares · sides of the outline | (D) 6 |
 
@@ -340,34 +340,34 @@ Answer letters: A 8, B 8, C 7, D 7
 | Q | Chapter | Scenario | Answer |
 |---|---|---|---|
 | 1 | Ch1 | counting back by ones from 63 · fifth number said | (A) 58 |
-| 2 | Ch1 | which of these is a 2-digit number | (A) 70 |
+| 2 | Ch1 | how many of six numbers are 2-digit numbers | (A) 3 |
 | 3 | Ch1 | counting in tens to 100 and in fives to 50 · numbers said by both | (C) 5 |
-| 4 | Ch1 | greater than 68 with tens digit 6 | (D) 69 |
+| 4 | Ch1 | numbers above 58 and below 65 with tens digit 6 | (D) 5 |
 | 5 | Ch1 | between 4 tens 9 ones and 5 tens 2 ones | (D) 51 |
 | 6 | Ch1 | house number with equal digits in the forties · two tens more | (B) 64 |
-| 7 | Ch1 | numbers from 1 to 100 written with one digit | (C) 9 |
+| 7 | Ch1 | numbers from 1 to 30 written with two digits | (C) 21 |
 | 8 | Ch2 | using 1 2 3 4 once each in a true number sentence | (B) 1 + 4 = 2 + 3 |
 | 9 | Ch2 | thirteen as three different numbers with seven the biggest | (B) 2 |
-| 10 | Ch2 | three equal sums with two hidden numbers | (C) 11 |
+| 10 | Ch2 | giving away two marbles · new difference | (C) 3 |
 | 11 | Ch2 | mangoes sold in the morning and evening · evening sales | (A) 6 |
 | 12 | Ch2 | largest number in a box keeping a sum below 15 | (B) 5 |
 | 13 | Ch2 | laddoos on plates · three plates of four and two of three | (B) 18 |
 | 14 | Ch5 | big triangle made of nine small triangles · count all triangles | (C) 13 |
-| 15 | Ch5 | door with a top panel and two bottom panels · count rectangles | (D) 5 |
+| 15 | Ch5 | folding a square twice and cutting the folded corner | (D) 1 |
 | 16 | Ch5 | how many shapes can fold into matching halves | (D) 4 |
 | 17 | Ch5 | six triangles meeting in the middle · count triangles | (B) 6 |
 | 18 | Ch9 | two days after two days before Tuesday | (C) Tuesday |
-| 19 | Ch9 | party three days after tomorrow when today is Friday | (A) Tuesday |
-| 20 | Ch9 | exchanging five ₹10 notes for one note | (C) ₹50 |
+| 19 | Ch9 | five months before the month after June | (A) February |
+| 20 | Ch9 | exchanging ₹10 notes and ₹5 coins for one note | (C) ₹50 |
 | 21 | Ch9 | today Thursday · day eight days ago | (A) Wednesday |
 | 22 | Ch10 | number triangle rows · first number in row 6 | (D) 16 |
 | 23 | Ch10 | triangle circle circle repeating · place of the 5th triangle | (D) 13 |
 | 24 | Ch10 | pairs making ten in order · sixth pair | (C) 6 + 4 |
 | 25 | Ch10 | adding the digits twice starting from 58 | (A) 4 |
-| 26 | Ch1 + Ch10 | tens digit double the ones digit · which number breaks the rule | (D) 85 |
+| 26 | Ch1 + Ch10 | tens digit three more than ones digit and digits adding to 11 | (D) 74 |
 | 27 | Ch5 + Ch10 | shapes labelled with their corners · one wrong label | (C) Circle |
 | 28 | Ch9 + Ch10 | practising every 2nd and every 3rd day from Tuesday · next together | (A) Monday |
 | 29 | Ch1 + Ch9 | largest date in a month with both digits the same | (B) 22nd |
-| 30 | Ch2 + Ch5 | separate triangles from 20 sticks | (A) 6 |
+| 30 | Ch2 + Ch5 | two squares and some triangles with 17 corners | (A) 3 |
 
 Answer letters: A 8, B 7, C 8, D 7
