@@ -12,6 +12,16 @@ def house():
             ('text', 60, 152, '6 cm', 11)]
 
 
+
+def fold_steps():
+    return [('rect', 0, 10, 70, 70, 'yellow'), ('text', 35, 92, '1. square', 10),
+            ('text', 92, 45, '→', 18),
+            ('poly', [(115, 10), (185, 80), (115, 80)], 'yellow'), ('text', 140, 92, '2. fold', 10),
+            ('text', 205, 45, '→', 18),
+            ('poly', [(225, 45), (260, 80), (225, 80)], 'yellow'),
+            ('line', 225, 68, 237, 80, True), ('text', 262, 92, '3. fold again, cut corner', 10)]
+
+
 QUESTIONS = [
     # ---------------- Part 1 · Number System
     dict(ch='1', scen='eight thousand eighty-eight plus eight hundred eight',
@@ -75,12 +85,13 @@ QUESTIONS = [
          sol='8/9 is 1/9 away from 9/9. 11/9 is 2/9 away, 6/9 is 3/9 away and 12/9 is 3/9 away. The closest is 8/9.'),
 
     # ---------------- Part 4 · Geometry
-    dict(ch='5', scen='painted cube cut into 8 small cubes · painted faces each',
-         stem='A cube is painted on all faces. It is cut into 8 equal small cubes, 2 along each edge. How many painted faces does each small cube have?',
-         opts=['3', '2', '1', '6'],
-         hint='Where is each small cube in the big cube?',
-         sol='Every small cube sits at a corner of the big cube. A corner touches 3 faces, so each small cube has 3 painted faces.'),
+    dict(ch='5', scen='painted cube cut into 27 small cubes · exactly two painted faces',
+         stem='A cube is painted on all faces. It is cut into 27 equal small cubes, 3 along each edge. How many small cubes have exactly 2 painted faces?',
+         opts=['12', '8', '6', '24'],
+         hint='The corner cubes have 3 painted faces. Look along the edges.',
+         sol='The 8 corner cubes have 3 painted faces. Each of the 12 edges of the big cube has 1 small cube between two corners, and it has exactly 2 painted faces. So 12.'),
     dict(ch='5', scen='square folded twice along diagonals · tip cut at the centre corner',
+         fig=drawing(280, 100, fold_steps()),
          stem='Pallavi folds a square paper corner to corner to make a triangle, then folds it in half again. She cuts off the square corner of the small triangle. How many holes does she see when she opens it?',
          opts=['1', '4', '2', '0'],
          hint='Where in the big square is the square corner of the folded triangle?',
@@ -99,11 +110,11 @@ QUESTIONS = [
          opts=['30 cm', '42 cm', '36 cm', '24 cm'],
          hint='The side shared by the square and the triangle is inside the shape.',
          sol='Outside edges: 3 sides of the square and 2 sides of the triangle, all 6 cm. 5 × 6 = 30 cm. (42 cm wrongly counts the shared side twice.)'),
-    dict(ch='6', scen='which two lengths are equal among km and m mixes',
-         stem='Which two of these lengths are equal: 1 km 50 m, 1500 m, 1 km 5 m, 1050 m?',
-         opts=['1 km 50 m and 1050 m', '1 km 50 m and 1500 m', '1 km 5 m and 1050 m', '1500 m and 1 km 5 m'],
-         hint='1 km = 1000 m.',
-         sol='1 km 50 m = 1050 m. 1 km 5 m = 1005 m. 1500 m is 1 km 500 m. So 1 km 50 m and 1050 m are equal.'),
+    dict(ch='6', scen='which two lengths add up to exactly 2 km',
+         stem='Which two of these lengths add up to exactly 2 km: 1 km 50 m, 950 m, 1 km 5 m, 1500 m?',
+         opts=['1 km 50 m and 950 m', '1 km 5 m and 950 m', '1500 m and 1 km 5 m', '1 km 50 m and 1500 m'],
+         hint='Change everything to metres: 2 km = 2000 m.',
+         sol='1 km 50 m = 1050 m and 1 km 5 m = 1005 m. 1050 + 950 = 2000 m = 2 km. The others: 1005 + 950 = 1955, 1500 + 1005 = 2505, 1050 + 1500 = 2550.'),
     dict(ch='6', scen='4 books weigh as much as 6 notebooks of 200 g',
          stem='On a balance, 4 equal books weigh the same as 6 equal notebooks. One notebook weighs 200 g. How much does one book weigh?',
          opts=['300 g', '200 g', '800 g', '1200 g'],

@@ -24,3 +24,9 @@ Reviews of the AMO Level 1 practice papers against the AMO Vertical Syllabus v5.
 - `reviews/level2/class2/README.md`: review of the 10 original Level-2 Class 2 papers, how they were replaced and how the new ones were verified. `originals_papers1-5.md` and `originals_papers6-10.md` are the question-by-question reviews; `question_index.md` lists all 300 new questions with their answers.
 - `questions/level2/class2/paperNN.py`: the 300 new questions.
 - `papers/level2/class2/`: Set-1 (Practice Papers 1–5) and Set-2 (Practice Papers 6–10), as DOCX and PDF. The cover is `assets/AMO_Class2_L2_cover.png`.
+
+## Level-2 (Class 3)
+
+- `reviews/level2/class3/README.md`: review of the 10 original Level-2 Class 3 papers, how they were replaced and verified; `originals_papers1-5.md`, `originals_papers6-10.md` and `question_index.md` alongside.
+- `questions/level2/class3/paperNN.py`: the 300 new questions.
+- `papers/level2/class3/`: Set-1 (Practice Papers 1–5) and Set-2 (Practice Papers 6–10), DOCX and PDF. Cover: `assets/AMO_Class3_L2_cover.png`.
