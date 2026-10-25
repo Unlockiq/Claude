@@ -31,7 +31,7 @@ def tangents(r=45, d=150, lab_r=None, lab_extra=None, angle_mark=None):
     if lab_r:
         prims.append(('text', (O[0] + A[0]) / 2 - 12, (O[1] + A[1]) / 2, lab_r, 11))
     if angle_mark:
-        prims.append(('text', P[0] - 28, P[1], angle_mark, 11))
+        prims.append(('text', P[0] - 30, P[1] - 9, angle_mark, 10))
     for s, x, y in lab_extra or []:
         prims.append(('text', x, y, s, 11))
     return prims
@@ -184,7 +184,7 @@ QUESTIONS = [
          hint='Each step, how does the total of the numbers on the board change?',
          sol='Each step lowers the total by exactly 1. The starting total is 55 and there are 9 steps, so the last number is 55 − 9 = 46, whatever the order.'),
 
-    # ---------------- Section II · Star Questions
+    # ---------------- Part 10 · Mixed Problems
     dict(ch='4+10', scen='positive integer solutions of 3x + 5y = 100',
          stem='How many pairs of positive integers (x, y) satisfy 3x + 5y = 100?',
          opts=['6', '7', '5', '20'],
