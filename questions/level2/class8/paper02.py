@@ -130,7 +130,7 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='pie chart of a ₹36,000 budget · food minus savings',
-         fig=drawing(250, 180, pie([('Food', 120), ('Rent', 90), ('Education', 72), ('Savings', 30), ('Others', 48)])),
+         fig=drawing(320, 180, pie([('Food', 120), ('Rent', 90), ('Education', 72), ('Savings', 30), ('Others', 48)], cx=150)),
          stem='The pie chart shows how a family spends its monthly income of ₹36,000. How much more is spent on food than is saved?',
          opts=['₹9,000', '₹12,000', '₹3,000', '₹10,800'],
          hint='Each degree stands for 36,000 ÷ 360 rupees.',

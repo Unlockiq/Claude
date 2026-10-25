@@ -141,7 +141,7 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='histogram of test marks · percentage scoring 50 or more',
-         fig=hist([20, 30, 40, 50, 60, 70], [5, 7, 12, 10, 6], 12, 2, 'Marks'),
+         fig=drawing(300, 200, hist([20, 30, 40, 50, 60, 70], [5, 7, 12, 10, 6], 12, 2, 'Marks')),
          stem='The histogram shows the marks of a class in a test (each class includes its lower mark, not its upper mark). What percentage of the class scored 50 marks or more?',
          opts=['40%', '16%', '70%', '25%'],
          hint='Add all the bars for the total, then add the bars from 50 onwards.',

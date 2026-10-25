@@ -17,8 +17,10 @@ Tushar Umesh Vinay Mohit Ojas Rohit Lalit Raghav Hari Vivek Mukesh Sohan Akash A
 NAMES = GIRLS | BOYS
 
 # Capitalised words that may start a sentence or name a thing, not a person.
-NOT_NAMES = set('''A An The How What Which Who Whom Whose Where When Why If In On At Of To For From By With Each Every
+NOT_NAMES = set('''Buy Shop A An The How What Which Who Whom Whose Where When Why If In On At Of To For From By With Each Every
 Hanoi Koch Sierpiński Sierpinski Heron Heron's Cartesian Rule Plan Tower Archimedes Baudhāyana Ganita Manjari
+Model Celsius Fahrenheit Job Machine Scheme Option Town Village Shop Factory Bank School Team Group Player Club Year
+Method Spinner Bag Box Card Coin Die Dice Car Van Phone Pipe Lamp Tank Graph Table Survey Class Section
 Some Many Most All Both Then There This That These Those Her His Their He She They It Its One Two Three Four Five Six
 Seven Eight Nine Ten Look Count Find Start Read Write Fill Put Use Make Share Draw Fold Cut Move Join Add Take Give
 Is Are Was Were Do Does Did Can Could Will Would Should Section Part Star Monday Tuesday Wednesday Thursday Friday
@@ -31,7 +33,7 @@ Clock Year Week Month Months Days Day Help Lift Ticket Tickets Seat Seats Locker
 Each Either Neither Round Square Circle Triangle Rectangle Children Class Teacher School Library Park Garden
 Market Shop Indian India Sundays Mondays Saturdays Fridays Tuesdays Wednesdays Thursdays Roman Farm Bucket Jug Tank Pole Club Pune Goa Delhi Mumbai Chennai Jaipur Kolkata Agra Mysuru Diwali Holi Coach Domino Point Grandma Grandpa Mother Father Aunt Uncle Sister Brother Mummy Papa Dadi Nani Nana Dada Mr Mrs Ms North South East West Kerala Shimla Ooty Manali Lucknow Bengaluru Hyderabad Kochi Surat Nagpur Patna Bhopal Indore Varanasi Amritsar Republic Independence Children's Teachers' Sports Science Maths Mathematics Screen Hall Stadium Station Express Rajdhani Shatabdi Ganga Yamuna Everest Olympiad Store Bakery Dairy Canteen English Hindi Marathi Tamil Telugu Kannada Bengali Gujarati Punjabi Sanskrit Maharashtra Gujarat Rajasthan Karnataka Punjab Euclid Pythagoras Thales Brahmagupta Aryabhata Bhaskara Plan Pipe Machine Mode Median Mean Theorem Leh Dead Sea Kanchenjunga Earth Sun Moon Mars Sierpinski Koch Euler Baudhayana Sulba Khajuraho Fibonacci'''.split())
 
-STARTERS = set('''Petrol Water Paint Fuel Apples Mangoes Oranges Bananas Sugar Flour Tiles Bricks Boxes Pens Pencils Notebooks Tickets Cars Buses Trains Runners Students Girls Boys Squares Starting Seen Rice Ribbon Posts Painting Milk Follow Fencing During Cloth Cannot Any Another Later Into Ball Bat Cap Lunch Both Each Every Some Pages Houses Lockers Raffle Eggs Dots Shapes Hens Coins Coins Numbers Months Days
+STARTERS = set('''Buy Light About Loss Profit Ignore Following Solve Working Simplify Write Tank Cost Rent Food Savings Travel Others Sleep School Play Homework Cricket Football Hockey Badminton Mango Apple Banana Grapes Kites Marks Shoe Pupils Machine Pipe Pipes Drum Drums Tin Coin Cars Cuboid Cylinder Petrol Water Paint Fuel Apples Mangoes Oranges Bananas Sugar Flour Tiles Bricks Boxes Pens Pencils Notebooks Tickets Cars Buses Trains Runners Students Girls Boys Squares Starting Seen Rice Ribbon Posts Painting Milk Follow Fencing During Cloth Cannot Any Another Later Into Ball Bat Cap Lunch Both Each Every Some Pages Houses Lockers Raffle Eggs Dots Shapes Hens Coins Coins Numbers Months Days
 Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Going Look Count Find Which What How Who Where When Whose
 The A An In On At If Then There This That These Those She He They It Its Her His My I Now Today Tomorrow Yesterday
 School Points Part Players Rows Row Lines Each Every Both Neither Use Using Write Put Thirteen Eleven Twelve Fourteen
