@@ -52,10 +52,10 @@ QUESTIONS = [
 
     # ---------------- Part 2 · Operations
     dict(ch='2', scen='5 to the 2x minus 1 divided by 25 equals 125',
-         stem='Find x if 5^(2x − 1) ÷ 25 = 125.',
+         stem='Find x if 5²ˣ⁻¹ ÷ 25 = 125.',
          opts=['3', '2', '4', '5/2'],
          hint='Write 25 and 125 as powers of 5.',
-         sol='5^(2x − 1) ÷ 5² = 5^(2x − 3) = 5³. So 2x − 3 = 3 and x = 3.'),
+         sol='5²ˣ⁻¹ ÷ 5² = 5²ˣ⁻³ = 5³. So 2x − 3 = 3 and x = 3.'),
     dict(ch='2', scen='blood cell 0.000006 m and virus 0.00000003 m · how many times larger',
          stem='A blood cell is about 0.000006 m across and a virus is about 0.00000003 m across. Using standard form, find how many times wider the blood cell is.',
          opts=['200', '20', '2,000', '2 × 10⁻²'],

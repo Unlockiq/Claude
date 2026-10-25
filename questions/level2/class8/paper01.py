@@ -60,10 +60,10 @@ QUESTIONS = [
 
     # ---------------- Part 2 · Operations
     dict(ch='2', scen='solve 3 to the 2x minus 1 times 9 to the minus 2 equals 27 to the minus 1',
-         stem='Find x if 3^(2x − 1) × 9⁻² = 27⁻¹.',
+         stem='Find x if 3²ˣ⁻¹ × 9⁻² = 27⁻¹.',
          opts=['1', '2', '−1', '3'],
          hint='Write 9 and 27 as powers of 3.',
-         sol='9⁻² = 3⁻⁴ and 27⁻¹ = 3⁻³. So 3^(2x − 1 − 4) = 3⁻³, which gives 2x − 5 = −3, so 2x = 2 and x = 1.'),
+         sol='9⁻² = 3⁻⁴ and 27⁻¹ = 3⁻³. So 3²ˣ⁻¹⁻⁴ = 3⁻³, which gives 2x − 5 = −3, so 2x = 2 and x = 1.'),
     dict(ch='2', scen='distance from the Sun from light speed and 500 seconds in standard form',
          stem='Light travels 3 × 10⁸ metres every second. Sunlight takes about 500 seconds to reach the Earth. About how far is the Sun, in kilometres, in standard form?',
          opts=['1.5 × 10⁸ km', '1.5 × 10¹¹ km', '1.5 × 10⁵ km', '6 × 10⁵ km'],

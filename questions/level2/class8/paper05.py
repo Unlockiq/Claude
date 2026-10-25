@@ -48,10 +48,10 @@ QUESTIONS = [
 
     # ---------------- Part 2 · Operations
     dict(ch='2', scen='2 to the x plus 2 minus 2 to the x equals 96',
-         stem='Find x if 2^(x + 2) − 2^x = 96.',
+         stem='Find x if 2ˣ⁺² − 2ˣ = 96.',
          opts=['5', '4', '6', '3'],
-         hint='2^(x + 2) = 4 × 2^x.',
-         sol='4 × 2^x − 2^x = 3 × 2^x = 96, so 2^x = 32 = 2⁵ and x = 5.'),
+         hint='2ˣ⁺² = 4 × 2ˣ.',
+         sol='4 × 2ˣ − 2ˣ = 3 × 2ˣ = 96, so 2ˣ = 32 = 2⁵ and x = 5.'),
     dict(ch='2', scen='heartbeats in a year at 72 a minute in standard form',
          stem='A heart beats about 72 times a minute. About how many times does it beat in a year of 365 days? Give the answer in standard form.',
          opts=['3.78 × 10⁷', '3.78 × 10⁶', '6.3 × 10⁵', '2.6 × 10⁸'],

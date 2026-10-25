@@ -177,7 +177,7 @@ QUESTIONS = [
          stem='A tree is drawn from a 64 cm trunk (step 0). At each step, every branch tip grows two new branches, each half as long as the branch it grows from. Steps 0, 1 and 2 are shown. What is the total length of the drawing after step 5?',
          opts=['384 cm', '128 cm', '2,048 cm', '320 cm'],
          hint='At each step the number of new branches doubles and their length halves.',
-         sol='Step k adds 2^k branches, each 64 ÷ 2^k cm long, which is 64 cm in total. The trunk plus 5 steps gives 6 × 64 = 384 cm.'),
+         sol='Step k adds 2ᵏ branches, each 64 ÷ 2ᵏ cm long, which is 64 cm in total. The trunk plus 5 steps gives 6 × 64 = 384 cm.'),
 
     # ---------------- Part 10 · Mixed Problems
     dict(ch='4+10', scen='integers n with n squared minus 20n plus 96 negative',

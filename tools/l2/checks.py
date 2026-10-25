@@ -20,7 +20,7 @@ NAMES = GIRLS | BOYS
 NOT_NAMES = set('''Buy Shop A An The How What Which Who Whom Whose Where When Why If In On At Of To For From By With Each Every
 Hanoi Koch Sierpiński Sierpinski Heron Heron's Cartesian Rule Plan Tower Archimedes Baudhāyana Ganita Manjari
 Model Celsius Fahrenheit Job Machine Scheme Option Town Village Shop Factory Bank School Team Group Player Club Year
-Method Spinner Bag Box Card Coin Die Dice Car Van Phone Pipe Lamp Tank Graph Table Survey Class Section
+Method Spinner Bag Box Card Coin Die Dice Car Van Phone Pipe Lamp Tank Graph Table Survey Class Section Gym Lab Clinic
 Some Many Most All Both Then There This That These Those Her His Their He She They It Its One Two Three Four Five Six
 Seven Eight Nine Ten Look Count Find Start Read Write Fill Put Use Make Share Draw Fold Cut Move Join Add Take Give
 Is Are Was Were Do Does Did Can Could Will Would Should Section Part Star Monday Tuesday Wednesday Thursday Friday
