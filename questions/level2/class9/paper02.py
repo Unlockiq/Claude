@@ -40,11 +40,11 @@ QUESTIONS = [
          opts=['₹4,08,000', '₹3,90,000', '₹4,20,000', '₹4,05,000'],
          hint='Multiply by 0.80 and then by 0.85.',
          sol='6,00,000 × 0.80 = 4,80,000. 4,80,000 × 0.85 = ₹4,08,000. (₹3,90,000 takes 35% off the original price.)'),
-    dict(ch='3', scen='village population up 5 then 10 percent · total percent rise',
-         stem='The population of a village rises by 5% in one year and by 10% in the next. By what percentage has it risen over the two years?',
-         opts=['15.5%', '15%', '16%', '15.25%'],
-         hint='The growth factors multiply: 1.05 × 1.10.',
-         sol='1.05 × 1.10 = 1.155, a rise of 15.5%. The second 10% is taken on the already grown population, which adds 0.5% more than 5% + 10%.'),
+    dict(ch='3', scen='share of girls from class average 66 with averages 72 and 62',
+         stem='In a class, the girls\' average mark is 72 and the boys\' average mark is 62. The whole class averages 66. What percentage of the class are girls?',
+         opts=['40%', '60%', '50%', '45%'],
+         hint='The class average is a weighted average of 72 and 62.',
+         sol='Let a fraction g of the class be girls: 72g + 62(1 − g) = 66, so 10g = 4 and g = 0.4. So 40% are girls. (60% is the share of boys; 50% would give an average of 67.)'),
 
     # ---------------- Part 3 · Algebra
     dict(ch='4', scen='a² − b² − 2b − 1 for a 1001 and b 999',
@@ -162,7 +162,7 @@ QUESTIONS = [
          opts=['The diagonals of a rhombus bisect each other.', 'The diagonals of a trapezium bisect each other.',
                'If the diagonals of a quadrilateral bisect each other, it is a parallelogram.', 'The diagonals of a rectangle are equal.'],
          hint='A special case applies the same result to a smaller family of shapes.',
-         sol='Every rhombus is a parallelogram, so the result applies to it: a special case. The third statement is the converse, the fourth is a different property, and the second is false.'),
+         sol='Every rhombus is a parallelogram, so the result applies to it: a special case. The statement starting "If the diagonals of a quadrilateral bisect each other" is the converse, the rectangle statement is a different property, and the trapezium statement is false.'),
 
     # ---------------- Part 9 · Mixed Problems
     dict(ch='4+10', scen='time for 10-disc Tower of Hanoi at one move a second',

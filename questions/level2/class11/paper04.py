@@ -16,8 +16,8 @@ QUESTIONS = [
     dict(ch='1', scen='least modulus of z on the circle |z − (3 + 4i)| = 2',
          stem='A complex number z satisfies |z − (3 + 4i)| = 2. What is the least possible value of |z|?',
          opts=['3', '5', '7', '1'],
-         hint='z lies on a circle of radius 2 centred at the point (3, 4).',
-         sol='The centre 3 + 4i is at distance 5 from the origin. The nearest point of the circle to O is on the line through O and the centre, at distance 5 − 2 = 3.'),
+         hint='Use the triangle inequality: |3 + 4i| ≤ |z| + |(3 + 4i) − z|.',
+         sol='5 = |3 + 4i| ≤ |z| + |3 + 4i − z| = |z| + 2, so |z| ≥ 3. Equality holds for z = (3/5)(3 + 4i) = 9/5 + (12/5)i, which satisfies |z − (3 + 4i)| = 2. The least value is 3.'),
 
     # ---------------- Part 2 · Algebra
     dict(ch='4', scen='sum of all three-digit multiples of 7',
@@ -108,11 +108,11 @@ QUESTIONS = [
          sol='Mean of y = 3 − 2 × 5 = −7. Variance of y = (−2)² × 4 = 16, so SD = 4 (an SD is never negative; 16 is the variance).'),
 
     # ---------------- Part 6 · Applied Mathematics
-    dict(ch='9', scen='CGST in a price of ₹1,416 that includes 18% GST',
-         stem='A phone cover costs ₹1,416 including 18% GST, sold within one state. How much of this is CGST?',
-         opts=['₹108', '₹127.44', '₹216', '₹254.88'],
-         hint='First remove the GST: price before tax = 1,416 ÷ 1.18.',
-         sol='Price before tax = 1,416 ÷ 1.18 = ₹1,200. GST = ₹216, split equally into CGST and SGST: CGST = ₹108. (₹127.44 wrongly takes 9% of 1,416.)'),
+    dict(ch='9', scen='CGST payable after input credit on an intra-state sale',
+         stem='A shopkeeper in Pune buys an item for ₹1,000 plus 18% GST and sells it within Maharashtra for ₹1,416, including 18% GST. After input tax credit, how much CGST does he pay to the government?',
+         opts=['₹18', '₹36', '₹108', '₹90'],
+         hint='Remove the GST from the selling price first, then subtract the input GST.',
+         sol='Selling price before tax = 1,416 ÷ 1.18 = ₹1,200, so output GST = ₹216. Input GST = ₹180. Net GST = ₹36, split equally into CGST and SGST: CGST = ₹18. (₹108 forgets the input credit.)'),
     dict(ch='9', scen='partnership with B joining after 4 months · A share of ₹22,000',
          stem='Anil starts a business with ₹24,000. Four months later Prachi joins with ₹30,000. At the end of the year the profit is ₹22,000. What is Anil’s share?',
          opts=['₹12,000', '₹9,778', '₹10,000', '₹11,000'],
@@ -125,21 +125,21 @@ QUESTIONS = [
          sol='35,000 + 25n < 20,000 + 30n gives 15,000 < 5n, so n > 3,000. B is cheaper for more than 3,000 items.'),
 
     # ---------------- Part 7 · Mathematical Reasoning
-    dict(ch='10', scen='socks of 4 colours · draws to be sure of 3 of one colour',
-         stem='A drawer has many socks in 4 colours. Socks are taken out in the dark. What is the least number that must be taken to be sure of getting 3 socks of the same colour?',
-         opts=['9', '8', '12', '5'],
-         hint='How many socks can you take while having at most 2 of each colour?',
-         sol='8 socks can be 2 of each colour with no 3 alike. The 9th sock makes 3 of some colour (pigeonhole: 2 × 4 + 1).'),
+    dict(ch='10', scen='socks with only 2 red · sure of 4 of one colour',
+         stem='A drawer has 2 red, 10 blue, 10 green and 10 black socks. Socks are taken out in the dark. What is the least number that must be taken out to be sure of getting 4 socks of the same colour?',
+         opts=['12', '13', '16', '10'],
+         hint='Find the largest number you can take with at most 3 of each colour; there are only 2 red socks.',
+         sol='At most 2 red + 3 blue + 3 green + 3 black = 11 socks can be taken without 4 of one colour. The 12th sock must give 4 blue, green or black. (13 assumes 3 red socks are available.)'),
     dict(ch='10', scen='number of positive divisors of 7200',
          stem='How many positive divisors does 7200 have?',
          opts=['54', '36', '48', '72'],
          hint='Write 7200 as a product of prime powers.',
          sol='7200 = 2⁵ × 3² × 5². A divisor is 2ᵃ3ᵇ5ᶜ with a = 0 to 5, b = 0 to 2, c = 0 to 2: 6 × 3 × 3 = 54.'),
     dict(ch='10', scen='length of sequence forcing a monotone run of 5',
-         stem='What is the least length L such that every list of L distinct numbers contains 5 numbers (in order) that are increasing, or 5 that are decreasing?',
+         stem='What is the least length L such that every list of L distinct numbers contains 5 numbers that are increasing, or 5 that are decreasing? (The 5 numbers need not be next to each other, but must be in their order in the list.)',
          opts=['17', '16', '25', '10'],
-         hint='Label each number with the length of the longest increasing run ending at it.',
-         sol='Label each term by the longest increasing subsequence ending there. If none reaches 5, labels are 1 to 4, so with 17 terms some label is shared by 5 terms (pigeonhole), and those 5 must be decreasing. A list of 16 made of 4 decreasing blocks of 4, arranged in increasing order of blocks, has no monotone run of 5. So L = 17.'),
+         hint='Label each number with the length of the longest increasing subsequence ending at it.',
+         sol='Label each term by the longest increasing subsequence ending there. If none reaches 5, labels are 1 to 4, so with 17 terms some label is shared by 5 terms (pigeonhole), and those 5 must be decreasing. A list of 16 made of 4 decreasing blocks of 4, arranged in increasing order of blocks, has no monotone subsequence of 5. So L = 17.'),
 
     # ---------------- Part 8 · Mixed Problems
     dict(ch='4+10', scen='sum of the first ten Fibonacci numbers',

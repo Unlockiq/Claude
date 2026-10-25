@@ -47,11 +47,11 @@ QUESTIONS = [
          sol='6 1/4 = 25/4, so its root is 5/2. 2 7/9 = 25/9, so its root is 5/3. 5/2 − 5/3 = 15/6 − 10/6 = 5/6.'),
 
     # ---------------- Part 2 · Operations
-    dict(ch='2', scen='minus 3 to the minus 2 times 3 cubed all to the minus 1',
-         stem='What is ((−3)⁻² × 3³)⁻¹?',
-         opts=['1/3', '3', '−1/3', '−3'],
-         hint='(−3)⁻² = 1/(−3)² = 1/9.',
-         sol='(−3)⁻² = 1/9, so (1/9) × 27 = 3. The inverse of 3 is 1/3. (The square makes the sign positive.)'),
+    dict(ch='2', scen='find x with minus 3 to the minus 2 times 3 to the x equal to one third inverse to the 4 times 3 inverse',
+         stem='Find x if (−3)⁻² × 3ˣ = (1/3)⁻⁴ × 3⁻¹.',
+         opts=['5', '3', '1', '−5'],
+         hint='(−3)⁻² = 1/9 = 3⁻² and (1/3)⁻⁴ = 3⁴.',
+         sol='(−3)⁻² = 1/(−3)² = 3⁻². The right side is 3⁴ × 3⁻¹ = 3³. So 3ˣ⁻² = 3³, x − 2 = 3 and x = 5. (−5 treats (−3)⁻² as negative.)'),
     dict(ch='2', scen='computer doing 4.5 times 10 to the 9 operations a second · minutes for 2.7 times 10 to the 13',
          stem='A computer carries out 4.5 × 10⁹ operations every second. How long does it take to carry out 2.7 × 10¹³ operations?',
          opts=['100 minutes', '6,000 minutes', '10 minutes', '60 minutes'],
@@ -110,11 +110,11 @@ QUESTIONS = [
          sol='Half of the known diagonal is 12. The other half-diagonal is √(169 − 144) = 5, so the other diagonal is 10. Area = ½ × 24 × 10 = 120 cm².'),
 
     # ---------------- Part 6 · Mensuration
-    dict(ch='6', scen='cone and cylinder with equal base and volume · cone height',
-         stem='A cone and a cylinder have equal bases and equal volumes. The cylinder is 6 cm tall. How tall is the cone?',
-         opts=['18 cm', '2 cm', '6 cm', '12 cm'],
-         hint='(1/3)πr²H = πr²h.',
-         sol='(1/3)πr²H = πr² × 6 gives H = 18 cm. A cone must be three times as tall to hold the same amount.'),
+    dict(ch='6', scen='cone with twice the radius of a cylinder and equal volume · cone height',
+         stem='A cone and a cylinder have equal volumes. The radius of the cone is twice the radius of the cylinder, and the cylinder is 6 cm tall. How tall is the cone?',
+         opts=['4.5 cm', '18 cm', '9 cm', '2 cm'],
+         hint='(1/3)π(2r)²H = πr² × 6.',
+         sol='(1/3)π(2r)²H = (4/3)πr²H. Setting this equal to πr² × 6 gives (4/3)H = 6, so H = 4.5 cm. (18 cm ignores the doubled radius.)'),
     dict(ch='6', scen='well of diameter 3.5 m and depth 10 m spread on a 22 m by 14 m plot',
          stem='A cylindrical well of diameter 3.5 m is dug 10 m deep. The earth taken out is spread evenly over a plot 22 m by 14 m. By how much is the level of the plot raised? (Take π = 22/7.)',
          opts=['31.25 cm', '3.125 cm', '62.5 cm', '12.5 cm'],
@@ -150,11 +150,11 @@ QUESTIONS = [
          opts=['10%', '11%', '12%', '8%'],
          hint='Interest = principal × years × rate.',
          sol='Interest = 5,000 × 2 × r% + 3,000 × 4 × r% = 22,000 × r% = 2,200, so r = 10.'),
-    dict(ch='9', scen='car sold at 10 percent loss · ₹45,000 more would give 5 percent gain',
-         stem='A car is sold at a loss of 10%. Had it been sold for ₹45,000 more, there would have been a gain of 5%. What was the cost price?',
-         opts=['₹3,00,000', '₹4,50,000', '₹2,70,000', '₹3,15,000'],
-         hint='From 10% loss to 5% gain is 15% of the cost.',
-         sol='The extra ₹45,000 covers 10% + 5% = 15% of the cost. Cost = 45,000 × 100 ÷ 15 = ₹3,00,000.'),
+    dict(ch='9', scen='car sold at 10 percent loss · bought 20 percent cheaper and sold for ₹45,000 more gives 25 percent gain',
+         stem='A car is sold at a loss of 10%. If it had been bought for 20% less and sold for ₹45,000 more, the dealer would have gained 25%. What was the cost price?',
+         opts=['₹4,50,000', '₹3,00,000', '₹1,80,000', '₹5,00,000'],
+         hint='Let the cost be C. Write both selling prices in terms of C.',
+         sol='Actual selling price = 0.9C. New cost = 0.8C and new selling price = 1.25 × 0.8C = C. So C = 0.9C + 45,000, giving 0.1C = 45,000 and C = ₹4,50,000.'),
 
     # ---------------- Part 9 · Mathematical Reasoning
     dict(ch='10', scen='ABC minus CBA is 297 with B 8 and digit sum 17',
@@ -181,7 +181,7 @@ QUESTIONS = [
 
     # ---------------- Part 10 · Mixed Problems
     dict(ch='4+10', scen='integers n with n squared minus 20n plus 96 negative',
-         stem='For how many whole numbers n is n² − 20n + 96 a negative number?',
+         stem='For how many whole numbers n from 1 to 15 is n² − 20n + 96 a negative number?',
          opts=['3', '5', '4', '2'],
          hint='Factorise n² − 20n + 96.',
          sol='n² − 20n + 96 = (n − 8)(n − 12). This is negative only when one factor is negative and the other positive, that is 8 < n < 12. So n = 9, 10 or 11: 3 numbers.'),

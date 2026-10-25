@@ -32,6 +32,27 @@ def sierp_steps():
     return prims
 
 
+
+def htree(n, cx, cy, w):
+    """H-fractal: an H of width w centred at (cx, cy); step n adds half-size H's at the 4 tips."""
+    prims = [('line', cx - w / 2, cy, cx + w / 2, cy), ('line', cx - w / 2, cy - w / 2, cx - w / 2, cy + w / 2),
+             ('line', cx + w / 2, cy - w / 2, cx + w / 2, cy + w / 2)]
+    if n > 0:
+        for dx in (-w / 2, w / 2):
+            for dy in (-w / 2, w / 2):
+                prims += htree(n - 1, cx + dx, cy + dy, w / 2)
+    return prims
+
+
+def htree_steps():
+    prims = []
+    for k in range(3):
+        cx = 55 + k * 125
+        prims += htree(k, cx, 55, 52)
+        prims.append(('text', cx, 118, f'Step {k}', 11))
+    return prims
+
+
 QUESTIONS = [
     # ---------------- Part 1 · Number System
     dict(ch='1', scen='square field of area 30 and a quarter m² fenced with 4 rounds of wire',
@@ -46,11 +67,11 @@ QUESTIONS = [
          sol='1³ + … + n³ = (1 + 2 + … + n)². 441 = 21², and 1 + 2 + … + 6 = 21. So n = 6.'),
 
     # ---------------- Part 2 · Operations
-    dict(ch='2', scen='quarter inverse minus eighth inverse all inverted times 2 to the minus 3',
-         stem='What is (4⁻¹ − 8⁻¹)⁻¹ × 2⁻³?',
-         opts=['1', '8', '1/8', '64'],
-         hint='4⁻¹ − 8⁻¹ = 1/4 − 1/8.',
-         sol='1/4 − 1/8 = 1/8, so (1/8)⁻¹ = 8. 2⁻³ = 1/8. 8 × 1/8 = 1.'),
+    dict(ch='2', scen='find x with quarter inverse minus eighth inverse all inverted times 2 to the minus x',
+         stem='Find x if (4⁻¹ − 8⁻¹)⁻¹ × 2⁻ˣ = 1/16.',
+         opts=['7', '1', '4', '−7'],
+         hint='4⁻¹ − 8⁻¹ = 1/4 − 1/8. Write everything as a power of 2.',
+         sol='1/4 − 1/8 = 1/8, so (1/8)⁻¹ = 8 = 2³. Then 2³⁻ˣ = 2⁻⁴, so 3 − x = −4 and x = 7.'),
     dict(ch='2', scen='0.00000525 times 4 times 10 to the 5 divided by 7 times 10 to the minus 2',
          stem='Write (0.00000525 × 4 × 10⁵) ÷ (7 × 10⁻²) in standard form.',
          opts=['3 × 10¹', '3 × 10⁻¹', '3 × 10²', '2.1 × 10¹'],
@@ -109,11 +130,11 @@ QUESTIONS = [
          sol='3n = 30, so the base is a 10-sided polygon. Faces = 2 bases + 10 side faces = 12. Check with Euler: V = 20, and 12 + 20 − 30 = 2.'),
 
     # ---------------- Part 6 · Mensuration
-    dict(ch='6', scen='two cylinders with radii 2 to 3 and heights 5 to 3 · ratio of volumes',
-         stem='Two cylinders have radii in the ratio 2 : 3 and heights in the ratio 5 : 3. What is the ratio of their volumes?',
-         opts=['20 : 27', '10 : 9', '2 : 3', '4 : 9'],
-         hint='Volume = πr²h, so the radius ratio is squared.',
-         sol='Ratio = (2² × 5) : (3² × 3) = 20 : 27. (10 : 9 forgets to square the radii.)'),
+    dict(ch='6', scen='two cylinders with radii 2 to 3 and volumes 20 to 27 · ratio of curved surfaces',
+         stem='Two cylinders have radii in the ratio 2 : 3 and volumes in the ratio 20 : 27. What is the ratio of their curved surface areas?',
+         opts=['10 : 9', '20 : 27', '5 : 3', '4 : 9'],
+         hint='Volume = πr²h gives the ratio of heights; curved surface = 2πrh.',
+         sol='Volumes: (4h₁) : (9h₂) = 20 : 27, so h₁ : h₂ = 5 : 3. Curved surfaces: r₁h₁ : r₂h₂ = (2 × 5) : (3 × 3) = 10 : 9. (5 : 3 is the ratio of heights.)'),
     dict(ch='6', scen='cone radius 5 height 12 · total surface area with pi 3.14',
          stem='A solid cone has base radius 5 cm and height 12 cm. What is its total surface area? (Take π = 3.14.)',
          opts=['282.6 cm²', '204.1 cm²', '314 cm²', '188.4 cm²'],
@@ -128,15 +149,15 @@ QUESTIONS = [
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='pie chart of 900 votes among three candidates · winning margin',
          fig=drawing(320, 180, pie([('A', 140), ('B', 100), ('C', 120)])),
-         stem='The pie chart shows how 900 votes were shared among candidates A, B and C. By how many votes did A beat C?',
+         stem='The pie chart shows how 900 saplings were planted by three schools A, B and C. How many more saplings did school A plant than school C?',
          opts=['50', '20', '150', '100'],
-         hint='Each degree stands for 900 ÷ 360 votes.',
-         sol='Each degree is 2.5 votes. A − C = 140° − 120° = 20°, which is 50 votes.'),
-    dict(ch='8', scen='mean of 10 numbers 25 with each increased by 4 then doubled',
-         stem='The mean of 10 numbers is 25. Each number is increased by 4 and the result is doubled. What is the new mean?',
-         opts=['58', '54', '29', '50'],
-         hint='The mean changes in the same way as every number.',
-         sol='Adding 4 to every number makes the mean 29. Doubling every number makes it 58. (54 doubles first and then adds 4.)'),
+         hint='Each degree stands for 900 ÷ 360 saplings.',
+         sol='Each degree is 2.5 saplings. A − C = 140° − 120° = 20°, which is 50 saplings.'),
+    dict(ch='8', scen='mean of 10 numbers transformed then one new value removed',
+         stem='The mean of 10 numbers is 25. Each number is increased by 4 and the result is doubled. Then one of the new numbers, 22, is removed. What is the mean of the remaining 9 numbers?',
+         opts=['62', '58', '60', '55.8'],
+         hint='Find the new mean, then the new total, before removing 22.',
+         sol='Adding 4 makes the mean 29; doubling makes it 58. New total = 10 × 58 = 580. Removing 22 leaves 558 for 9 numbers: 558 ÷ 9 = 62. (58 is the mean before removing 22.)'),
 
     # ---------------- Part 8 · Applied Mathematics
     dict(ch='9', scen='eggs bought 5 for ₹16 and sold 4 for ₹16 with 30 of 600 broken',
@@ -144,11 +165,11 @@ QUESTIONS = [
          opts=['18.75%', '25%', '20%', '15%'],
          hint='Find the total cost and the total takings.',
          sol='Cost = 600 × 3.20 = ₹1,920. He sells 570 eggs at ₹4 each: ₹2,280. Profit = 360 on 1,920 = 18.75%. (25% ignores the broken eggs.)'),
-    dict(ch='9', scen='₹10,000 at 6 percent for 3 years then 8 percent for 2 years simple interest',
-         stem='₹10,000 is deposited at simple interest. The rate is 6% a year for the first 3 years and 8% a year for the next 2 years. What is the amount after 5 years?',
-         opts=['₹13,400', '₹13,000', '₹14,000', '₹12,800'],
-         hint='Simple interest is always on the original ₹10,000.',
-         sol='Interest = 10,000 × (18% + 16%) = ₹3,400. Amount = ₹13,400.'),
+    dict(ch='9', scen='single simple-interest rate over 4 years matching 6 percent for 3 years then 8 percent for 2',
+         stem='A sum earns simple interest at 6% a year for 3 years and then at 8% a year for 2 more years. At what single yearly rate would the same sum earn the same total interest in only 4 years?',
+         opts=['8.5%', '6.8%', '7%', '34%'],
+         hint='Add the percentages earned over the 5 years.',
+         sol='Total interest = 3 × 6% + 2 × 8% = 34% of the sum. Over 4 years this needs 34% ÷ 4 = 8.5% a year. (6.8% spreads it over 5 years.)'),
     dict(ch='9', scen='phone sold at 20 percent profit · bought 10 percent cheaper and sold ₹180 less gives 25 percent',
          stem='Om sells a phone at a 20% profit. Had he bought it for 10% less and sold it for ₹180 less, his profit would have been 25%. What did the phone cost him?',
          opts=['₹2,400', '₹1,800', '₹3,000', '₹2,000'],
@@ -171,12 +192,12 @@ QUESTIONS = [
          opts=['130', '142', '12', '131'],
          hint='Take away the multiples of 77.',
          sol='Multiples of 7: 1,000 ÷ 7 → 142. Multiples of both 7 and 11 are multiples of 77: 1,000 ÷ 77 → 12. Answer: 142 − 12 = 130.'),
-    dict(ch='10', scen='Sierpinski triangle · number of removed triangles after step 3',
-         fig=drawing(330, 110, sierp_steps()),
-         stem='At each step, every shaded triangle is split into four equal triangles and the middle one is removed (left white). Steps 0, 1 and 2 are shown. How many white triangles of all sizes have been removed after step 3?',
-         opts=['13', '27', '9', '12'],
-         hint='Each step removes one triangle from every shaded triangle there was.',
-         sol='Step 1 removes 1, step 2 removes 3 and step 3 removes 9. Total 1 + 3 + 9 = 13. (27 is the number of shaded triangles.)'),
+    dict(ch='10', scen='H-fractal · line segments after step 3',
+         fig=drawing(320, 125, htree_steps()),
+         stem='An H-shape is made of 3 line segments (step 0). At each step, a half-size H is added at each of the 4 tips of every H added in the step before. Steps 0, 1 and 2 are shown. How many line segments are there after step 3?',
+         opts=['255', '192', '85', '256'],
+         hint='Count the H-shapes added at each step: 1, 4, 16, …',
+         sol='H-shapes: step 0 has 1, step 1 adds 4, step 2 adds 16 and step 3 adds 64. Total 1 + 4 + 16 + 64 = 85 H-shapes, each of 3 segments: 85 × 3 = 255. (192 counts only the step-3 H-shapes; 85 counts H-shapes, not segments.)'),
 
     # ---------------- Part 10 · Mixed Problems
     dict(ch='4+10', scen='a plus b is 1 and ab is minus 2 · a to the fourth plus b to the fourth',
@@ -190,7 +211,7 @@ QUESTIONS = [
          hint='Edges = (12 × 5 + 20 × 6) ÷ 2.',
          sol='Edges = (60 + 120) ÷ 2 = 90. Faces = 32. V = 2 − F + E = 2 − 32 + 90 = 60.'),
     dict(ch='4+5', scen='right triangle with sides x x plus 7 and x plus 9 · perimeter',
-         stem='The sides of a right-angled triangle are x cm, (x + 7) cm and (x + 9) cm. What is its perimeter?',
+         stem='The sides of a right-angled triangle are x cm, (x + 7) cm and (x + 9) cm, where x is a whole number. What is its perimeter?',
          opts=['40 cm', '24 cm', '30 cm', '56 cm'],
          hint='The longest side is x + 9. Try whole-number values of x.',
          sol='x² + (x + 7)² = (x + 9)². Trying x = 8: 64 + 225 = 289 = 17². So the sides are 8, 15 and 17 cm, and the perimeter is 40 cm.'),
