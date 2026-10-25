@@ -164,7 +164,7 @@ QUESTIONS = [
          stem='A sequence starts with a₁ = 1 and follows the recursive rule aₙ₊₁ = 2aₙ + 3. Which is the first term greater than 1,000?',
          opts=['9th', '8th', '10th', '7th'],
          hint='Write out the terms; each one is double the last plus 3.',
-         sol='The terms are 1, 5, 13, 29, 61, 125, 253, 509, 1,021. The 8th term is 509 and the 9th is 1,021, so the 9th term is the first above 1,000. (Adding 1 to each term gives 2, 6, 14, 30, … no — 4, 8, 16, …: aₙ + 3 doubles each time.)'),
+         sol='The terms are 1, 5, 13, 29, 61, 125, 253, 509, 1,021. The 8th term is 509 and the 9th is 1,021, so the 9th term is the first above 1,000. (Check: aₙ + 3 doubles each time, 4, 8, 16, …, so aₙ = 2ⁿ⁺¹ − 3.)'),
     dict(ch='5+6', scen='rectangular field with a circular pond of radius 7 · remaining area',
          stem='A field has corners (0, 0), (20, 0), (20, 14) and (0, 14), in metres. A circular pond of radius 7 m has its centre at (10, 7). What area of the field is not covered by the pond? (Take π = 22/7.)',
          opts=['126 m²', '280 m²', '154 m²', '434 m²'],
