@@ -135,11 +135,11 @@ QUESTIONS = [
          opts=['10', '12', '9', '13'],
          hint='After n instalments the total is 400n + 200 × (0 + 1 + 2 + … + (n − 1)).',
          sol='Total after n instalments = 400n + 200 × n(n − 1)/2 = 400n + 100n(n − 1). For n = 10: 4,000 + 9,000 = 13,000. So 10 instalments.'),
-    dict(ch='9', scen='phone losing a quarter of its value each year · below ₹15,000',
-         stem='A phone bought for ₹40,000 loses one quarter of its value every year. After how many years is its value first below ₹15,000?',
-         opts=['4', '3', '5', '6'],
-         hint='Each year the value is multiplied by 3/4.',
-         sol='Values: 30,000, 22,500, 16,875, 12,656.25. It first falls below ₹15,000 after 4 years. (A fall of ₹10,000 every year would wrongly give 3 years.)'),
+    dict(ch='9', scen='loan repaid in instalments of 100 200 300 rupees',
+         stem='Sneha repays a loan of ₹10,500 by paying ₹100 in the first month, ₹200 in the second month, ₹300 in the third, and so on. In how many months is the loan fully repaid?',
+         opts=['14', '15', '105', '21'],
+         hint='The total paid after n months is 100 × (1 + 2 + … + n).',
+         sol='After n months she has paid 100 × n(n + 1)/2. We need n(n + 1)/2 = 105, so n(n + 1) = 210 = 14 × 15. The loan is repaid in 14 months. (105 divides ₹10,500 by ₹100 only.)'),
 
     # ---------------- Part 8 · Mathematical Reasoning
     dict(ch='10', scen='counterexample to n² + n + 41 always prime',

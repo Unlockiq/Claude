@@ -37,11 +37,11 @@ QUESTIONS = [
          opts=['59,850', '60,000', '59,700', '60,150'],
          hint='The factors are 1.05 and 0.95.',
          sol='60,000 × 1.05 × 0.95 = 60,000 × 0.9975 = 59,850. The 5% fall is taken on the larger number, so it does not cancel the rise.'),
-    dict(ch='3', scen='practical mark needed for 75 percent with weights 70 and 30',
-         stem='A course gives 70% weight to theory and 30% to practical marks. Tanya scored 70 in theory. What is the least whole-number practical mark she needs for an overall score of at least 75?',
-         opts=['87', '80', '86', '90'],
-         hint='0.7 × 70 + 0.3 × p ≥ 75.',
-         sol='0.7 × 70 = 49, so 0.3p ≥ 26 and p ≥ 86.67. The least whole mark is 87. (86 gives 49 + 25.8 = 74.8, just short.)'),
+    dict(ch='3', scen='mixing rice at ₹40 and ₹64 per kg to cost ₹50 per kg',
+         stem='A grocer mixes rice costing ₹40 per kg with rice costing ₹64 per kg so that the mixture costs ₹50 per kg. In what ratio (cheaper : dearer) are they mixed?',
+         opts=['7 : 5', '5 : 7', '3 : 2', '2 : 3'],
+         hint='Each kilogram of cheap rice saves ₹10 against ₹50; each kilogram of dear rice costs ₹14 extra.',
+         sol='Let the amounts be p kg and q kg. 40p + 64q = 50(p + q) gives 14q = 10p, so p : q = 14 : 10 = 7 : 5.'),
 
     # ---------------- Part 3 · Algebra
     dict(ch='4', scen='a + b + c = 9 and a² + b² + c² = 35 · ab + bc + ca',
@@ -142,11 +142,11 @@ QUESTIONS = [
          sol='0 + 1 + … + 19 = 190. Total = 6,00,000 − 1,90,000 = ₹4,10,000.'),
 
     # ---------------- Part 8 · Mathematical Reasoning
-    dict(ch='10', scen='smallest counterexample to n² − n + 11 always prime',
-         stem='Bhavna claims n² − n + 11 is prime for every whole number n ≥ 0. What is the smallest n that disproves her claim?',
-         opts=['11', '10', '12', '0'],
-         hint='Look for n that makes every term a multiple of 11.',
-         sol='For n = 0 to 10 the values are 11, 11, 13, 17, 23, 31, 41, 53, 67, 83 and 101, all prime. For n = 11: 121 − 11 + 11 = 121 = 11², not prime. So n = 11.'),
+    dict(ch='10', scen='converse of the rhombus diagonals statement and its truth',
+         stem='Statement: "If a quadrilateral is a rhombus, then its diagonals are perpendicular." Which option gives its converse correctly, with whether the converse is true?',
+         opts=['If the diagonals are perpendicular, it is a rhombus: false', 'If the diagonals are perpendicular, it is a rhombus: true', 'If it is not a rhombus, its diagonals are not perpendicular: false', 'If the diagonals are not perpendicular, it is not a rhombus: true'],
+         hint='The converse swaps the "if" part and the "then" part. Think of a kite.',
+         sol='The converse is "If the diagonals are perpendicular, it is a rhombus". A kite with unequal sides has perpendicular diagonals but is not a rhombus, so the converse is false. The last option is the contrapositive (true, but not the converse).'),
     dict(ch='10', scen='reverse-and-add steps from 87 to a palindrome',
          stem='Algorithm: add a number to its reverse, and repeat until the result reads the same forwards and backwards. Starting with 87, how many additions are needed?',
          opts=['4', '3', '5', '2'],

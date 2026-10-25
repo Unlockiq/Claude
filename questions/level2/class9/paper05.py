@@ -82,11 +82,11 @@ QUESTIONS = [
          sol='The line through the midpoint of AB parallel to BC bisects AC, so AC = 2 × 6 = 12 cm, and DE is half of BC, so BC = 14 cm. AC + BC = 26 cm.'),
 
     # ---------------- Part 5 · Mensuration
-    dict(ch='6', scen='shortest altitude of the 26 28 30 triangle',
-         stem='A triangle has sides 26 cm, 28 cm and 30 cm. What is the length of its shortest altitude?',
-         opts=['22.4 cm', '24 cm', '25.2 cm', '28 cm'],
-         hint='The shortest altitude is drawn to the longest side.',
-         sol='s = 42, area = √(42 × 16 × 14 × 12) = 336 cm². The shortest altitude is to the 30 cm side: 2 × 336 ÷ 30 = 22.4 cm. (24 cm is the altitude to the 28 cm side.)'),
+    dict(ch='6', scen='volume ratio of cylinder cone and hemisphere on the same base',
+         stem='A cylinder, a cone and a hemisphere have the same base radius r. The cylinder and the cone both have height r. What is the ratio of their volumes (cylinder : cone : hemisphere)?',
+         opts=['3 : 1 : 2', '1 : 3 : 2', '3 : 2 : 1', '2 : 1 : 3'],
+         hint='Write each volume in terms of πr³.',
+         sol='Cylinder: πr² × r = πr³. Cone: ⅓πr² × r = ⅓πr³. Hemisphere: ⅔πr³. Multiplying by 3: 3 : 1 : 2.'),
     dict(ch='6', scen='cylinder with curved surface 880 and height 10 · volume',
          stem='A cylinder of height 10 cm has a curved surface area of 880 cm². What is its volume? (Take π = 22/7.)',
          opts=['6,160 cm³', '3,080 cm³', '12,320 cm³', '8,800 cm³'],

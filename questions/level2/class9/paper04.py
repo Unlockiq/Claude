@@ -36,11 +36,11 @@ QUESTIONS = [
          opts=['A decrease of 1.99%', 'No change', 'An increase of 1%', 'A decrease of 0.99%'],
          hint='Multiply the factors 0.9, 0.9 and 1.21.',
          sol='0.9 × 0.9 × 1.21 = 0.81 × 1.21 = 0.9801, so the value is 98.01% of the start: a decrease of 1.99%. (−10 − 10 + 21 = +1 adds percentages wrongly.)'),
-    dict(ch='3', scen='class of 40 with mean 52 · boys mean 50 girls mean 55 · number of girls',
-         stem='A class of 40 students has a mean mark of 52. The boys have a mean of 50 and the girls a mean of 55. How many girls are there?',
-         opts=['16', '24', '20', '18'],
-         hint='If all 40 had scored 50, the total would be 2,000.',
-         sol='Total = 40 × 52 = 2,080. If everyone scored 50 the total would be 2,000; each girl adds 5 more. 5g = 80, so g = 16 girls (and 24 boys).'),
+    dict(ch='3', scen='pass percentage of 200 boys at 60 and 300 girls at 75',
+         stem='In a school, 60% of the 200 boys and 75% of the 300 girls passed an exam. What percentage of all the students passed?',
+         opts=['69%', '67.5%', '70%', '72%'],
+         hint='Weight each percentage by the number of students.',
+         sol='Boys passed: 120. Girls passed: 225. Total 345 out of 500 = 69%. (67.5% is the plain average of 60 and 75, which ignores the different group sizes.)'),
 
     # ---------------- Part 3 · Algebra
     dict(ch='4', scen='8x³ − 27y³ when 2x − 3y = 5 and xy = 2',
@@ -89,11 +89,11 @@ QUESTIONS = [
          sol='One pair of sides equal and parallel always gives a parallelogram. An isosceles trapezium has one pair parallel and the other pair equal; an isosceles trapezium also has equal diagonals; a kite has two pairs of equal adjacent sides — none of them is a parallelogram in general.'),
 
     # ---------------- Part 5 · Mensuration
-    dict(ch='6', scen='Brahmagupta area of a cyclic quadrilateral with sides 25 39 52 60',
-         stem='A garden is a cyclic quadrilateral (its corners lie on a circle) with sides 25 m, 39 m, 52 m and 60 m in order. What is its area?',
-         opts=['1,764 m²', '1,680 m²', '1,820 m²', '882 m²'],
-         hint='Brahmagupta: area = √((s − a)(s − b)(s − c)(s − d)), where s is half the perimeter.',
-         sol='s = (25 + 39 + 52 + 60) ÷ 2 = 88. Area = √(63 × 49 × 36 × 28) = √31,11,696 = 1,764 m². Check: the diagonal 65 splits it into right triangles 25-60-65 and 39-52-65, with areas 750 + 1,014 = 1,764. (882 m² is only half of the area.)'),
+    dict(ch='6', scen='square pyramid with base 10 and slant height 13 · volume',
+         stem='A square pyramid has a base edge of 10 cm and a slant height (from the apex to the middle of a base edge) of 13 cm. What is its volume?',
+         opts=['400 cm³', '1,200 cm³', '520 cm³', '433⅓ cm³'],
+         hint='Find the vertical height using the right triangle formed by the height, half the base edge and the slant height.',
+         sol='Height = √(13² − 5²) = 12 cm. Volume = ⅓ × base area × height = ⅓ × 100 × 12 = 400 cm³. (1,200 forgets the ⅓; 520 uses the slant height.)'),
     dict(ch='6', scen='canvas length 2.5 m wide for a conical tent of radius 7 and height 24',
          stem='A conical tent has base radius 7 m and height 24 m. It is made from canvas 2.5 m wide. What length of canvas is needed? (Take π = 22/7; ignore waste.)',
          opts=['220 m', '550 m', '110 m', '275 m'],
