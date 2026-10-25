@@ -70,7 +70,7 @@ QUESTIONS = [
 
     # ---------------- Part 4 · Trigonometry
     dict(ch='7', scen='sin 20 + sin 40 − sin 80',
-         stem='What is the value of sin 20° + sin 40° − sin 80°?',
+         stem='Simplify sin 20° + sin 40° − sin 80° completely.',
          opts=['0', '1/2', '√3/2', '−1/2'],
          hint='sin 20° + sin 40° = 2 sin 30° cos 10°.',
          sol='sin 20° + sin 40° = 2 sin 30° cos 10° = cos 10° = sin 80°. So the value is 0.'),
