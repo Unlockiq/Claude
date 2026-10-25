@@ -2,7 +2,7 @@
 # Each question: ch, scen (unique), stem, opts (correct FIRST), hint, sol, optional fig.
 
 
-def hist(edges, freqs, top, step, xlab='', bw=46, h=150):
+def hist(edges, freqs, top, step, xlab='', bw=46, h=150, ylab=''):
     """Histogram: adjacent bars over class intervals, y axis 0..top with gridlines every step."""
     x0, y0 = 40, 10
     w = len(freqs) * bw
@@ -13,11 +13,14 @@ def hist(edges, freqs, top, step, xlab='', bw=46, h=150):
     for i, f in enumerate(freqs):
         x = x0 + i * bw
         prims.append(('rect', x, y0 + h - f * h / top, bw, f * h / top, 'blue'))
+        prims.append(('text', x + bw / 2, y0 + h - f * h / top - 8, str(f), 10))
     for i, e in enumerate(edges):
         prims.append(('text', x0 + i * bw, y0 + h + 13, str(e), 10))
     prims += [('line', x0, y0, x0, y0 + h), ('line', x0, y0 + h, x0 + w + 10, y0 + h)]
     if xlab:
         prims.append(('text', x0 + w / 2, y0 + h + 30, xlab, 10))
+    if ylab:
+        prims.append(('text', x0 + 50, y0 - 16, ylab, 10))
     return prims
 
 
@@ -64,11 +67,11 @@ QUESTIONS = [
          opts=['1', '2', '−1', '3'],
          hint='Write 9 and 27 as powers of 3.',
          sol='9⁻² = 3⁻⁴ and 27⁻¹ = 3⁻³. So 3²ˣ⁻¹⁻⁴ = 3⁻³, which gives 2x − 5 = −3, so 2x = 2 and x = 1.'),
-    dict(ch='2', scen='distance from the Sun from light speed and 500 seconds in standard form',
-         stem='Light travels 3 × 10⁸ metres every second. Sunlight takes about 500 seconds to reach the Earth. About how far is the Sun, in kilometres, in standard form?',
-         opts=['1.5 × 10⁸ km', '1.5 × 10¹¹ km', '1.5 × 10⁵ km', '6 × 10⁵ km'],
-         hint='First find the distance in metres, then divide by 1,000.',
-         sol='3 × 10⁸ × 500 = 1,500 × 10⁸ = 1.5 × 10¹¹ m. In kilometres: 1.5 × 10¹¹ ÷ 10³ = 1.5 × 10⁸ km. (6 × 10⁵ comes from dividing by 500 instead of multiplying.)'),
+    dict(ch='2', scen='star distance in light-years from light speed and seconds in a year',
+         stem='Light travels 3 × 10⁸ metres every second, and a year has about 3.15 × 10⁷ seconds. A light-year is the distance light travels in one year. A star is 1.89 × 10¹⁴ km away. How many light-years is that?',
+         opts=['20', '0.02', '2,000', '2'],
+         hint='Find one light-year in metres, then change it to kilometres.',
+         sol='One light-year = 3 × 10⁸ × 3.15 × 10⁷ = 9.45 × 10¹⁵ m = 9.45 × 10¹² km. 1.89 × 10¹⁴ ÷ (9.45 × 10¹²) = 0.2 × 10² = 20 light-years. (0.02 forgets to change metres into kilometres.)'),
 
     # ---------------- Part 3 · Fractions, Decimals & Percentages
     dict(ch='3', scen='successive 20 and 10 percent off against a single 30 percent off on ₹2,500',
@@ -88,11 +91,11 @@ QUESTIONS = [
          sol='1.2 × 0.8 = 0.96, a 4% fall after two changes. 0.96 × 1.25 = 1.2. So the price is 1.2 times the original: a 20% increase.'),
 
     # ---------------- Part 4 · Algebra
-    dict(ch='4', scen='a plus b is 9 and ab is 14 · a squared plus b squared',
-         stem='Two numbers a and b have a + b = 9 and ab = 14. What is a² + b²?',
-         opts=['53', '81', '67', '25'],
-         hint='Use (a + b)² = a² + 2ab + b².',
-         sol='(a + b)² = 81 = a² + b² + 2 × 14. So a² + b² = 81 − 28 = 53. (Check: the numbers are 2 and 7, and 4 + 49 = 53.)'),
+    dict(ch='4', scen='a plus b is 9 and ab is 14 · a squared minus b squared with a larger',
+         stem='Two numbers a and b, with a > b, have a + b = 9 and ab = 14. What is a² − b²?',
+         opts=['45', '53', '25', '81'],
+         hint='Find (a − b)² from (a + b)² − 4ab, then use a² − b² = (a + b)(a − b).',
+         sol='(a − b)² = (a + b)² − 4ab = 81 − 56 = 25, so a − b = 5 (a is larger). a² − b² = (a + b)(a − b) = 9 × 5 = 45. (53 is a² + b².)'),
     dict(ch='4', scen='1001 squared minus 999 squared over 51 squared minus 49 squared',
          stem='Without long multiplication, find (1001² − 999²) ÷ (51² − 49²).',
          opts=['20', '2', '10', '40'],
@@ -110,11 +113,11 @@ QUESTIONS = [
          opts=['7 m', '5 m', '12 m', '1 m'],
          hint='Use Pythagoras twice: once for each position.',
          sol='At first the top is √(13² − 5²) = √144 = 12 m high. Later it is √(13² − 12²) = √25 = 5 m high. It slides down 12 − 5 = 7 m.'),
-    dict(ch='5', scen='rhombus with diagonals 16 and 30 · perimeter',
-         stem='The diagonals of a rhombus are 16 cm and 30 cm long. What is the perimeter of the rhombus?',
-         opts=['68 cm', '46 cm', '92 cm', '34 cm'],
-         hint='The diagonals of a rhombus bisect each other at right angles.',
-         sol='The diagonals cut each other in half at right angles, giving four right triangles with legs 8 cm and 15 cm. Each side is √(64 + 225) = √289 = 17 cm. Perimeter = 4 × 17 = 68 cm.'),
+    dict(ch='5', scen='rhombus with perimeter 68 and one diagonal 30 · area',
+         stem='A rhombus has a perimeter of 68 cm and one diagonal 30 cm long. What is its area?',
+         opts=['240 cm²', '480 cm²', '255 cm²', '120 cm²'],
+         hint='The diagonals of a rhombus bisect each other at right angles. Find the other diagonal first.',
+         sol='Each side is 68 ÷ 4 = 17 cm. Half of the known diagonal is 15 cm, so half of the other is √(17² − 15²) = √64 = 8 cm, and the other diagonal is 16 cm. Area = ½ × 30 × 16 = 240 cm². (480 forgets the ½.)'),
     dict(ch='5', scen='girl 1.5 m tall standing 4 m from a 6 m lamp post · shadow',
          fig=drawing(190, 165, lamp()),
          stem='Riya, 1.5 m tall, stands 4 m from the foot of a 6 m lamp post, as shown. How long is her shadow?',
@@ -123,25 +126,25 @@ QUESTIONS = [
          sol='Let the shadow be s m. The small triangle (height 1.5, base s) is similar to the large one (height 6, base 4 + s). So 1.5/s = 6/(4 + s), giving 1.5(4 + s) = 6s, 6 + 1.5s = 6s, 4.5s = 6 and s = 4/3 m.'),
 
     # ---------------- Part 6 · Mensuration
-    dict(ch='6', scen='closed cylinder radius 7 height 10 · total surface area',
-         stem='A closed cylindrical tin has radius 7 cm and height 10 cm. What is its total surface area? (Take π = 22/7.)',
-         opts=['748 cm²', '440 cm²', '594 cm²', '1,540 cm²'],
-         hint='Total surface = curved surface + top + bottom = 2πr(h + r).',
-         sol='Curved surface = 2πrh = 2 × 22/7 × 7 × 10 = 440 cm². Each circular end = πr² = 154 cm². Total = 440 + 2 × 154 = 748 cm². (594 counts only one end.)'),
-    dict(ch='6', scen='cone radius 7 height 24 · curved surface area via slant height',
-         stem='A cone has base radius 7 cm and height 24 cm. What is its curved surface area? (Take π = 22/7.)',
-         opts=['550 cm²', '528 cm²', '704 cm²', '1,232 cm²'],
-         hint='The curved surface uses the slant height l, found from r and h.',
-         sol='Slant height l = √(7² + 24²) = √625 = 25 cm. Curved surface = πrl = 22/7 × 7 × 25 = 550 cm². (528 wrongly uses the height; 704 adds the base.)'),
-    dict(ch='6', scen='tank 2 m by 1.5 m by 1 m filled at 50 litres a minute',
-         stem='A tank 2 m long, 1.5 m wide and 1 m deep is filled by a pipe that delivers 50 litres every minute. How long does it take to fill the empty tank?',
-         opts=['1 hour', '6 hours', '10 minutes', '6 minutes'],
-         hint='1 m³ = 1,000 litres.',
-         sol='Volume = 2 × 1.5 × 1 = 3 m³ = 3,000 litres. Time = 3,000 ÷ 50 = 60 minutes = 1 hour.'),
+    dict(ch='6', scen='closed cylinder with curved surface 440 and height 10 · total surface area',
+         stem='A closed cylindrical tin is 10 cm tall and its curved surface area is 440 cm². What is its total surface area? (Take π = 22/7.)',
+         opts=['748 cm²', '594 cm²', '880 cm²', '1,540 cm²'],
+         hint='Use 2πrh = 440 to find the radius first.',
+         sol='2πrh = 2 × 22/7 × r × 10 = 440 gives r = 7 cm. Each circular end = πr² = 154 cm². Total = 440 + 2 × 154 = 748 cm². (594 counts only one end.)'),
+    dict(ch='6', scen='cone with curved surface 550 and radius 7 · height',
+         stem='The curved surface area of a cone is 550 cm² and its base radius is 7 cm. What is its height? (Take π = 22/7.)',
+         opts=['24 cm', '25 cm', '18 cm', '32 cm'],
+         hint='Curved surface = πrl gives the slant height l. Then use Pythagoras.',
+         sol='πrl = 22/7 × 7 × l = 22l = 550, so l = 25 cm. Height = √(25² − 7²) = √576 = 24 cm. (25 cm is the slant height.)'),
+    dict(ch='6', scen='tank 2 m by 1.5 m by 1 m filled at 50 L a minute with a 10 L leak',
+         stem='A tank 2 m long, 1.5 m wide and 1 m deep is filled by a pipe that delivers 50 litres a minute, but a leak at the bottom loses 10 litres a minute. How long does it take to fill the empty tank?',
+         opts=['1 hour 15 minutes', '1 hour', '50 minutes', '1 hour 40 minutes'],
+         hint='1 m³ = 1,000 litres. Find how much the tank really gains each minute.',
+         sol='Volume = 2 × 1.5 × 1 = 3 m³ = 3,000 litres. The tank gains 50 − 10 = 40 litres a minute. Time = 3,000 ÷ 40 = 75 minutes = 1 hour 15 minutes. (1 hour ignores the leak.)'),
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='histogram of test marks · percentage scoring 50 or more',
-         fig=drawing(300, 200, hist([20, 30, 40, 50, 60, 70], [5, 7, 12, 10, 6], 12, 2, 'Marks')),
+         fig=drawing(300, 200, hist([20, 30, 40, 50, 60, 70], [5, 7, 12, 10, 6], 12, 2, 'Marks', ylab='Number of students')),
          stem='The histogram shows the marks of a class in a test (each class includes its lower mark, not its upper mark). What percentage of the class scored 50 marks or more?',
          opts=['40%', '16%', '70%', '25%'],
          hint='Add all the bars for the total, then add the bars from 50 onwards.',

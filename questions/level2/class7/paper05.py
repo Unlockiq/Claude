@@ -80,7 +80,7 @@ QUESTIONS = [
          sol='2⁵ = 32, so a = 5. 3⁴ = 81, so b = 4. aᵇ − bᵃ = 5⁴ − 4⁵ = 625 − 1,024 = −399.'),
     dict(ch='2', scen='3.6 × 10⁴ + 4.5 × 10³ in standard form',
          stem='Write 3.6 × 10⁴ + 4.5 × 10³ in standard form.',
-         opts=['4.05 × 10⁴', '8.1 × 10⁴', '8.1 × 10⁷', '4.05 × 10³'],
+         opts=['4.05 × 10⁴', '8.1 × 10⁴', '8.1 × 10³', '4.05 × 10³'],
          hint='Change both numbers to ordinary form, or to the same power of 10, before adding.',
          sol='3.6 × 10⁴ = 36,000 and 4.5 × 10³ = 4,500. Sum = 40,500 = 4.05 × 10⁴. (8.1 × 10⁴ adds 3.6 and 4.5 without matching the powers.)'),
 

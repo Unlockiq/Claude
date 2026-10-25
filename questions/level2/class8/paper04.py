@@ -2,7 +2,7 @@
 # Each question: ch, scen (unique), stem, opts (correct FIRST), hint, sol, optional fig.
 
 
-def line_graph(labels, values, top, step, ylab='', dx=60, h=150):
+def line_graph(labels, values, top, step, ylab='', ytitle='', vals=False, dx=60, h=150):
     """Line graph: one point per label, joined by straight lines; y gridlines every step."""
     x0, y0 = 46, 10
     X = lambda i: x0 + 30 + i * dx
@@ -13,10 +13,14 @@ def line_graph(labels, values, top, step, ylab='', dx=60, h=150):
         prims += [('line', x0, Y(v), x0 + w, Y(v), True, (170, 170, 170), 0.8), ('text', x0 - 18, Y(v), str(v), 10)]
     prims.append(('polyline', [(X(i), Y(v)) for i, v in enumerate(values)]))
     prims += [('dot', X(i), Y(v), 3.5) for i, v in enumerate(values)]
+    if vals:
+        prims += [('text', X(i), Y(v) - 11, str(v), 10) for i, v in enumerate(values)]
     prims += [('text', X(i), y0 + h + 13, lab, 10) for i, lab in enumerate(labels)]
     prims += [('line', x0, y0, x0, y0 + h), ('line', x0, y0 + h, x0 + w, y0 + h)]
     if ylab:
         prims.append(('text', x0 + w / 2, y0 + h + 30, ylab, 10))
+    if ytitle:
+        prims.append(('text', x0 + 60, y0 - 16, ytitle, 10))
     return prims
 
 
@@ -142,7 +146,7 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='line graph of monthly sales · greatest rise from the previous month',
-         fig=drawing(330, 200, line_graph(['Jan', 'Feb', 'Mar', 'Apr', 'May'], [20, 35, 30, 50, 45], 60, 10, 'Sales (thousands of ₹)')),
+         fig=drawing(330, 200, line_graph(['Jan', 'Feb', 'Mar', 'Apr', 'May'], [20, 35, 30, 50, 45], 60, 10, 'Month', ytitle='Sales (thousands of ₹)', vals=True)),
          stem='The line graph shows a shop\'s sales in thousands of rupees. In which month was the rise from the month before the greatest, and by how much?',
          opts=['April, ₹20,000', 'February, ₹15,000', 'April, ₹50,000', 'May, ₹15,000'],
          hint='Look at the change from each month to the next, not at the height.',

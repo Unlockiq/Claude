@@ -2,7 +2,7 @@
 # Each question: ch, scen (unique), stem, opts (correct FIRST), hint, sol, optional fig.
 
 
-def freq_polygon(mids, freqs, top, step, xlab='', dx=50, h=150):
+def freq_polygon(mids, freqs, top, step, xlab='', dx=50, h=150, ylab=''):
     """Frequency polygon: points at class mid-points joined by straight lines, closed to the axis."""
     x0, y0 = 40, 10
     X = lambda i: x0 + (i + 1) * dx
@@ -14,11 +14,14 @@ def freq_polygon(mids, freqs, top, step, xlab='', dx=50, h=150):
     pts = [(X(-1), Y(0))] + [(X(i), Y(f)) for i, f in enumerate(freqs)] + [(X(len(freqs)), Y(0))]
     prims.append(('polyline', pts))
     prims += [('dot', X(i), Y(f), 3.5) for i, f in enumerate(freqs)]
+    prims += [('text', X(i), Y(f) - 11, str(f), 10) for i, f in enumerate(freqs)]
     labels = [mids[0] - (mids[1] - mids[0])] + list(mids) + [mids[-1] + (mids[1] - mids[0])]
     prims += [('text', X(i - 1), y0 + h + 13, str(m), 10) for i, m in enumerate(labels)]
     prims += [('line', x0, y0, x0, y0 + h), ('line', x0, y0 + h, x0 + w, y0 + h)]
     if xlab:
         prims.append(('text', x0 + w / 2, y0 + h + 30, xlab, 10))
+    if ylab:
+        prims.append(('text', x0 + 50, y0 - 16, ylab, 10))
     return prims
 
 
@@ -57,11 +60,11 @@ QUESTIONS = [
          sol='3,087 = 3² × 7³. The 3² does not make a cube, so divide by 9: 3,087 ÷ 9 = 343 = 7³. The divisor is 9 and the cube root is 7.'),
 
     # ---------------- Part 2 · Operations
-    dict(ch='2', scen='5 to the minus 1 times 25 squared cubed divided by 5 to the eighth',
-         stem='Simplify (5⁻¹ × 25²)³ ÷ 5⁸.',
-         opts=['5', '25', '1/5', '125'],
-         hint='Write 25 as 5² and use the laws of exponents.',
-         sol='5⁻¹ × 25² = 5⁻¹ × 5⁴ = 5³. (5³)³ = 5⁹. 5⁹ ÷ 5⁸ = 5.'),
+    dict(ch='2', scen='find x with 5 to the minus 1 times 25 squared cubed over 5 to the x',
+         stem='Find x if (5⁻¹ × 25²)³ ÷ 5ˣ = 1/25.',
+         opts=['11', '7', '9', '−11'],
+         hint='Write everything as a power of 5. 1/25 = 5⁻².',
+         sol='5⁻¹ × 25² = 5⁻¹ × 5⁴ = 5³, and (5³)³ = 5⁹. So 5⁹⁻ˣ = 5⁻², giving 9 − x = −2 and x = 11.'),
     dict(ch='2', scen='mass of the Earth compared with the Moon in standard form',
          stem='The mass of the Earth is 5.97 × 10²⁴ kg and the mass of the Moon is 7.35 × 10²² kg. About how many times as heavy as the Moon is the Earth?',
          opts=['About 81', 'About 8', 'About 810', 'About 0.8'],
@@ -114,8 +117,8 @@ QUESTIONS = [
          hint='Triangle ADE is similar to triangle ABC. Use AB, not DB.',
          sol='AB = 4 + 6 = 10 cm. Similar triangles give DE/BC = AD/AB = 4/10. So BC = 6 × 10/4 = 15 cm. (9 cm wrongly uses AD/DB.)'),
     dict(ch='5', scen='kite with sides 10 and 17 and short diagonal 16 · long diagonal',
-         stem='Kite ABCD has AB = AD = 10 cm and CB = CD = 17 cm. The diagonal BD is 16 cm long. How long is the diagonal AC?',
-         opts=['21 cm', '9 cm', '27 cm', '15 cm'],
+         stem='Convex kite ABCD has AB = AD = 10 cm and CB = CD = 17 cm. The diagonal BD is 16 cm long. How long is the diagonal AC?',
+         opts=['21 cm', '19 cm', '27 cm', '15 cm'],
          hint='In a kite, the diagonal AC cuts BD in half at right angles.',
          sol='AC meets BD at its midpoint M at right angles, so BM = 8 cm. AM = √(10² − 8²) = 6 cm and CM = √(17² − 8²) = 15 cm. AC = 6 + 15 = 21 cm.'),
 
@@ -138,16 +141,16 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='frequency polygon of ages of 40 people · number aged 30 or more',
-         fig=drawing(380, 200, freq_polygon([15, 25, 35, 45, 55], [4, 9, 14, 8, 5], 16, 2, 'Age (years), class mid-points')),
+         fig=drawing(380, 200, freq_polygon([15, 25, 35, 45, 55], [4, 9, 14, 8, 5], 16, 2, 'Age (years), class mid-points', ylab='Number of people')),
          stem='The frequency polygon shows the ages of 40 people in classes 10–20, 20–30, 30–40, 40–50 and 50–60, plotted at the class mid-points. How many people are aged 30 or more?',
          opts=['27', '13', '22', '14'],
          hint='Mid-point 35 stands for the class 30–40.',
          sol='The classes from 30 upwards have mid-points 35, 45 and 55, with frequencies 14, 8 and 5. Total = 27.'),
-    dict(ch='8', scen='mean of 20 observations corrected after 48 misread as 84',
-         stem='The mean of 20 observations was found to be 35. Later it was found that one observation, 48, had been copied as 84. What is the correct mean?',
-         opts=['33.2', '36.8', '35', '34.2'],
-         hint='Correct the total first.',
-         sol='Wrong total = 20 × 35 = 700. Correct total = 700 − 84 + 48 = 664. Correct mean = 664 ÷ 20 = 33.2.'),
+    dict(ch='8', scen='mean of 20 corrected for two misread values then one value removed',
+         stem='The mean of 20 observations was found to be 35. Two values had been copied wrongly: 48 as 84 and 26 as 62. After correcting them, the observation 39 is removed. What is the mean of the remaining observations?',
+         opts=['31', '31.4', '33.2', '29.6'],
+         hint='Correct the total first, then remove 39 and divide by 19.',
+         sol='Wrong total = 20 × 35 = 700. Correct total = 700 − 84 + 48 − 62 + 26 = 628. Removing 39 leaves 589 for 19 observations: 589 ÷ 19 = 31. (31.4 is 628 ÷ 20, before removing 39.)'),
 
     # ---------------- Part 8 · Applied Mathematics
     dict(ch='9', scen='buying 12 pens for ₹100 and selling 10 for ₹100',
@@ -160,11 +163,11 @@ QUESTIONS = [
          opts=['₹2,000', '₹1,667', '₹2,200', '₹1,800'],
          hint='Interest is charged only on the amount still owed.',
          sol='Amount owed = ₹40,000. Interest = 40,000 × 10% × 2 = ₹8,000. Total to repay = ₹48,000. Each instalment = 48,000 ÷ 24 = ₹2,000.'),
-    dict(ch='9', scen='sold for ₹720 at 10 percent loss · price for 25 percent profit',
-         stem='Selling a lamp for ₹720 causes a loss of 10%. At what price should it be sold to make a profit of 25%?',
-         opts=['₹1,000', '₹900', '₹960', '₹1,080'],
-         hint='₹720 is 90% of the cost price.',
-         sol='Cost price = 720 ÷ 0.9 = ₹800. For 25% profit: 800 × 1.25 = ₹1,000.'),
+    dict(ch='9', scen='lamp at ₹720 with 10 percent loss · marked price for 25 percent profit after 20 percent discount',
+         stem='Selling a lamp for ₹720 causes a loss of 10%. The shopkeeper wants a profit of 25% even after giving a discount of 20% on the marked price. What should the marked price be?',
+         opts=['₹1,250', '₹1,000', '₹1,200', '₹1,125'],
+         hint='₹720 is 90% of the cost price. The selling price is 80% of the marked price.',
+         sol='Cost price = 720 ÷ 0.9 = ₹800. Selling price for 25% profit = 800 × 1.25 = ₹1,000. This is 80% of the marked price, so marked price = 1,000 ÷ 0.8 = ₹1,250. (₹1,200 adds 20% instead of dividing by 0.8.)'),
 
     # ---------------- Part 9 · Mathematical Reasoning
     dict(ch='10', scen='AB times AB equals CAB',
@@ -184,7 +187,7 @@ QUESTIONS = [
          sol='With all signs +, the total is 55, which is odd. Changing the sign of n lowers the total by 2n, so the total stays odd. Only 7 is odd, and it can be made: put − in front of 10, 9, 4 and 1 (which add to 24), giving 55 − 48 = 7.'),
     dict(ch='10', scen='Koch snowflake perimeter after step 3 from side 27 cm',
          fig=drawing(270, 135, koch_steps()),
-         stem='At each step, every side of the shape is split into three equal parts and a small equilateral triangle is built outward on the middle part, which is then removed. Steps 0 and 1 are shown. If each side at step 0 is 27 cm, what is the perimeter after step 3?',
+         stem='At each step, every side of the shape is split into three equal parts and a small equilateral triangle is built outward on the middle part, and that middle segment is then removed. Steps 0 and 1 are shown. If each side at step 0 is 27 cm, what is the perimeter after step 3?',
          opts=['192 cm', '108 cm', '256 cm', '144 cm'],
          hint='Each step multiplies the number of sides by 4 and divides the side length by 3.',
          sol='Sides: 3 → 12 → 48 → 192. Side length: 27 → 9 → 3 → 1 cm. Perimeter after step 3 = 192 × 1 = 192 cm. (144 cm is the perimeter after step 2.)'),

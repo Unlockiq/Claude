@@ -2,7 +2,7 @@
 # Each question: ch, scen (unique), stem, opts (correct FIRST), hint, sol, optional fig.
 
 
-def hist(edges, freqs, top, step, xlab='', bw=46, h=150):
+def hist(edges, freqs, top, step, xlab='', bw=46, h=150, ylab=''):
     """Histogram: adjacent bars over class intervals, y axis 0..top with gridlines every step."""
     x0, y0 = 40, 10
     w = len(freqs) * bw
@@ -13,11 +13,14 @@ def hist(edges, freqs, top, step, xlab='', bw=46, h=150):
     for i, f in enumerate(freqs):
         x = x0 + i * bw
         prims.append(('rect', x, y0 + h - f * h / top, bw, f * h / top, 'lilac'))
+        prims.append(('text', x + bw / 2, y0 + h - f * h / top - 8, str(f), 10))
     for i, e in enumerate(edges):
         prims.append(('text', x0 + i * bw, y0 + h + 13, str(e), 10))
     prims += [('line', x0, y0, x0, y0 + h), ('line', x0, y0 + h, x0 + w + 10, y0 + h)]
     if xlab:
         prims.append(('text', x0 + w / 2, y0 + h + 30, xlab, 10))
+    if ylab:
+        prims.append(('text', x0 + 50, y0 - 16, ylab, 10))
     return prims
 
 
@@ -132,7 +135,7 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='histogram of hours spent on homework · percentage from 2 to under 4 hours',
-         fig=drawing(300, 200, hist([0, 1, 2, 3, 4, 5], [5, 12, 18, 10, 5], 18, 3, 'Hours a week on a hobby')),
+         fig=drawing(300, 200, hist([0, 1, 2, 3, 4, 5], [5, 12, 18, 10, 5], 18, 3, 'Hours a week on a hobby', ylab='Number of students')),
          stem='The histogram shows how many hours a week students spend on a hobby (each class includes its lower value, not its upper value). What percentage of the students spend at least 2 hours but less than 4 hours?',
          opts=['56%', '28%', '66%', '46%'],
          hint='Total all the bars first.',

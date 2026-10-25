@@ -2,7 +2,7 @@
 # Each question: ch, scen (unique), stem, opts (correct FIRST), hint, sol, optional fig.
 
 
-def line_graph(labels, values, top, step, ylab='', dx=55, h=150):
+def line_graph(labels, values, top, step, ylab='', ytitle='', vals=False, dx=55, h=150):
     """Line graph: one point per label, joined by straight lines; y gridlines every step."""
     x0, y0 = 46, 10
     X = lambda i: x0 + 20 + i * dx
@@ -13,10 +13,14 @@ def line_graph(labels, values, top, step, ylab='', dx=55, h=150):
         prims += [('line', x0, Y(v), x0 + w, Y(v), True, (170, 170, 170), 0.8), ('text', x0 - 18, Y(v), str(v), 10)]
     prims.append(('polyline', [(X(i), Y(v)) for i, v in enumerate(values)]))
     prims += [('dot', X(i), Y(v), 3.5) for i, v in enumerate(values)]
+    if vals:
+        prims += [('text', X(i), Y(v) - 11, str(v), 10) for i, v in enumerate(values)]
     prims += [('text', X(i), y0 + h + 13, lab, 10) for i, lab in enumerate(labels)]
     prims += [('line', x0, y0, x0, y0 + h), ('line', x0, y0 + h, x0 + w, y0 + h)]
     if ylab:
         prims.append(('text', x0 + w / 2, y0 + h + 30, ylab, 10))
+    if ytitle:
+        prims.append(('text', x0 + 60, y0 - 16, ytitle, 10))
     return prims
 
 
@@ -33,7 +37,7 @@ def koch_curve(n, p, q):
 def koch_curve_steps():
     prims = []
     for k in range(3):
-        y = 40 + k * 45
+        y = 52 + k * 64
         pts = koch_curve(k, (10, y), (172, y)) + [(172, y)]
         prims.append(('polyline', pts))
         prims.append(('text', 210, y - 8, f'Step {k}', 11))
@@ -135,7 +139,7 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='distance-time line graph of a cyclist · hour with the greatest speed',
-         fig=drawing(330, 200, line_graph(['0', '1', '2', '3', '4', '5'], [0, 12, 24, 24, 40, 50], 50, 10, 'Time (hours)')),
+         fig=drawing(330, 200, line_graph(['0', '1', '2', '3', '4', '5'], [0, 12, 24, 24, 40, 50], 50, 10, 'Time (hours)', ytitle='Distance (km)', vals=True)),
          stem='The line graph shows the distance (in km) a cyclist has covered after each hour. In which hour did the cyclist ride fastest, and at what speed?',
          opts=['From hour 3 to 4, at 16 km/h', 'From hour 4 to 5, at 10 km/h', 'From hour 1 to 2, at 12 km/h', 'From hour 3 to 4, at 40 km/h'],
          hint='Speed in each hour = rise in distance during that hour.',
@@ -180,7 +184,7 @@ QUESTIONS = [
          hint='Find the pattern in the last digits of 7¹, 7², 7³, 7⁴, …',
          sol='Last digits of powers of 7 repeat 7, 9, 3, 1 every 4 powers. 2025 = 4 × 506 + 1, so 7²⁰²⁵ ends in the same digit as 7¹, which is 7.'),
     dict(ch='10', scen='Koch curve from a 27 cm segment · length after step 3',
-         fig=drawing(250, 150, koch_curve_steps()),
+         fig=drawing(250, 190, koch_curve_steps()),
          stem='A 27 cm straight segment is changed step by step: every straight piece is split into three equal parts and the middle part is replaced by two sides of an equilateral triangle. Steps 0, 1 and 2 are shown. How long is the curve after step 3?',
          opts=['64 cm', '48 cm', '81 cm', '36 cm'],
          hint='Each step multiplies the length by 4/3.',

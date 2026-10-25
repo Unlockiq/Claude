@@ -2,7 +2,7 @@
 # Each question: ch, scen (unique), stem, opts (correct FIRST), hint, sol, optional fig.
 
 
-def hist(edges, freqs, top, step, xlab='', bw=46, h=150):
+def hist(edges, freqs, top, step, xlab='', bw=46, h=150, ylab=''):
     """Histogram: adjacent bars over class intervals, y axis 0..top with gridlines every step."""
     x0, y0 = 40, 10
     w = len(freqs) * bw
@@ -13,11 +13,14 @@ def hist(edges, freqs, top, step, xlab='', bw=46, h=150):
     for i, f in enumerate(freqs):
         x = x0 + i * bw
         prims.append(('rect', x, y0 + h - f * h / top, bw, f * h / top, 'peach'))
+        prims.append(('text', x + bw / 2, y0 + h - f * h / top - 8, str(f), 10))
     for i, e in enumerate(edges):
         prims.append(('text', x0 + i * bw, y0 + h + 13, str(e), 10))
     prims += [('line', x0, y0, x0, y0 + h), ('line', x0, y0 + h, x0 + w + 10, y0 + h)]
     if xlab:
         prims.append(('text', x0 + w / 2, y0 + h + 30, xlab, 10))
+    if ylab:
+        prims.append(('text', x0 + 50, y0 - 16, ylab, 10))
     return prims
 
 
@@ -128,7 +131,7 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='histogram of daily wages · percentage earning under ₹250',
-         fig=drawing(300, 200, hist([100, 150, 200, 250, 300, 350], [6, 10, 16, 12, 6], 16, 2, 'Daily wage (₹)')),
+         fig=drawing(300, 200, hist([100, 150, 200, 250, 300, 350], [6, 10, 16, 12, 6], 16, 2, 'Daily wage (₹)', ylab='Number of workers')),
          stem='The histogram shows the daily wages of the workers in a factory (each class includes its lower value, not its upper value). What percentage of the workers earn less than ₹250 a day?',
          opts=['64%', '32%', '36%', '52%'],
          hint='Add all the bars for the total; then add the bars to the left of 250.',
