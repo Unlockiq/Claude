@@ -37,13 +37,13 @@ School Points Part Players Rows Row Lines Each Every Both Neither Use Using Writ
 Without Sort Think Counting Point Ten Taking After Before Only Once Twice Cone Cylinder Sphere Cube Half Quarter Clock Rows Piece Pictures Shirt Exactly Dates Choose Putting You Together Pencil Eraser Sharpener Noon Midnight Morning Evening Night Hall Triangular Square Rectangular Cuboid Pyramid Prism'''.split())
 WORD_CAP = 25          # Language & Culture rule 8: max 25 words per sentence for C1-3, 35 for C4-6
 ADD_CAP = 24           # Computational ceiling: C1 sums within 20 (+20% allowed for Section II); C2 sums within 999
-CAPS = {1: 24, 2: 999, 3: 10000, 4: 100000}
+CAPS = {1: 24, 2: 999, 3: 10000, 4: 100000, 5: 1000000}
 
 
 def set_class(cls):
     global ADD_CAP, WORD_CAP
     ADD_CAP = CAPS.get(cls, 10 ** 9)
-    WORD_CAP = 25 if cls <= 3 else 35
+    WORD_CAP = 25 if cls <= 3 else 35 if cls <= 6 else 50 if cls <= 10 else 60
 
 
 def sentences(text):

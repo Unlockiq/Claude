@@ -56,6 +56,74 @@ BLUEPRINT = {  # class: (Section I parts as (chapter, band title, count), Sectio
          ('9', 'Part 7 — Applied Mathematics (Syllabus Chapter 9)', 3),
          ('10', 'Part 8 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
         ['3+10', '9+10', '1+10', '3+9', '5+6']),
+    # Classes 5-11: Level-1 Section I weights (Distributions tab) scaled 40 -> 25 by largest remainder;
+    # Section II pairings from the 'Section II Pairings' tab. Not yet used for a booklet - check before first use.
+    5: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 3),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 3),
+         ('3', 'Part 3 — Fractions, Decimals & Percentages (Syllabus Chapter 3)', 4),
+         ('5', 'Part 4 — Geometry (Syllabus Chapter 5)', 3),
+         ('6', 'Part 5 — Mensuration (Syllabus Chapter 6)', 3),
+         ('8', 'Part 6 — Data Handling, Statistics & Probability (Syllabus Chapter 8)', 1),
+         ('9', 'Part 7 — Applied Mathematics (Syllabus Chapter 9)', 4),
+         ('10', 'Part 8 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
+        ['1+10', '3+10', '6+10', '1+9', '3+9']),
+    6: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 3),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 3),
+         ('3', 'Part 3 — Fractions, Decimals & Percentages (Syllabus Chapter 3)', 3),
+         ('4', 'Part 4 — Algebra (Syllabus Chapter 4)', 2),
+         ('5', 'Part 5 — Geometry (Syllabus Chapter 5)', 3),
+         ('6', 'Part 6 — Mensuration (Syllabus Chapter 6)', 3),
+         ('8', 'Part 7 — Data Handling, Statistics & Probability (Syllabus Chapter 8)', 2),
+         ('9', 'Part 8 — Applied Mathematics (Syllabus Chapter 9)', 3),
+         ('10', 'Part 9 — Mathematical Reasoning (Syllabus Chapter 10)', 3)],
+        ['4+10', '1+10', '3+9', '5+6', '4+9']),
+    7: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 3),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 2),
+         ('3', 'Part 3 — Fractions, Decimals & Percentages (Syllabus Chapter 3)', 3),
+         ('4', 'Part 4 — Algebra (Syllabus Chapter 4)', 3),
+         ('5', 'Part 5 — Geometry (Syllabus Chapter 5)', 3),
+         ('6', 'Part 6 — Mensuration (Syllabus Chapter 6)', 3),
+         ('8', 'Part 7 — Data Handling, Statistics & Probability (Syllabus Chapter 8)', 2),
+         ('9', 'Part 8 — Applied Mathematics (Syllabus Chapter 9)', 3),
+         ('10', 'Part 9 — Mathematical Reasoning (Syllabus Chapter 10)', 3)],
+        ['4+10', '3+10', '4+9', '5+6', '1+4']),
+    8: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 2),
+         ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 2),
+         ('3', 'Part 3 — Fractions, Decimals & Percentages (Syllabus Chapter 3)', 3),
+         ('4', 'Part 4 — Algebra (Syllabus Chapter 4)', 3),
+         ('5', 'Part 5 — Geometry (Syllabus Chapter 5)', 3),
+         ('6', 'Part 6 — Mensuration (Syllabus Chapter 6)', 3),
+         ('8', 'Part 7 — Data Handling, Statistics & Probability (Syllabus Chapter 8)', 2),
+         ('9', 'Part 8 — Applied Mathematics (Syllabus Chapter 9)', 3),
+         ('10', 'Part 9 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
+        ['4+10', '5+10', '4+5', '3+9', '6+9']),
+    9: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 2),
+         ('3', 'Part 2 — Fractions, Decimals & Percentages (Syllabus Chapter 3)', 2),
+         ('4', 'Part 3 — Algebra (Syllabus Chapter 4)', 4),
+         ('5', 'Part 4 — Geometry (Syllabus Chapter 5)', 4),
+         ('6', 'Part 5 — Mensuration (Syllabus Chapter 6)', 3),
+         ('8', 'Part 6 — Data Handling, Statistics & Probability (Syllabus Chapter 8)', 3),
+         ('9', 'Part 7 — Applied Mathematics (Syllabus Chapter 9)', 3),
+         ('10', 'Part 8 — Mathematical Reasoning (Syllabus Chapter 10)', 4)],
+        ['4+10', '5+6', '4+5', '8+10', '3+9']),
+    10: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 2),
+         ('3', 'Part 2 — Fractions, Decimals & Percentages (Syllabus Chapter 3)', 3),
+         ('4', 'Part 3 — Algebra (Syllabus Chapter 4)', 4),
+         ('5', 'Part 4 — Geometry (Syllabus Chapter 5)', 3),
+         ('6', 'Part 5 — Mensuration (Syllabus Chapter 6)', 3),
+         ('7', 'Part 6 — Trigonometry (Syllabus Chapter 7)', 2),
+         ('8', 'Part 7 — Data Handling, Statistics & Probability (Syllabus Chapter 8)', 2),
+         ('9', 'Part 8 — Applied Mathematics (Syllabus Chapter 9)', 3),
+         ('10', 'Part 9 — Mathematical Reasoning (Syllabus Chapter 10)', 3)],
+        ['4+10', '5+7', '4+5', '3+9', '6+10']),
+    11: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 3),
+         ('4', 'Part 2 — Algebra (Syllabus Chapter 4)', 6),
+         ('5', 'Part 3 — Geometry (Syllabus Chapter 5)', 3),
+         ('7', 'Part 4 — Trigonometry (Syllabus Chapter 7)', 3),
+         ('8', 'Part 5 — Data Handling, Statistics & Probability (Syllabus Chapter 8)', 4),
+         ('9', 'Part 6 — Applied Mathematics (Syllabus Chapter 9)', 3),
+         ('10', 'Part 7 — Mathematical Reasoning (Syllabus Chapter 10)', 3)],
+        ['4+10', '4+8', '1+4', '5+7', '8+10']),
 }
 PARTS, STARS = BLUEPRINT[1]
 
@@ -259,14 +327,16 @@ HELLO = [
 NOTES = [
     'Pictures are part of the questions. Every picture also works when printed in black and white.',
     'You may read a question aloud to the child, exactly as printed. Please do not explain it or point to an answer choice.',
-    'Parts follow the AMO syllabus chapters. Chapters {gaps} are not part of the Class {cls} syllabus, so the chapter numbers shown in the Part headings have gaps.',
+    'Parts follow the AMO syllabus chapters. {gaps} not part of the Class {cls} syllabus, so the chapter numbers shown in the Part headings have gaps.',
     'The answer sheet and the answer key are at the end. Remove only the answer key before the child begins.',
 ]
 
 
 def gap_text():
     gaps = [str(c) for c in range(1, 11) if str(c) not in [p[0] for p in PARTS]]
-    return ', '.join(gaps[:-1]) + ' and ' + gaps[-1]
+    if len(gaps) == 1:
+        return f'Chapter {gaps[0]} is'
+    return 'Chapters ' + ', '.join(gaps[:-1]) + ' and ' + gaps[-1] + ' are'
 
 
 def paper_page(n, cls, logo_rid, pid):
