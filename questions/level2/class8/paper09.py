@@ -147,12 +147,12 @@ QUESTIONS = [
          sol='Volume = 96 m³; half = 48 m³ = 48,000 litres. Time = 48,000 ÷ 300 = 160 minutes = 2 h 40 min.'),
 
     # ---------------- Part 7 · Data Handling
-    dict(ch='8', scen='pie chart of 900 votes among three candidates · winning margin',
+    dict(ch='8', scen='pie chart of 900 saplings by three schools · fraction planted by B and C',
          fig=drawing(320, 180, pie([('A', 140), ('B', 100), ('C', 120)])),
-         stem='The pie chart shows how 900 saplings were planted by three schools A, B and C. How many more saplings did school A plant than school C?',
-         opts=['50', '20', '150', '100'],
+         stem='The pie chart shows how 900 saplings were planted by three schools A, B and C. Next month school B plants 100 more saplings and the others plant none. What fraction of all the saplings will then have been planted by B?',
+         opts=['7/20', '5/18', '1/3', '2/5'],
          hint='Each degree stands for 900 ÷ 360 saplings.',
-         sol='Each degree is 2.5 saplings. A − C = 140° − 120° = 20°, which is 50 saplings.'),
+         sol='Each degree is 2.5 saplings, so B planted 100 × 2.5 = 250. After 100 more, B has 350 out of 1,000 saplings: 7/20. (5/18 is B\'s share before the extra saplings.)'),
     dict(ch='8', scen='mean of 10 numbers transformed then one new value removed',
          stem='The mean of 10 numbers is 25. Each number is increased by 4 and the result is doubled. Then one of the new numbers, 22, is removed. What is the mean of the remaining 9 numbers?',
          opts=['62', '58', '60', '55.8'],
@@ -170,11 +170,11 @@ QUESTIONS = [
          opts=['8.5%', '6.8%', '7%', '34%'],
          hint='Add the percentages earned over the 5 years.',
          sol='Total interest = 3 × 6% + 2 × 8% = 34% of the sum. Over 4 years this needs 34% ÷ 4 = 8.5% a year. (6.8% spreads it over 5 years.)'),
-    dict(ch='9', scen='phone sold at 20 percent profit · bought 10 percent cheaper and sold ₹180 less gives 25 percent',
-         stem='Om sells a phone at a 20% profit. Had he bought it for 10% less and sold it for ₹180 less, his profit would have been 25%. What did the phone cost him?',
-         opts=['₹2,400', '₹1,800', '₹3,000', '₹2,000'],
-         hint='Compare 1.2 × cost with 1.25 × 0.9 × cost.',
-         sol='Actual selling price = 1.2C. The other selling price = 1.25 × 0.9C = 1.125C. The difference 0.075C = ₹180, so C = ₹2,400.'),
+    dict(ch='9', scen='buy 4 get 1 free offer still giving 20 percent profit · markup on cost',
+         stem='A dealer gives one item free with every 4 items bought, at the marked price. He still makes a profit of 20%. By what percentage is the marked price above the cost price?',
+         opts=['50%', '20%', '25%', '45%'],
+         hint='For every 5 items handed over, the customer pays for 4.',
+         sol='Let each item cost ₹C and be marked ₹M. For 5 items the dealer receives 4M and spends 5C. A 20% profit means 4M = 1.2 × 5C = 6C, so M = 1.5C. The marked price is 50% above cost.'),
 
     # ---------------- Part 9 · Mathematical Reasoning
     dict(ch='10', scen='TOO times 4 equals GOOD',

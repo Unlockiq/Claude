@@ -135,11 +135,11 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='histogram of heights · percentage at least 150 cm',
-         fig=drawing(300, 200, hist([140, 145, 150, 155, 160, 165], [4, 9, 15, 8, 4], 16, 2, 'Height (cm)', ylab='Number of students')),
+         fig=drawing(300, 200, hist([140, 145, 150, 155, 160, 165], [4, 9, 14, 9, 4], 16, 2, 'Height (cm)', ylab='Number of students')),
          stem='The histogram shows the heights of the students in a class (each class includes its lower value, not its upper value). What percentage of the students are 150 cm or taller?',
          opts=['67.5%', '27%', '57.5%', '37.5%'],
          hint='Find the total first.',
-         sol='Total = 4 + 9 + 15 + 8 + 4 = 40. Height 150 cm or more: 15 + 8 + 4 = 27. 27 ÷ 40 = 67.5%.'),
+         sol='Total = 4 + 9 + 14 + 9 + 4 = 40. Height 150 cm or more: 14 + 9 + 4 = 27. 27 ÷ 40 = 67.5%.'),
     dict(ch='8', scen='five numbers with mean 12 median 13 and mode 15 · sum of the two smallest',
          stem='Five whole numbers have mean 12, median 13 and a single mode, 15. What is the sum of the two smallest numbers?',
          opts=['17', '30', '13', '24'],
