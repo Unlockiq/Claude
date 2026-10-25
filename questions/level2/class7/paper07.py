@@ -54,6 +54,14 @@ def zig(b_lab, d_lab, e_lab):
             ('text', 204, 80, 'E', 12), ('text', 98, 31, b_lab, 11), ('text', 98, 129, d_lab, 11), ('text', 168, 80, e_lab, 11)]
 
 
+
+def zig90():
+    """AB ∥ CD with a bent path B–E–D drawn so that angle BED is about 90° (50° at B, 40° at D)."""
+    return [('line', 0, 20, 240, 20), ('line', 0, 140, 240, 140), ('line', 40, 20, 99, 90), ('line', 40, 140, 99, 90),
+            ('text', 40, 6, 'B', 12), ('text', 236, 6, 'A', 12), ('text', 40, 156, 'D', 12), ('text', 236, 156, 'C', 12),
+            ('text', 112, 90, 'E', 12), ('text', 92, 33, '(x + 20)°', 11), ('text', 92, 129, '(x + 10)°', 11), ('text', 76, 90, '3x°', 11)]
+
+
 QUESTIONS = [
     # ---------------- Part 1 · Number System
     dict(ch='1', scen='tank 3/5 full falls to 1/3 full after 24 L used',
@@ -120,7 +128,7 @@ QUESTIONS = [
 
     # ---------------- Part 5 · Geometry
     dict(ch='5', scen='bent path between parallel lines · angles x + 20 x + 10 and 3x',
-         fig=drawing(250, 165, zig('(x + 20)°', '(x + 10)°', '3x°')),
+         fig=drawing(250, 165, zig90()),
          stem='AB ∥ CD. The angles at B, D and E are marked. What is the size of angle BED?',
          opts=['90°', '30°', '60°', '120°'],
          hint='Angle BED equals the sum of the angles at B and D.',
@@ -173,11 +181,11 @@ QUESTIONS = [
          opts=['72', '60', '84', '48'],
          hint='Let there be 7x boys and 5x girls.',
          sol='7x − 8 = 5x + 4, so x = 6. At first: 42 boys and 30 girls, 72 students.'),
-    dict(ch='9', scen='6 L of petrol for 84 km · petrol for 315 km',
-         stem='A scooter uses 6 litres of petrol to go 84 km. How much petrol does it need for 315 km?',
-         opts=['22.5 L', '21 L', '24 L', '20 L'],
-         hint='Find how far it goes on 1 litre.',
-         sol='1 litre lasts 84 ÷ 6 = 14 km. For 315 km: 315 ÷ 14 = 22.5 L.'),
+    dict(ch='9', scen='petrol for 84 km on 6 L · cost of a 315 km ride at ₹104 a litre',
+         stem='A scooter uses 6 litres of petrol to go 84 km. Petrol costs ₹104 a litre. How much does Ravi spend on petrol for a 315 km ride?',
+         opts=['₹2,340', '₹2,184', '₹2,496', '₹2,250'],
+         hint='Find how far the scooter goes on 1 litre.',
+         sol='1 litre lasts 84 ÷ 6 = 14 km. For 315 km: 315 ÷ 14 = 22.5 L. Cost: 22.5 × 104 = ₹2,340.'),
     dict(ch='9', scen='pipes filling in 12 h and 15 h with an outlet emptying in 20 h',
          stem='Pipe A fills a tank in 12 hours and pipe B fills it in 15 hours. Pipe C empties the full tank in 20 hours. If all three are opened together, how long does it take to fill the empty tank?',
          opts=['10 hours', '15 hours', '8 hours', '12 hours'],
@@ -195,11 +203,11 @@ QUESTIONS = [
          opts=['10', '15', '20', '60'],
          hint='Once you choose three different digits, there is only one way to arrange them in increasing order.',
          sol='Choose 3 of the 5 digits: 123, 124, 125, 134, 135, 145, 234, 235, 245, 345. That is 10.'),
-    dict(ch='10', scen='2178 × 4 = 8712 reversal',
-         stem='1,089 × 9 = 9,801 reverses the digits of 1,089. Which number multiplies 2,178 to reverse its digits, giving 8,712?',
-         opts=['4', '3', '6', '9'],
-         hint='Try dividing 8,712 by 2,178.',
-         sol='2,178 × 4 = 8,712. So 4 reverses the digits of 2,178.'),
+    dict(ch='10', scen='AB + AB + AB = CAB',
+         stem='In AB + AB + AB = CAB, the letters stand for different digits, AB is a 2-digit number and CAB is a 3-digit number. What is A + B + C?',
+         opts=['6', '5', '7', '15'],
+         hint='Taking AB away from both sides leaves AB + AB = C00.',
+         sol='AB + AB = CAB − AB = 100 × C. So 2 × AB is a multiple of 100, and AB = 50 with C = 1. Check: 50 + 50 + 50 = 150. A + B + C = 5 + 0 + 1 = 6.'),
 
     # ---------------- Part 10 · Mixed Problems
     dict(ch='4+10', scen='four consecutive even numbers adding to 108 · smallest times largest',
@@ -212,11 +220,11 @@ QUESTIONS = [
          opts=['₹1,331', '₹1,300', '₹1,210', '₹1,464'],
          hint='Each year multiply by 1.1, not add ₹100.',
          sol='1,000 → 1,100 → 1,210 → 1,331. After 3 years it costs ₹1,331. (₹1,300 adds ₹100 each year.)'),
-    dict(ch='4+9', scen='two numbers in ratio 5 : 7 differing by 18',
-         stem='Two numbers are in the ratio 5 : 7 and their difference is 18. What is their sum?',
-         opts=['108', '72', '126', '90'],
-         hint='The difference is 2 parts.',
-         sol='2 parts = 18, so 1 part = 9. The numbers are 45 and 63; their sum is 108.'),
+    dict(ch='4+9', scen='numbers in ratio 5 : 7 differing by 18 · number added to make 6 : 7',
+         stem='Two numbers are in the ratio 5 : 7 and their difference is 18. What number must be added to each of them to make the ratio 6 : 7?',
+         opts=['63', '45', '18', '54'],
+         hint='Find the two numbers first; the difference is 2 parts.',
+         sol='2 parts = 18, so the numbers are 45 and 63. (45 + k)/(63 + k) = 6/7 gives 315 + 7k = 378 + 6k, so k = 63. Check: 108 : 126 = 6 : 7.'),
     dict(ch='5+6', scen='log of radius 14 cm length 2 m cut lengthwise in half · surface of one half',
          stem='A cylindrical log of radius 14 cm and length 2 m is cut in half along its length, through the centre. What is the total surface area of one half? (π = 22/7)',
          opts=['15,016 cm²', '9,416 cm²', '14,400 cm²', '17,600 cm²'],
