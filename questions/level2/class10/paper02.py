@@ -201,6 +201,6 @@ QUESTIONS = [
     dict(ch='6+10', scen='3 cm cubes cut from a 10 by 8 by 7 block · volume wasted',
          stem='Whole cubes of edge 3 cm are cut from a solid block 10 cm × 8 cm × 7 cm, as many as possible. How much of the block (in cm³) is left over?',
          opts=['236 cm³', '20 cm³', '0 cm³', '56 cm³'],
-         hint='Along each edge, only whole cubes fit. Turning the cubes does not help, since they are cubes.',
+         hint='Count how many whole cubes fit along each edge of the block.',
          sol='Along the edges: 10 ÷ 3 gives 3 cubes, 8 ÷ 3 gives 2, 7 ÷ 3 gives 2. So at most 3 × 2 × 2 = 12 cubes = 324 cm³. Block = 560 cm³. Left over = 560 − 324 = 236 cm³. (20 cm³ assumes 560 ÷ 27 ≈ 20 cubes fit.)'),
 ]

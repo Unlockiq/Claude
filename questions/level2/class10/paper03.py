@@ -105,11 +105,11 @@ QUESTIONS = [
          sol='Extra area = 1/4 × 22/7 × (21² − 14²) = 1/4 × 22/7 × 245 = 192.5 m². (770 m² uses a full circle.)'),
 
     # ---------------- Part 6 · Trigonometry
-    dict(ch='7', scen='sec theta plus tan theta equals 3 · value of sin theta',
-         stem='For an acute angle θ, sec θ + tan θ = 3. What is sin θ?',
-         opts=['4/5', '3/5', '5/3', '1/3'],
-         hint='sec²θ − tan²θ = 1 factorises as (sec θ − tan θ)(sec θ + tan θ).',
-         sol='(sec θ − tan θ)(sec θ + tan θ) = 1, so sec θ − tan θ = 1/3. Adding: 2 sec θ = 10/3, so sec θ = 5/3; subtracting: tan θ = 4/3. sin θ = tan θ / sec θ = (4/3) ÷ (5/3) = 4/5.'),
+    dict(ch='7', scen='tan theta 1 over root 7 · ratio of cosec squared and sec squared',
+         stem='For an acute angle θ, tan θ = 1/√7. What is (cosec²θ − sec²θ) ÷ (cosec²θ + sec²θ)?',
+         opts=['3/4', '4/3', '1/2', '5/7'],
+         hint='Use cosec²θ = 1 + cot²θ and sec²θ = 1 + tan²θ.',
+         sol='tan²θ = 1/7 and cot²θ = 7. So cosec²θ = 1 + 7 = 8 and sec²θ = 1 + 1/7 = 8/7. The ratio is (8 − 8/7) ÷ (8 + 8/7) = (48/7) ÷ (64/7) = 3/4.'),
     dict(ch='7', scen='two equal poles across an 80 m road seen at 60 and 30 degrees',
          stem='Two poles of equal height stand on opposite sides of an 80 m wide road. From a point on the road between them, the angles of elevation of their tops are 60° and 30°. What is the height of each pole?',
          opts=['20√3 m', '40√3 m', '20 m', '40 m'],

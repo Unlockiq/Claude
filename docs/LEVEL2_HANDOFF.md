@@ -5,7 +5,7 @@ Use this file to continue the Level-2 work (Classes 5–11, or any class) in a n
 ## 1. Where things are
 
 - **Repository:** `Unlockiq/Claude`. **Branch:** `claude/exciting-hypatia-b3jk1w`. All work is on this branch; it has not been merged.
-- **Done:** Classes 1–5. Each has 300 new questions, two booklets (Set-1 = Papers 1–5, Set-2 = Papers 6–10, as PDF and DOCX), reviews of the original papers, a question index and a README:
+- **Done:** Classes 1–6 and 10. Each has 300 new questions, two booklets (Set-1 = Papers 1–5, Set-2 = Papers 6–10, as PDF and DOCX), reviews of the original papers, a question index and a README:
   - `questions/level2/classN/paper01.py … paper10.py`
   - `papers/level2/classN/AMO_Class-N_Level-2_Practice_Papers_Set-1|2.{pdf,docx}`
   - `reviews/level2/classN/` (`README.md`, `originals_papers1-5.md`, `originals_papers6-10.md`, `question_index.md`)
@@ -108,4 +108,4 @@ Picture helpers (all in `tools/l2/figures.py`, available by name in paper files)
 
 ## 8. Starting prompt for the new chat
 
-> Continue the AMO Level-2 practice-paper project in repo Unlockiq/Claude on branch `claude/exciting-hypatia-b3jk1w`. First read `docs/LEVEL2_HANDOFF.md` and follow it exactly. Classes 1–5 are done. Now do Class **N**: I am uploading its 10 question papers and 10 answer keys. Review the originals, then write 300 new Hard questions that follow the syllabus with unique scenarios and Indian names, build Set-1 (Papers 1–5) and Set-2 (Papers 6–10) in the same template, verify them independently, commit and push, and give me the two PDFs.
+> Continue the AMO Level-2 practice-paper project in repo Unlockiq/Claude on branch `claude/exciting-hypatia-b3jk1w`. First read `docs/LEVEL2_HANDOFF.md` and follow it exactly. Classes 1–6 and 10 are done. Now do Class **N**: I am uploading its 10 question papers and 10 answer keys. Review the originals, then write 300 new Hard questions that follow the syllabus with unique scenarios and Indian names, build Set-1 (Papers 1–5) and Set-2 (Papers 6–10) in the same template, verify them independently, commit and push, and give me the two PDFs.

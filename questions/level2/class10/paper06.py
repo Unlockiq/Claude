@@ -171,7 +171,7 @@ QUESTIONS = [
          stem='A rhombus has side 10 cm and one angle of 60°. A circle with its centre where the diagonals cross touches all four sides. What is its radius?',
          opts=['5√3/2 cm', '5√3 cm', '5/2 cm', '10√3 cm'],
          hint='The radius is the distance from the centre to a side. Use the area of the rhombus.',
-         sol='Area = 10 × 10 × sin 60° = 50√3 cm². The rhombus splits into 4 triangles with apex at the centre, each with base 10 and height r: 4 × ½ × 10 × r = 20r. So 20r = 50√3 and r = 5√3/2 cm.'),
+         sol='The 60° angle makes a height of 10 × sin 60° = 5√3 cm on a side of 10 cm, so area = 10 × 5√3 = 50√3 cm². The rhombus splits into 4 triangles with apex at the centre, each with base 10 and height r: 4 × ½ × 10 × r = 20r. So 20r = 50√3 and r = 5√3/2 cm.'),
     dict(ch='4+5', scen='ratio in which the y-axis divides AB when the centroid lies on it',
          stem='The centroid of triangle A(2, 4), B(k, 0), C(6, 2) lies on the y-axis. In what ratio does the y-axis divide AB?',
          opts=['1 : 4', '4 : 1', '1 : 3', '2 : 3'],

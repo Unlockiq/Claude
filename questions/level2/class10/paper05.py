@@ -27,9 +27,9 @@ QUESTIONS = [
          sol='1071 = 462 × 2 + 147; 462 = 147 × 3 + 21; 147 = 21 × 7 + 0. Three divisions, and the last non-zero remainder is 21.'),
     dict(ch='1', scen='which of four surd expressions is irrational',
          stem='Which of these numbers is irrational?',
-         opts=['(√5 + √2)²', '(3 + √2)(3 − √2)', '√12 × √3', '(2√3)² − 5'],
+         opts=['(√5 + √2)²', '(3 + √2)(3 − √2)', '√12 × √3', '√8 × √2'],
          hint='Expand each one.',
-         sol='(3 + √2)(3 − √2) = 9 − 2 = 7; √12 × √3 = √36 = 6; (2√3)² − 5 = 12 − 5 = 7. But (√5 + √2)² = 7 + 2√10, and √10 is irrational. So only (√5 + √2)² = 7 + 2√10 is irrational.'),
+         sol='(3 + √2)(3 − √2) = 9 − 2 = 7; √12 × √3 = √36 = 6; √8 × √2 = √16 = 4. But (√5 + √2)² = 7 + 2√10, and √10 is irrational. So only (√5 + √2)² = 7 + 2√10 is irrational.'),
 
     # ---------------- Part 2 · Fractions, Decimals & Percentages
     dict(ch='3', scen='capital of a partner from a 5 : 3 profit ratio over 8 months',
