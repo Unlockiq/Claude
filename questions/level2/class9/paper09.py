@@ -55,7 +55,7 @@ QUESTIONS = [
          stem='A straight line passes through (1, −1) and is parallel to y = 3x + 2. Where does it cross the x-axis?',
          opts=['(4/3, 0)', '(−4/3, 0)', '(1/3, 0)', '(2/3, 0)'],
          hint='Parallel lines have the same slope.',
-         sol='The line is y = 3x + b with −1 = 3 + b, so b = −4 and y = 3x − 4. At y = 0, x = 4/3. ((2/3, 0) is where y = 3x + 2 would be shifted by its own intercept; (−4/3, 0) has the sign wrong.)'),
+         sol='The line is y = 3x + b with −1 = 3 + b, so b = −4 and y = 3x − 4. At y = 0, x = 4/3. ((1/3, 0) comes from taking b = −1, the y-value of the point; (−4/3, 0) has the sign wrong.)'),
     dict(ch='4', scen='GP of positive terms with 2nd times 6th equal 144 · 4th term',
          stem='In a geometric progression of positive terms, the product of the 2nd and 6th terms is 144. What is the 4th term?',
          opts=['12', '72', '24', '6'],
