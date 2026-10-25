@@ -123,7 +123,7 @@ QUESTIONS = [
          hint='Add the base circle, the cylinder\'s curved surface and the cone\'s curved surface. Find the slant height first.',
          sol='Slant height = √(14² + 48²) = √2,500 = 50 cm. Cone curved surface = 22/7 × 14 × 50 = 2,200 cm². Cylinder curved surface = 2 × 22/7 × 14 × 5 = 440 cm². Base = 22/7 × 14 × 14 = 616 cm². Total = 2,200 + 440 + 616 = 3,256 cm².'),
     dict(ch='6', scen='2 cm of rain on a field 1.2 km by 500 m · litres in standard form',
-         stem='2 cm of rain falls on a field 1.2 km long and 500 m wide. How many litres of rain water fall on the field, in standard form?',
+         stem='Rain 2 cm deep falls on a field 1.2 km long and 500 m wide. How many litres of rain water fall on the field, in standard form?',
          opts=['1.2 × 10⁷ L', '1.2 × 10⁴ L', '1.2 × 10⁶ L', '6 × 10⁵ L'],
          hint='Work in metres: 2 cm = 0.02 m, and 1 m³ = 1,000 L.',
          sol='Area = 1,200 × 500 = 6,00,000 m². Volume = 6,00,000 × 0.02 = 12,000 m³ = 1,20,00,000 L = 1.2 × 10⁷ L.'),
