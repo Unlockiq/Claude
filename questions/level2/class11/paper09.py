@@ -165,6 +165,6 @@ QUESTIONS = [
     dict(ch='8+10', scen='grid paths from (0, 0) to (4, 4) never above the diagonal',
          stem='A path goes from (0, 0) to (4, 4) in unit steps right or up, and never goes above the line y = x. How many such paths are there?',
          opts=['14', '70', '35', '42'],
-         hint='Count the bad paths by reflecting the part before they first touch y = x + 1.',
+         hint='Count the bad paths by reflecting the part after they first touch y = x + 1.',
          sol='All paths: C(8, 4) = 70. Bad paths touch y = x + 1; reflecting the part after the first touch in y = x + 1 gives a path to (3, 5), and there are C(8, 3) = 56 of them. Good paths: 70 − 56 = 14.'),
 ]

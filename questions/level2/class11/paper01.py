@@ -116,7 +116,7 @@ QUESTIONS = [
          sol='3 girls and 2 boys: C(4, 3) × C(6, 2) = 4 × 15 = 60. 4 girls and 1 boy: C(4, 4) × C(6, 1) = 6. Total 66.'),
     dict(ch='8', scen='exactly two different faces in four throws of a die',
          stem='A fair die is thrown 4 times. What is the probability that exactly two different numbers appear among the four results?',
-         opts=['35/216', '5/72', '15/216', '7/36'],
+         opts=['35/216', '5/72', '25/216', '7/36'],
          hint='Choose the two numbers, then count the ways to fill 4 throws using both of them.',
          sol='Choose the two numbers: C(6, 2) = 15. Fill 4 throws with only these two, using both: 2⁴ − 2 = 14. Favourable = 15 × 14 = 210, so P = 210/1296 = 35/216.'),
     dict(ch='8', scen='standard deviation of 2, 4, 6, … , 20',

@@ -151,7 +151,7 @@ QUESTIONS = [
          stem='What is the value of C(5, 0)² + C(5, 1)² + C(5, 2)² + … + C(5, 5)²?',
          opts=['252', '1024', '126', '32'],
          hint='Choose 5 people from 5 men and 5 women: k women and 5 − k men.',
-         sol='Σ C(5, k) C(5, 5 − k) counts 5-member groups from 10 people, so the sum is C(10, 5) = 252. (1024 = 4⁵ and 32 = 2⁵ add the coefficients without squaring correctly.)'),
+         sol='Σ C(5, k) C(5, 5 − k) counts 5-member groups from 10 people, so the sum is C(10, 5) = 252. (32 = 2⁵ adds the coefficients without squaring them, and 1024 = 2¹⁰ squares that total instead of adding the squares.)'),
     dict(ch='1+4', scen='sum of k times i to the k for k from 1 to 8',
          stem='What is the value of 1·i + 2·i² + 3·i³ + … + 8·i⁸?',
          opts=['4 − 4i', '0', '−4 + 4i', '4 + 4i'],

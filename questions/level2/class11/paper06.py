@@ -134,7 +134,7 @@ QUESTIONS = [
          stem='Among a number of identical-looking coins, exactly one is heavier. With a two-pan balance, what is the largest number of coins for which 4 weighings are always enough to find the heavy coin?',
          opts=['81', '64', '27', '16'],
          hint='Each weighing has 3 outcomes: left heavier, right heavier or balance.',
-         sol='Each weighing splits the possibilities into at most 3 groups, so 4 weighings can tell apart at most 3⁴ = 81 coins. With 81 coins, weigh 27 against 27 and keep the heavy group (or the 27 left out); repeat with 9, 3, 1. So 81. (64 = 2⁶ treats the balance as giving only two outcomes.)'),
+         sol='Each weighing splits the possibilities into at most 3 groups, so 4 weighings can tell apart at most 3⁴ = 81 coins. With 81 coins, weigh 27 against 27 and keep the heavy group (or the 27 left out); repeat with 9, 3, 1. So 81. (16 = 2⁴ treats each weighing as having only two outcomes.)'),
     dict(ch='10', scen='largest number always dividing four consecutive integers product',
          stem='What is the largest integer that divides n(n + 1)(n + 2)(n + 3) for every positive integer n?',
          opts=['24', '12', '48', '120'],

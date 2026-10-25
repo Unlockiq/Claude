@@ -141,11 +141,11 @@ QUESTIONS = [
          sol='With all three: 1/20 + 1/30 − 1/15 = 1/60 tank per minute, so 10 minutes fill 1/6. P and Q alone fill 1/20 + 1/30 = 1/12 per minute, so the remaining 5/6 takes 10 minutes. Total 20 minutes.'),
 
     # ---------------- Part 7 · Mathematical Reasoning
-    dict(ch='10', scen='numbers from 1 to 100 · guarantee one divides another',
-         stem='What is the least number of distinct integers that must be chosen from 1 to 100 to be sure that one of them divides another?',
-         opts=['51', '50', '26', '101'],
-         hint='Write every number as 2ᵏ × (odd number). How many odd parts are there?',
-         sol='There are 50 odd numbers, so 50 boxes "odd part = m". Among 51 numbers, two share an odd part, and the smaller then divides the larger. The 50 numbers 51 to 100 show that 50 is not enough.'),
+    dict(ch='10', scen='numbers from 1 to 30 forcing a pair that adds to 31',
+         stem='What is the least number of distinct integers that must be chosen from 1, 2, 3, … , 30 to be sure that two of the chosen numbers add up to 31?',
+         opts=['16', '15', '31', '17'],
+         hint='Group the numbers into pairs that add up to 31.',
+         sol='The pairs (1, 30), (2, 29), … , (15, 16) make 15 boxes. With 16 numbers, two fall in the same pair and add to 31. The 15 numbers 1 to 15 have no such pair, so 15 is not enough. Answer: 16.'),
     dict(ch='10', scen='largest number of acute angles in a convex polygon',
          stem='What is the largest possible number of acute interior angles in a convex polygon?',
          opts=['3', '4', '2', 'No limit'],

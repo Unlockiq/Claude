@@ -3,11 +3,11 @@
 
 QUESTIONS = [
     # ---------------- Part 1 · Number System (complex numbers)
-    dict(ch='1', scen='sum of five powers of (1 + 2i)/(2 − i)',
-         stem='Let w = (1 + 2i)/(2 − i). What is the value of w + w² + w³ + w⁴ + w⁵?',
-         opts=['i', '0', '−1', '1 + i'],
-         hint='Simplify w first by multiplying top and bottom by the conjugate of 2 − i.',
-         sol='w = (1 + 2i)(2 + i)/5 = (2 + i + 4i − 2)/5 = i. The sum is i − 1 − i + 1 + i = i.'),
+    dict(ch='1', scen='z times its conjugate minus the real part of z squared',
+         stem='Let z = (2 + 3i)(1 − i). What is the value of z·z̄ minus the real part of z²?',
+         opts=['2', '26', '24', '−22'],
+         hint='Multiply out z first, then use z·z̄ = |z|².',
+         sol='z = 2 − 2i + 3i − 3i² = 5 + i. Then z·z̄ = 5² + 1² = 26 and z² = 25 + 10i − 1 = 24 + 10i, so its real part is 24. The answer is 26 − 24 = 2.'),
     dict(ch='1', scen='z = 2 − 3i in the cubic z³ − 3z² + 9z + 4',
          stem='Let z = 2 − 3i. What is the value of z³ − 3z² + 9z + 4?',
          opts=['−9', '4', '13', '−9 + 12i'],
