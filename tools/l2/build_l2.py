@@ -134,7 +134,7 @@ def use_class(cls):
     checks.set_class(cls)
 
 
-CH_NAME = {c: f'Ch{c}' for c in ('1', '2', '3', '5', '6', '8', '9', '10')}
+CH_NAME = {c: f'Ch{c}' for c in ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')}
 
 
 def esc(t):
