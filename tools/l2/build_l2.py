@@ -324,6 +324,18 @@ HELLO = [
     'Do not use a calculator. You may do rough work on a separate sheet.',
     'All figures are not necessarily drawn to scale unless stated.',
 ]
+NOTES_SENIOR = [  # Class 6 and above
+    'Figures are part of the questions and work when printed in black and white.',
+    'Parts follow the AMO syllabus chapters. {gaps} not part of the Class {cls} syllabus, so the chapter numbers shown in the Part headings have gaps.',
+    'The answer sheet and the answer key are at the end. Remove the answer key before the paper is attempted.',
+]
+INSTR_SENIOR = [
+    'Each question has four options, (A) to (D), with exactly one correct answer.',
+    'Section I has 25 questions, each from one chapter. Section II has 5 Star Questions, each joining two chapters.',
+    'Every question is at Level-2 (Hard) standard: expect several steps or a key insight.',
+    'There is no negative marking. Calculators are not allowed; use a separate sheet for rough work.',
+    'Figures are not necessarily drawn to scale unless stated.',
+]
 NOTES = [
     'Pictures are part of the questions. Every picture also works when printed in black and white.',
     'You may read a question aloud to the child, exactly as printed. Please do not explain it or point to an answer choice.',
@@ -351,12 +363,16 @@ def paper_page(n, cls, logo_rid, pid):
     trs = [[para([run(a, 11, True)]), para([run(b, 11)])] for a, b in rows]
     out += table(trs, [3150, bc.TEXT_W - 3150], bc.GRID, fills=[bc.LABEL_FILL, None], mar=(60, 100) if tight else (95, 100))
     out += spacer(16)
-    hello = [para([run('\U0001F44B ', 13), run('Hello, friend! How to do this paper:', 13, True, color=bc.NAVY)], after=100)]
-    hello += [para([run('⭐ ', 12), run(b, 12)], after=40 if tight else 70) for b in HELLO]
+    if cls >= 6:
+        hello = [para([run('Instructions', 13, True, color=bc.NAVY)], after=100)]
+        hello += [para([run('•  ', 12), run(b, 12)], after=40 if tight else 70) for b in INSTR_SENIOR]
+    else:
+        hello = [para([run('\U0001F44B ', 13), run('Hello, friend! How to do this paper:', 13, True, color=bc.NAVY)], after=100)]
+        hello += [para([run('⭐ ', 12), run(b, 12)], after=40 if tight else 70) for b in HELLO]
     out += box(hello, bc.YEL_FILL, bc.YEL_LINE)
     out += spacer(14)
-    par = [para([run('For parents and teachers', 8.5, True, color=bc.NAVY)], after=50)]
-    par += [para([run('•  ', 8), run(t.format(cls=cls, gaps=gap_text()), 8)], after=30) for t in NOTES]
+    par = [para([run('For teachers' if cls >= 6 else 'For parents and teachers', 8.5, True, color=bc.NAVY)], after=50)]
+    par += [para([run('•  ', 8), run(t.format(cls=cls, gaps=gap_text()), 8)], after=30) for t in (NOTES_SENIOR if cls >= 6 else NOTES)]
     out += box(par, bc.GRY_FILL, bc.GRY_LINE)
     return out
 
