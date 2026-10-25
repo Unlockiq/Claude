@@ -85,11 +85,11 @@ QUESTIONS = [
          sol='Cricket: 5/12 of 360 = 150. Football: 1/4 of 360 = 90. Kabaddi: 360 − 150 − 90 = 120. 150 − 120 = 30.'),
 
     # ---------------- Part 4 · Geometry
-    dict(ch='5', scen='angle between clock hands at 4 o\'clock and its type',
-         stem='What is the smaller angle between the hands of a clock at exactly 4 o\'clock, and what type of angle is it?',
-         opts=['120°, obtuse', '120°, acute', '150°, obtuse', '100°, obtuse'],
-         hint='The angle between two numbers next to each other on a clock is 360° ÷ 12.',
-         sol='Each gap between numbers is 30°. At 4 o\'clock the hands are 4 gaps apart: 4 × 30° = 120°. It is more than 90° and less than 180°, so obtuse.'),
+    dict(ch='5', scen='four angles at a point with two equal unknown angles',
+         stem='Four angles meet at a point. Two of them are 100° and 70°. The other two are equal. What is the size of each equal angle, and what type of angle is it?',
+         opts=['95°, obtuse', '95°, acute', '85°, acute', '190°, reflex'],
+         hint='Angles around a point add up to 360°.',
+         sol='360° − 100° − 70° = 190° for the two equal angles together. Each is 190° ÷ 2 = 95°. It is more than 90° and less than 180°, so it is obtuse.'),
     dict(ch='5', scen='triangle angles each 30 degrees more than the last · type',
          stem='The angles of a triangle go up in steps: the second is 30° more than the first, and the third is 30° more than the second. What type of triangle is it?',
          opts=['Right-angled', 'Acute-angled', 'Obtuse-angled', 'Equilateral'],
@@ -152,8 +152,8 @@ QUESTIONS = [
     # ---------------- Part 8 · Mathematical Reasoning
     dict(ch='10', scen='multiply by 2 3 4 5 series',
          fig=cards([1, 2, 6, 24, 120, '?'], size=38),
-         stem='Each number in Nandini\'s series is a multiple of the one before. Which number comes next?',
-         opts=['720', '240', '600', '144'],
+         stem='Nandini\'s series follows a pattern. Which number comes next?',
+         opts=['720', '620', '500', '144'],
          hint='Look at what each number is multiplied by.',
          sol='The multipliers are 2, 3, 4 and 5: 1 × 2 = 2, 2 × 3 = 6, 6 × 4 = 24, 24 × 5 = 120. Next: 120 × 6 = 720.'),
     dict(ch='10', scen='31-day month with five Fridays Saturdays and Sundays',
@@ -196,7 +196,7 @@ QUESTIONS = [
          sol='LCM of 15 and 20 is 60 seconds. They flash together at the end of every minute: 8:01, 8:02, 8:03, 8:04 and 8:05. That is 5 more times.'),
     dict(ch='3+9', scen='3.6 km road at 0.45 km a day with Sundays off',
          stem='Workers build a road 3.6 km long. They build 0.45 km each working day and rest on Sundays. They start on Monday the 1st. On which day do they finish?',
-         opts=['Tuesday the 9th', 'Monday the 8th', 'Wednesday the 10th', 'Tuesday the 8th'],
+         opts=['Tuesday the 9th', 'Monday the 8th', 'Wednesday the 10th', 'Thursday the 11th'],
          hint='First find how many working days they need.',
          sol='3.6 ÷ 0.45 = 360 ÷ 45 = 8 working days. Monday 1st to Saturday 6th is 6 days. Sunday 7th is a rest day. Monday 8th and Tuesday 9th are days 7 and 8. They finish on Tuesday the 9th.'),
 ]

@@ -91,7 +91,7 @@ QUESTIONS = [
          hint='In a triangle with two equal sides, the two other angles are equal.',
          sol='The other two angles are equal and add up to 180° − 60° = 120°, so each is 60°. All three angles are 60°, so all sides are equal: equilateral.'),
     dict(ch='5', scen='which regular polygon cannot tile a floor alone',
-         stem='Tiles of only one shape must cover a floor with no gaps or overlaps. Which of these regular shapes can NOT do it?',
+         stem='Tiles of only one shape must cover a floor with no gaps or overlaps. A regular pentagon has corners of 108°. Which of these regular shapes can NOT do it?',
          opts=['Regular pentagon', 'Equilateral triangle', 'Square', 'Regular hexagon'],
          hint='At each corner the angles must add up to 360°.',
          sol='Corner angles: triangle 60° (6 make 360°), square 90° (4 make 360°), hexagon 120° (3 make 360°). A regular pentagon has 108° corners; 3 make 324° and 4 make 432°, so they never fit exactly.'),
@@ -118,7 +118,7 @@ QUESTIONS = [
     dict(ch='8', scen='pictograph of apples sold against a 300 kg target',
          fig=drawing(300, 190, pict([('Monday', 3), ('Tuesday', 5), ('Wednesday', 2), ('Thursday', 4)], '🍎', '20 kg')),
          stem='The pictograph shows apples sold by a shop. Its target was 300 kg for the four days. What happened?',
-         opts=['It missed by 20 kg', 'It beat it by 20 kg', 'It missed by 1 kg', 'It beat it by 80 kg'],
+         opts=['It missed by 20 kg', 'It beat it by 20 kg', 'It beat it by 40 kg', 'It beat it by 80 kg'],
          hint='Each symbol stands for 20 kg.',
          sol='Symbols: 3 + 5 + 2 + 4 = 14. 14 × 20 = 280 kg. 300 − 280 = 20, so it missed the target by 20 kg.'),
 
