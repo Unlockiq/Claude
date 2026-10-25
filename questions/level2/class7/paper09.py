@@ -82,7 +82,7 @@ QUESTIONS = [
          stem='How many zeros are there at the end of 5⁵ × 4⁴ × 2²?',
          opts=['5', '10', '4', '8'],
          hint='Each zero needs one 2 and one 5.',
-         sol='4⁴ × 2² = 2⁸ × 2² has ten 2s, but there are only five 5s. So the number is 2⁵ × (2 × 5)⁵ = 32 × 10⁵, which ends in 5 zeros.'),
+         sol='Each 4 gives two 2s, so 4⁴ × 2² has 4 × 2 + 2 = 10 factors of 2, but there are only five 5s. Pair five 2s with the five 5s: the number is 2⁵ × 10⁵ = 32 × 10⁵, which ends in 5 zeros.'),
 
     # ---------------- Part 3 · Fractions, Decimals & Percentages
     dict(ch='3', scen='oranges bought 6 for ₹10 sold 4 for ₹10',

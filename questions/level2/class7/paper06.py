@@ -74,10 +74,10 @@ QUESTIONS = [
 
     # ---------------- Part 2 · Operations
     dict(ch='2', scen='find n with (5³ × 5⁴) ÷ (5²)³ × 3ⁿ = 45 × 9',
-         stem='Find n if (5³ × 5⁴) ÷ (5²)³ × 3ⁿ = 45 × 9.',
+         stem='Find n if [(5³ × 5⁴) ÷ (5²)³] × 3ⁿ = 45 × 9.',
          opts=['4', '3', '5', '2'],
          hint='Simplify the powers of 5 first.',
-         sol='5³ × 5⁴ = 5⁷ and (5²)³ = 5⁶, so the first part is 5. Then 5 × 3ⁿ = 405, so 3ⁿ = 81 = 3⁴ and n = 4.'),
+         sol='(5²)³ = 5² × 5² × 5², so (5³ × 5⁴) ÷ (5²)³ = (5³ ÷ 5²) × (5⁴ ÷ 5⁴) = 5. Then 5 × 3ⁿ = 405, so 3ⁿ = 81 = 3⁴ and n = 4.'),
     dict(ch='2', scen='2⁵ × 5³ × 4² in standard form',
          stem='Write 2⁵ × 5³ × 4² in standard form.',
          opts=['6.4 × 10⁴', '6.4 × 10³', '3.2 × 10⁴', '1.6 × 10⁴'],

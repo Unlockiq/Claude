@@ -73,11 +73,11 @@ QUESTIONS = [
          sol='After the first cut: 5/8 × 24 = 15 m. The second cut takes 2/5 × 15 = 6 m, leaving 9 m.'),
 
     # ---------------- Part 2 · Operations
-    dict(ch='2', scen='2 to the x times 4 squared is 8 cubed and 3 to the y is 9 times 27',
-         stem='If 2ˣ × 4² = 8³ and 3ʸ = 9 × 27, what is x + y?',
-         opts=['10', '9', '11', '8'],
-         hint='Write 4, 8, 9 and 27 as powers of 2 or 3.',
-         sol='4² = 2⁴ and 8³ = 2⁹, so x + 4 = 9 and x = 5. 9 × 27 = 3² × 3³ = 3⁵, so y = 5. x + y = 10.'),
+    dict(ch='2', scen='(9² × 8 × 5³) ÷ (6³ × 3 × 10²) by cancelling powers',
+         stem='Without multiplying out, find the value of (9² × 8 × 5³) ÷ (6³ × 3 × 10²).',
+         opts=['5/4', '4/5', '5/2', '1'],
+         hint='Write every number as a product of powers of 2, 3 and 5.',
+         sol='Top: 3⁴ × 2³ × 5³. Bottom: 6³ × 3 × 10² = 2³ × 3³ × 3 × 2² × 5² = 2⁵ × 3⁴ × 5². Cancel 3⁴, 2³ and 5²: what is left is 5 ÷ 2² = 5/4.'),
     dict(ch='2', scen='town of 4 × 10³ families using 1.5 × 10² L each · tanks of 2 × 10⁵ L',
          stem='A town has 4 × 10³ families. Each family uses 1.5 × 10² litres of water a day. A tank holds 2 × 10⁵ litres. How many full tanks does the town use in a day?',
          opts=['3', '30', '0.3', '6'],
@@ -156,7 +156,7 @@ QUESTIONS = [
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='pie chart of favourite sports · boys who like badminton',
          fig=drawing(230, 230, pie([('Cricket 150°', 150), ('Football 90°', 90), ('Hockey 60°', 60), ('Badminton 60°', 60)])),
-         stem='The pie chart shows the favourite sports of 720 students. 1/3 of the cricket fans are girls, and every other girl chose badminton. There are 200 girls in all. How many badminton fans are boys?',
+         stem='The pie chart shows the favourite sports of 720 students. 1/3 of the cricket fans are girls, and all the other girls chose badminton. There are 200 girls in all. How many badminton fans are boys?',
          opts=['20', '40', '100', '120'],
          hint='Each degree stands for 720 ÷ 360 students.',
          sol='Each degree is 2 students. Cricket: 150° = 300 students, so 100 girls. The other 100 girls all chose badminton. Badminton: 60° = 120 students, so 120 − 100 = 20 are boys.'),
