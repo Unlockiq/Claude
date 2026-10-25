@@ -61,7 +61,7 @@ QUESTIONS = [
          sol='a + b = 50 and ab = 400. (a − b)² = 2500 − 1600 = 900, so a − b = 30. The numbers are 40 and 10.'),
     dict(ch='4', scen='greatest value of 2x + 5y on a quadrilateral region',
          fig=drawing(160, 120, plane(-0.5, 6.5, -0.5, 4.6, u=22, segs=[(0, 4, 4, 0), (0, 2, 6, 0)],
-                                     labels=[('x + y = 4', 4.6, 1.2), ('x + 3y = 6', 5.4, 0.9)])),
+                                     labels=[('x + y = 4', 3.3, 2.2), ('x + 3y = 6', 5.9, 0.75)])),
          stem='x and y satisfy x + y ≤ 4, x + 3y ≤ 6, x ≥ 0 and y ≥ 0. What is the greatest value of 2x + 5y?',
          opts=['11', '10', '8', '15'],
          hint='The greatest value occurs at a corner of the region.',
