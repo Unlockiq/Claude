@@ -19,7 +19,7 @@ All ten papers used the same 30-question template, so the same scenario appeared
 
 ## How the new papers are built
 
-- **Blueprint (each paper, 30 questions, all Hard).** Section I has 25 questions: Number System 6, Operations 6, Geometry 5, Applied Mathematics 4, Mathematical Reasoning 4. Section II has 5 Star Questions in the syllabus's Class 2 pairings: Ch1+Ch10, Ch2+Ch10, Ch5+Ch10, Ch1+Ch9 and Ch5+Ch9.
+- **Blueprint (each paper, 30 questions, all Hard).** The chapter Parts hold 25 questions: Number System 6, Operations 6, Geometry 5, Applied Mathematics 4, Mathematical Reasoning 4. The last Part, "Mixed Problems", has 5 questions that each join two chapters, using the syllabus's Class 2 pairings: Ch1+Ch10, Ch2+Ch10, Ch5+Ch10, Ch1+Ch9 and Ch5+Ch9.
 - **Syllabus.** Numbers to 999 (hundreds, tens, ones; number line; even and odd); adding and subtracting with carrying, sums within 999; multiplication within 1-digit × 1-digit (repeated addition for anything larger); division only as halving and quartering; 2D shape properties and the 3D solids cube, sphere, cylinder and cone (faces, edges and vertices are not counted — that is Class 3); clock times at o'clock, half past, quarter past and quarter to, with AM and PM (no elapsed-time arithmetic); two-step money; patterns, analogies and simple counting.
 - **Hard.** Every question needs three or more steps or one real insight. Wrong options are common-mistake answers.
 - **Unique scenarios, Indian names, ₹, sentences of at most 25 words.** Checked by `tools/l2/checks.py`; `question_index.md` lists all 300 questions with their answers.

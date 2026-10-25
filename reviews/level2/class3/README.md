@@ -20,7 +20,7 @@ Every paper used one 30-question template. The slots broke the syllabus in every
 
 ## How the new papers are built
 
-- **Blueprint (30 questions, all Hard).** The Level-1 Class 3 weighting scaled to 25 Section I questions: Number System 4, Operations 4, Fractions 3, Geometry 3, Mensuration 3, Applied Mathematics 4, Mathematical Reasoning 4. Section II has 5 Star Questions in the Class 3 pairings: Ch1+Ch10, Ch3+Ch10, Ch9+Ch10, Ch1+Ch9, Ch5+Ch6.
+- **Blueprint (30 questions, all Hard).** The Level-1 Class 3 weighting scaled to 25 single-chapter questions: Number System 4, Operations 4, Fractions 3, Geometry 3, Mensuration 3, Applied Mathematics 4, Mathematical Reasoning 4. The last Part, "Mixed Problems", has 5 questions that each join two chapters, using the Class 3 pairings: Ch1+Ch10, Ch3+Ch10, Ch9+Ch10, Ch1+Ch9, Ch5+Ch6.
 - **Syllabus.** Numbers to 10,000, place and face value, Roman numerals to L; tables to 12, multiplication to 2-digit × 1-digit, division to 3-digit ÷ 1-digit with exact quotients (remainders only with 2-digit dividends); like fractions with denominators up to 12, no decimals; 2D/3D properties, faces, edges and vertices, line symmetry by folding, nets; metric units and perimeter (no area); elapsed time, calendar and money; patterns, simple cryptarithms and working backwards.
 - **Unique scenarios, Indian names, ₹, sentences of at most 25 words**, checked by `tools/l2/checks.py`. `question_index.md` lists all 300 questions with answers.
 

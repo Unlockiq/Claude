@@ -26,7 +26,7 @@ LOGO = os.path.join(ROOT, 'assets/unlockiq_logo.png')
 PURPLE_T, AMBER, WHITE = '5A2D8F', 'E8A800', 'FFFFFF'
 bc.HEADER = 'Aryabhatta Maths Olympiad (AMO) Level-2 Practice Papers'
 
-BLUEPRINT = {  # class: (Section I parts as (chapter, band title, count), Section II pairings) — syllabus v5.9
+BLUEPRINT = {  # class: (chapter Parts as (chapter, band title, count), mixed two-chapter pairs for the last Part) — weights and pairs from syllabus v5.9
     1: ([('1', 'Part 1 — Number System (Syllabus Chapter 1)', 7),
          ('2', 'Part 2 — Operations (Syllabus Chapter 2)', 6),
          ('5', 'Part 3 — Geometry (Syllabus Chapter 5)', 4),
@@ -207,7 +207,7 @@ def opt_table(opts):
 def question_block(n, q, img_xml, star):
     stem_runs = [R(f'Q{n}.  ', 14, True, color=PURPLE_T), R(q['stem'], 14)]
     if star:
-        stem_runs.append(R('   [Star]', 11, False, True, '7F7F7F'))
+        pass  # Level-2 has no sections; mixed questions carry no tag
     inner = ''
     if img_xml:
         inner += P([img_xml], 40, 80, 'center', keep=True)
@@ -247,11 +247,10 @@ def answer_sheet(cls, pno):
     out += (f'<w:tbl>{TBL_PR.format(jc="<w:jc w:val=" + chr(34) + "center" + chr(34) + "/>")}<w:tblGrid>'
             + ''.join(f'<w:gridCol w:w="{w}"/>' for w in grid) + '</w:tblGrid>')
     for r in range(10):
-        out += '<w:tr>' + ''.join(bubble_cell(c * 10 + r + 1, c * 10 + r + 1 > 25) for c in range(3)) + '</w:tr>'
+        out += '<w:tr>' + ''.join(bubble_cell(c * 10 + r + 1, False) for c in range(3)) + '</w:tr>'
     out += '</w:tbl>'
-    out += P([R('Q26–Q30 are Section II Star Questions. Each joins two chapters.', 10, italic=True, color='595959')], 120, 40)
+    out += P([], 120, 40)
     box = (P([R('For the parent or teacher', 11, True, color=PURPLE_T)], 0, 80)
-           + P([R('Section I correct: ______ / 25          Section II correct: ______ / 5', 11)], 0, 40)
            + P([R('Correct: ______ / 30', 12, True)], 80, 0))
     out += ('<w:tbl>' + TBL_PR.format(jc='<w:jc w:val="center"/>') + '<w:tblGrid><w:gridCol w:w="9977"/></w:tblGrid><w:tr><w:tc>'
             '<w:tcPr><w:tcW w:type="dxa" w:w="9978"/><w:tcBorders>'
@@ -293,7 +292,7 @@ def answer_key(cls, pno, qs):
         for x, t in zip(widths, ['Q', 'Part · level', 'Answer', 'Why?'])) + '</w:tr>'
     for n, q in enumerate(qs, 1):
         if q['ch'] in STARS:
-            pl = 'Section II · ' + ' + '.join(CH_NAME[c] for c in q['ch'].split('+')) + ' · Hard'
+            pl = f'Part {len(PARTS) + 1} · Mixed · ' + ' + '.join(CH_NAME[c] for c in q['ch'].split('+')) + ' · Hard'
         else:
             k = [p[0] for p in PARTS].index(q['ch']) + 1
             pl = f'Part {k} · {CH_NAME[q["ch"]]} · Hard'
@@ -309,8 +308,7 @@ INFO_ROWS = [
     ('Total Questions', '30 multiple-choice questions'),
     ('Level', 'Level-2 (final round): every question is Hard'),
     ('Time', '45 minutes'),
-    ('Section I', '25 questions, each from one chapter'),
-    ('Section II', '5 Star Questions, each joining two chapters'),
+    ('Arrangement', 'Parts by chapter; the last Part has mixed problems joining two chapters'),
     ('Negative Marking', 'No negative marking'),
     ('Calculator', 'Not allowed'),
     ('Chapters', 'Number System · Operations · Geometry · Applied Mathematics · Mathematical Reasoning'),
@@ -319,7 +317,7 @@ HELLO = [
     'Every question has four answer choices: (A), (B), (C) and (D). Only one is correct.',
     'Read each question and look at its picture carefully. Then mark your answer on the answer sheet at the end.',
     'This is a Level-2 paper. Every question needs careful thinking, so take your time and check each step.',
-    'Section I has 25 questions. Section II has 5 Star Questions.',
+    'The questions are in Parts by chapter. The last Part has mixed problems that join two chapters.',
     'There is no negative marking, so try every question.',
     'Do not use a calculator. You may do rough work on a separate sheet.',
     'All figures are not necessarily drawn to scale unless stated.',
@@ -331,7 +329,7 @@ NOTES_SENIOR = [  # Class 6 and above
 ]
 INSTR_SENIOR = [
     'Each question has four options, (A) to (D), with exactly one correct answer.',
-    'Section I has 25 questions, each from one chapter. Section II has 5 Star Questions, each joining two chapters.',
+    'The questions are grouped in Parts by chapter. The last Part has mixed problems, each joining two chapters.',
     'Every question is at Level-2 (Hard) standard: expect several steps or a key insight.',
     'There is no negative marking. Calculators are not allowed; use a separate sheet for rough work.',
     'Figures are not necessarily drawn to scale unless stated.',
@@ -486,13 +484,11 @@ def main(cls, set_no, first, last, qdir, out_path):
         content = ''
         k = 0
         for ch, title, cnt in PARTS:
-            if ch == '1':
-                content += band('SECTION I', '25 questions · every question is Hard', AMBER, '1F1F1F')
             content += part_band(title)
             for _ in range(cnt):
                 content += qblock(p, k, qs[k], add_part, tmpdir, star=False)
                 k += 1
-        content += band('SECTION II — Star Questions', '5 questions · each joins two chapters', AMBER, '1F1F1F')
+        content += part_band(f'Part {len(PARTS) + 1} — Mixed Problems (each joins two chapters)')
         for _ in STARS:
             content += qblock(p, k, qs[k], add_part, tmpdir, star=True)
             k += 1

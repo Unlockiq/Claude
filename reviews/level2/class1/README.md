@@ -30,13 +30,13 @@ Every paper used the same 30-question template, so the same scenario appeared 10
 ## How the new papers are built
 
 - **Blueprint (each paper, 30 questions, all Hard).**
-  - Section I has 25 questions in five Parts:
+  - Parts 1–5 hold 25 single-chapter questions:
     - Number System: 7
     - Operations: 6
     - Geometry: 4
     - Applied Mathematics: 4
     - Mathematical Reasoning: 4
-  - Section II has 5 Star Questions. They follow the syllabus's Class 1 Section II pairings in this order: Ch1+Ch10, Ch5+Ch10, Ch9+Ch10, Ch1+Ch9 and Ch2+Ch5.
+  - The last Part, "Mixed Problems", has 5 questions that each join two chapters. They follow the syllabus's Class 1 Section II pairings in this order: Ch1+Ch10, Ch5+Ch10, Ch9+Ch10, Ch1+Ch9 and Ch2+Ch5.
 - **Syllabus.** The questions stay within Class 1 content: numbers to 100, adding and subtracting within 20, and multiplication only as equal groups. Geometry covers circle, square, rectangle, triangle and visual symmetry. Applied questions use days, months and Indian coins and notes. Reasoning covers patterns, sequences and mathematical odd-one-out. Place-value counting in tens (such as 4 tens and 7 ones) is used for numbers above 20.
 - **Hard.** Every question needs three or more steps or one real insight. Wrong options are common-mistake answers, for example counting "between" numbers inclusively, forgetting that 0 cannot lead, or doubling the wrong number.
 - **Unique scenarios.** Every question has its own scenario key, and no stem repeats across the 10 papers. `question_index.md` lists all 300 with their answers.
@@ -48,7 +48,7 @@ Every paper used the same 30-question template, so the same scenario appeared 10
   - an opening page for each paper;
   - the header and brand footer;
   - Part bands;
-  - an answer sheet with Star rows shaded;
+  - an answer sheet for all 30 questions;
   - quick answers and a solutions table, where each "Why?" cell has a hint and a full solution.
 
 ## Rebuilding

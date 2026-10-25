@@ -20,7 +20,7 @@ The out-of-syllabus questions used ratio and inverse proportion, simple and comp
 
 ## How the new papers are built
 
-- **Blueprint (30 questions, all Hard).** The Level-1 Class 5 weighting scaled to 25 Section I questions: Number System 3, Operations 3, Fractions, Decimals & Percentages 4, Geometry 3, Mensuration 3, Data Handling 1, Applied Mathematics 4, Mathematical Reasoning 4. Section II has 5 Star Questions in the Class 5 pairings: Ch1+Ch10, Ch3+Ch10, Ch6+Ch10, Ch1+Ch9, Ch3+Ch9.
+- **Blueprint (30 questions, all Hard).** The Level-1 Class 5 weighting scaled to 25 single-chapter questions: Number System 3, Operations 3, Fractions, Decimals & Percentages 4, Geometry 3, Mensuration 3, Data Handling 1, Applied Mathematics 4, Mathematical Reasoning 4. The last Part, "Mixed Problems", has 5 questions that each join two chapters, using the Class 5 pairings: Ch1+Ch10, Ch3+Ch10, Ch6+Ch10, Ch1+Ch9, Ch3+Ch9.
 - **Syllabus.** Numbers to 9,99,999; factors, multiples, primes, HCF and LCM within 100; Roman numerals to M; BODMAS up to two bracket levels; fraction–decimal conversion and percentages through simple fractions; decimals to two places; fraction denominators up to 20; basic angles, triangle and quadrilateral types, line and rotational symmetry, tessellation and directions; area of right triangles and rectangles, volume of cubes and cuboids; pictographs and simple bar graphs; speed, distance, time and average speed; number series, calendar arithmetic and parity. Multiplication up to 3-digit × 2-digit and division up to 4-digit ÷ 2-digit.
 - **Unique scenarios, Indian names, ₹, sentences of at most 35 words**, checked by `tools/l2/checks.py`. `question_index.md` lists all 300 questions with answers.
 

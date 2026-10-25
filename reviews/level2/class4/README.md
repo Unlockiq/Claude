@@ -20,7 +20,7 @@ The out-of-syllabus questions used HCF/LCM and primes, percentages and simple in
 
 ## How the new papers are built
 
-- **Blueprint (30 questions, all Hard).** The Level-1 Class 4 weighting scaled to 25 Section I questions: Number System 3, Operations 3, Fractions & Decimals 4, Geometry 3, Mensuration 4, Data Handling 1, Applied Mathematics 3, Mathematical Reasoning 4. Section II has 5 Star Questions in the Class 4 pairings: Ch3+Ch10, Ch9+Ch10, Ch1+Ch10, Ch3+Ch9, Ch5+Ch6.
+- **Blueprint (30 questions, all Hard).** The Level-1 Class 4 weighting scaled to 25 single-chapter questions: Number System 3, Operations 3, Fractions & Decimals 4, Geometry 3, Mensuration 4, Data Handling 1, Applied Mathematics 3, Mathematical Reasoning 4. The last Part, "Mixed Problems", has 5 questions that each join two chapters, using the Class 4 pairings: Ch3+Ch10, Ch9+Ch10, Ch1+Ch10, Ch3+Ch9, Ch5+Ch6.
 - **Syllabus.** Numbers to 1,00,000 and Roman numerals to C; four operations up to 2-digit × 2-digit or 3-digit × 1-digit and 4-digit ÷ 1-digit, properties and estimation; mixed, equivalent and unlike fractions (denominators to 12), decimals to one place (add and subtract only); lines and rays, prisms and pyramids, nets, F + V − E, reflection, tiling, grid positions and views; perimeter and area of rectangles and squares; pictographs with a stated key; time to the minute, day-of-week calendar logic and money; series, casework and calendar arithmetic.
 - **Unique scenarios, Indian names, ₹, sentences of at most 35 words**, checked by `tools/l2/checks.py`. `question_index.md` lists all 300 questions with answers.
 

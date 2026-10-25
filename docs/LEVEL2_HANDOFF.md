@@ -17,7 +17,7 @@ Use this file to continue the Level-2 work (Classes 5–11, or any class) in a n
 - Review the 10 original Level-2 "Extra Mock" papers per class (question paper + answer key PDFs) rigorously.
 - Consolidate them into **two booklets per class in the same template as the Level-1 consolidated booklet**: Set-1 = Papers 1–5, Set-2 = Papers 6–10.
 - "All questions are of difficulty level **hard** for all the classes and should **follow the attached syllabus**. If the 10 attached papers have any low quality question, replace it. **Each question has to be of unique scenario, Indian names only.**"
-- Level-2 format: **30 questions, 45 minutes** (Level-1 is 45 questions, 60 minutes). Section I = 25 questions (one chapter each), Section II = 5 Star questions (two chapters each).
+- Level-2 format: **30 questions, 45 minutes** (Level-1 is 45 questions, 60 minutes). **Level-2 papers have no sections** (Section I/II exist only at Level-1). The 30 questions run in Parts by chapter (25 questions), and the last Part, "Mixed Problems", has 5 questions that each join two chapters (the syllabus's Section II pairings). Never print "Section" or "Star" in a Level-2 booklet.
 - The user wants the PDFs sent in the chat when a class is done.
 
 In practice every class so far had wrong keys, broken questions, a single repeated template and many syllabus breaks, so all 300 questions were rewritten each time.
@@ -44,7 +44,7 @@ Commit and push often (a stop hook asks for it). Never put the model name in rep
 
 ## 4. House rules (enforced or checked)
 
-- **Blueprint:** exact Part order and counts from `BLUEPRINT[N]` in `build_l2.py`; stars in the listed order (e.g. `'4+10'`).
+- **Blueprint:** exact Part order and counts from `BLUEPRINT[N]` in `build_l2.py`; the 5 mixed questions last, in the listed pair order (e.g. `'4+10'`).
 - **Hard:** 3+ steps or one real insight. Wrong options are common-mistake answers. The checkers flag one-step questions; upgrade them (add a second condition, ask for a derived quantity, etc.).
 - **Exactly one defensible answer.** Odd-one-out questions were the biggest source of trouble: test every option for parity, multiples, squares, digit sums and digit patterns. Prefer stems like "Three of these are in the same times table".
 - **Syllabus caps:** numbers, multiplication/division sizes, fraction denominators, decimals and topics per `reference/syllabus_by_class.md`. This also applies to the *worked solution* and to *wrong options* (e.g. no 4-digit distractors in Class 2).
@@ -72,7 +72,7 @@ QUESTIONS = [
          hint='One-line nudge (printed in the key).',
          sol='Full worked solution, within the class limits.'),
     ...
-    # ---------------- Section II · Star Questions
+    # ---------------- Last Part · Mixed Problems (two chapters each)
     dict(ch='4+10', scen='…', stem='…', opts=[…], hint='…', sol='…'),
 ]
 ```
@@ -81,9 +81,9 @@ Picture helpers (all in `tools/l2/figures.py`, available by name in paper files)
 
 ## 6. Notes for Classes 6–11 (Class 5 is done)
 
-- **Blueprints** (25 Section I questions = Level-1 weights × 25/40, largest remainder; Section II from the "Section II Pairings" tab):
+- **Blueprints** (25 single-chapter questions = Level-1 Section I weights × 25/40, largest remainder; the 5 mixed pairs come from the "Section II Pairings" tab):
 
-  | Class | Section I (chapter: count) | Section II |
+  | Class | Chapter Parts (chapter: count) | Mixed pairs (last Part) |
   |---|---|---|
   | 5 | 1:3, 2:3, 3:4, 5:3, 6:3, 8:1, 9:4, 10:4 | 1+10, 3+10, 6+10, 1+9, 3+9 |
   | 6 | 1:3, 2:3, 3:3, 4:2, 5:3, 6:3, 8:2, 9:3, 10:3 | 4+10, 1+10, 3+9, 5+6, 4+9 |
