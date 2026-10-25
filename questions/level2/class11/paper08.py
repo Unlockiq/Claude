@@ -5,7 +5,7 @@ QUESTIONS = [
     # ---------------- Part 1 · Number System (complex numbers)
     dict(ch='1', scen='conjugate of (2 + i)/(1 + 2i)',
          stem='What is the conjugate of (2 + i)/(1 + 2i)?',
-         opts=['(4 + 3i)/5', '(4 − 3i)/5', '(2 − i)/(1 − 2i) − 1', '4 + 3i'],
+         opts=['(4 + 3i)/5', '(4 − 3i)/5', '(3 + 4i)/5', '4 + 3i'],
          hint='Simplify the quotient first, then change the sign of the imaginary part.',
          sol='(2 + i)(1 − 2i)/5 = (2 − 4i + i + 2)/5 = (4 − 3i)/5. Its conjugate is (4 + 3i)/5.'),
     dict(ch='1', scen='z = 2 − 3i in the cubic z³ − 3z² + 9z + 4',
