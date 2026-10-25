@@ -63,11 +63,11 @@ QUESTIONS = [
          sol='The other two add to 2 − (−5) = 7 and multiply to −60 ÷ (−5) = 12. They are 3 and 4. The largest is 4.'),
 
     # ---------------- Part 3 · Fractions, Decimals & Percentages
-    dict(ch='3', scen='0.375 as a fraction in lowest terms and as a percent',
-         stem='Which pair shows 0.375 correctly as a fraction in lowest terms and as a percentage?',
-         opts=['3/8 and 37.5%', '3/8 and 3.75%', '375/1000 and 375%', '3/5 and 37.5%'],
-         hint='0.375 = 375/1000. Divide top and bottom by 125.',
-         sol='375/1000 = 3/8 (dividing by 125). As a percentage: 0.375 × 100 = 37.5%.'),
+    dict(ch='3', scen='number strictly between 3/8 and 2/5',
+         stem='Which of these numbers lies between 3/8 and 2/5?',
+         opts=['0.39', '37%', '0.41', '3/7'],
+         hint='Change everything into decimals.',
+         sol='3/8 = 0.375 and 2/5 = 0.4. 0.39 lies between them. 37% = 0.37 is too small, 0.41 is too big, and 3/7 = 0.428… is too big.'),
     dict(ch='3', scen='salary with 40% rent and 25% of the rest on food · savings ₹13,500',
          stem='Aman spends 40% of his salary on rent and 25% of what is left on food. He saves the remaining ₹13,500. What is his salary?',
          opts=['₹30,000', '₹27,000', '₹40,500', '₹22,500'],
@@ -80,11 +80,11 @@ QUESTIONS = [
          sol='2 hours = 120 minutes. 18/120 = 3/20 = 15/100 = 15%. (9% wrongly uses 200 minutes.)'),
 
     # ---------------- Part 4 · Algebra
-    dict(ch='4', scen='largest of four expressions at x equals 3',
-         stem='When x = 3, which of these expressions has the largest value?',
-         opts=['20 − 2x', '4x', 'x × x + 1', '5x − 4'],
-         hint='Substitute x = 3 into each one.',
-         sol='20 − 2x = 14. 4x = 12. x × x + 1 = 10. 5x − 4 = 11. The largest is 20 − 2x.'),
+    dict(ch='4', scen='value of x making 20 minus 2x beat 5x minus 4 and 4x beat 10',
+         stem='Which of these values of x makes 20 − 2x greater than 5x − 4, and also makes 4x greater than 10?',
+         opts=['3', '2', '4', '5'],
+         hint='Substitute each value into all three expressions.',
+         sol='x = 2: 16 > 6, but 4x = 8 is not greater than 10. x = 3: 14 > 11 and 12 > 10, so both are true. x = 4: 12 is not greater than 16. x = 5: 10 is not greater than 21. Only x = 3 works.'),
     dict(ch='4', scen='matchstick hexagons in a row · sticks for 12 hexagons',
          stem='Hexagons are made in a row with matchsticks, each pair sharing one side. 1 hexagon uses 6 sticks and 2 hexagons use 11. How many sticks do 12 hexagons use?',
          opts=['61', '72', '60', '66'],
@@ -127,11 +127,11 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='favourite subject bar graph · percent for the top two',
-         fig=drawing(330, 210, bars([('Maths', 14), ('Science', 11), ('English', 8), ('Hindi', 10), ('Art', 7)], 16, 2, 'Favourite subject (students)')),
+         fig=drawing(330, 210, bars([('Maths', 16), ('Science', 12), ('English', 8), ('Hindi', 10), ('Art', 4)], 16, 2, 'Favourite subject (students)')),
          stem='The bar graph shows the favourite subjects of a group of students. What percentage of the students chose one of the two most popular subjects?',
-         opts=['50%', '25%', '28%', '40%'],
+         opts=['56%', '28%', '32%', '50%'],
          hint='Find the total number of students first.',
-         sol='Total: 14 + 11 + 8 + 10 + 7 = 50. Top two: Maths 14 + Science 11 = 25. 25 out of 50 = 50%.'),
+         sol='Total: 16 + 12 + 8 + 10 + 4 = 50. Top two: Maths 16 + Science 12 = 28. 28 out of 50 = 56%. (28% is the count, not the percentage.)'),
     dict(ch='8', scen='goals per match table · matches with at least 2 goals',
          fig=table(['Goals in a match', '0', '1', '2', '3', '4'], [['Matches', '3', '5', '6', '4', '2']], widths=[140, 45, 45, 45, 45, 45]),
          stem='The table shows the goals scored in each match of a school football league. In how many matches were at least 2 goals scored, and how many goals were scored in those matches?',
@@ -199,6 +199,6 @@ QUESTIONS = [
     dict(ch='4+9', scen='fare ₹x per km for 10 km then ₹x minus 4 · 25 km costs ₹315',
          stem='A taxi charges ₹x per km for the first 10 km and ₹(x − 4) per km after that. A 25 km ride costs ₹315. What is x?',
          opts=['15', '12', '18', '13'],
-         hint='Write the fare: 10x + 15(x − 4). Then try the options.',
-         sol='Fare = 10x + 15(x − 4) = 25x − 60. 25x − 60 = 315 gives 25x = 375, so x = 15. Check: 10 × 15 + 15 × 11 = 150 + 165 = 315.'),
+         hint='Imagine every km cost ₹x. How much more would the ride cost?',
+         sol='If all 25 km cost ₹x, the fare would be ₹4 more for each of the last 15 km: 315 + 15 × 4 = ₹375. So 25 km at ₹x cost ₹375, and x = 375 ÷ 25 = 15. Check: 10 × 15 + 15 × 11 = 150 + 165 = 315.'),
 ]

@@ -38,7 +38,7 @@ QUESTIONS = [
 
     # ---------------- Part 2 · Operations
     dict(ch='2', scen='brackets placed in 8 plus 4 times 6 minus 2 · largest value',
-         stem='Brackets are placed in 8 + 4 × 6 − 2 in different ways. Which gives the largest value?',
+         stem='Here are four ways of writing 8 + 4 × 6 − 2, with or without brackets. Which of these gives the largest value?',
          opts=['(8 + 4) × 6 − 2', '(8 + 4) × (6 − 2)', '8 + 4 × (6 − 2)', '8 + 4 × 6 − 2'],
          hint='Work out each one, brackets first.',
          sol='(8 + 4) × 6 − 2 = 72 − 2 = 70. (8 + 4) × (6 − 2) = 12 × 4 = 48. 8 + 4 × (6 − 2) = 8 + 16 = 24. 8 + 4 × 6 − 2 = 8 + 24 − 2 = 30. The largest is 70.'),
@@ -118,11 +118,11 @@ QUESTIONS = [
 
     # ---------------- Part 7 · Data Handling
     dict(ch='8', scen='rainfall bar graph · share of months under 60 mm',
-         fig=drawing(330, 210, bars([('Jan', 40), ('Feb', 65), ('Mar', 30), ('Apr', 85), ('May', 50)], 90, 10, 'Rainfall (mm)')),
+         fig=drawing(330, 210, bars([('Jan', 40), ('Feb', 70), ('Mar', 30), ('Apr', 80), ('May', 50)], 90, 10, 'Rainfall (mm)')),
          stem='The bar graph shows the rainfall in a town. What fraction of the total rainfall fell in the months that had less than 60 mm each?',
          opts=['4/9', '5/9', '3/5', '2/5'],
          hint='Add all five bars, then the bars below 60 mm.',
-         sol='Total: 40 + 65 + 30 + 85 + 50 = 270 mm. Months under 60 mm: 40 + 30 + 50 = 120 mm. 120/270 = 4/9.'),
+         sol='Total: 40 + 70 + 30 + 80 + 50 = 270 mm. Months under 60 mm: 40 + 30 + 50 = 120 mm. 120/270 = 4/9.'),
     dict(ch='8', scen='shoe size frequency table · size 7 and above against 5 and below',
          fig=table(['Shoe size', '4', '5', '6', '7', '8'], [['Students', '3', '6', '9', '8', '4']], widths=[100, 50, 50, 50, 50, 50]),
          stem='The table shows the shoe sizes of the students in a class. How many more students wear size 7 or above than size 5 or below?',
