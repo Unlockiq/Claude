@@ -89,11 +89,11 @@ QUESTIONS = [
          sol='One pair of sides equal and parallel always gives a parallelogram. An isosceles trapezium has one pair parallel and the other pair equal; an isosceles trapezium also has equal diagonals; a kite has two pairs of equal adjacent sides — none of them is a parallelogram in general.'),
 
     # ---------------- Part 5 · Mensuration
-    dict(ch='6', scen='altitude to the side 14 of a 13 14 15 triangle',
-         stem='A triangle has sides 13 cm, 14 cm and 15 cm. What is the length of the altitude drawn to the 14 cm side?',
-         opts=['12 cm', '11.2 cm', '168/13 cm', '6 cm'],
-         hint='Find the area with Heron\'s formula, then use area = ½ × base × height.',
-         sol='s = 21, area = √(21 × 8 × 7 × 6) = √7,056 = 84 cm². Altitude to the 14 cm side = 2 × 84 ÷ 14 = 12 cm. (11.2 cm is the altitude to the 15 cm side and 168/13 cm the altitude to the 13 cm side.)'),
+    dict(ch='6', scen='Brahmagupta area of a cyclic quadrilateral with sides 25 39 52 60',
+         stem='A garden is a cyclic quadrilateral (its corners lie on a circle) with sides 25 m, 39 m, 52 m and 60 m in order. What is its area?',
+         opts=['1,764 m²', '1,680 m²', '1,820 m²', '882 m²'],
+         hint='Brahmagupta: area = √((s − a)(s − b)(s − c)(s − d)), where s is half the perimeter.',
+         sol='s = (25 + 39 + 52 + 60) ÷ 2 = 88. Area = √(63 × 49 × 36 × 28) = √31,11,696 = 1,764 m². Check: the diagonal 65 splits it into right triangles 25-60-65 and 39-52-65, with areas 750 + 1,014 = 1,764. (882 m² is only half of the area.)'),
     dict(ch='6', scen='canvas length 2.5 m wide for a conical tent of radius 7 and height 24',
          stem='A conical tent has base radius 7 m and height 24 m. It is made from canvas 2.5 m wide. What length of canvas is needed? (Take π = 22/7; ignore waste.)',
          opts=['220 m', '550 m', '110 m', '275 m'],
