@@ -6,7 +6,7 @@ def vessel():
     prims = [('rect', 40, 20, 120, 90, 'yellow')]
     pts = [(100 + 60 * math.cos(math.radians(a)), 110 + 60 * math.sin(math.radians(a))) for a in range(0, 181, 10)]
     prims += [('poly', [(40, 110)] + pts[::-1] + [(160, 110)], 'yellow'), ('line', 40, 110, 160, 110, True),
-              ('text', 100, 10, '3 cm radius', 11), ('text', 182, 65, '5 cm', 11)]
+              ('dot', 100, 110, 3), ('line', 100, 110, 160, 110), ('text', 130, 100, 'r = 3 cm', 10), ('text', 182, 65, '5 cm', 11)]
     return prims
 
 
@@ -34,11 +34,11 @@ QUESTIONS = [
          opts=['₹9,000', '₹12,000', '₹7,200', '₹10,800'],
          hint='Lata: ₹20,000 for 6 months and ₹40,000 for 6 months.',
          sol='Kunal: 30,000 × 12 = 3,60,000. Lata: 20,000 × 6 + 40,000 × 6 = 3,60,000. Equal shares: ₹9,000 each.'),
-    dict(ch='3', scen='cutting petrol use after a 25 percent price rise',
-         stem='The price of petrol rises by 25%. By what percentage must a family reduce its petrol use so that its spending on petrol stays the same?',
-         opts=['20%', '25%', '15%', '22.5%'],
-         hint='New price is 5/4 of the old. What fraction of the old quantity keeps the bill the same?',
-         sol='New quantity = old × 4/5, a cut of 1/5 = 20%. (Cutting 25% would make the bill 1.25 × 0.75 = 93.75% of the old one.)'),
+    dict(ch='3', scen='petrol up 25 percent with spending up 10 percent · change in use',
+         stem='The price of petrol rises by 25%, and a family increases its monthly spending on petrol by 10%. By what percentage does the amount of petrol it uses change?',
+         opts=['12% decrease', '15% decrease', '20% decrease', '10% decrease'],
+         hint='Amount used = spending ÷ price.',
+         sol='New amount = old amount × 1.10 ÷ 1.25 = 0.88 × old amount, a 12% decrease. (15% simply subtracts 10 from 25.)'),
 
     # ---------------- Part 3 · Algebra
     dict(ch='4', scen='values of k when one zero of x² + kx + 8 is twice the other',
@@ -56,11 +56,11 @@ QUESTIONS = [
          opts=['158', '98', '163', '153'],
          hint='Read the AP backwards: first term 253, common difference −5.',
          sol='20th term from the end = 253 + 19 × (−5) = 253 − 95 = 158. (98 is the 20th term from the start; 153 uses 20 steps.)'),
-    dict(ch='4', scen='sum of squares of the roots of x² − 6x + 7',
-         stem='What is the sum of the squares of the roots of x² − 6x + 7 = 0?',
-         opts=['22', '36', '14', '50'],
-         hint='α² + β² = (α + β)² − 2αβ. You do not need the roots themselves.',
-         sol='α + β = 6, αβ = 7. α² + β² = 36 − 14 = 22. (The roots are 3 ± √2: 11 + 6√2 + 11 − 6√2 = 22.)'),
+    dict(ch='4', scen='quadratic whose roots are the squares of the roots of x² − 6x + 7',
+         stem='α and β are the roots of x² − 6x + 7 = 0. Which quadratic equation has roots α² and β²?',
+         opts=['x² − 22x + 49 = 0', 'x² − 36x + 49 = 0', 'x² − 22x + 7 = 0', 'x² + 22x + 49 = 0'],
+         hint='Find α² + β² and α²β² from α + β and αβ.',
+         sol='α + β = 6, αβ = 7. α² + β² = 36 − 14 = 22 and α²β² = 49. The equation is x² − 22x + 49 = 0. (x² − 36x + 49 uses (α + β)² for the sum.)'),
 
     # ---------------- Part 4 · Geometry
     dict(ch='5', scen='which set of lengths makes EF parallel to QR',
@@ -68,11 +68,11 @@ QUESTIONS = [
          opts=['PE = 4, EQ = 4.5, PF = 8, FR = 9', 'PE = 4, EQ = 4.5, PF = 8, FR = 8', 'PE = 3, EQ = 4, PF = 4, FR = 3', 'PE = 5, EQ = 2, PF = 6, FR = 3'],
          hint='Converse of BPT: EF ∥ QR exactly when PE/EQ = PF/FR.',
          sol='4/4.5 = 8/9 and 8/9 = 8/9: equal, so EF ∥ QR. The others give 8/9 vs 1, 3/4 vs 4/3, and 5/2 vs 2.'),
-    dict(ch='5', scen='ratio of side squared to altitude squared in an equilateral triangle',
-         stem='In an equilateral triangle ABC, AD is the altitude to BC. What is AB² : AD²?',
-         opts=['4 : 3', '2 : 1', '3 : 4', '√3 : 2'],
-         hint='BD = AB/2. Use Pythagoras in triangle ABD.',
-         sol='AD² = AB² − (AB/2)² = 3AB²/4. So AB² : AD² = 4 : 3.'),
+    dict(ch='5', scen='point dividing a side of an equilateral triangle in the ratio 1 : 2',
+         stem='In an equilateral triangle ABC, D is the point on BC with BD = BC/3. If 9AD² = k × AB², what is k?',
+         opts=['7', '8', '6', '9'],
+         hint='Drop the altitude AM. Then DM = BC/2 − BC/3.',
+         sol='Let AB = a. The altitude AM has AM² = 3a²/4, and DM = a/2 − a/3 = a/6. AD² = 3a²/4 + a²/36 = 28a²/36 = 7a²/9. So 9AD² = 7a² and k = 7.'),
     dict(ch='5', scen='ratio in which (−1, 6) divides the join of (−3, 10) and (6, −8)',
          stem='In what ratio does the point (−1, 6) divide the line segment joining (−3, 10) and (6, −8)?',
          opts=['2 : 7', '7 : 2', '1 : 3', '2 : 5'],

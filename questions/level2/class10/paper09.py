@@ -9,7 +9,7 @@ def chord_tangents():
     return [('circle', O[0], O[1], r, None), ('line', P[0], P[1], Q[0], Q[1]), ('line', P[0], P[1], T[0], T[1]),
             ('line', Q[0], Q[1], T[0], T[1]), ('line', O[0], O[1], T[0], T[1], True), ('line', O[0], O[1], P[0], P[1], True),
             ('dot', O[0], O[1], 3), ('text', O[0] - 12, O[1], 'O', 12), ('text', P[0], P[1] - 12, 'P', 12),
-            ('text', Q[0], Q[1] + 12, 'Q', 12), ('text', T[0] + 12, T[1], 'T', 12), ('text', 118, 104, '8 cm', 10)]
+            ('text', Q[0], Q[1] + 12, 'Q', 12), ('text', T[0] + 12, T[1], 'T', 12), ('text', 90, 128, '8 cm', 10)]
 
 
 QUESTIONS = [
@@ -112,11 +112,11 @@ QUESTIONS = [
          sol='Horizontal distances: 87/√3 and 87√3. Distance moved = 87√3 − 87/√3 = 87 × 2/√3 = 58√3 m (about 100.5 m).'),
 
     # ---------------- Part 7 · Data Handling, Statistics & Probability
-    dict(ch='8', scen='mode from the empirical relation with median 27 and mean 28.5',
-         stem='For a moderately skewed distribution, the median is 27 and the mean is 28.5. Using the empirical relation between mean, median and mode, what is the mode?',
-         opts=['24', '27', '22.5', '30'],
-         hint='Mode = 3 Median − 2 Mean.',
-         sol='Mode = 3 × 27 − 2 × 28.5 = 81 − 57 = 24.'),
+    dict(ch='8', scen='mean exceeding the median by 1.5 with mode 24 · the mean',
+         stem='For a moderately skewed distribution, the mean is 1.5 more than the median, and the mode is 24. Using the empirical relation, what is the mean?',
+         opts=['28.5', '27', '25.5', '30'],
+         hint='Mode = 3 × median − 2 × mean. Write the mean as median + 1.5.',
+         sol='Let the median be m, so the mean is m + 1.5. 24 = 3m − 2(m + 1.5) = m − 3, so m = 27 and the mean is 28.5. (27 is the median.)'),
     dict(ch='8', scen='disc numbered 1 to 25 that is a prime or a perfect square',
          stem='Discs numbered 1 to 25 are in a box. One is drawn at random. What is the probability that its number is a prime or a perfect square?',
          opts=['14/25', '9/25', '1/2', '13/25'],
@@ -146,11 +146,11 @@ QUESTIONS = [
          opts=['10', '4', '12', '13'],
          hint='In the worst case he gets 3 of each colour first.',
          sol='He could take 3 red, 3 blue and 3 green (9 marbles) with no colour 4 times. The 10th marble makes 4 of some colour. So 10.'),
-    dict(ch='10', scen='number of diagonals of a decagon',
-         stem='How many diagonals does a polygon with 10 sides have?',
-         opts=['35', '45', '70', '25'],
-         hint='From each corner, a diagonal can go to every other corner except itself and its two neighbours.',
-         sol='Each of the 10 corners has 10 − 3 = 7 diagonals. Every diagonal is counted twice: 10 × 7 ÷ 2 = 35. (45 counts the 10 sides as well.)'),
+    dict(ch='10', scen='triangles from octagon corners with no side of the octagon',
+         stem='Triangles are drawn using three corners of a regular octagon. How many of them have no side in common with the octagon?',
+         opts=['16', '56', '8', '24'],
+         hint='Fix one corner of the triangle and count the ways to choose the other two.',
+         sol='Number the corners 1 to 8 and fix corner 1. The other two corners must come from 3, 4, 5, 6, 7 and must not be next to each other: (3, 5), (3, 6), (3, 7), (4, 6), (4, 7), (5, 7), which is 6 ways. Each of the 8 corners gives 6, but every triangle is counted 3 times (once at each corner): 8 × 6 ÷ 3 = 16. (56 counts all triangles.)'),
     dict(ch='10', scen='numbers 1 to 10 replaced by their difference until one remains',
          stem='The numbers 1 to 10 are on a board. Each step, Sameer erases two numbers and writes their positive difference. At the end one number is left. What can be said about it?',
          opts=['It is always odd', 'It is always even', 'It is always 1', 'It is always 0'],
@@ -172,7 +172,7 @@ QUESTIONS = [
          stem='Which point of the form (a, a) is equidistant from A(3, 4) and B(5, 2)?',
          opts=['No such point exists', '(3.5, 3.5)', '(4, 4)', '(2, 2)'],
          hint='Equate (a − 3)² + (a − 4)² and (a − 5)² + (a − 2)².',
-         sol='Expanding: 2a² − 14a + 25 = 2a² − 14a + 29, which says 25 = 29. This is never true, so no such point exists. (All points equidistant from A and B satisfy y = x − 1, which never meets y = x.)'),
+         sol='Expanding: 2a² − 14a + 25 = 2a² − 14a + 29, which says 25 = 29. This is never true, so no such point exists.'),
     dict(ch='3+9', scen='₹1,00,000 repaid in two equal monthly instalments at 1 percent a month',
          stem='A shop lends ₹1,00,000 at 1% per month, compounded monthly. It is repaid in 2 equal monthly instalments, the first after one month. What is each instalment (to the nearest paisa)?',
          opts=['₹50,751.24', '₹50,500.00', '₹51,000.00', '₹50,000.00'],

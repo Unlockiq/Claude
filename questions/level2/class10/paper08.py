@@ -2,11 +2,14 @@
 
 
 def mirror_tree():
-    return [('line', 0, 150, 260, 150), ('line', 30, 30, 30, 150), ('circle', 30, 30, 16, 'green'),
-            ('rect', 196, 146, 16, 4, 'blue'), ('line', 240, 112, 240, 150), ('dot', 240, 110, 4),
-            ('line', 30, 30, 204, 148, True), ('line', 204, 148, 240, 110, True),
-            ('text', 117, 164, '12 m', 11), ('text', 222, 164, '2 m', 11), ('text', 256, 130, '1.5 m', 10),
-            ('text', 204, 136, 'mirror', 9)]
+    # 15 px per metre: tree 9 m, 12 m to the mirror, eye 1.5 m high and 2 m behind it
+    g, tx, mx = 150, 20, 200
+    ex, ey = mx + 30, g - 22.5
+    return [('line', 0, g, 260, g), ('line', tx, g, tx, g - 135), ('circle', tx, g - 120, 14, 'green'),
+            ('rect', mx - 7, g - 4, 14, 4, 'blue'), ('line', ex, g, ex, ey), ('dot', ex, ey, 4),
+            ('line', tx, g - 135, mx, g - 2, True), ('line', mx, g - 2, ex, ey, True),
+            ('text', (tx + mx) / 2, g + 14, '12 m', 11), ('text', (mx + ex) / 2, g + 14, '2 m', 11), ('text', ex + 18, (g + ey) / 2, '1.5 m', 10),
+            ('text', mx - 26, g - 12, 'mirror', 9)]
 
 
 def incircle_right():
@@ -138,11 +141,11 @@ QUESTIONS = [
          opts=['₹360', '₹1,800', '₹1,440', '₹240'],
          hint='Each trader pays GST only on the value he adds.',
          sol='Retailer adds 15,000 − 12,000 = ₹3,000. GST = 12% of 3,000 = ₹360. (₹1,800 is the GST on the full final price, paid in parts by all three.)'),
-    dict(ch='9', scen='single discount equal to 10 20 and 25 percent in succession',
-         stem='A shop gives three successive discounts of 10%, 20% and 25%. What single discount is equal to these three?',
-         opts=['46%', '55%', '50%', '44%'],
-         hint='Multiply what is left after each discount.',
-         sol='0.9 × 0.8 × 0.75 = 0.54. The buyer pays 54%, so the single discount is 46%. (55% simply adds the three.)'),
+    dict(ch='9', scen='two shops with different pairs of successive discounts on ₹4,000',
+         stem='On an item marked ₹4,000, Shop A gives successive discounts of 20% and 10%, and Shop B gives 25% and then 5%. Which shop is cheaper, and by how much?',
+         opts=['Shop B, by ₹30', 'Shop A, by ₹30', 'Both are the same', 'Shop B, by ₹40'],
+         hint='Multiply the factors for each shop.',
+         sol='Shop A: 4,000 × 0.8 × 0.9 = ₹2,880. Shop B: 4,000 × 0.75 × 0.95 = ₹2,850. Shop B is cheaper by ₹30. ("Both are the same" adds the discounts: 30% each.)'),
 
     # ---------------- Part 9 · Mathematical Reasoning
     dict(ch='10', scen='integers forcing three with a sum divisible by 3',

@@ -3,7 +3,7 @@ import math
 
 
 def two_tangents_chord():
-    O, r, d = (60, 85), 50, 150
+    O, r, d = (60, 85), 50, 78
     P = (O[0] + d, O[1])
     phi = math.acos(r / d)
     A = (O[0] + r * math.cos(phi), O[1] - r * math.sin(phi))
@@ -11,11 +11,11 @@ def two_tangents_chord():
     return [('circle', O[0], O[1], r, None), ('line', P[0], P[1], A[0], A[1]), ('line', P[0], P[1], B[0], B[1]),
             ('line', O[0], O[1], A[0], A[1], True), ('line', O[0], O[1], B[0], B[1], True), ('line', A[0], A[1], B[0], B[1]),
             ('dot', O[0], O[1], 3), ('text', O[0] - 12, O[1], 'O', 12), ('text', P[0] + 12, P[1], 'P', 12),
-            ('text', A[0] + 2, A[1] - 12, 'A', 12), ('text', B[0] + 2, B[1] + 12, 'B', 12), ('text', P[0] - 30, P[1], '80°', 10)]
+            ('text', A[0] + 2, A[1] - 12, 'A', 12), ('text', B[0] + 2, B[1] + 12, 'B', 12), ('text', P[0] - 13, P[1], '80°', 8)]
 
 
 def square_circle():
-    return [('rect', 10, 10, 140, 140, 'yellow'), ('circle', 80, 80, 70, 'white'), ('text', 80, 165, '14 cm', 11)]
+    return [('rect', 10, 10, 140, 140, 'yellow'), ('circle', 80, 80, 70, 'white'), ('rect', 30.5, 30.5, 99, 99, 'blue'), ('text', 80, 165, '14 cm', 11)]
 
 
 QUESTIONS = [
@@ -29,7 +29,7 @@ QUESTIONS = [
          stem='Which of these numbers is irrational?',
          opts=['(√5 + √2)²', '(3 + √2)(3 − √2)', '√12 × √3', '(2√3)² − 5'],
          hint='Expand each one.',
-         sol='(3 + √2)(3 − √2) = 9 − 2 = 7; √12 × √3 = √36 = 6; (2√3)² − 5 = 12 − 5 = 7. But (√5 + √2)² = 7 + 2√10, and √10 is irrational. So only the first is irrational.'),
+         sol='(3 + √2)(3 − √2) = 9 − 2 = 7; √12 × √3 = √36 = 6; (2√3)² − 5 = 12 − 5 = 7. But (√5 + √2)² = 7 + 2√10, and √10 is irrational. So only (√5 + √2)² = 7 + 2√10 is irrational.'),
 
     # ---------------- Part 2 · Fractions, Decimals & Percentages
     dict(ch='3', scen='capital of a partner from a 5 : 3 profit ratio over 8 months',
@@ -37,28 +37,28 @@ QUESTIONS = [
          opts=['₹45,000', '₹30,000', '₹40,000', '₹50,000'],
          hint='Profit ratio = ratio of capital × months.',
          sol='50,000 × 12 : C × 8 = 5 : 3. So 8C = 6,00,000 × 3/5 = 3,60,000 and C = ₹45,000. (₹30,000 ignores the months.)'),
-    dict(ch='3', scen='difference of compound and simple interest on ₹10,000 at 10 percent for 3 years',
-         stem='What is the difference between the compound interest (compounded yearly) and the simple interest on ₹10,000 at 10% per annum for 3 years?',
-         opts=['₹310', '₹300', '₹100', '₹331'],
-         hint='CI = 10,000 × (1.1³ − 1).',
-         sol='CI = 10,000 × 0.331 = ₹3,310. SI = 10,000 × 0.1 × 3 = ₹3,000. Difference ₹310. (₹100 is the 2-year difference.)'),
-    dict(ch='3', scen='principal giving ₹7,200 after two years at 20 percent compound',
-         stem='A sum invested at 20% per annum, compounded yearly, grows to ₹7,200 in 2 years. What was the sum?',
-         opts=['₹5,000', '₹4,800', '₹5,143', '₹4,320'],
-         hint='Divide by 1.2 twice.',
-         sol='Sum = 7,200 ÷ 1.44 = ₹5,000. (₹5,143 divides by 1.4, the simple-interest factor; ₹4,320 takes 40% off.)'),
+    dict(ch='3', scen='CI minus SI is ₹50 for 2 years · difference for 3 years',
+         stem='On a certain sum at 10% per annum, the compound interest (compounded yearly) exceeds the simple interest by ₹50 for 2 years. By how much does it exceed it for 3 years?',
+         opts=['₹155', '₹150', '₹75', '₹165.50'],
+         hint='For 2 years, CI − SI = P × (r/100)². Find P first.',
+         sol='P × 0.01 = 50, so P = ₹5,000. For 3 years: CI = 5,000 × (1.331 − 1) = ₹1,655 and SI = ₹1,500. Difference = ₹155. (₹150 simply triples the 2-year gap.)'),
+    dict(ch='3', scen='sum amounting to ₹7,200 in 2 years and ₹8,640 in 3 years',
+         stem='A sum at compound interest (compounded yearly) amounts to ₹7,200 in 2 years and to ₹8,640 in 3 years. What was the sum?',
+         opts=['₹5,000', '₹4,800', '₹6,000', '₹5,760'],
+         hint='The 3rd year\'s growth gives the rate.',
+         sol='8,640 ÷ 7,200 = 1.2, so the rate is 20%. Sum = 7,200 ÷ 1.2² = 7,200 ÷ 1.44 = ₹5,000. (₹6,000 divides by 1.2 only once.)'),
 
     # ---------------- Part 3 · Algebra
-    dict(ch='4', scen='monic quadratic with zeros 2 + √3 and 2 − √3',
-         stem='Which quadratic polynomial (with leading coefficient 1) has zeros 2 + √3 and 2 − √3?',
-         opts=['x² − 4x + 1', 'x² + 4x + 1', 'x² − 4x − 1', 'x² − 2x + 1'],
-         hint='x² − (sum of zeros)x + (product of zeros).',
-         sol='Sum = 4. Product = 4 − 3 = 1. The polynomial is x² − 4x + 1.'),
-    dict(ch='4', scen='x plus 1/x equals 3 · value of x³ + 1/x³',
-         stem='If x + 1/x = 3, what is x³ + 1/x³?',
-         opts=['18', '27', '24', '9'],
-         hint='(x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x).',
-         sol='27 = x³ + 1/x³ + 3 × 3, so x³ + 1/x³ = 27 − 9 = 18. (27 forgets the middle terms.)'),
+    dict(ch='4', scen='integer quadratic with a zero 2 + √3 · value of p + q',
+         stem='2 + √3 is a zero of x² + px + q, where p and q are integers. What is p + q?',
+         opts=['−3', '5', '3', '−5'],
+         hint='With integer coefficients, the other zero is 2 − √3.',
+         sol='The other zero is 2 − √3. Sum = 4 = −p, so p = −4. Product = 4 − 3 = 1 = q. p + q = −3. (5 uses p = +4.)'),
+    dict(ch='4', scen='x plus 1/x equals 3 · value of x⁵ + 1/x⁵',
+         stem='If x + 1/x = 3, what is x⁵ + 1/x⁵?',
+         opts=['123', '126', '243', '47'],
+         hint='Find x² + 1/x² and x³ + 1/x³, then multiply them.',
+         sol='x² + 1/x² = 9 − 2 = 7. x³ + 1/x³ = 27 − 3 × 3 = 18. (x² + 1/x²)(x³ + 1/x³) = x⁵ + 1/x⁵ + x + 1/x, so x⁵ + 1/x⁵ = 7 × 18 − 3 = 123. (126 forgets to subtract x + 1/x.)'),
     dict(ch='4', scen='sum of all two-digit odd numbers',
          stem='What is the sum of all the two-digit odd numbers?',
          opts=['2,475', '2,450', '2,500', '4,950'],
@@ -77,7 +77,7 @@ QUESTIONS = [
          hint='Find the distance from the foot of the ladder to each wall.',
          sol='Distance to the first wall = √(25² − 24²) = 7 m. Distance to the second wall = √(25² − 7²) = 24 m. Width = 7 + 24 = 31 m.'),
     dict(ch='5', scen='angle OAB when the tangents from P meet at 80 degrees',
-         fig=drawing(230, 170, two_tangents_chord()),
+         fig=drawing(160, 170, two_tangents_chord()),
          stem='PA and PB are tangents to a circle with centre O, and angle APB = 80°. What is angle OAB?',
          opts=['40°', '50°', '80°', '100°'],
          hint='OA ⊥ PA and OB ⊥ PB, so angle AOB = 180° − 80°.',
@@ -94,24 +94,24 @@ QUESTIONS = [
          opts=['156π cm²', '140π cm²', '256π cm²', '116π cm²'],
          hint='Slant height l = √(h² + (R − r)²). Curved area = π(R + r)l.',
          sol='l = √(64 + 36) = 10 cm. Curved area = π(10 + 4) × 10 = 140π. Base = π × 4² = 16π. Total 156π cm². (256π adds the top, which is open.)'),
-    dict(ch='6', scen='three cubes of edges 3 4 5 melted into one cube',
-         stem='Three metal cubes with edges 3 cm, 4 cm and 5 cm are melted and recast into a single cube. What is the edge of the new cube?',
-         opts=['6 cm', '12 cm', '5 cm', '7 cm'],
-         hint='Add the volumes.',
-         sol='27 + 64 + 125 = 216 cm³ = 6³. The edge is 6 cm. (12 cm adds the edges.)'),
-    dict(ch='6', scen='area between a 14 cm square and its inscribed circle',
+    dict(ch='6', scen='three cubes of edges 3 4 5 recast · change in surface area',
+         stem='Three metal cubes with edges 3 cm, 4 cm and 5 cm are melted and recast into a single cube. By what percentage does the total surface area change?',
+         opts=['28% decrease', '28% increase', '16% decrease', 'No change'],
+         hint='Find the edge of the new cube from the total volume.',
+         sol='Volume 27 + 64 + 125 = 216 cm³, so the new edge is 6 cm. Old surface area = 6(9 + 16 + 25) = 300 cm². New = 6 × 36 = 216 cm². Decrease = 84/300 = 28%.'),
+    dict(ch='6', scen='area between a circle in a 14 cm square and the square inside the circle',
          fig=drawing(160, 175, square_circle()),
-         stem='A circle just fits inside a square of side 14 cm. What is the area of the part of the square outside the circle? (Take π = 22/7.)',
-         opts=['42 cm²', '154 cm²', '98 cm²', '56 cm²'],
-         hint='The diameter of the circle equals the side of the square.',
-         sol='Square = 196 cm². Circle of radius 7 = 22/7 × 49 = 154 cm². Outside = 196 − 154 = 42 cm².'),
+         stem='A circle just fits inside a square of side 14 cm. A smaller square is drawn inside the circle with its four corners on the circle. What is the area of the part of the circle outside the smaller square? (Take π = 22/7.)',
+         opts=['56 cm²', '42 cm²', '98 cm²', '14 cm²'],
+         hint='The diagonal of the small square is a diameter of the circle.',
+         sol='The circle has radius 7 cm and area 22/7 × 49 = 154 cm². The small square has diagonal 14 cm, so its area is 14² ÷ 2 = 98 cm². Area between them = 154 − 98 = 56 cm². (42 cm² is the big square minus the circle.)'),
 
     # ---------------- Part 6 · Trigonometry
-    dict(ch='7', scen='sin theta equals cos theta · value of sin⁴ + cos⁴',
-         stem='If sin θ = cos θ for an acute angle θ, what is sin⁴θ + cos⁴θ?',
-         opts=['1/2', '1', '1/4', '3/4'],
-         hint='Which acute angle has sin θ = cos θ?',
-         sol='θ = 45°, so sin²θ = cos²θ = 1/2. sin⁴θ + cos⁴θ = 1/4 + 1/4 = 1/2.'),
+    dict(ch='7', scen='sin theta plus cos theta equals 7/5 · tan theta plus cot theta',
+         stem='For an acute angle θ, sin θ + cos θ = 7/5. What is tan θ + cot θ?',
+         opts=['25/12', '12/25', '7/5', '5/7'],
+         hint='Square the given equation and use sin²θ + cos²θ = 1.',
+         sol='(sin θ + cos θ)² = 1 + 2 sin θ cos θ = 49/25, so sin θ cos θ = 12/25. tan θ + cot θ = (sin²θ + cos²θ)/(sin θ cos θ) = 1 ÷ (12/25) = 25/12.'),
     dict(ch='7', scen='tower seen at 45 then 60 degrees after walking 20 m closer',
          stem='The angle of elevation of the top of a tower from a point is 45°. After walking 20 m straight towards the tower it is 60°. What is the height of the tower?',
          opts=['10(3 + √3) m', '10√3 m', '20√3 m', '10(3 − √3) m'],
@@ -125,11 +125,11 @@ QUESTIONS = [
          opts=['7', '5', '9', '6'],
          hint='Use class marks 5, 15, 25, 35, 45 and set Σfx/Σf = 24.',
          sol='Σfx = 10 + 15f + 125 + 105 + 135 = 375 + 15f. Σf = 13 + f. 375 + 15f = 24(13 + f) = 312 + 24f, so 9f = 63 and f = 7.'),
-    dict(ch='8', scen='three coins showing at least one head and at least one tail',
-         stem='Three fair coins are tossed. What is the probability of getting at least one head and at least one tail?',
-         opts=['3/4', '1/2', '7/8', '1/4'],
-         hint='Use the complement: all heads or all tails.',
-         sol='Only HHH and TTT fail. P = 1 − 2/8 = 6/8 = 3/4. (7/8 only rules out one of them.)'),
+    dict(ch='8', scen='four coins with more heads than tails',
+         stem='Four fair coins are tossed together. What is the probability that there are more heads than tails?',
+         opts=['5/16', '1/2', '11/16', '3/8'],
+         hint='More heads than tails means 3 or 4 heads. List the outcomes.',
+         sol='There are 2⁴ = 16 equally likely outcomes. 4 heads: 1 way (HHHH). 3 heads: 4 ways (the tail can be any one coin). P = 5/16. (1/2 ignores the 6 outcomes with 2 heads and 2 tails.)'),
 
     # ---------------- Part 8 · Applied Mathematics
     dict(ch='9', scen='average speed of a boat for a round trip of 32 km each way',
@@ -171,11 +171,11 @@ QUESTIONS = [
          opts=['14', '13', '12', '15'],
          hint='Write them as a − d, a, a + d.',
          sol='3a = 27, so a = 9. (9 − d) × 9 × (9 + d) = 504 gives 81 − d² = 56, so d = 5. The numbers are 4, 9, 14. Largest 14.'),
-    dict(ch='5+7', scen='side of an equilateral triangle in a circle of radius 6',
-         stem='An equilateral triangle is drawn inside a circle of radius 6 cm with all its corners on the circle. What is the length of a side?',
-         opts=['6√3 cm', '6 cm', '12 cm', '3√3 cm'],
-         hint='Each side subtends 120° at the centre.',
-         sol='Half a side = 6 sin 60° = 3√3 cm, so the side is 6√3 cm (about 10.4 cm).'),
+    dict(ch='5+7', scen='part of a radius-6 circle outside its inscribed equilateral triangle',
+         stem='An equilateral triangle is drawn inside a circle of radius 6 cm with all three corners on the circle. What is the area of the part of the circle outside the triangle?',
+         opts=['(36π − 27√3) cm²', '(36π − 9√3) cm²', '(36π − 108√3) cm²', '(12π − 9√3) cm²'],
+         hint='Each side subtends 120° at the centre. Find a side using sin 60°.',
+         sol='Half a side = 6 sin 60° = 3√3, so a side is 6√3 cm. Triangle area = (√3/4) × 108 = 27√3 cm². Circle = 36π cm². Outside = (36π − 27√3) cm².'),
     dict(ch='4+5', scen='line parallel to the base halving the area of a triangle',
          stem='A line parallel to side BC of triangle ABC cuts AB at D and AC at E so that triangle ADE has exactly half the area of triangle ABC. What is AD/AB?',
          opts=['1/√2', '1/2', '1/4', '√2 − 1'],

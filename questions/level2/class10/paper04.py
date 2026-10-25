@@ -13,6 +13,21 @@ def concentric():
             ('text', O[0] - 10, y + 12, 'M', 12)]
 
 
+
+def concentric_diameter():
+    import math
+    O = (90, 90)
+    R, r = 75, 45
+    y = O[1] + r
+    dx = math.sqrt(R * R - r * r)
+    A, B, M = (O[0] - dx, y), (O[0] + dx, y), (O[0], y)
+    E = (2 * O[0] - A[0], 2 * O[1] - A[1])
+    return [('circle', O[0], O[1], R, None), ('circle', O[0], O[1], r, 'yellow'), ('line', A[0], A[1], B[0], B[1]),
+            ('line', A[0], A[1], E[0], E[1]), ('line', M[0], M[1], E[0], E[1], True), ('dot', O[0], O[1], 3),
+            ('text', O[0] - 12, O[1] - 4, 'O', 12), ('text', A[0] - 10, A[1] + 6, 'A', 12), ('text', B[0] + 10, B[1] + 6, 'B', 12),
+            ('text', M[0], M[1] + 13, 'M', 12), ('text', E[0] + 8, E[1] - 8, 'E', 12)]
+
+
 QUESTIONS = [
     # ---------------- Part 1 · Number System
     dict(ch='1', scen='smallest multiple of 7 leaving remainder 5 on division by 12 15 and 20',
@@ -44,11 +59,11 @@ QUESTIONS = [
          sol='1.1 × 1.2 × 0.75 = 0.99. The population is 99% of the start: a 1% decrease. (Adding 10 + 20 − 25 = 5 is wrong.)'),
 
     # ---------------- Part 3 · Algebra
-    dict(ch='4', scen='k when the zeros of x³ − 12x² + 39x − k are in AP',
-         stem='The zeros of x³ − 12x² + 39x − k are in arithmetic progression. What is k?',
-         opts=['28', '39', '64', '12'],
-         hint='Write the zeros as a − d, a, a + d. Their sum is 12.',
-         sol='3a = 12 gives a = 4. Sum of products in pairs: 4(4 − d) + 4(4 + d) + (16 − d²) = 48 − d² = 39, so d = 3. Zeros 1, 4, 7. k = product = 28.'),
+    dict(ch='4', scen='k when the zeros of x² − 12x + k differ by 6',
+         stem='The zeros of x² − 12x + k differ by 6. What is k?',
+         opts=['27', '35', '32', '36'],
+         hint='(α − β)² = (α + β)² − 4αβ.',
+         sol='α + β = 12 and αβ = k. (α − β)² = 144 − 4k = 36, so 4k = 108 and k = 27. The zeros are 9 and 3. (36 gives equal zeros; 32 gives zeros 8 and 4; 35 gives 7 and 5.)'),
     dict(ch='4', scen='three batters scoring 120 runs with two conditions',
          stem='Anaya, Kabir and Riya scored 120 runs in all. Anaya scored 10 more than Kabir. Riya scored 20 fewer than Anaya and Kabir together. How many runs did Riya score?',
          opts=['50', '40', '30', '60'],
@@ -59,24 +74,24 @@ QUESTIONS = [
          opts=['17', '16', '9', '8'],
          hint='Sₙ = n/2 × (2a + (n − 1)d) = 0 with n ≠ 0.',
          sol='2 × 24 + (n − 1)(−3) = 0 gives n − 1 = 16, so n = 17. The positive terms 24 to 3 cancel the negative terms −3 to −24 after the 0.'),
-    dict(ch='4', scen='positive number exceeding its reciprocal by 24/5',
-         stem='A positive number exceeds its reciprocal by 24/5. What is the number?',
-         opts=['5', '1/5', '24/5', '4'],
-         hint='x − 1/x = 24/5 gives a quadratic.',
-         sol='5x² − 24x − 5 = 0 = (5x + 1)(x − 5). The positive root is 5. Check: 5 − 1/5 = 24/5.'),
+    dict(ch='4', scen='number exceeding its reciprocal by 24/5 · square plus reciprocal square',
+         stem='A positive number x exceeds its reciprocal by 24/5. What is x² + 1/x²?',
+         opts=['626/25', '576/25', '526/25', '26'],
+         hint='Square x − 1/x = 24/5 instead of solving for x.',
+         sol='(x − 1/x)² = x² − 2 + 1/x². So x² + 1/x² = (24/5)² + 2 = 576/25 + 50/25 = 626/25. (Check: x = 5 gives 25 + 1/25 = 626/25.)'),
 
     # ---------------- Part 4 · Geometry
-    dict(ch='5', scen='altitude of a smaller similar triangle from areas 81 and 49',
-         stem='The areas of two similar triangles are 81 cm² and 49 cm². An altitude of the larger triangle is 6.3 cm. What is the corresponding altitude of the smaller one?',
-         opts=['4.9 cm', '3.43 cm', '5.4 cm', '8.1 cm'],
-         hint='The ratio of areas is the square of the ratio of corresponding altitudes.',
-         sol='Ratio of altitudes = √(49/81) = 7/9. Smaller altitude = 6.3 × 7/9 = 4.9 cm. (3.43 cm uses 49/81 without the square root.)'),
-    dict(ch='5', scen='chord of the larger of two concentric circles touching the smaller',
-         fig=drawing(180, 175, concentric()),
-         stem='Two concentric circles have radii 5 cm and 3 cm. A chord AB of the larger circle touches the smaller circle at M. What is the length of AB?',
-         opts=['8 cm', '4 cm', '6 cm', '10 cm'],
-         hint='OM is perpendicular to the tangent AB, so it bisects the chord.',
-         sol='Triangle OMB is right-angled at M: MB = √(5² − 3²) = 4 cm. AB = 2 × 4 = 8 cm.'),
+    dict(ch='5', scen='perimeters of two similar triangles with areas 81 and 49 adding to 64',
+         stem='The areas of two similar triangles are 81 cm² and 49 cm². The sum of their perimeters is 64 cm. What is the perimeter of the larger triangle?',
+         opts=['36 cm', '28 cm', '32 cm', '40.5 cm'],
+         hint='The ratio of areas is the square of the ratio of sides.',
+         sol='Ratio of sides = √(81/49) = 9/7, and perimeters are in the same ratio. Larger = 64 × 9/16 = 36 cm. (40.5 cm uses 81 : 49 directly.)'),
+    dict(ch='5', scen='chord touching the inner of two concentric circles · distance from M to the far end of diameter AE',
+         fig=drawing(180, 175, concentric_diameter()),
+         stem='Two concentric circles with centre O have radii 5 cm and 3 cm. A chord AB of the larger circle touches the smaller circle at M. AO is extended to meet the larger circle again at E. What is the length ME?',
+         opts=['2√13 cm', '8 cm', '√34 cm', '6 cm'],
+         hint='O is the midpoint of AE and M is the midpoint of AB. Use the midpoint theorem in triangle ABE.',
+         sol='OM ⊥ AB, so AM = MB = √(25 − 9) = 4 cm. In triangle ABE, O and M are midpoints of AE and AB, so BE = 2 × OM = 6 cm and BE ∥ OM, making angle ABE = 90°. ME = √(MB² + BE²) = √(16 + 36) = √52 = 2√13 cm.'),
     dict(ch='5', scen='points of trisection of the segment from (−2, 3) to (4, −3)',
          stem='The two points that divide the segment from (−2, 3) to (4, −3) into three equal parts are found. What is the sum of all four of their coordinates?',
          opts=['2', '0', '1', '4'],
@@ -94,18 +109,18 @@ QUESTIONS = [
          opts=['54', '81', '27', '108'],
          hint='Hemisphere volume = (2/3)πr³.',
          sol='Bowl = (2/3)π × 729 = 486π cm³. One bottle = π × 2.25 × 4 = 9π cm³. 486 ÷ 9 = 54 bottles. (108 uses a full sphere.)'),
-    dict(ch='6', scen='perimeter of a 60 degree sector of radius 21 cm',
-         stem='What is the perimeter of a sector of a circle of radius 21 cm with an angle of 60° at the centre? (Take π = 22/7.)',
-         opts=['64 cm', '22 cm', '43 cm', '231 cm'],
-         hint='The perimeter has two radii and one arc.',
-         sol='Arc = 60/360 × 2 × 22/7 × 21 = 22 cm. Perimeter = 21 + 21 + 22 = 64 cm. (22 cm is the arc alone; 231 cm² is the area.)'),
+    dict(ch='6', scen='60 degree sector with perimeter 64 cm · its area',
+         stem='A sector of a circle has an angle of 60° at the centre and a perimeter of 64 cm. What is its area? (Take π = 22/7.)',
+         opts=['231 cm²', '462 cm²', '22 cm²', '1386 cm²'],
+         hint='Perimeter = 2r + arc length. Find r first.',
+         sol='Arc = (60/360) × 2 × 22/7 × r = 22r/21. So 2r + 22r/21 = 64r/21 = 64, giving r = 21 cm. Area = (1/6) × 22/7 × 441 = 231 cm². (1386 cm² is the whole circle.)'),
 
     # ---------------- Part 6 · Trigonometry
-    dict(ch='7', scen='5 tan theta = 4 · value of a ratio of sin and cos expressions',
-         stem='If 5 tan θ = 4, what is the value of (5 sin θ − 3 cos θ)/(5 sin θ + 2 cos θ)?',
-         opts=['1/6', '1/2', '1/3', '6'],
-         hint='Divide the top and bottom by cos θ.',
-         sol='The expression equals (5 tan θ − 3)/(5 tan θ + 2) = (4 − 3)/(4 + 2) = 1/6.'),
+    dict(ch='7', scen='sin theta plus cos theta equals root 2 cos theta · tan theta',
+         stem='For an acute angle θ, sin θ + cos θ = √2 cos θ. What is tan θ, and what is the value of tan θ + cot θ?',
+         opts=['√2 − 1 and 2√2', '√2 + 1 and 2√2', '√2 − 1 and 2', '1 and 2'],
+         hint='Divide both sides by cos θ.',
+         sol='Dividing by cos θ: tan θ + 1 = √2, so tan θ = √2 − 1. Then cot θ = 1/(√2 − 1) = √2 + 1. tan θ + cot θ = 2√2.'),
     dict(ch='7', scen='kite string of 60 m changing from 60 to 45 degrees',
          stem='A kite is on a straight string 60 m long making 60° with the level ground. The wind changes and the string, still 60 m long, now makes 45°. By how much has the kite come down?',
          opts=['30(√3 − √2) m', '30√3 m', '30√2 m', '15 m'],
@@ -136,11 +151,11 @@ QUESTIONS = [
          opts=['30 days', '20 days', '60 days', '24 days'],
          hint='Adding all three pair rates counts each person twice.',
          sol='2(H + R + S) = 1/12 + 1/15 + 1/20 = 1/5, so H + R + S = 1/10. H = 1/10 − (R + S) = 1/10 − 1/15 = 1/30. Hema takes 30 days.'),
-    dict(ch='9', scen='CGST inside a GST-inclusive price of ₹5,900 at 18 percent',
-         stem='A sofa costs ₹5,900 including 18% GST, charged within the state. How much of this price is CGST?',
-         opts=['₹450', '₹531', '₹900', '₹1,062'],
-         hint='First find the price before tax: ₹5,900 is 118% of it.',
-         sol='Price before tax = 5,900 ÷ 1.18 = ₹5,000. GST = ₹900, shared equally: CGST = ₹450. (₹531 wrongly takes 9% of ₹5,900.)'),
+    dict(ch='9', scen='dealer buying and selling within the state · CGST paid after input credit',
+         stem='A dealer in Pune buys goods for ₹10,000 plus 18% GST and sells them in Mumbai for ₹12,000 plus 18% GST. Both deals are within the state. After input tax credit, how much CGST does the dealer pay to the government?',
+         opts=['₹180', '₹360', '₹1,080', '₹90'],
+         hint='Net GST = GST collected on the sale − GST paid on the purchase. CGST is half of it.',
+         sol='GST collected = 18% of 12,000 = ₹2,160. GST paid = 18% of 10,000 = ₹1,800. Net GST = ₹360, shared equally as CGST and SGST: CGST = ₹180. (₹360 is the total net GST.)'),
 
     # ---------------- Part 9 · Mathematical Reasoning
     dict(ch='10', scen='points in a 2 by 2 square forcing two within root 2',
@@ -152,7 +167,7 @@ QUESTIONS = [
          stem='At a party there are 5 couples. Everyone shakes hands once with every other person except their own partner. How many handshakes take place?',
          opts=['40', '45', '35', '90'],
          hint='Count all possible handshakes among 10 people, then remove the forbidden ones.',
-         sol='Among 10 people there are 10 × 9 ÷ 2 = 45 pairs. The 5 couples do not shake hands: 45 − 5 = 40.'),
+         sol='Each of the 10 people shakes hands with everyone except themselves and their partner, that is with 8 people. 10 × 8 = 80 counts every handshake twice (once for each person), so there are 40 handshakes. (45 forgets that partners do not shake hands.)'),
     dict(ch='10', scen='splitting 10 into positive integers with the largest product',
          stem='The number 10 is written as a sum of positive integers, such as 4 + 6 or 2 + 3 + 5. What is the largest possible product of the parts?',
          opts=['36', '32', '30', '25'],
@@ -180,9 +195,9 @@ QUESTIONS = [
          opts=['Bank Q, by ₹25', 'Bank P, by ₹25', 'Bank Q, by ₹125', 'Both cost the same'],
          hint='Bank P charges 5% for each half-year.',
          sol='Bank P: 50,000 × 1.05² − 50,000 = ₹5,125. Bank Q: 10.2% of 50,000 = ₹5,100. Bank Q is cheaper by ₹25.'),
-    dict(ch='6+10', scen='unpainted unit cubes in a painted 3 by 4 by 5 cuboid',
-         stem='A cuboid 3 cm × 4 cm × 5 cm is painted on all faces and cut into 1 cm cubes. How many of the small cubes have no paint at all?',
-         opts=['6', '24', '60', '12'],
-         hint='The unpainted cubes form a smaller cuboid inside.',
-         sol='Remove one layer from each face: the inside block is (3 − 2) × (4 − 2) × (5 − 2) = 1 × 2 × 3 = 6 cubes.'),
+    dict(ch='6+10', scen='small cubes painted on exactly two faces from a painted 3 by 4 by 5 cuboid',
+         stem='A cuboid 3 cm × 4 cm × 5 cm is painted on all faces and cut into 1 cm cubes. How many of the small cubes have paint on exactly two faces?',
+         opts=['24', '22', '8', '6'],
+         hint='Such cubes lie along the edges of the cuboid but not at the corners.',
+         sol='A cuboid has 4 edges of each length. Leaving out the 2 corner cubes, the edges of length 3, 4 and 5 hold 1, 2 and 3 such cubes. Total 4 × (1 + 2 + 3) = 24. (8 cubes have three painted faces, 22 have one and 6 have none: 8 + 24 + 22 + 6 = 60.)'),
 ]
